@@ -1,0 +1,5161 @@
+/*
+    날짜 : 2020.06.01
+    작성자 : 이주연
+    내용 : 2차 추가
+*/
+.test {
+    background: transparent;
+}
+
+.font-weight-m {
+    font-family: var(--font2) !important;
+}
+
+.number {
+    font-family: var(--font5) !important;
+}
+
+.bg_purple {
+    background: #f7f8fc;
+}
+
+.primary-color {
+    color: #6839d3;
+}
+
+.mt-22 {
+    margin-top: 22px;
+}
+
+.badge-pill {
+    display: inline-block;
+    min-width: 56px;
+    padding: 0 9px;
+    background-color: #6839d3;
+    color: #fff;
+    height: 22px;
+    font-size: 10px;
+    letter-spacing: -.5px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 333px;
+
+    &.badge-light-purple {
+        font-family: var(--font2);
+        color: #9474dd;
+        letter-spacing: -.25px;
+        border: solid 1px #ece3ff;
+        background-color: #faf7ff;
+        line-height: 20px;
+    }
+
+    &.bg-next {
+        background-color: #3e5baf;
+    }
+
+    &.bg-last {
+        background-color: #40466a;
+    }
+}
+
+.divider {
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 10px;
+        background-color: #f5f6f8;
+    }
+}
+
+textarea.custom {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    border-radius: 4px;
+    border-color: #e2e3e6;
+    background-color: transparent;
+    letter-spacing: -.65px;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 14px;
+    margin-bottom: 20px;
+
+    &:read-only {
+        background: #f5f6f8;
+    }
+
+    &::placeholder {
+        color: #afaeb8;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.mycard {
+    & .contents {
+        padding: 7px 16px 1px;
+
+        & .card_box {
+            &.empty {
+                width: 100%;
+                height: 185px;
+                border: 1px dotted #bbbfcb;
+                border-radius: 6px;
+                margin-bottom: 80px;
+
+                & a {
+                    display: block;
+                    text-align: center;
+
+                    & span {
+                        display: inline-block;
+                        font-size: 12px;
+                        font-family: var(--font1);
+                        line-height: 181px;
+                        letter-spacing: -.6px;
+                        color: #9b9aa6;
+
+                        & i {
+                            margin-right: 8px;
+                            transform: translate(3px, 2px);
+                        }
+                    }
+                }
+            }
+
+            &.list {
+                padding-left: 0;
+                padding-bottom: 20px;
+
+                &::before {
+                    content: none;
+                }
+
+                & .card {
+                    width: 100%;
+                    height: 80px;
+                    border: 0;
+                    border-radius: 6px;
+                    padding: 0;
+                    margin-bottom: 12px;
+
+                    & a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        padding: 27px 75px 27px 20px;
+                        box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+                        border-radius: 6px;
+
+                        & .img {
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            transform: translate(0, 0);
+
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        & .title {
+                            display: inline-block;
+                            width: calc(100% - 30px);
+                            font-size: 13px;
+                            line-height: 19px;
+                            color: #37354e;
+                            font-family: var(--font2);
+                            letter-spacing: -.33px;
+                            margin-left: 3px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            vertical-align: middle;
+                        }
+
+                        & .open {
+                            position: absolute;
+                            right: 32px;
+                            top: 30px;
+                            font-family: var(--font1);
+                            color: #737183;
+                            font-size: 12px;
+                            line-height: 18px;
+                            letter-spacing: -.6px;
+
+                            & i {
+                                position: absolute;
+                                right: -11px;
+                                top: 2px;
+                            }
+                        }
+
+                        &:hover {
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 94px;
+                    }
+                }
+
+                & .card-connected {
+                    position: relative;
+                    display: block;
+                    border-radius: 6px;
+                    box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+                    margin-bottom: 12px;
+                    background-color: #ffffff;
+
+                    & a {
+                        display: block;
+                        padding: 22px 20px 20px;
+
+                        &:hover {
+                            color: inherit;
+                            text-decoration: none;
+                        }
+
+                        & li {
+                            display: block;
+
+                            &.card-info {
+                                margin-bottom: 33px;
+
+                                & .img {
+                                    display: inline-block;
+                                    width: 32px;
+                                    height: 32px;
+                                    margin-right: 3px;
+                                    vertical-align: middle;
+
+                                    & img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                & .title {
+                                    display: inline-block;
+                                    padding-top: 2px;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    letter-spacing: -.33px;
+                                    color: #37354e;
+                                    font-family: var(--font2);
+                                    vertical-align: middle;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    width: calc(100% - 130px);
+                                }
+
+                                & .sum {
+                                    float: right;
+                                    position: relative;
+                                    font-size: 14px;
+                                    font-family: var(--font5);
+                                    color: #37354e;
+                                    letter-spacing: -.14px;
+                                    line-height: 16px;
+                                    padding-top: 6px;
+
+                                    &::after {
+                                        content: '원';
+                                        font-family: var(--font2);
+                                        font-size: 13px;
+                                        line-height: 19px;
+                                    }
+                                }
+                            }
+
+                            &.required-performance {
+                                position: relative;
+                                display: block;
+                                top: -34px;
+
+                                & .txt {
+                                    font-family: var(--font1);
+                                    font-size: 11px;
+                                    letter-spacing: -.28px;
+                                    color: #737183;
+                                    position: absolute;
+                                    right: 53px;
+                                    top: 0;
+                                }
+
+                                & .val {
+                                    font-family: var(--font4);
+                                    font-size: 11px;
+                                    line-height: 26px;
+                                    letter-spacing: 0;
+                                    color: #737183;
+                                    display: inline-block;
+                                    position: absolute;
+                                    right: 0;
+                                    top: -4px;
+                                    text-decoration: underline;
+
+                                    &::before {
+                                        content: '혜택 필요실적';
+                                        font-family: var(--font1);
+                                        font-size: 11px;
+                                        color: #737183;
+                                        text-decoration: underline;
+                                        text-decoration-color: white;
+                                        margin-right: 5px;
+                                    }
+
+                                    &::after {
+                                        content: '원';
+                                        font-family: var(--font1);
+                                        font-size: 11px;
+                                        color: #737183;
+                                        text-decoration: underline;
+                                    }
+                                }
+
+                                &.h-underline {
+                                    & .val {
+                                        text-decoration: none;
+
+                                        &::after {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.bar-graph {
+                                display: block;
+                                position: relative;
+                                width: 100%;
+                                height: 4px;
+                                border-radius: 66px;
+                                background-color: #f5f6f8;
+                                margin-bottom: 39px;
+
+                                & .bar {
+                                    display: block;
+                                    position: absolute;
+                                    height: 4px;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: #6839d3;
+                                    border-radius: 66px;
+                                    margin-bottom: 6px;
+
+                                    &.bar-full {
+                                        background-color: #3eadff;
+                                    }
+                                }
+
+                                & .txt {
+                                    display: block;
+                                    font-family: var(--font1);
+                                    font-size: 11px;
+                                    letter-spacing: -.28px;
+                                    color: #6839d3;
+                                    position: absolute;
+                                    right: 51px;
+                                    top: 11px;
+
+                                }
+
+                                & .val {
+                                    font-family: var(--font4);
+                                    font-size: 11px;
+                                    line-height: 26px;
+                                    letter-spacing: 0;
+                                    color: #6839d3;
+                                    display: inline-block;
+                                    position: absolute;
+                                    right: 9px;
+                                    top: 7px;
+
+                                    &::before {
+                                        content: '실적';
+                                        font-family: var(--font1);
+                                        font-size: 11px;
+                                        color: #6839d3;
+                                    }
+
+                                    &::after {
+                                        content: '원 ';
+                                        font-family: var(--font1);
+                                        font-size: 11px;
+                                        color: #6839d3;
+                                        position: absolute;
+                                        top: 0;
+                                    }
+
+                                    &.val-full {
+                                        color: #3eadff;
+
+                                        &::before {
+                                            color: #3eadff;
+                                        }
+
+                                        &::after {
+                                            color: #3eadff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.performance {
+                                width: 100%;
+                                height: 36px;
+                                text-align: center;
+                                background-color: #f7f8fc;
+                                border-radius: 6px;
+
+                                & .val {
+                                    position: relative;
+                                    font-family: var(--font4);
+                                    font-size: 11px;
+                                    line-height: 36px;
+                                    letter-spacing: -.11px;
+                                    color: #37354e;
+
+                                    &::after {
+                                        content: '원';
+                                        font-family: var(--font1);
+                                        font-size: 11px;
+                                        letter-spacing: -.28px;
+                                        color: #37354e;
+                                    }
+                                }
+
+                                & .txt {
+                                    font-family: var(--font1);
+                                    font-size: 11px;
+                                    letter-spacing: -.28px;
+                                    color: #37354e;
+                                    line-height: 36px;
+                                }
+
+                                &.double {
+                                    height: 53px;
+                                    line-height: 53px;
+                                    padding: 8px 0 10px;
+
+                                    & .txt {
+                                        display: block;
+                                        line-height: 17px;
+
+                                        &:first-child {
+                                            margin-bottom: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.empty {
+                        & .card-info {
+                            margin-bottom: 0;
+                        }
+
+                        & .no-data {
+                            & .txt {
+                                font-family: var(--font1);
+                                font-size: 11px;
+                                line-height: 26px;
+                                letter-spacing: -.28px;
+                                color: #9b9aa6;
+                                padding-left: 38px;
+                            }
+                        }
+
+                        & .btn-direct {
+                            display: block;
+                            width: 59px;
+                            height: 26px;
+                            line-height: 24px;
+                            border: 1px solid #e3e4e8;
+                            border-radius: 2px;
+                            color: #737183;
+                            letter-spacing: -.55px;
+                            font-size: 11px;
+                            text-align: center;
+                            padding: 0;
+                            position: absolute;
+                            right: 18px;
+                            top: 53px;
+                        }
+                    }
+                }
+
+                & .card-edit {
+                    margin-bottom: 12px;
+                    margin-top: 20px;
+                    background-color: #ffffff;
+                    border-radius: 6px;
+                    background-color: rgba(255, 255, 255, .8);
+
+                    & .btn-edit {
+                        display: block;
+                        width: 100%;
+                        height: 46px;
+                        line-height: 46px;
+                        color: #9b9aa6;
+                        letter-spacing: -.6px;
+                        padding: 0;
+                        text-align: center;
+
+                        & i {
+                            vertical-align: inherit;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                & >.list {
+                    font-size: 11px;
+                    letter-spacing: -0.28px;
+                    text-align: left;
+                    color: var(--text-03);
+                }
+            }
+        }
+
+        &.contents_lg {
+            padding: 7px 20px 1px;
+        }
+
+        & .btn_area {
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            padding: 20px 20px 20px;
+            height: 91px;
+            background: #f7f8fc;
+        }
+    }
+
+    & .desc_box {
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        padding: 33px 24px;
+        background: rgba(255, 255, 255, .9);
+        bottom: 0;
+
+        & p {
+            font-family: var(--font2);
+            color: #37354e;
+            line-height: 19px;
+            letter-spacing: -.33px;
+            font-size: 13px;
+        }
+
+        & p:first-child {
+            color: #6839d3;
+        }
+
+        & p:nth-child(2) {
+            margin-bottom: 8px;
+        }
+
+        & p:nth-child(3) {
+            font-family: var(--font1);
+            font-size: 12px;
+            letter-spacing: -.3px;
+            color: #afaeb8;
+        }
+
+        & .img {
+            display: inline-block;
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            right: 28px;
+            top: 37px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.select_box {
+    position: relative;
+    margin-bottom: 29px;
+    padding: 0 8px;
+
+    & label {
+        width: auto;
+        height: auto;
+        position: relative;
+        background: transparent;
+        border: 0;
+        font-size: 18px;
+        font-family: var(--font2);
+        color: #37354e;
+        line-height: 23px;
+        border-bottom: 1px solid #37354e;
+        border-radius: 0;
+        padding: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -13px;
+            top: 7px;
+            background-image: url('../../img/sprite/common/ico_mycard_arrow@2x.png');
+            width: 11px;
+            height: 11px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+    }
+
+    & select {
+        position: absolute;
+        width: 40px;
+        height: 28px;
+        line-height: normal;
+        font-family: inherit;
+        border: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        left: 8px;
+        top: 0;
+        padding: 0;
+    }
+
+    & .txt, & .txt2 {
+        font-family: var(--font1);
+        font-size: 18px;
+        letter-spacing: -.45px;
+        line-height: 28px;
+
+        & .sum {
+            font-family: var(--font5);
+            color: #37354e;
+            letter-spacing: -.19px;
+            font-size: 19px;
+        }
+
+        & .won {
+            font-family: var(--font2);
+            padding-left: 2px;
+        }
+    }
+
+    & .txt {
+        padding-left: 16px;
+        margin-bottom: 2px;
+        display: inline-block;
+        color: #37354e;
+    }
+
+    & .txt2 {
+        margin-bottom: 10px;
+    }
+
+    & .txt3 {
+        display: inline-block;
+        font-size: 12px;
+        font-family: var(--font1);
+        color: #9b9aa6;
+        letter-spacing: -.3px;
+        line-height: 16px;
+        vertical-align: middle;
+    }
+
+    & .btn-tooltip {
+        display: inline-block;
+        margin-left: 2px;
+        width: 16px;
+        height: 16px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .list.caution {
+        padding-left: 0;
+        margin-top: 4px;
+        color: #ef4b61;
+        &::before {
+            content: none;
+        }
+    }
+}
+
+.card_detail_wrap {
+    padding-top: 12px;
+
+    & .card_info {
+        & .img {
+            width: 64px;
+            height: 40px;
+            margin: 1px auto 6px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .card_name {
+            text-align: center;
+            font-family: var(--font2);
+            font-size: 13px;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
+
+        & .division-01 {
+            & li {
+                line-height: 20px;
+                margin-bottom: 3px;
+
+                & span {
+                    &:first-child {
+                        float: left;
+                        display: inline-block;
+                        font-size: 13px;
+                        color: #9b9aa6;
+                        letter-spacing: -.65px;
+                    }
+
+                    &:nth-child(2) {
+                        float: right;
+                        display: inline-block;
+                        font-size: 13px;
+                        font-family: var(--font4);
+
+                        &.won {
+                            font-family: var(--font5);
+
+                            &::after {
+                                content: '원';
+                                font-family: var(--font1);
+                                font-weight: bold;
+                            }
+
+                            &.grey {
+                                color: #737183;
+
+                                &::after {
+                                    font-family: var(--font1);
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 17px;
+                }
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                border-bottom: 1px solid #f2f4f7;
+            }
+        }
+
+        & .division-02 {
+            padding: 17px 0 11px;
+
+            & li {
+                line-height: 20px;
+                margin-bottom: 5px;
+
+                & span {
+                    &:first-child {
+                        float: left;
+                        display: inline-block;
+                        font-size: 13px;
+                        color: #9b9aa6;
+                        letter-spacing: -.65px;
+                    }
+
+                    &:nth-child(2) {
+                        float: right;
+                        display: inline-block;
+                        font-size: 13px;
+                        font-family: var(--font1);
+                        color: #737183;
+
+                        &.won {
+                            font-family: var(--font5);
+
+                            &::after {
+                                content: '원';
+                                font-family: var(--font1);
+                                font-weight: bold;
+                            }
+
+                            &.grey {
+                                color: #737183;
+
+                                &::after {
+                                    font-family: var(--font1);
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+
+                        & .num {
+                            font-family: var(--font4);
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 17px;
+                }
+            }
+        }
+    }
+}
+
+.card_view {
+    & li {
+        position: relative;
+        width: 100%;
+        height: 58px;
+        line-height: 58px;
+        border-top: 1px solid #f5f6f8;
+
+        & a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: #37354e;
+
+            & .title {
+                display: block;
+                font-family: var(--font2);
+                font-size: 13px;
+                letter-spacing: -.65px;
+                line-height: 58px;
+                padding: 0 30px 0 20px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            & i {
+                position: absolute;
+                right: 19px;
+                top: 21px;
+            }
+        }
+    }
+}
+.pd-20 {
+    padding: 0 20px;
+}
+.card_detail_list_wrap {
+    margin-top: 80px;
+    & .inner {
+        padding: 29px 0;
+
+        & .date_info {
+            position: relative;
+            margin-bottom: 50px;
+            padding: 0 20px;
+
+            & .title {
+                display: inline-block;
+                font-size: 15px;
+                font-weight: bold;
+                letter-spacing: -.3px;
+                line-height: 18px;
+                color: var(--text-01);
+            }
+            & .total {
+                float: right;
+                line-height: 20px;
+                font-family: var(--font4);
+                font-size: 17px;
+                font-weight: bold;
+                letter-spacing: normal;
+                text-align: right;
+                color: var(--text-01);
+                &::after {
+                    content: '원';
+                    font-size: 14px;
+                    font-family: var(--font1);
+                    font-weight: bold;
+                }
+            }
+            & .date {
+                position: absolute;
+                display: block;
+                top: 25px;
+                right: 20px;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                color: var(--text-03);
+                & i {
+                    margin-right: 3px;
+                    transform: translate(0, 2px);
+                }
+            }
+        }
+
+        & .spending_list {
+            & li {
+                width: 100%;
+                height: 60px;
+
+                & .day {
+                    display: inline-block;
+                    float: left;
+                    width: 14%;
+                    text-align: center;
+                    font-size: 11px;
+                    font-family: var(--font2);
+                    color: #9b9aa6;
+                    padding: 2px 0 0 2px;
+                    line-height: 16px;
+                }
+
+                & .title {
+                    position: relative;
+                    display: inline-block;
+                    float: left;
+                    width: 58%;
+                    height: 100%;
+                    font-size: 13px;
+                    font-family: var(--font2);
+                    letter-spacing: -.65px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    padding: 0 0 0 3px;
+
+                    & .time {
+                        position: absolute;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #9b9aa6;
+                        font-family: var(--font4);
+                        top: 21px;
+                        left: 4px;
+                        letter-spacing: 0;
+
+                        & .category {
+                            font-family: var(--font1);
+                            font-size: 11px;
+                            letter-spacing: -.55px;
+                            margin-left: 2px;
+                        }
+                    }
+                }
+
+                & .val {
+                    display: inline-block;
+                    float: left;
+                    width: 28%;
+                    font-family: var(--font5);
+                    font-size: 14px;
+                    letter-spacing: -.14px;
+                    text-align: right;
+                    padding-right: 20px;
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font1);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card_benefits_wrap {
+    & .card_info {
+        width: 100%;
+        border-bottom: 1px solid #f2f4f7;
+        padding: 12px 0 21px;
+
+        & >.img {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin-right: 2px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & >.title {
+            width: calc(100% - 40px);
+            display: inline-block;
+            font-family: var(--font2);
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -.7px;
+            vertical-align: middle;
+        }
+
+        & >.b-list {
+            display: block;
+            margin-top: 20px;
+            & .item {
+                display: block;
+                margin-bottom: 8px;
+                & .tit {
+                    display: inline-block;
+                    width: 60%;
+                    text-align: left;
+                    vertical-align: middle;
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: -0.65px;
+                    color: var(--text-03);
+                }
+                & .val {
+                    display: inline-block;
+                    width: 40%;
+                    text-align: right;
+                    font-size: 13px;
+                    font-family: var(--font2);
+                    font-weight: 500;
+                    line-height: 19px;
+                    color: var(--text-02);
+                    vertical-align: middle;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    & .card_benefits {
+        & .badge_area {
+            padding: 30px 0 0 0;
+            margin-bottom: 14px;
+        }
+
+        & .list_area {
+            padding: 0 3px;
+            margin-bottom: 38px;
+
+            & .list {
+                position: relative;
+                font-family: var(--font2);
+                font-size: 13px;
+                margin-bottom: 15px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 2px;
+                    background-color: #666666;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    top: 6px;
+                    left: 0;
+                }
+
+                & .primary-color {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        & .btn_area {
+            padding: 0 3px;
+            margin-bottom: 0;
+            background-color: transparent;
+        }
+
+        & .empty {
+            font-size: 13px;
+            line-height: 30px;
+            letter-spacing: -0.65px;
+            color: #9b9aa6;
+            margin-top: -7px;
+            margin-bottom: 28px;
+        }
+    }
+
+    &.direct {
+        & .badge_area {
+            padding: 13px 0 0 0;
+        }
+    }
+}
+
+.direct_register_area {
+    padding: 17px 0;
+    border-top: 1px solid #f2f4f7;
+
+    & .title_area {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0;
+
+        & .title {
+            display: block;
+            font-family: var(--font2);
+            font-size: 13px;
+            letter-spacing: -.65px;
+            line-height: 56px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        & .btn {
+            position: absolute;
+            right: 0;
+            top: 15px;
+            min-width: 44px;
+            width: 44px;
+        }
+    }
+
+    &.direct {
+        padding: 17px 20px 0;
+
+        & .title_area {
+            & .refresh {
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 11px;
+            }
+        }
+
+        & textarea {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.more_benefit_wrap {
+    & .more_benefit {
+        position: relative;
+        width: 100%;
+        height: 58px;
+        line-height: 58px;
+        border-top: 1px solid #f5f6f8;
+
+        & a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: #37354e;
+
+            & .title {
+                display: block;
+                font-family: var(--font2);
+                font-size: 13px;
+                letter-spacing: -.65px;
+                line-height: 56px;
+                padding: 0 30px 0 20px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                border-bottom: 1px solid #f5f6f8;
+            }
+
+            & i {
+                position: absolute;
+                right: 19px;
+                top: 21px;
+            }
+        }
+    }
+
+    & .list {
+        &.caution {
+            padding: 30px 56px 0 36px;
+            font-family: var(--font1);
+            color: #afaeb8;
+            letter-spacing: -.55px;
+            margin-bottom: 99px;
+
+            &::before {
+                top: 33px;
+                left: 20px;
+            }
+        }
+
+        &.mb {
+            margin-bottom: 74px;
+        }
+
+        &.mb-lg {
+            margin-bottom: 167px;
+        }
+    }
+
+    & .btn_area {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.mycard_edit {
+    padding-top: 3px;
+    padding-bottom: 90px;
+
+    & .mycard {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        border-radius: 6px;
+        box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+        padding: 17px 40px 17px 18px;
+        margin-bottom: 12px;
+        background-color: #ffffff;
+
+        & label {
+            transform: translate(0, 10px);
+            margin-right: 6px;
+        }
+
+        & .name {
+            display: inline-block;
+            width: calc(100% - 75px);
+            vertical-align: middle;
+            font-family: var(--font2);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -.33px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        & .img {
+            display: inline-block;
+            margin-right: 3px;
+
+            & img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        & .btn-mycard-edit {
+            position: absolute;
+            display: inline-block;
+            right: 22px;
+            top: 32px;
+        }
+    }
+}
+
+/*
+    더보기
+*/
+.even_list {
+    padding: 10px 20px;
+
+    & .event {
+        margin-bottom: 35px;
+
+        & span {
+            display: block;
+        }
+
+        & .title {
+            font-family: var(--font2);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -0.35px;
+            color: #37354e;
+            margin-bottom: 5px;
+            padding-left: 4px;
+
+        }
+
+        & .date {
+            font-family: var(--font4);
+            font-size: 12px;
+            line-height: 14px;
+            color: #9b9aa6;
+            margin-bottom: 13px;
+            padding-left: 4px;
+        }
+
+        & .img {
+            width: 100%;
+            height: 140px;
+            border-radius: 6px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &.detail {
+        padding-bottom: 0;
+
+        & .event {
+            margin-bottom: 30px;
+
+            & .title {
+                font-family: var(--font2);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+                letter-spacing: -0.45px;
+                padding-left: 0;
+                margin-bottom: 12px;
+            }
+
+            & .date {
+                padding-left: 0;
+                margin-bottom: 20px;
+            }
+
+            & .img {
+                width: 100%;
+                height: 388px;
+                border-radius: 0;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.faq_list_detail {
+    padding: 11px 20px 0;
+
+    & .faq_info {
+        position: relative;
+        width: 100%;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #f5f6f8;
+
+        & .title {
+            font-family: var(--font2);
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.45px;
+            margin-bottom: 5px;
+        }
+
+        & .title-sm {
+            & span {
+                font-size: 11px;
+                line-height: 26px;
+                letter-spacing: -0.28px;
+                color: #9b9aa6;
+            }
+
+            & .date {
+                position: relative;
+                padding-left: 12px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 4px;
+                    top: 4px;
+                    width: 1px;
+                    height: 8px;
+                    border: solid 1px #d5d5d5;
+                }
+            }
+        }
+
+        & .badge-pill {
+            position: absolute;
+            right: 0;
+            bottom: 28px;
+        }
+    }
+
+    & .faq_content {
+        padding: 30px 0 100px;
+
+        & p {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+        }
+    }
+
+    & .faq_answer {
+        margin-bottom: 40px;
+
+        & .content {
+            position: relative;
+            width: 100%;
+            padding: 50px 20px 22px;
+            background-color: #f7f8fc;
+            margin-top: -25px;
+
+            & p {
+                font-size: 12px;
+                line-height: 19px;
+                letter-spacing: -0.3px;
+                color: #737183;
+            }
+
+            & .date {
+                font-family: var(--font4);
+                font-size: 11px;
+                line-height: 26px;
+                color: #9b9aa6;
+            }
+
+            &::before {
+                content: 'A';
+                position: absolute;
+                width: auto;
+                height: auto;
+                background: unset;
+                border-radius: 50%;
+                vertical-align: middle;
+                top: 20px;
+                left: 20px;
+                font-size: 15px;
+                font-family: var(--font5);
+                color: #ff2e60;
+                letter-spacing: -0.75px;
+                line-height: 21px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    & .faq_question {
+        & label {
+            display: block;
+            font-family: var(--font2);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #afaeb8;
+            margin-bottom: 9px;
+        }
+
+        & .category, & .title {
+            margin-bottom: 36px;
+        }
+
+        & textarea.custom {
+            height: 180px;
+            padding: 9px 12px;
+            margin-bottom: 6px;
+        }
+
+        & .push_alert {
+            margin-bottom: 40px;
+
+            & label {
+                & span {
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 26px;
+                    letter-spacing: -0.33px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.faq-category {
+    margin-bottom: 20px;
+
+    & .faq-item {
+        position: relative;
+        width: 33%;
+        float: left;
+        text-align: center;
+        border-right: 1px solid #e2e3e6;
+        border-bottom: 1px solid #e2e3e6;
+
+        & a {
+            display: block;
+            color: var(--text-01);
+            height: 44px;
+            line-height: 42px;
+            font-family: var(--font2);
+            font-size: 12px;
+            letter-spacing: -0.6px;
+        }
+
+        &.active {
+            border-color: var(--color-point);
+
+            & a {
+                color: var(--color-point);
+
+                &:after {
+                    content: '';
+                }
+            }
+        }
+
+        &:first-child {
+            border-left: 1px solid #e2e3e6;
+        }
+
+        &:first-child, &:nth-child(2), &:nth-child(3) {
+            border-top: 1px solid #e2e3e6;
+        }
+
+        &:nth-child(4) {
+            border-left: 1px solid #e2e3e6;
+        }
+
+        &.active {
+            border-top: 1px solid var(--color-point);
+            border-left: 1px solid var(--color-point);
+        }
+    }
+}
+
+/*
+  S 04_지출관리
+*/
+
+.box_ex_top {
+    position: relative;
+    width: 100%;
+    height: 108px;
+    border-bottom: 1px solid #f5f6f8;
+
+    & .sum_desc {
+        position: absolute;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        color: #9b9aa6;
+        top: 20px;
+        left: 20px;
+    }
+
+    & .sum_change {
+        position: absolute;
+        font-family: var(--font4);
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 33px;
+        letter-spacing: -1.3px;
+        color: #37354e;
+        top: 45px;
+        left: 20px;
+
+        &::after {
+            content: '원';
+            position: absolute;
+            font-family: var(--font1);
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            letter-spacing: -0.4px;
+            right: -18px;
+            bottom: 3px;
+        }
+        &.text {
+            font-family: var(--font1);
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    & .btn-wrap {
+        position: absolute;
+        right: 20px;
+        bottom: 29px;
+        & .btn {
+            width: 80px;
+            height: 32px;
+            line-height: 30px;
+            font-size: 12px;
+            letter-spacing: -.6px;
+            &:hover,&:focus,&:active {
+                color: var(--text-02);
+            }
+            & i {
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+.box_ex_list {
+    padding: 20px 20px 0;
+}
+
+.ac-bank {
+    padding-top: 10px;
+    overflow: hidden;
+    margin-bottom: 9px;
+
+    & > .name {
+        font-family: var(--font2);
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        color: #afaeb8;
+        vertical-align: middle;
+        margin-bottom: 14px;
+    }
+
+    & .ac-list {
+        & .ac-item {
+            position: relative;
+            margin-bottom: 32px;
+
+            & .img {
+                float: left;
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
+                margin-right: 6px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .name {
+                float: left;
+                width: calc(100% - 128px);
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 22px;
+                letter-spacing: -0.33px;
+                color: #37354e;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            & .value {
+                float: right;
+                font-family: var(--font5);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: -0.14px;
+                vertical-align: middle;
+
+                &.text {
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 22px;
+                    &::after {
+                        content: none;
+                    }
+                }
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 22px;
+                    letter-spacing: 0;
+                }
+            }
+
+            & .ac-num {
+                position: absolute;
+                font-family: var(--font4);
+                font-size: 11px;
+                line-height: 13px;
+                letter-spacing: 0;
+                color: #9b9aa6;
+                left: 28px;
+                top: 25px;
+            }
+
+            & .box-switch {
+                float: right;
+                display: inline-block;
+                transform: translate(1px, 0);
+            }
+
+        }
+
+    }
+
+    &.ac-bank-lg {
+        padding-top: 0;
+        margin-bottom: 18px;
+
+        & .ac-list {
+            & .ac-item {
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+}
+
+.group-date {
+    padding-top: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    & .date {
+        font-family: var(--font2);
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        color: #afaeb8;
+        vertical-align: middle;
+        margin-bottom: 23px;
+    }
+
+    & .ex-list {
+        & .ex-item {
+            position: relative;
+            margin-bottom: 37px;
+
+            & > .title {
+                float: left;
+                width: calc(100% - 128px);
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 22px;
+                letter-spacing: -0.33px;
+                color: #37354e;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            & .value {
+                float: right;
+                font-family: var(--font5);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: -0.14px;
+                vertical-align: middle;
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 22px;
+                    letter-spacing: 0;
+                }
+
+                &.text {
+                    font-family: var(--font2);
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 22px;
+                    letter-spacing: 0;
+                    &::after {
+                        content: none;
+                    }
+                }
+
+                &.in {
+                    color: var(--color-point);
+
+                    &::after {
+                        color: var(--color-point);
+                    }
+                }
+            }
+
+            & .time {
+                position: absolute;
+                font-family: var(--font4);
+                font-size: 11px;
+                line-height: 13px;
+                letter-spacing: 0;
+                color: #9b9aa6;
+                left: 0;
+                top: 25px;
+            }
+
+            & .balance {
+                position: absolute;
+                display: inline-block;
+                font-family: var(--font4);
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0;
+                color: #9b9aa6;
+                right: 2px;
+                top: 24px;
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font1);
+                    font-size: 11px;
+                    line-height: 14px;
+                    color: #9b9aa6;
+                    letter-spacing: -.28px;
+                }
+            }
+
+            & .box-switch {
+                float: right;
+                display: inline-block;
+                transform: translate(1px, 0);
+            }
+
+        }
+
+    }
+
+    &.ac-bank-lg {
+        padding-top: 0;
+        margin-bottom: 18px;
+
+        & .ac-list {
+            & .ac-item {
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+}
+
+.box_ex_bottom {
+    padding: 0 24px;
+
+    & .updating {
+        display: inline-block;
+        width: calc(100% - 45px);
+        height: 41px;
+        line-height: 40px;
+        font-size: 11px;
+        letter-spacing: -0.28px;
+        color: var(--text-03);
+        text-align: center;
+
+        & img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+            width: 13px;
+            height: 13px;
+            transform: translate(0, -2px);
+        }
+    }
+}
+
+.box_ex_edit_list {
+    padding: 20px;
+
+    & .ex_edit_item {
+        margin-bottom: 25px;
+
+        & .label {
+            vertical-align: middle;
+            margin-right: 5px;
+
+            & input {
+                height: 22px;
+            }
+
+            & span {
+                height: 22px;
+                line-height: 22px;
+            }
+        }
+
+        & .date {
+            width: 41px; /* 고정형 */
+            display: inline-block;
+            font-size: 11px;
+            line-height: 22px;
+            letter-spacing: -0.28px;
+            color: var(--text-03);
+            vertical-align: middle;
+            margin-right: 9px;
+        }
+
+        & .title {
+            width: calc(100% - 185px); /* 반응형 */
+            display: inline-block;
+            font-size: 13px;
+            font-family: var(--font2);
+            line-height: 22px;
+            letter-spacing: -0.33px;
+            color: var(--text-01);
+            vertical-align: middle;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        & .value {
+            display: inline-block;
+            float: right;
+            font-family: var(--font5);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: -0.14px;
+            text-align: right;
+            color: var(--text-01);
+            transform: translate(-1px, 2px);
+
+            &::after {
+                content: '원';
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 22px;
+                color: var(--text-01);
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.has_fixed_btn {
+        padding-bottom: 100px;
+    }
+}
+
+.box_my_income_list {
+    padding: 30px 20px 0;
+
+    & .income-item {
+        position: relative;
+        margin-bottom: 25px;
+
+        & .date {
+            width: 45px;
+            display: inline-block;
+            font-family: var(--font2);
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: -0.28px;
+            color: var(--text-03);
+            margin-right: 10px;
+        }
+
+        & .title {
+            width: calc(100% - 165px);
+            font-family: var(--font2);
+            font-size: 13px;
+            line-height: 17px;
+            letter-spacing: -0.33px;
+            color: var(--text-01);
+            transform: translate(-3px, 1px);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        & .value {
+            float: right;
+            display: inline-block;
+            font-family: var(--font5);
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -0.14px;
+            text-align: right;
+            color: var(--text-01);
+            transform: translate(-1px, 2px);
+
+            &::after {
+                content: '원';
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 17px;
+                color: var(--text-01);
+            }
+        }
+
+        & .ac-info {
+            margin-top: 9px;
+            padding-left: 55px;
+
+            & .b-name {
+                display: inline-block;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                text-align: left;
+                color: var(--text-03);
+                margin-right: 2px;
+            }
+
+            & .b-num {
+                display: inline-block;
+                font-family: var(--font4);
+                font-size: 11px;
+                line-height: 17px;
+                color: var(--text-03);
+            }
+        }
+
+        & .btn-delete {
+            position: absolute;
+            top: 25px;
+            right: 0;
+            min-width: 50px;
+
+            & i {
+                margin-right: 2px;
+                transform: translate(1px, 1px);
+            }
+        }
+    }
+}
+
+.box_my_income_add {
+    padding: 20px 20px 40px;
+
+    & .label {
+        margin-top: 10px;
+        display: block;
+    }
+
+    & .btn_box {
+        overflow: hidden;
+        position: static;
+        left: auto;
+        bottom: auto;
+        margin: 40px 0 0;
+        padding: 0;
+    }
+}
+
+.box_ex_detail {
+    padding: 0 20px;
+
+    & .box-ex-header {
+        & .ex-top {
+            padding: 8px 0;
+            margin-bottom: 8px;
+
+            & .left {
+                float: left;
+
+                & .img {
+                    display: inline-block;
+                    width: 26px;
+                    height: 26px;
+                    vertical-align: middle;
+                    margin-right: 6px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .b-name {
+                    display: inline-block;
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    line-height: 26px;
+                    letter-spacing: -0.35px;
+                    color: var(--text-01);
+                    transform: translate(-2px, 2px);
+                }
+            }
+
+            & .right {
+                float: right;
+
+                & .txt {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 26px;
+                    letter-spacing: -0.6px;
+                    text-align: right;
+                    color: var(--text-03);
+                    transform: translate(-2px, 2px);
+                }
+
+                & .btn-alarm {
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    vertical-align: middle;
+                    background-image: url("../../img/sprite/common/ico_alarm_big_off@2x.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                    &.active {
+                        background-image: url("../../img/sprite/common/ico_alarm_big_on@2x.png");
+                    }
+                }
+            }
+        }
+
+        & .ex-bottom {
+            position: relative;
+            width: 100%;
+            height: 56px;
+            padding: 0 16px;
+            background-color: #f7f8fc;
+
+            & .left {
+                float: left;
+
+                & .date {
+                    display: inline-block;
+                    font-family: var(--font4);
+                    font-size: 11px;
+                    letter-spacing: -0.11px;
+                    color: var(--text-02);
+                    line-height: 56px;
+
+                }
+
+                & .txt {
+                    display: inline-block;
+                    font-family: var(--font1);
+                    font-size: 11px;
+                    letter-spacing: -0.11px;
+                    color: var(--text-02);
+                    line-height: 56px;
+
+                }
+            }
+
+            & .right {
+                float: right;
+
+                & .img {
+                    display: inline-block;
+                    width: 13px;
+                    height: 13px;
+                    vertical-align: middle;
+                    transform: translate(0, -4px);
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .txt {
+                    display: inline-block;
+                    font-family: var(--font2);
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: 56px;
+                    letter-spacing: -0.28px;
+                    color: var(--text-point-color);
+                    vertical-align: middle;
+
+                }
+
+                & .txt2 {
+                    position: absolute;
+                    display: inline-block;
+                    font-size: 11px;
+                    line-height: 56px;
+                    letter-spacing: -0.28px;
+                    text-align: right;
+                    color: var(--text-03);
+                    font-weight: normal;
+                    right: 65px;
+                    top: 0;
+                }
+
+                & .toggle {
+                    width: auto;
+                    height: auto;
+
+                    & .custom-switch {
+                        left: auto;
+                        right: 11px;
+                        top: 14px;
+                    }
+                }
+
+                &.error {
+                    & .img {
+                        width: 13px;
+                        height: 13px;
+                        vertical-align: initial;
+                        transform: translate(0, -1px);
+                    }
+
+                    & .txt {
+                        color: #ef4b61;
+                    }
+                }
+
+                & .btn {
+                    margin-top: 12px;
+                    color: black;
+                    height: 32px;
+                    line-height: 30px;
+                    min-width: 80px;
+
+                    & i {
+                        margin-right: 4px;
+                        transform: translate(0px, 1px);
+                    }
+                }
+            }
+        }
+
+        & .card-info {
+            position: relative;
+            overflow: hidden;
+            margin-top: -8px;
+            margin-bottom: 16px;
+
+            & .name {
+                display: block;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                color: var(--text-03);
+                padding-left: 2px;
+            }
+
+            & .info {
+                padding-left: 2px;
+
+                & li {
+                    position: relative;
+                    display: inline-block;
+                    float: left;
+                    font-size: 11px;
+                    line-height: 17px;
+                    letter-spacing: -0.28px;
+                    color: var(--text-03);
+                    margin-right: 13px;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 1px;
+                        height: 8px;
+                        border-right: 1px solid #d5d5d5;
+                        right: -8px;
+                        bottom: 4px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+
+            & .sum {
+                position: absolute;
+                right: 2px;
+                top: 14px;
+                display: inline-block;
+                font-family: var(--font5);
+                font-size: 17px;
+                line-height: 20px;
+                letter-spacing: 0;
+                text-align: right;
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--text-01);
+                }
+            }
+        }
+
+        & .ex-bill {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            margin-top: 25px;
+            margin-bottom: 30px;
+
+            & .info {
+                margin-bottom: 5px;
+
+                & .title {
+                    display: inline-block;
+                    font-family: var(--font1);
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 20px;
+                    letter-spacing: -0.35px;
+                }
+
+                & .sum {
+                    float: right;
+                    display: inline-block;
+                    font-family: var(--font4);
+                    font-size: 17px;
+                    font-weight: bold;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    text-align: right;
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font1);
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--text-01);
+                    }
+                }
+                & .txt {
+                    float: right;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    text-align: right;
+                    color: var(--text-02);
+                }
+            }
+
+            & .desc {
+                display: block;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                color: var(--text-03);
+                padding-left: 2px;
+
+            }
+
+            & .select_box {
+                display: inline-block;
+                padding: 0;
+                margin-bottom: 0;
+
+                & label {
+                    display: inline-block;
+                    font-family: var(--font1);
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 20px;
+                    letter-spacing: -0.35px;
+                    border: 0;
+
+                    &::after {
+                        right: -13px;
+                        top: 4px;
+                        background-image: url('../../img/sprite/common/credit_detail_arrow@2x.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                & select {
+                    left: 0;
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+
+.box_ex_detail_list {
+    padding: 20px;
+
+    & .ex-detail-item {
+        position: relative;
+        border-bottom: 1px solid #f5f6f8;
+        padding: 20px 0;
+
+        & .title {
+            padding-left: 4px;
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            text-align: left;
+            color: #666666;
+        }
+
+        & .value {
+            float: right;
+            width: calc(100% - 75px);
+            font-family: var(--font2);
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            text-align: right;
+            color: #000000;
+            padding-right: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &.won {
+                font-family: var(--font5);
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font2);
+                }
+            }
+        }
+
+        &:first-child {
+            border-top: 1px solid var(--text-01);
+        }
+
+        &:last-child {
+            border-bottom: 1px solid #e3e4e8;
+            margin-bottom: 20px;
+        }
+
+        &.ex-detail-item-lg {
+            padding: 20px 0 53px;
+
+            & .btn {
+                position: absolute;
+                right: 4px;
+                bottom: 20px;
+            }
+        }
+
+        &.ex-detail-item-md {
+            padding: 20px 0 40px;
+
+            & .value2 {
+                font-family: var(--font2);
+                display: inline-block;
+                position: absolute;
+                right: 4px;
+                bottom: 19px;
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: -0.13px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.ex-detail-list {
+    padding: 30px 20px;
+
+    & > ul {
+        & > li {
+            margin-bottom: 33px;
+
+            & .date {
+                display: inline-block;
+                font-family: var(--font2);
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                color: var(--text-03);
+                margin-bottom: 24px;
+            }
+
+            & li {
+                margin-bottom: 22px;
+
+                & .title {
+                    display: inline-block;
+                    width: calc(100% - 100px);
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: -0.33px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                & .value {
+                    display: inline-block;
+                    float: right;
+                    font-family: var(--font5);
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: -0.14px;
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font2);
+                        font-size: 13px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box_apartment_i {
+    padding: 22px 20px 0;
+
+    & .sec-aparti {
+        margin-bottom: 34px;
+
+        & > .title {
+            display: block;
+            font-family: var(--font2);
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            color: var(--text-04);
+            margin-bottom: 17px;
+        }
+
+        & .label-box {
+            padding-left: 2px;
+
+            & label:first-child {
+                margin-right: 23px;
+            }
+        }
+
+        & .ex-list {
+            margin-top: -3px;
+
+            & li {
+                position: relative;
+                width: 100%;
+                border-bottom: 1px solid #f5f6f8;
+                padding: 20px 0 22px 32px;
+
+                & .img {
+                    position: absolute;
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    left: 4px;
+                    top: 27px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .ac-name {
+                    width: calc(100% - 40px);
+                    display: block;
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: -0.33px;
+                    margin-bottom: 5px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                & .ac-num {
+                    display: block;
+                    font-family: var(--font4);
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: var(--text-03);
+                }
+
+                & label {
+                    position: absolute;
+                    right: -3px;
+                    top: 25px;
+                }
+
+                &:first-child {
+                    border-top: 1px solid var(--text-01);
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid #e3e4e8;
+                }
+            }
+        }
+
+        &.empty {
+            & .ex-list {
+                border-top: 1px solid var(--text-01);
+                border-bottom: 1px solid #e3e4e8;
+                padding: 48px 0 51px;
+
+                & .img {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 auto 12px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & p {
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: -0.3px;
+                    text-align: center;
+                    color: var(--text-04);
+                }
+            }
+        }
+    }
+
+    & .box_event {
+        position: relative;
+        width: 100%;
+        height: 117px;
+        padding: 24px 24px 0;
+        background-color: #f4f1fd;
+        border-radius: 6px;
+        margin-bottom: 53px;
+        margin-top: -12px;
+
+        & .txt {
+            display: block;
+            font-family: var(--font2);
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+            color: #382269;
+            margin-bottom: 8px;
+        }
+
+        & a {
+            position: relative;
+            display: inline-block;
+            font-family: var(--font2);
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: -0.28px;
+            text-align: right;
+            color: #653bb4;
+            margin-right: 3px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                border-bottom: 1px solid #653bb4;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        & i {
+            vertical-align: middle;
+        }
+
+        & .img {
+            position: absolute;
+            display: inline-block;
+            width: 70px;
+            height: 53px;
+            right: 30px;
+            top: 36px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    & .btn_area {
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+}
+
+.box_ex_connect_item {
+    padding: 10px 20px 0;
+
+    & .title {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 27px;
+        letter-spacing: -0.45px;
+        margin-bottom: 30px;
+
+        & .primary {
+            font-weight: bold;
+            left: -.45px;
+        }
+    }
+
+    & .box_connect_list {
+
+        & .group-list {
+            overflow: hidden;
+            margin-bottom: 30px;
+
+            & .group-item {
+                position: relative;
+                float: left;
+                width: calc(33% - 4px);
+                height: 99px;
+                border-radius: 6px;
+                border: 1px solid #f5f6f8;
+                margin-right: 7px;
+                margin-bottom: 7px;
+
+                & a {
+                    display: block;
+                    padding: 20px 0 22px;
+
+                    & .img {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 auto 8px;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    & .item-title {
+                        display: block;
+                        font-family: var(--font2);
+                        font-size: 12px;
+                        line-height: 17px;
+                        letter-spacing: -0.3px;
+                        text-align: center;
+                        color: var(--text-01);
+                    }
+
+                    & .item-desc {
+                        display: block;
+                        font-size: 10px;
+                        line-height: 16px;
+                        letter-spacing: -0.25px;
+                        text-align: center;
+                        color: var(--text-03);
+                    }
+                }
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+
+                &.active {
+                    border-color: var(--color-point);
+                }
+            }
+        }
+    }
+
+    & .btn_area {
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+}
+
+.box_ex_alarm {
+    overflow: hidden;
+    padding: 10px 20px 30px;
+
+    & li {
+        position: relative;
+        width: 100%;
+        border-radius: 6px;
+        padding: 21px 30px 21px 48px;
+        background-color: #ffffff;
+        box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+        margin-bottom: 12px;
+
+        & .img {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            left: 20px;
+            top: 21px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .txt {
+            display: block;
+            font-family: var(--font2);
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            text-align: left;
+            margin-bottom: 2px;
+
+            & .primary {
+                font-weight: bold;
+            }
+        }
+
+        & .time {
+            display: block;
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: -0.28px;
+            color: var(--text-03);
+        }
+    }
+}
+
+.box_category_ex_detail {
+    padding: 30px 20px 0;
+
+    & .ex-header {
+        margin-bottom: 16px;
+
+        & .term {
+            display: block;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            color: var(--text-03);
+            margin-bottom: 8px;
+        }
+
+        & .value {
+            display: block;
+            font-family: var(--font4);
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 30px;
+            letter-spacing: -0.26px;
+
+            &::after {
+                content: '원';
+                font-family: var(--font1);
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 30px;
+                vertical-align: bottom;
+                letter-spacing: -0.38px;
+                margin-left: 2px;
+            }
+        }
+
+        & .text {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 28px;
+            letter-spacing: -0.45px;
+            color: var(--text-01);
+            margin-bottom: 10px;
+        }
+
+        & .desc {
+            font-size: 12px;
+            line-height: 19px;
+            letter-spacing: -0.3px;
+            color: var(--text-03);
+            padding-right: 10px;
+        }
+    }
+
+    & .ex-list {
+        & .ex-item {
+            position: relative;
+            border-bottom: 1px solid #f5f6f8;
+            padding: 20px 0;
+
+            & .day {
+                float: left;
+                width: 32px;
+                height: 17px;
+                display: inline-block;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: 0;
+                color: var(--text-03);
+                transform: translate(0, 3px);
+                text-align: left;
+                padding-right: 9px;
+            }
+
+            & .img {
+                position: absolute;
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                top: 20px;
+                left: 28px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .b-info {
+                width: calc(100% - 130px);
+                display: inline-block;
+                padding-left: 28px;
+
+                & .title {
+                    display: block;
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: -0.33px;
+                    margin-bottom: 2px;
+                    color: var(--text-01);
+
+                    &.alarm {
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            background-image: url("../../img/common/ico_alarm_small_off@2x.png");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            width: 16px;
+                            height: 15px;
+                            transform: translate(3px, 3px);
+                        }
+                    }
+                }
+
+                & .desc {
+                    display: block;
+                    font-family: var(--font1);
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: -0.12px;
+                    margin-bottom: 5px;
+                    color: var(--text-01);
+
+                }
+
+                & .ac-info {
+                    display: block;
+                    font-size: 11px;
+                    line-height: 17px;
+                    letter-spacing: 0;
+                    color: var(--text-03);
+                    white-space: nowrap;
+
+                    & .b-name {
+                        display: inline-block;
+                        font-family: var(--font1);
+                    }
+
+                    & .ac-num {
+                        display: inline-block;
+                        font-family: var(--font4);
+                    }
+                }
+
+                & .badge {
+                    margin-top: 9px;
+                    padding: 0;
+                }
+            }
+
+            & .btn-move {
+                position: relative;
+                float: right;
+                display: inline-block;
+                color: var(--text-01);
+                transform: translate(-1px, -2px);
+                padding-bottom: 15px;
+
+                & .value {
+                    font-family: var(--font5);
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: -0.14px;
+                    text-align: right;
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font2);
+                    }
+                }
+
+                & .txt {
+                    position: absolute;
+                    right: 9px;
+                    top: 22px;
+                    display: inline-block;
+                    font-size: 11px;
+                    line-height: 17px;
+                    letter-spacing: -0.28px;
+                    color: var(--text-03);
+                    white-space: nowrap;
+                }
+
+                & i {
+                    transform: translate(1px, 3px);
+                }
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            &.same {
+                border-bottom: 0;
+
+                &::after {
+                    content: '';
+                    float: right;
+                    padding-top: 23px;
+                    width: calc(100% - 32px);
+                    border-bottom: 1px solid #f5f6f8;
+                }
+            }
+        }
+
+        &.completed {
+            margin-bottom: 50px;
+
+            & .ex-item {
+                position: relative;
+                padding: 20px 0 0;
+                border: 0;
+
+                & .day {
+                    transform: translate(0, 0);
+                }
+
+                & .b-info {
+                    padding-left: 15px;
+                }
+
+                & .btn-move {
+                    transform: translate(-2px, 1px);
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-image: url("../../img/common/ico_list_dot@2x.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    left: 31px;
+                    top: 27px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    border-right: 1px solid #f2f2f6;
+                    left: 33px;
+                    top: 32px;
+                }
+
+                &:last-child {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &.fixed {
+        padding-top: 40px;
+        background-color: #f7f8fc;
+
+        & .ex-item {
+            border-bottom: 1px solid #eeeff4;
+
+            &.same {
+                &::after {
+                    border-bottom: 1px solid #eeeff4;
+                }
+            }
+        }
+
+        & .empty {
+            height: 160px;
+            padding-top: 30px;
+
+            & .img {
+                display: block;
+                width: 30px;
+                height: 30px;
+                margin: 0 auto 12px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .desc {
+                display: block;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                text-align: center;
+                color: var(--text-03);
+            }
+        }
+    }
+
+    & .empty {
+        height: 160px;
+        padding-top: 30px;
+
+        & .img {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 12px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .desc {
+            display: block;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: center;
+            color: var(--text-03);
+        }
+    }
+}
+
+.box_category_list {
+    padding: 0;
+
+    & .category-list-item {
+        border-bottom: 10px solid #f5f6f8;
+
+        & .category-info {
+            position: relative;
+            margin-bottom: 22px;
+            padding: 22px 20px 0;
+
+            & .title {
+                display: inline-block;
+                font-family: var(--font1);
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 22px;
+                letter-spacing: -0.38px;
+                text-align: left;
+                color: var(--text-01);
+            }
+
+            & .sum {
+                position: absolute;
+                right: 20px;
+                bottom: 3px;
+                display: inline-block;
+                font-family: var(--font4);
+                font-size: 14px;
+                line-height: 16px;
+                text-align: right;
+                color: var(--text-02);
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font1);
+                    font-size: 13px;
+                    line-height: 16px;
+                    letter-spacing: 0.65px;
+                    text-align: right;
+                    color: var(--text-02);
+                }
+            }
+        }
+
+        & .ex-item {
+            position: relative;
+            padding: 0 20px;
+            margin-bottom: 20px;
+
+            & a {
+                position: relative;
+                display: block;
+                padding-top: 1px;
+
+                & .day {
+                    float: left;
+                    width: 32px;
+                    height: 17px;
+                    display: inline-block;
+                    font-size: 11px;
+                    line-height: 17px;
+                    letter-spacing: 0;
+                    color: var(--text-03);
+                    transform: translate(0, 3px);
+                    text-align: left;
+                    padding-right: 9px;
+                }
+
+                & .img {
+                    position: absolute;
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    left: 29px;
+                    top: 2px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .b-info {
+                    width: calc(100% - 130px);
+                    display: inline-block;
+                    padding-left: 25px;
+
+                    & .title {
+                        display: block;
+                        font-family: var(--font2);
+                        font-size: 13px;
+                        line-height: 19px;
+                        letter-spacing: -0.33px;
+                        margin-bottom: 3px;
+                        color: var(--text-01);
+
+                        &.alarm {
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                display: inline-block;
+                                background-image: url("../../img/common/ico_alarm_small_off@2x.png");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                width: 16px;
+                                height: 15px;
+                                transform: translate(3px, 3px);
+                            }
+                        }
+                    }
+
+                    & .desc {
+                        display: block;
+                        font-family: var(--font1);
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: -0.12px;
+                        margin-bottom: 5px;
+                        color: var(--text-01);
+
+                    }
+
+                    & .ac-info {
+                        display: block;
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: 0;
+                        color: var(--text-03);
+                        white-space: nowrap;
+
+                        & .b-name {
+                            display: inline-block;
+                            font-family: var(--font1);
+                        }
+
+                        & .ac-num {
+                            display: inline-block;
+                            font-family: var(--font4);
+                        }
+                    }
+
+                    & .badge {
+                        margin-top: 9px;
+                        padding: 0;
+                    }
+                }
+
+                & .btn-move {
+                    position: relative;
+                    float: right;
+                    display: inline-block;
+                    color: var(--text-01);
+                    transform: translate(-1px, 0px);
+                    padding-bottom: 15px;
+
+                    & .value {
+                        font-family: var(--font5);
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: -0.14px;
+                        text-align: right;
+
+                        &::after {
+                            content: '원';
+                            font-family: var(--font2);
+                        }
+                    }
+
+                    & .desc {
+                        font-family: var(--font2);
+                        font-size: 13px;
+                        line-height: 16px;
+                        letter-spacing: -0.14px;
+                        text-align: right;
+                        color: var(--text-02);
+                    }
+
+                    & .txt {
+                        position: absolute;
+                        right: 9px;
+                        top: 22px;
+                        display: inline-block;
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: -0.28px;
+                        color: var(--text-03);
+                        white-space: nowrap;
+                    }
+
+                    & i {
+                        transform: translate(1px, 3px);
+                    }
+                }
+            }
+
+            &:last-child {
+                border-bottom: 0;
+                padding-bottom: 10px;
+            }
+
+            & .empty {
+                width: 100%;
+                height: 30px;
+                line-height: 27px;
+                font-size: 12px;
+                letter-spacing: -0.3px;
+                color: var(--text-02);
+            }
+        }
+
+        & .empty {
+            margin-bottom: 40px;
+            padding-left: 20px;
+
+            & span {
+                display: block;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                color: var(--text-02);
+            }
+        }
+    }
+}
+
+.tab_area {
+    margin-bottom: 24px;
+
+    & .btn-left, & .btn-right {
+        position: relative;
+        display: inline-block;
+        width: 62px;
+        height: 30px;
+        border: 1px solid #e3e2eb;
+        background-color: #ffffff;
+        text-align: center;
+        font-size: 11px;
+        font-family: var(--font2);
+        line-height: 28px;
+        letter-spacing: -0.28px;
+        color: var(--text-03);
+
+        &.active {
+            background-color: var(--text-01);
+            border-color: var(--text-01);
+            color: #ffffff;
+        }
+    }
+
+    & .btn-left {
+        margin-right: -3px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    & .btn-right {
+        border-radius: 0 5px 5px 0;
+
+    }
+}
+
+.box_ex_account {
+    & .accordion {
+        border: 0;
+
+        & .card {
+            border: 0;
+            padding-bottom: 10px;
+
+            & .card-body {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    & .ex-account {
+        & > ul {
+            padding: 36px 20px 24px;
+
+            & .img {
+                display: block;
+                width: 22px;
+                height: 22px;
+                margin-bottom: 6px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .title {
+                font-family: var(--font2);
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.35px;
+                text-align: left;
+                color: var(--text-01);
+                margin-bottom: 3px;
+            }
+
+            & .ac-info {
+                display: block;
+                margin-bottom: 12px;
+
+                & .name {
+                    display: inline-block;
+                    font-size: 11px;
+                    line-height: 17px;
+                    letter-spacing: -0.28px;
+                    text-align: left;
+                    color: var(--text-03);
+                }
+
+                & .number {
+                    display: inline-block;
+                    font-family: var(--font4);
+                    font-size: 11px;
+                    line-height: 11px;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: var(--text-03);
+                }
+            }
+
+            & .ac-item {
+                display: block;
+                margin-bottom: 5px;
+
+                & .left {
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: -0.3px;
+                    text-align: left;
+                    color: var(--text-02);
+                }
+
+                & .right {
+                    float: right;
+                    font-family: var(--font5);
+                    font-size: 13px;
+                    line-height: 18px;
+                    letter-spacing: 0;
+                    text-align: right;
+                    color: var(--text-01);
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font2);
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            & .ex-num {
+                display: block;
+                float: right;
+                font-family: var(--font4);
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0;
+                text-align: right;
+                color: var(--text-03);
+                margin-top: -3px;
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font1);
+                }
+            }
+        }
+
+    }
+
+    & .card-body {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        border-radius: unset;
+        border-top: 0;
+        padding: 24px 0 18px;
+
+        & .ex-pre {
+            padding-bottom: 4px;
+
+            & .badge-pill {
+                margin-bottom: 13px;
+            }
+
+            & .ex-info {
+                position: relative;
+                display: block;
+                margin-bottom: 12px;
+
+                & .date-wrap {
+                    position: absolute;
+                    display: inline-block;
+                    width: 40px;
+                    height: 20px;
+                    left: 0;
+                    top: 0;
+
+                    & .date {
+                        display: inline-block;
+                        float: left;
+                        min-width: 29px;
+                        height: 20px;
+                        font-family: var(--font2);
+                        font-size: 11px;
+                        line-height: 20px;
+                        letter-spacing: normal;
+                        text-align: left;
+                        padding: 0 6px;
+                        background-color: transparent;
+                        color: var(--text-03);
+                    }
+                }
+
+                & .title {
+                    display: inline-block;
+                    float: left;
+                    width: calc(100% - 145px);
+                    font-size: 12px;
+                    line-height: 17px;
+                    letter-spacing: -0.3px;
+                    color: var(--text-02);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    padding-left: 40px;
+                }
+
+                & .value {
+                    display: inline-block;
+                    float: right;
+                    font-family: var(--font4);
+                    font-size: 13px;
+                    line-height: 17px;
+                    color: var(--text-01);
+                    padding-right: 2px;
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font1)
+                    }
+                }
+
+                & .text {
+                    display: inline-block;
+                    float: right;
+                    font-family: var(--font2);
+                    font-size: 12px;
+                    line-height: 17px;
+                    letter-spacing: -.3px;
+                    color: var(--text-02);
+                    padding-right: 2px;
+                }
+
+                & .right {
+                    float: right;
+                    margin-top: -10px;
+
+                    & .month {
+                        font-family: var(--font4);
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: -0.28px;
+                        text-align: right;
+                        color: var(--text-03);
+                    }
+
+                    & .number {
+                        font-family: var(--font4);
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: 0;
+                        text-align: right;
+                        color: var(--text-03);
+
+                        &::after {
+                            content: '원';
+                            font-family: var(--font1);
+                        }
+                    }
+                }
+
+                &.active {
+                    & .date-wrap {
+                        & .date {
+                            color: #3e5baf;
+                            border-radius: 11px;
+                            background: rgba(62, 91, 175, .06);
+                        }
+                    }
+
+                    & .title {
+                        color: var(--text-01);
+                    }
+                }
+            }
+        }
+
+        & .ex-sum {
+            padding: 14px 0 20px;
+
+            & .ex-item {
+                margin-bottom: 2px;
+
+                & .title {
+                    display: inline-block;
+                    font-family: var(--font2);
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: -0.3px;
+                    text-align: left;
+                    color: var(--text-01);
+                    padding-left: 2px;
+                }
+
+                & .sum {
+                    float: right;
+                    display: inline-block;
+                    font-family: var(--font4);
+                    font-size: 13px;
+                    line-height: 15px;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: var(--text-01);
+                    padding-right: 2px;
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font1);
+                    }
+                }
+
+                & .right {
+                    float: right;
+                    display: inline-block;
+                    font-family: var(--font4);
+                    font-size: 12px;
+                    line-height: 17px;
+                    letter-spacing: 0;
+                    text-align: right;
+                    color: var(--text-03);
+                    padding-right: 2px;
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font1);
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        & .ex-total {
+            width: 100%;
+            height: 59px;
+            background-color: #f7f8fc;
+
+            & .inner {
+                padding: 2px 15px 0;
+
+                & .text {
+                    display: inline-block;
+                    font-family: var(--font2);
+                    font-size: 12px;
+                    line-height: 59px;
+                    letter-spacing: -0.3px;
+                    color: var(--text-01);
+                }
+
+                & .value {
+                    float: right;
+                    display: inline-block;
+                    font-family: var(--font5);
+                    font-size: 15px;
+                    line-height: 59px;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: var(--text-01);
+
+                    &::after {
+                        content: '원';
+                        font-family: var(--font2);
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .btn-open {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 42px;
+        line-height: 43px;
+        font-size: 11px;
+        letter-spacing: -0.28px;
+        text-align: center;
+        color: var(--text-02);
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+
+        &:focus, &:active {
+            border-top: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            border-bottom: 10px solid #f5f6f8;
+        }
+
+        & i {
+            vertical-align: middle;
+            margin-left: 3px;
+        }
+
+        &.collapsed {
+            border-top: 1px solid #f2f4f7;
+        }
+    }
+
+    & .ex-detail-opened {
+        position: relative;
+        border-top: 1px solid #f2f4f7;
+
+        & .inner {
+            padding: 0 22px 24px;
+        }
+    }
+
+    & .empty {
+        padding: 134px 0 0;
+
+        & .img {
+            display: block;
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 14px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .txt {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+            text-align: center;
+            color: var(--text-02);
+        }
+    }
+}
+
+.box_ex_calendar {
+    padding: 0 12px 17px;
+
+    & .fc {
+        & td {
+            height: auto;
+            line-height: 18px;
+        }
+    }
+
+    & .fc-head {
+        border: 0;
+
+        & .fc-day-header {
+            font-family: var(--font2);
+            font-size: 12px;
+            letter-spacing: -0.6px;
+            text-align: center;
+            color: var(--text-01);
+            line-height: 37px;
+        }
+    }
+
+    & .fc-sun {
+        color: #ef4b61 !important;
+
+        &.fc-other-month.fc-past {
+            color: #fddbe0 !important;
+        }
+    }
+
+    & .fc-sat {
+        color: #3992d3 !important;
+
+        &.fc-other-month.fc-past {
+            color: #c0d8ea !important;
+        }
+    }
+
+    & .fc-day-number {
+        display: block;
+        float: unset !important;
+        font-family: var(--font4);
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.13px;
+        text-align: center;
+        color: var(--text-01);
+        padding: 0;
+        margin: 0;
+    }
+
+    & .fc-today {
+        background-color: transparent !important;
+
+        & .fc-day-number {
+            width: 24px;
+            height: 24px;
+            margin: 0 auto;
+            line-height: 24px;
+            text-align: center;
+            background: rgba(104, 57, 211, .06);
+            border-radius: 50%;
+            font-family: var(--font5);
+            color: var(--text-point-color);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+
+        }
+    }
+
+    & .fc-body {
+        border: 0;
+
+        & .fc-widget-content {
+            & .fc-day-grid-container {
+                & .fc-day-grid {
+                    & .fc-row {
+                        min-height: 50px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    & .fc-event-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        & .fc-day-grid-event {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 16px;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            border-color: transparent;
+            z-index: -1;
+
+            & .fc-content {
+                display: block;
+                padding-top: 17px;
+
+                & .fc-title {
+                    display: block;
+                    text-align: center;
+                    font-family: var(--font4);
+                    font-size: 10px;
+                    line-height: 11px;
+                    letter-spacing: -0.1px;
+                    color: var(--text-03);
+                }
+            }
+
+            &.bullet-01 {
+                &::after {
+                    background-color: #31a8ff;
+                    top: 130%;
+                    left: 46%;
+                    transform: translate(-46%, -47%);
+                }
+            }
+
+            &.bullet-02 {
+                &::after {
+                    background-color: var(--text-point-color);
+                    top: 48%;
+                    left: 56%;
+                    transform: translate(-56%, -45%);
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+            }
+
+            &.bullet-single {
+                &.bullet-01, &.bullet-02 {
+                    &::after {
+                        top: 93%;
+                        left: 50%;
+                        transform: translate(-50%, 114%);
+                    }
+                }
+            }
+
+            &.cal-single {
+                &.bullet-01, &.bullet-02 {
+                    &::after {
+                        top: 193%;
+                        left: 51%;
+                        transform: translate(-51%, 35%);
+                    }
+                }
+            }
+
+            &.cal-double {
+                & .fc-content {
+                    padding-top: 4px;
+                }
+
+                &.bullet-01 {
+                    &::after {
+                        top: 110%;
+                        left: 48%;
+                        transform: translate(-50%, 30%);
+                    }
+                }
+
+                &.bullet-02 {
+                    &::after {
+                        top: 236%;
+                        left: 58%;
+                        transform: translate(-58%, -206%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box_ex_calendar_info {
+    width: 100%;
+    border-top: 1px solid #f5f6f8;
+
+    & .inner {
+        padding: 30px 20px 28px 20px;
+
+        & > .title {
+            font-family: var(--font2);
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: var(--text-04);
+        }
+
+        & .box_ex_account_info {
+            & > li {
+                position: relative;
+                padding: 14px 0 20px;
+                margin-bottom: 3px;
+
+                & .img {
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 3px;
+                    transform: translateY(-5px);
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .bullet {
+                    display: inline-block;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+
+                    &.bullet-01 {
+                        background-color: #31a8ff;
+                    }
+
+                    &.bullet-02 {
+                        background-color: var(--text-point-color);
+                    }
+                }
+
+                & .ex-title {
+                    width: calc(100% - 140px);
+                    display: inline-block;
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: -0.33px;
+                    color: var(--text-01);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                & .txt {
+                    position: absolute;
+                    display: inline-block;
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: -0.14px;
+                    text-align: right;
+                    color: var(--text-02);
+                    right: 12px;
+                    top: 14px;
+                }
+
+                & > a {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+
+                    & .value {
+                        position: absolute;
+                        display: inline-block;
+                        font-family: var(--font5);
+                        font-size: 14px;
+                        line-height: 19px;
+                        letter-spacing: -0.14px;
+                        text-align: right;
+                        color: var(--text-01);
+                        right: 12px;
+                        top: 14px;
+
+                        &::after {
+                            content: '원';
+                            font-family: var(--font2);
+                            font-size: 13px;
+                        }
+                    }
+
+                    & .desc {
+                        position: absolute;
+                        display: inline-block;
+                        right: 12px;
+                        top: 38px;
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: -0.28px;
+                        text-align: right;
+                        color: var(--text-03);
+                    }
+
+                    & i {
+                        position: absolute;
+                        right: 0;
+                        top: 16px;
+                    }
+                }
+
+                & .b-info {
+                    position: absolute;
+                    left: 28px;
+                    bottom: 4px;
+
+                    & .b-name {
+                        display: inline-block;
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: -0.28px;
+                        color: var(--text-03);
+                        margin-right: 2px;
+                    }
+
+                    & .b-num {
+                        display: inline-block;
+                        font-family: var(--font4);
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: 0;
+                        color: var(--text-03);
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    & .empty {
+        width: 100%;
+        height: 186px;
+        background-color: #ffffff;
+
+        & .inner {
+            padding: 38px 0 0 0;
+
+            & .img {
+                display: block;
+                width: 30px;
+                height: 30px;
+                margin: 0 auto 12px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .txt {
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                text-align: center;
+                color: var(--text-03);
+            }
+        }
+    }
+
+    &.card_pay {
+        background-color: #f7f8fc;
+        border-top: 0;
+
+        & .inner {
+            padding: 32px 20px 28px 20px;
+
+            & .box_ex_account_info {
+                & > li {
+                    margin-bottom: 7px;
+
+                    & .bullet {
+                        position: absolute;
+                        left: 4px;
+                        top: 22px;
+                    }
+
+                    & .ex-title {
+                        padding-left: 16px;
+                    }
+
+                    & .b-info {
+                        left: 16px;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box_ex_current {
+    & .tab_area {
+        margin-top: 20px;
+        padding-left: 21px;
+    }
+}
+
+.ex-current {
+    padding: 35px 20px 0;
+
+    & .area-title {
+        position: relative;
+        overflow: hidden;
+
+        & .title {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 22px;
+            letter-spacing: -0.38px;
+            color: var(--text-01);
+            margin-bottom: 20px;
+        }
+
+        & .date {
+            position: absolute;
+            right: 0;
+            top: 2px;
+            display: inline-block;
+            font-size: 11px;
+            line-height: 22px;
+            vertical-align: middle;
+            letter-spacing: -0.28px;
+            text-align: right;
+            color: var(--text-03);
+        }
+    }
+
+    & .ex01-list {
+        padding: 0 4px;
+        margin-bottom: 73px;
+
+        & .ex01-item {
+            position: relative;
+            display: block;
+            margin-bottom: 9px;
+
+            & .title {
+                display: inline-block;
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                color: var(--text-03);
+            }
+
+            & .date {
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                text-align: right;
+                color: var(--text-02);
+            }
+
+            & .value {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                font-family: var(--font5);
+                font-size: 13px;
+                line-height: 19px;
+                text-align: right;
+                color: var(--text-01);
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font2);
+                }
+            }
+
+            & .btn {
+                position: absolute;
+                right: 0;
+                top: -4px;
+            }
+        }
+    }
+
+    & .ex02-list {
+        position: relative;
+        background-color: #f7f8fc;
+        margin-bottom: 21px;
+
+        & .inner {
+            padding: 18px 16px 49px;
+
+            & .title {
+                display: inline-block;
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                color: var(--text-01);
+            }
+
+            & .value {
+                position: absolute;
+                display: inline-block;
+                font-family: var(--font5);
+                font-size: 14px;
+                line-height: 19px;
+                color: #ef4b61;
+                right: 16px;
+                top: 18px;
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font2);
+                }
+            }
+
+            & .date {
+                position: absolute;
+                right: 16px;
+                top: 39px;
+                display: block;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                text-align: right;
+                color: #ef4b61;
+            }
+        }
+    }
+
+    & .ex03-list {
+        margin-bottom: 46px;
+
+        & .ex03-item {
+            display: block;
+            margin-bottom: 38px;
+            position: relative;
+
+            & .date {
+                display: inline-block;
+                font-size: 11px;
+                line-height: 19px;
+                letter-spacing: -0.28px;
+                color: var(--text-03);
+                vertical-align: top;
+                width: 46px;
+                text-align: left;
+                margin-right: 5px;
+                padding-left: 4px;
+                white-space: nowrap;
+            }
+
+            & .title {
+                width: calc(100% - 170px);
+                display: inline-block;
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                color: var(--text-01);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            & .value {
+                float: right;
+                padding-right: 4px;
+                display: inline-block;
+                font-family: var(--font5);
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: -0.14px;
+                text-align: right;
+                color: var(--text-01);
+
+                &.in {
+                    color: var(--text-point-color);
+                }
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font2);
+                }
+            }
+
+            & .balance {
+                display: inline-block;
+                position: absolute;
+                font-family: var(--font4);
+                font-size: 12px;
+                line-height: 14px;
+                text-align: right;
+                color: var(--text-03);
+                right: 4px;
+                top: 22px;
+
+                &::after {
+                    content: '원';
+                    font-family: var(--font1);
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    & .btn_area {
+        margin-bottom: 30px;
+
+        & a {
+            & i {
+                transform: translate(0, 2px);
+            }
+        }
+    }
+}
+
+/*
+  E 04_지출관리
+*/
+
+/*      S
+    06_연말정산 추가
+*/
+.box_guide {
+    padding: 0 20px;
+
+    & .title_area {
+        margin-bottom: 19px;
+
+        & .title {
+            margin-bottom: 7px;
+        }
+
+        & .desc {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+            text-align: left;
+            color: var(--text-02);
+
+            & .text-color {
+                color: var(--text-01) !important;
+                font-family: var(--font2);
+            }
+        }
+    }
+
+    & .info-guide {
+        width: 100%;
+
+        & .title_area {
+            border-bottom: 1px solid #37354e;
+            margin-bottom: 24px;
+
+            & .title-sm {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.43;
+                letter-spacing: -0.35px;
+                text-align: left;
+                color: var(--text-01);
+                vertical-align: middle;
+                margin-bottom: 13px;
+
+                & i {
+                    margin-right: 5px;
+                    transform: translateY(3px);
+                }
+            }
+        }
+
+        & .desc_area {
+            margin-bottom: 20px;
+            padding: 0 3px;
+
+            & .desc-title {
+                font-family: var(--font2);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: -0.35px;
+                color: var(--text-01);
+                margin-bottom: 6px;
+            }
+
+            & .desc-title-sm {
+                font-size: 13px;
+                font-family: var(--font2);
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: -0.35px;
+                color: var(--text-01);
+                margin-bottom: 6px;
+            }
+
+            & .desc-primary {
+                font-family: var(--font2);
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: -0.35px;
+                color: var(--text-point-color);
+                margin-bottom: 6px;
+            }
+
+            & .desc-tip {
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                text-align: left;
+                color: var(--text-03);
+                margin-bottom: 6px;
+            }
+
+            & .desc {
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: -0.33px;
+                color: var(--text-02);
+            }
+        }
+
+        & .statement {
+            border-bottom: 1px solid #e3e4e8;
+            padding-bottom: 23px;
+            margin-bottom: 12px;
+
+            & .vertical-table {
+                margin-bottom: 30px;
+            }
+
+            & > .item {
+                padding: 0;
+                margin-bottom: 30px;
+
+                & .table {
+                    & thead {
+                        & tr {
+                            & th {
+                                height: 28px;
+                                line-height: 26px;
+                                font-size: 11px;
+                                &.crossed {
+                                    background-image: linear-gradient(to bottom left,  transparent calc(50% - 1px), #e3e4e8, transparent calc(50% + 1px));
+                                    & .right {
+                                        position: absolute;
+                                        width: auto;
+                                        top: -5px;
+                                        right: 24px;
+                                    }
+                                    & .left {
+                                        width: auto;
+                                        position: absolute;
+                                        left: -7px;
+                                        top: 15px;
+                                    }
+                                }
+                            }
+                            &.line-2 {
+                                & th {
+                                    position: relative;
+                                    height: 49px;
+
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: -27%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & tbody {
+                        & tr {
+                            & td {
+                                height: 34px;
+                                color: var(--text-02);
+                                &.h-140 {
+                                    position: relative;
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: 9%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                }
+                            }
+
+                            &.line-2 {
+                                & td {
+                                    position: relative;
+                                    height: 49px;
+
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: -27%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                }
+                            }
+
+                            &.line-3 {
+                                & td {
+                                    position: relative;
+                                    height: 66px;
+
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: -37%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                    &:nth-child(2) {
+                                       & span {
+                                           top: 17px;
+                                           left: 10px;
+                                           transform: none;
+                                           text-align: left;
+                                       }
+                                    }
+                                    &:nth-child(3) {
+                                        & span {
+                                            top: -9%;
+                                        }
+                                    }
+                                    &.line-3 {
+                                        & span {
+                                            top: 9px;
+                                            text-align: center;
+                                            left: -1%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.line-6 {
+                                & td {
+                                    position: relative;
+                                    height: 114px;
+
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: -37%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                    &:nth-child(2) {
+                                        & span {
+                                            top: 10px;
+                                            text-align: left;
+                                            transform: none;
+                                            left: 10px;
+                                        }
+                                    }
+                                    &:nth-child(3) {
+                                        & span {
+                                            top: 18%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.h-150 {
+                                & td {
+                                    position: relative;
+
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: -17%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                    &:nth-child(2) {
+                                        height: 98px;
+                                        & span {
+                                            top: 10px;
+                                            left: 10px;
+                                            transform: none;
+                                            text-align: left;
+                                        }
+                                    }
+                                    &:nth-child(3) {
+                                        & span {
+                                            top: 12%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.h-130 {
+                                & td {
+                                    position: relative;
+                                    height: 130px;
+
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: 10%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                    &:nth-child(2) {
+                                        height: 98px;
+                                        & span {
+                                            top: 10px;
+                                            left: 10px;
+                                            transform: none;
+                                            text-align: left;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.h-100 {
+                                & td {
+                                    position: relative;
+
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: 10%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                    &:nth-child(2) {
+                                        height: 98px;
+                                        & span {
+                                            top: 10px;
+                                            left: 10px;
+                                            transform: none;
+                                            text-align: left;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.h-50 {
+                                & td {
+                                    position: relative;
+                                    height: 50px;
+                                    & span {
+                                        position: absolute;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        top: -17%;
+                                        left: -50%;
+                                        transform: translate(50%, 70%);
+                                    }
+                                    &:nth-child(3) {
+                                        & span {
+                                            top: -28%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .table-tip {
+                    margin-top: 12px;
+
+                    & span {
+                        display: block;
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: -0.3px;
+                        text-align: left;
+                        color: var(--text-03);
+                        margin-bottom: 6px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            & .d-list {
+                padding-left: 3px;
+
+                & .desc-title {
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: -0.35px;
+                    color: var(--text-01);
+                    margin-bottom: 6px;
+                }
+
+                & ul {
+                    & li {
+                        font-size: 13px;
+                        line-height: 19px;
+                        letter-spacing: -0.33px;
+                        color: var(--text-02);
+                        margin-bottom: 6px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .companyInfo {
+            & > .card {
+                padding: 22px 0;
+
+                & .card-header {
+                    border-top: 0 !important;
+
+                    & .title {
+                        font-size: 14px;
+                        font-weight: bold;
+                        line-height: 20px;
+                        letter-spacing: -0.35px;
+                        color: var(--text-01);
+
+                        & .sprite {
+                            transform: translateY(3px);
+                            margin-right: 5px;
+                        }
+                    }
+
+                    & .btn-arrow {
+                        top: 10px;
+                        right: 5px;
+                        left: auto;
+                    }
+                }
+
+                & .card-body {
+                    margin-bottom: 0;
+
+                    & .inner {
+                        background-color: #f7f8fc;
+                        padding: 18px 18px 20px;
+
+                        & .text {
+                            display: block;
+                            font-size: 13px;
+                            line-height: 20px;
+                            letter-spacing: -0.33px;
+                            text-align: left;
+                            color: var(--text-01);
+                        }
+
+                        & .multiple {
+                            & > li {
+                                margin-bottom: 10px;
+                                & > ul {
+                                    & > li {
+                                        font-size: 13px;
+                                        line-height: 20px;
+                                        letter-spacing: -0.33px;
+                                        color: var(--text-02);
+                                    }
+                                }
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+
+                        & .question {
+                            position: relative;
+                            display: block;
+                            padding-left: 16px;
+                            margin-bottom: 10px;
+                            font-size: 13px;
+                            line-height: 20px;
+                            letter-spacing: -.7px;
+                            color: var(--text-01);
+
+                            &::before {
+                                content: 'Q';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                font-family: var(--font5);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 16px;
+                                letter-spacing: -0.35px;
+                                text-align: left;
+                                color: var(--text-point-color);
+                            }
+                        }
+
+                        & .answer {
+                            position: relative;
+                            display: block;
+                            padding-left: 16px;
+                            font-size: 13px;
+                            line-height: 20px;
+                            letter-spacing: -.7px;
+                            color: var(--text-02);
+
+                            &::before {
+                                content: 'A';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                font-family: var(--font5);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 16px;
+                                letter-spacing: -0.35px;
+                                text-align: left;
+                                color: #ef4b61;
+                            }
+                        }
+                        &.multiple {
+                            & >ul {
+                                & > li {
+                                    margin-bottom: 18px;
+                                    & .question {
+                                        & .icon-q {
+                                            position: absolute;
+                                            left: -5px;
+                                            top: 2px;
+                                            font-family: var(--font5);
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 16px;
+                                            letter-spacing: -0.35px;
+                                            text-align: left;
+                                            color: var(--text-point-color);
+                                        }
+                                        &:before {
+                                            content: none;
+                                        }
+                                    }
+                                    & .answer {
+                                        & .icon-a {
+                                            position: absolute;
+                                            left: -5px;
+                                            top: 2px;
+                                            font-family: var(--font5);
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 16px;
+                                            letter-spacing: -0.35px;
+                                            text-align: left;
+                                            color: #ef4b61;
+                                        }
+                                        &:before {
+                                            content: none;
+                                        }
+                                    }
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                &:first-child {
+                    border-bottom: 1px solid #f5f6f8;
+                }
+            }
+        }
+    }
+}
+.v-table {
+    & thead {
+        & tr {
+            & th {
+                font-family: var(--font1);
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 34px;
+                letter-spacing: -0.28px;
+                color: var(--text-02);
+                padding-left: 10px;
+                border-right: 1px solid #e3e4e8;
+                border-bottom: 1px solid #e3e4e8;
+                &:first-child {
+                    padding-left: 0;
+                    font-family: var(--font2);
+                    text-align: center;
+                    background-color: #f5f6f8;
+                }
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+            &.line-2 {
+                & th {
+                    position: relative;
+                    height: 49px;
+                    & span {
+                        padding: 0 0 0 10px;
+                        position: absolute;
+                        line-height: 16px;
+                        width: 100%;
+                        top: -27%;
+                        left: -50%;
+                        transform: translate(50%, 70%);
+                    }
+                }
+            }
+        }
+    }
+    & tbody {
+        & tr {
+            & td {
+                font-family: var(--font1);
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 34px;
+                letter-spacing: -0.28px;
+                color: var(--text-02);
+                padding-left: 10px;
+                border-right: 1px solid #e3e4e8;
+                border-bottom: 1px solid #e3e4e8;
+                &.col-bg {
+                    padding-left: 0;
+                    font-family: var(--font2);
+                    text-align: center;
+                    background-color: #f5f6f8;
+                }
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+            &.line-2 {
+                & td {
+                    position: relative;
+                    height: 49px;
+                    & span {
+                        padding-left: 10px;
+                        position: absolute;
+                        line-height: 16px;
+                        width: 100%;
+                        top: -27%;
+                        left: -50%;
+                        transform: translate(50%, 70%);
+                    }
+                }
+            }
+
+            &.line-lg {
+                & td {
+                    position: relative;
+                    height: 114px;
+
+                    & span {
+                        padding-left: 10px;
+                        position: absolute;
+                        line-height: 16px;
+                        width: 100%;
+                        top: -50%;
+                        left: -50%;
+                        transform: translate(50%, 67%);
+                    }
+                }
+            }
+        }
+    }
+}
+/*      E
+    06_연말정산 추가
+*/
+
+
+
+
+
+
+
+
+
+

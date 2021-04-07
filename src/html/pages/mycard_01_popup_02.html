@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap mycard">
+    <div class="header"></div>
+    <div id="contents" class="contents">
+        <a class="btn _btnPopup" href="javascript:void(0)">혜택 필요실적</a>
+    </div>
+    <!--  고정형 팝업  -->
+    <div class="popup-layer active" id="changeRequiredPerformance"> <!-- active 클래스 추가 시, popup 활성화 -->
+        <div class="popup-dim _dimClose"> <!-- _dimClose : dim 선택시 닫히는 기능 -->
+            <div class="popup-normal required-performance">
+                <div class="popup-header">
+                    <h2>KB 혜담 카드</h2>
+                    <a class="btn-close _btnClose" href="javascript:void(0)"><i class="sprite btn_popup_close"></i></a>
+                </div>
+                <div class="popup-body">
+                    <div class="rq-box">
+                        <label>변경할 실적</label>
+                        <input class="_refresh" type="text" title="requiredPerformance" value="200,000" onkeyup="inputNumberFormat(this)" placeholder="0"/><span class="won">원</span></span>
+                    </div>
+                    <div class="desc">
+                        <p>기본 실적 <span>300,000</span>원</p>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="confirm-area clearfix">
+                        <a class="btn-full" href="javascript:void(0)">저장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

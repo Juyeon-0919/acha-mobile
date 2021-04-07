@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=0.1">
+    <script src="../../js/lib/front.lib.js?v=0.1"></script>
+    <script src="../../js/ui/front.common.js?v=0.1"></script>
+</head>
+
+<body>
+<!-- 04_지출관리_00_홈_07_현금흐름보기_06_내수입_03_추가_200602 -->
+<!-- 지출 내역 제목 - 말줄임 처리 완료 -->
+<div id="wrap" class="wrap">
+
+    <!--  S header  -->
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>지출 직접 입력</h2>
+    </div>
+    <!--  E header  -->
+
+    <!--  S contents  -->
+    <div id="contents" class="contents">
+
+        <div class="box_my_income_add">
+            <form action="#">
+                <fieldset>
+                    <legend class="sr-only">내 수입 추가</legend>
+                    <div class="custom-light">
+                        <label class="title">카테고리</label>
+                        <select title="category">
+                            <option value="1" selected>생활비</option>
+                            <option value="2">용돈</option>
+                            <option value="3">교통비</option>
+                        </select>
+                    </div>
+                    <div class="custom-light">
+                        <label class="title">지출명</label>
+                        <input title="incomeTitle" type="text" value="월세"/>
+                    </div>
+                    <div class="custom-light">
+                        <label class="title">지출금액</label>
+                        <input class="number" type="text" title="incomeTitle" onkeyup="inputNumberFormat(this)" placeholder="1,000,000" /><span class="won">원</span>
+                    </div>
+                    <div class="custom-light">
+                        <label class="title">결제일</label>
+                        <select title="category">
+                            <option value="1" selected>25일</option>
+                            <option value="2">10일</option>
+                            <option value="3">1일</option>
+                        </select>
+                        <label class="label d-inline-block mr-4">
+                            <input type="checkbox" class="filled-in" checked="" />
+                            <span>결제일 알림</span>
+                        </label>
+                        <label class="label d-inline-block">
+                            <input type="checkbox" class="filled-in" />
+                            <span>매월 반복</span>
+                        </label>
+                    </div>
+                    <div class="custom-light">
+                        <label class="title">지급 방식</label>
+                        <select title="payment" class="mb-3">
+                            <option value="1" selected>계좌이체</option>
+                            <option value="2">신용카드</option>
+                            <option value="3">카카오페이</option>
+                        </select>
+                        <select title="account">
+                            <option value="1" selected>우리은행 1002-841-734-745</option>
+                            <option value="2">우리은행 1002-841-734-745</option>
+                            <option value="3">우리은행 1002-841-734-745</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="btn_box">
+                <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half">삭제</a>
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">저장</a>
+            </div>
+        </div>
+
+
+    </div>
+    <!--  E contents  -->
+
+</div>
+</body>
+</html>
+
+

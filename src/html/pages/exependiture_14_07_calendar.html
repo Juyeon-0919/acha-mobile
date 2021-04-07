@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<!-- 04_지출관리_04_캘린더_200602 -->
+<div id="wrap" class="wrap">
+    <!--  S contents  -->
+    <div id="contents" class="contents">
+
+        <div class="box_ex_calendar">
+            <div id='calendar'></div>
+        </div>
+        <div class="box_ex_calendar_info">
+            <div class="inner">
+                <p class="title">계좌 이체</p>
+                <ul class="box_ex_account_info">
+                    <li>
+                        <span class="img"><img src="../../img/common/tbroad.png" alt=""/></span>
+                        <span class="ex-title">SKT 010**34**78</span>
+                        <a href="#">
+                            <span class="value">103,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                            <!--
+                                날짜 : 2020.07.28
+                                작성자 : 이주연
+                                내용 : <span class="desc">전월(3월)</span> 추가
+                             -->
+                            <span class="desc">전월(3월)</span>
+                        </a>
+                        <ul class="b-info">
+                            <li class="b-name">국민은행</li>
+                            <li class="b-num">380-9***13*-4***7</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="img"><img src="../../img/common/ci_samsung@2x.png" alt=""/></span>
+                        <span class="ex-title">삼성생명 연금저축 손해보험</span>
+                        <a href="#">
+                            <span class="value">84,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                            <span class="desc">전월(12월)</span>
+                        </a>
+                        <ul class="b-info">
+                            <li class="b-name">국민은행</li>
+                            <li class="b-num">380-9***13*-4***7</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="img"><img src="../../img/common/ci_scbank@2x.png" alt=""/></span>
+                        <span class="ex-title">SC제일은행 중금리 대출</span>
+                        <a href="#">
+                            <span class="value">103,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                            <span class="desc">전월(1월)</span>
+                        </a>
+                        <ul class="b-info">
+                            <li class="b-name">국민은행</li>
+                            <li class="b-num">380-9***13*-4***7</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""/></span>
+                        <span class="ex-title">KB국민카드 (국내000)</span>
+                        <!--
+                                수정 날짜 : 2020.08.10
+                                작성자 : 이주연
+                                내용 : txt 클래스 추가
+                         -->
+                        <a href="#">
+                            <span class="txt">청구서 미발행</span>
+                        </a>
+                        <ul class="b-info">
+                            <li class="b-name">국민은행</li>
+                            <li class="b-num">380-9***13*-4***7</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_ex_calendar_info card_pay"> <!-- card_pay 클래스 추가 -->
+            <div class="inner">
+                <p class="title">카드 결제</p>
+                <ul class="box_ex_account_info">
+                    <li>
+                        <span class="bullet bullet-01"></span>
+                        <span class="ex-title">SKT 브로드밴드 인터넷/결합</span>
+                        <a href="#">
+                            <span class="value">56,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                        </a>
+                        <ul class="b-info">
+                            <li class="b-name">삼성카드</li>
+                            <li class="b-num">674</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bullet bullet-02"></span>
+                        <span class="ex-title">피아노 학원 방문 결제 (예원)</span>
+                        <a href="#">
+                            <span class="value">450,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                        </a>
+                        <ul class="b-info">
+                            <li class="b-name">삼성카드</li>
+                            <li class="b-num">674</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--  E contents  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid'],
+                showNonCurrentDates: true,
+                fixedWeekCount: false,
+                header: false,
+                height: 'auto',
+                defaultDate: '2020-06-01',  // 날짜 입력시, 달력 show
+                editable: false,
+                eventLimit: false,
+                navLinks: true,
+                timeZone: 'Asia/Seoul',
+                columnHeaderText: function (date) {
+                    return weekList[date.getDay()];
+                },
+                navLinkDayClick: function (date, jsEvent) {
+                    console.log(date.toISOString().slice(0,10));
+                },
+                /*
+                1. 금액만 보여질 경우
+                2. 블릿 보여질 경우(1개일 경우) -> bullet-single 클래스 추가
+                3. 블릿만 보여질 경우(2개일 경우, 순서는 bullet-01,bullet-02 순)
+                4. 블릿(1개), 금액 둘다 보여질 경우 -> cal-single 클래스 추가
+                5. 블릿(2개), 금액 둘다 보여질 경우 -> cal-double 클래스 추가
+                * */
+                events: [
+                    {
+                        className: 'bullet-01', // 블릿(2개)만 나오는 경우
+                        title: '',
+                        start: '2020-06-02'
+                    },
+                    {
+                        className: 'bullet-02', // 블릿(2개)만 나오는 경우
+                        title: '',
+                        start: '2020-06-02'
+                    },
+                    {
+                        className: ['bullet-01','bullet-single'], // 블릿(1개)만 나오는 경우, bullet-single 클래스 추가
+                        title: '',
+                        start: '2020-06-03'
+                    },
+                    {
+                        className: '', // 금액만 나오는 경우
+                        title: '50,000',
+                        start: '2020-06-04'
+                    },
+                    {
+                        className: ['bullet-02','bullet-single'], // 블릿(1개)만 나오는 경우, bullet-single 클래스 추가
+                        title: '',
+                        start: '2020-06-05'
+                    },
+                    {
+                        className: ['bullet-02', 'cal-double'], // 금액, 블릿(2개) (2개가 동시에 나올 경우, cal-double 클래스 추가)
+                        title: '',
+                        start: '2020-06-10'
+                    },
+                    {
+                        className: ['bullet-01', 'cal-double'],  // 금액, 블릿(2개) (2개가 동시에 나올 경우, cal-double 클래스 추가)
+                        title: '1,256,000',
+                        start: '2020-06-10'
+                    },
+                    {
+                        className: ['bullet-01', 'cal-single'],  // 금액, 블릿(1개) (2개가 동시에 나올 경우, cal-single 클래스 추가)
+                        title: '468,000',
+                        start: '2020-06-12'
+                    },
+                    {
+                        className: ['bullet-02', 'cal-single'], // 금액, 블릿(1개) (2개가 동시에 나올 경우, cal-single 추가)
+                        title: '36,000',
+                        start: '2020-06-15'
+                    },
+                    {
+                        className: '', // 금액만 나오는 경우
+                        title: '100,000',
+                        start: '2020-06-25'
+                    },
+                    {
+                        className: '', // 금액만 나오는 경우
+                        title: '540,000',
+                        start: '2020-06-30'
+                    },
+                ],
+            });
+
+            calendar.render();
+        });
+    </script>
+</div>
+</body>
+</html>
+
+

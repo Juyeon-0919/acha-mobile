@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">이용약관</h2>
+    </div>
+    <div id="contents" class="contents">
+        <div class="list-pd">
+            <div class="list_group">
+                <div class="list_group_item">
+                    <div class="item_title">
+                        <span class="title">서비스 이용약관</span>
+                    </div>
+                    <a href="#" class="btn_more"><i class="sprite ico_list_arrow_small"></i></a>
+                </div>
+                <div class="list_group_item">
+                    <div class="item_title">
+                        <span class="title">개인정보 처리방침</span>
+                    </div>
+                    <a href="#" class="btn_more"><i class="sprite ico_list_arrow_small"></i></a>
+                </div>
+                <div class="list_group_item list_group_item_lg">
+                    <div class="item_title">
+                        <span class="title">마케팅 활용 및 혜택 알림 수신 동의 (선택)</span>
+                        <span class="date">제휴 이벤트, 금융 상품 추천 등 Push 알림 받기</span>
+                    </div>
+                    <a href="#" class="btn_more"><i class="sprite ico_list_arrow_small"></i></a>
+                    <div class="box-switch">
+                        <a class="btn-no" href="#">동의</a>
+                        <a class="btn-yes active" href="#">미동의</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        * 업데이트 함수 설명 *
+        1. toastPopupShow() : 토스트 팝업 show 함수
+        2. toastPopupHide() : 토스트 팝업 hide 함수
+    -->
+    <!-- S 이용약관 토스트 팝업  -->
+    <div class="toast-popup terms_of_use_detail _toastPopup">
+        <p>2020년 4월 1일<br/>
+            Push 수신 동의로 변경되었습니다.</p>
+    </div>
+    <!-- E 이용약관 토스트 팝업  -->
+    <script>
+        toastPopupShow()
+    </script>
+</div>
+</body>
+</html>

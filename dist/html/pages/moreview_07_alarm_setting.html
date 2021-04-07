@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=0.1">
+    <script src="../../js/lib/front.lib.js?v=0.1"></script>
+    <script src="../../js/ui/front.common.js?v=0.1"></script>
+</head>
+
+<body>
+<div id="wrap" class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">알림설정</h2>
+    </div>
+    <div id="contents" class="contents">
+        <div class="list-pd">
+            <div class="list_group app_lock"><!-- app_lock 클래스 추가  -->
+                <div class="list_group_item list_group_item_lg">
+                    <div class="item_title">
+                        <span class="title">서비스 기본 알림</span>
+                        <span class="date">공지사항, 서비스 소식, 지출일 알림, 결제 정보 등</span>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="switch1" checked="checked">
+                        <label class="custom-control-label" for="switch1"></label>
+                    </div>
+                    <div class="day-alert">
+                        <div class="desc">* 추가 설정 시 지출일 이전에 알림을 받을 수 있어요</div>
+                        <div class="item">
+                            <div class="item_title">
+                                <span class="title">1일 전 알림</span>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="beforeOneDay">
+                                <label class="custom-control-label" for="beforeOneDay"></label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_title">
+                                <span class="title">3일 전 알림</span>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="beforeThreeDay">
+                                <label class="custom-control-label" for="beforeThreeDay"></label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_title">
+                                <span class="title">7일 전 알림</span>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="beforeSevenDay">
+                                <label class="custom-control-label" for="beforeSevenDay"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        * 업데이트 함수 설명 *
+        1. toastPopupShow() : 토스트 팝업 show 함수
+        2. toastPopupHide() : 토스트 팝업 hide 함수
+    -->
+    <!-- S 알림설정 토스트 팝업  -->
+    <div class="toast-popup alert-setting _toastPopup">
+        <p>서비스 기본 알림 설정이 해제되었습니다.<br/>
+            추후 긴급 공지 및  개인정보처리방침 변경 안내 등<br/>
+            회원 대상의 의무적 공지는 발송될 수 있으니 양해부탁드립니다</p>
+    </div>
+    <!-- E 알림설정 토스트 팝업  -->
+    <script>
+        toastPopupShow()
+    </script>
+</div>
+</body>
+</html>
+
+
