@@ -125,11 +125,10 @@ function watchPcss() {
 }
 
 function watchHtml() {
-    gulp.watch(['src/html/pages/*.html', 'src/html/pages_02/*.html'], gulp.series(htmlPage));
-    // gulp.watch(['src/html/pages/*.html','src/html/guide/*.html'], gulp.series(htmlPage));
+    gulp.watch(['src/html/pages/*.html'], gulp.series(htmlPage));
 }
 
-function watchInclue() {
+function watchInclude() {
     gulp.watch('src/html/*/*.html', gulp.series(htmlInclude, htmlPage));
 }
 
@@ -139,7 +138,7 @@ function watchJs() {
 
 gulp.task("watchCss", watchPcss);
 gulp.task("watchHtml", watchHtml);
-gulp.task("watchInclude", watchInclue);
+gulp.task("watchInclude", watchInclude);
 gulp.task("watchJs", watchJs);
 
 

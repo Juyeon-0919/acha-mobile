@@ -1,4 +1,51 @@
 var data = {}
+data.renewal = {
+    'title': 'renewal 2.0',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 전)',
+            'category': 'renewal 2.0',
+            'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 전)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 후)',
+            'category': 'renewal 2.0',
+            'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 후)'
+        },  {
+            'stateClass': 'complete',
+            'url': 'exependiture_18_connect_category',
+            'category': 'renewal 2.0',
+            'page': 'exependiture_18_connect_category'
+        },   {
+            'stateClass': 'complete',
+            'url': '02.입력목록_1.6필수입력 값(01_필수입력값 미입력 시)',
+            'category': 'renewal 2.0',
+            'page': '02.입력목록_1.6필수입력 값(01_필수입력값 미입력 시)'
+        }, {
+            'stateClass': 'complete',
+            'url': '02.입력목록_1.6필수입력 값(02_지출금액 0원 입력 시)',
+            'category': 'renewal 2.0',
+            'page': '02.입력목록_1.6필수입력 값(02_지출금액 0원 입력 시)'
+        }, {
+            'stateClass': 'complete',
+            'url': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(01_카테고리 생성 팝업)',
+            'category': 'renewal 2.0',
+            'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(01_카테고리 생성 팝업)'
+        },{
+            'stateClass': 'complete',
+            'url': '03.입력완료_1.2연 단위 입력 시(01_메인)',
+            'category': 'renewal 2.0',
+            'page': '03.입력완료_1.2연 단위 입력 시(01_메인)'
+        },{
+            'stateClass': 'complete',
+            'url': '04.직접입력 상세',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세'
+        },
+    ]
+};
 data.tax2 = {
     'title': '연말정산 TIP_21.01 개편',
     'list': [
