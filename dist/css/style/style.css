@@ -2407,11 +2407,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control::-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -7956,7 +7951,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -7976,9 +7970,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -12618,7 +12611,9 @@ input, textarea {
     height: 30px;
     padding: 0 5px;
     border: 1px solid #D4D4D4;
-    font-size: 16px
+    font-size: 16px;
+    caret-color: #6839d3;
+    caret-color: var(--color-point)
 
 }
 
@@ -12637,10 +12632,6 @@ input:read-only::-moz-placeholder, textarea:read-only::-moz-placeholder {
         }
 
 input:read-only:-ms-input-placeholder, textarea:read-only:-ms-input-placeholder {
-            color: #333333;
-        }
-
-input:read-only::-ms-input-placeholder, textarea:read-only::-ms-input-placeholder {
             color: #333333;
         }
 
@@ -12734,15 +12725,6 @@ input .error, textarea .error {
         }
 
 .input_area input:-ms-input-placeholder {
-            font-family: 'Noto Sans CJK KR Regular';
-            font-family: var(--font1);
-            font-size: 14px;
-            line-height: 21px;
-            letter-spacing: -0.7px;
-            color: #888888;
-        }
-
-.input_area input::-ms-input-placeholder {
             font-family: 'Noto Sans CJK KR Regular';
             font-family: var(--font1);
             font-size: 14px;
@@ -12846,10 +12828,6 @@ select:-ms-input-placeholder {
         color: #9b9aa6;
     }
 
-select::-ms-input-placeholder {
-        color: #9b9aa6;
-    }
-
 select::placeholder {
         color: #9b9aa6;
     }
@@ -12949,10 +12927,6 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
             color: #999999;
         }
 
-.search_box input::-ms-input-placeholder, .calendar_box input::-ms-input-placeholder {
-            color: #999999;
-        }
-
 .search_box input::placeholder, .search_box input::-ms-input-placeholder, .search_box input::-webkit-input-placeholder, .search_box input::-moz-placeholder, .calendar_box input::placeholder, .calendar_box input::-ms-input-placeholder, .calendar_box input::-webkit-input-placeholder, .calendar_box input::-moz-placeholder {
             color: #999999;
         }
@@ -13047,10 +13021,6 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
             color: #333333;
         }
 
-.file_box input::-ms-input-placeholder {
-            color: #333333;
-        }
-
 .file_box input::placeholder, .file_box input::-ms-input-placeholder, .file_box input::-webkit-input-placeholder, .file_box input::-moz-placeholder {
             color: #333333;
         }
@@ -13123,10 +13093,6 @@ input.custom::-moz-placeholder {
     }
 
 input.custom:-ms-input-placeholder {
-        color: #9b9aa6;
-    }
-
-input.custom::-ms-input-placeholder {
         color: #9b9aa6;
     }
 
@@ -13470,7 +13436,6 @@ input.custom:focus {
     position: relative;
     width: 100%;
     height: 66px
-
 }
 
 .header .btn_close {
@@ -13537,6 +13502,32 @@ input.custom:focus {
         padding: 10px;
         right: 10px;
         top: 10px;
+    }
+
+.header .btn-delete {
+        display: inline-block;
+        position: absolute;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: -0.35px;
+        color: #737183;
+        color: var(--text-02);
+        padding: 10px;
+        right: 10px;
+        top: 10px;
+    }
+
+.header .btn-edit {
+        display: inline-block;
+        position: absolute;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: -0.35px;
+        color: #6839d3;
+        color: var(--color-point);
+        padding: 10px;
+        right: 10px;
+        top: 12px;
     }
 
 .header .btn_area {
@@ -15807,10 +15798,6 @@ input.custom:focus {
         }
 
 .deduct-input > input:-ms-input-placeholder {
-            color: #9b9aa6;
-        }
-
-.deduct-input > input::-ms-input-placeholder {
             color: #9b9aa6;
         }
 
@@ -18155,10 +18142,6 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
                         color: #b5b5b5;
                     }
 
-.card .card-body .input_area input[type=text]:read-only::-ms-input-placeholder {
-                        color: #b5b5b5;
-                    }
-
 .card .card-body .input_area input[type=text]:-moz-read-only::placeholder {
                         color: #b5b5b5;
                     }
@@ -18786,10 +18769,6 @@ textarea.custom::-moz-placeholder {
     }
 
 textarea.custom:-ms-input-placeholder {
-        color: #afaeb8;
-    }
-
-textarea.custom::-ms-input-placeholder {
         color: #afaeb8;
     }
 
@@ -20850,6 +20829,195 @@ textarea.custom:focus {
         padding: 0;
     }
 
+.box_my_income_add .input-title {
+        font-family: 'Noto Sans CJK KR Medium';
+        font-family: var(--font2);
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: -0.28px;
+        text-align: left;
+        color: #6839d3;
+        color: var(--color-point);
+    }
+
+.box_my_income_add .input-byte {
+        display: block;
+        margin-top: 8px
+    }
+
+.box_my_income_add .input-byte .byte {
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: -0.28px;
+        }
+
+.box_my_income_add .input-byte .total {
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: -0.28px;
+            color: #afaeb8;
+            color: var(--text-04);
+        }
+
+.box_my_income_add .custom-light.with-icon {
+            position: relative;
+            overflow: hidden
+        }
+
+.box_my_income_add .custom-light.with-icon .icon {
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+                margin-top: 5px
+            }
+
+.box_my_income_add .custom-light.with-icon .icon img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+.box_my_income_add .custom-light.with-icon input {
+                float: left;
+                width: calc(100% - 15px - 30px);
+                margin-right: 0;
+                font-family: 'Roboto';
+                font-family: var(--font4);
+                font-size: 18px;
+                font-weight: bold
+            }
+
+.box_my_income_add .custom-light.with-icon input::-moz-placeholder {
+                    font-size: 13px;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-weight: normal;
+                }
+
+.box_my_income_add .custom-light.with-icon input:-ms-input-placeholder {
+                    font-size: 13px;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-weight: normal;
+                }
+
+.box_my_income_add .custom-light.with-icon input::placeholder {
+                    font-size: 13px;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-weight: normal;
+                }
+
+.box_my_income_add .custom-light.with-icon::after {
+                content: '원';
+                position: absolute;
+                right: 41px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 22px;
+                text-align: left;
+                color: #37354e;
+                color: var(--text-01);
+            }
+
+.box_my_income_add .custom-light.with-icon .btn-modify {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                width: 26px;
+                height: 26px;
+                border-radius: 50px;
+                border: solid 1px #e3e4e8;
+                background-color: #fff;
+                background-color: var(--white);
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 0
+            }
+
+.box_my_income_add .custom-light.with-icon .btn-modify i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url(../../img/common/ico-expense-modify.svg);
+                    background-size: cover;
+                }
+
+.box_my_income_add .custom-switch {
+        float: left;
+        position: static;
+        top: auto;
+        right: auto;
+        height: 22px
+    }
+
+.box_my_income_add .custom-switch input {
+            width: 42px;
+            height: 22px;
+        }
+
+.box_my_income_add .custom-switch-label {
+        float: left;
+        font-size: 13px;
+        line-height: 27px;
+        letter-spacing: -0.65px;
+        color: #afaeb8;
+        color: var(--text-04)
+    }
+
+.box_my_income_add .custom-switch-label:first-child {
+            margin-right: 6px
+        }
+
+.box_my_income_add .custom-switch-label:first-child.active {
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                color: #737183;
+                color: var(--text-02);
+            }
+
+.box_my_income_add .custom-switch-label:last-child {
+            margin-left: 6px
+        }
+
+.box_my_income_add .custom-switch-label:last-child.active {
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                color: #6839d3;
+                color: var(--color-point);
+            }
+
+.box_my_income_add .select-box {
+        position: relative;
+        width: 100%
+    }
+
+.box_my_income_add .select-box .bank-img {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 5px;
+            top: 10px
+        }
+
+.box_my_income_add .select-box .bank-img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.box_my_income_add .select-box select {
+            padding-left: 29px;
+        }
+
 .box_ex_detail {
     padding: 0 20px
 }
@@ -21206,6 +21374,101 @@ textarea.custom:focus {
                     width: 70px;
                 }
 
+.box_ex_detail .box-ex-header .ex-direct {
+            position: relative;
+            overflow: hidden;
+            width: 100%
+        }
+
+.box_ex_detail .box-ex-header .ex-direct .img {
+                float: left;
+                display: flex;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #f2f4f7;
+                border-radius: 50%;
+                margin-right: 10px
+            }
+
+.box_ex_detail .box-ex-header .ex-direct .img img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 8px auto 0;
+                }
+
+.box_ex_detail .box-ex-header .ex-direct .info {
+                float: left;
+                width: calc(100% - 50px - 10px - 56px)
+            }
+
+.box_ex_detail .box-ex-header .ex-direct .info .tit {
+                    display: block;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: -0.35px;
+                    text-align: left;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    margin-bottom: 2px;
+                }
+
+.box_ex_detail .box-ex-header .ex-direct .info .val {
+                    font-family: 'Roboto';
+                    font-family: var(--font4);
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 24px
+                }
+
+.box_ex_detail .box-ex-header .ex-direct .info .val::after {
+                        content: '원';
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
+                        font-size: 15px;
+                        font-weight: bold;
+                        line-height: 24px;
+                    }
+
+.box_ex_detail .box-ex-header .ex-direct .btn-alert {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0 8px;
+                height: 26px;
+                border: 1px solid #f2f4f7;
+                border-radius: 50px;
+                text-align: center;
+                line-height: 22px;
+                display: flex;
+                align-content: center
+            }
+
+.box_ex_detail .box-ex-header .ex-direct .btn-alert em {
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 24px;
+                    font-size: 12px;
+                    letter-spacing: -.3px
+                }
+
+.box_ex_detail .box-ex-header .ex-direct .btn-alert em:first-child {
+                        color: #737183;
+                        color: var(--text-02);
+                    }
+
+.box_ex_detail .box-ex-header .ex-direct .btn-alert em:nth-child(2) {
+                        color: #6839d3;
+                        color: var(--color-point);
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        font-weight: bold;
+                        margin-left: 3px;
+                    }
+
 .box_ex_detail_list {
     padding: 20px
 }
@@ -21545,6 +21808,8 @@ textarea.custom:focus {
     }
 
 .box_ex_connect_item .title .primary {
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
             font-weight: bold;
             left: -.45px;
         }
@@ -24061,6 +24326,213 @@ textarea.custom:focus {
 /*      E
     06_연말정산 추가
 */
+
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+.modal .modal-dialog {
+        width: 295px;
+        max-width: 295px !important;
+        margin: 0 auto
+    }
+
+.modal .modal-dialog .modal-content {
+            position: relative;
+            width: 295px;
+            text-align: center;
+            padding: 30px 0;
+            border: 0;
+            border-radius: 6px;
+            box-shadow: none
+        }
+
+.modal .modal-dialog .modal-content .btn-close {
+                position: absolute;
+                display: block;
+                width: 22px;
+                height: 22px;
+                background-image: url(../../img/common/btn-popup-close.svg);
+                background-size: cover;
+                right: 16px;
+                top: 20px;
+            }
+
+.modal .modal-dialog .modal-content .tit {
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 22px;
+                letter-spacing: -0.75px;
+                margin-bottom: 12px;
+            }
+
+.modal .modal-dialog .modal-content .txt {
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: -0.33px;
+            }
+
+@-webkit-keyframes modal-fade-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modal-fade-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes modal-fade-animation-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes modal-fade-animation-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@-webkit-keyframes modal-sticky-bottom-animation {
+    from {
+        height: 0;
+    }
+    to {
+        height: 402px;
+    }
+}
+
+@keyframes modal-sticky-bottom-animation {
+    from {
+        height: 0;
+    }
+    to {
+        height: 402px;
+    }
+}
+
+@-webkit-keyframes modal-sticky-bottom-animation-out {
+    from {
+        height: 402px;
+    }
+    to {
+        height: 0;
+        display: none;
+    }
+}
+
+@keyframes modal-sticky-bottom-animation-out {
+    from {
+        height: 402px;
+    }
+    to {
+        height: 0;
+        display: none;
+    }
+}
+
+.modal-slide-backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7)
+}
+
+.modal-slide-backdrop.show {
+        display: block;
+        -webkit-animation: modal-fade-animation .7s;
+                animation: modal-fade-animation .7s;
+    }
+
+.modal-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0
+}
+
+.modal-slide .modal-slide-content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 402px;
+        border-radius: 20px 20px 0 0;
+        background-color: #fff
+    }
+
+.modal-slide .modal-slide-content .btn-close {
+            position: absolute;
+            display: block;
+            width: 22px;
+            height: 22px;
+            background-image: url(../../img/common/btn-popup-close.svg);
+            background-size: cover;
+            right: 16px;
+            top: 20px;
+        }
+
+.modal-slide .modal-slide-content .inner {
+            padding: 60px 30px 0;
+            text-align: center
+        }
+
+.modal-slide .modal-slide-content .inner .img {
+                display: block;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid #f2f4f7;
+                text-align: center;
+                margin: 0 auto 35px;
+                padding-top: 20px;
+            }
+
+.modal-slide .modal-slide-content .inner .custom-light {
+                margin-bottom: 8px;
+            }
+
+.modal-slide .modal-slide-content .inner .desc {
+                width: 100%;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                text-align: left;
+                color: #afaeb8;
+                color: var(--text-04);
+                margin-bottom: 60px;
+                padding: 0 5px;
+            }
+
+.modal-slide.up {
+        transition: .5s
+    }
+
+.modal-slide.up .modal-slide-content {
+            height: 402px;
+            -webkit-animation: modal-sticky-bottom-animation .5s;
+                    animation: modal-sticky-bottom-animation .5s;
+        }
+
+.modal-slide.down {
+        transition: .5s
+    }
+
+.modal-slide.down .modal-slide-content {
+            -webkit-animation: modal-sticky-bottom-animation-out .5s;
+                    animation: modal-sticky-bottom-animation-out .5s;
+            height: 0;
+        }
 
 /*
     작성자 : 이주연

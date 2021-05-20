@@ -15,9 +15,9 @@ data.renewal = {
             'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 후)'
         },  {
             'stateClass': 'complete',
-            'url': 'exependiture_18_connect_category',
+            'url': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(02_카테고리 아이콘 설정)',
             'category': 'renewal 2.0',
-            'page': 'exependiture_18_connect_category'
+            'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(02_카테고리 아이콘 설정)'
         },   {
             'stateClass': 'complete',
             'url': '02.입력목록_1.6필수입력 값(01_필수입력값 미입력 시)',

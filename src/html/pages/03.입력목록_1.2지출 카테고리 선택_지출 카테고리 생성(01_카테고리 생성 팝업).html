@@ -29,7 +29,6 @@
         var btnSlideClose = $('._btnSlideClose');
 
         btnSlideOpen.on('click',function (){
-            console.log('1')
             setTimeout(
                 function(){
                     document.getElementsByClassName("_modalSlide")[0].style.display='block';
@@ -40,11 +39,10 @@
         });
 
         btnSlideClose.on('click',function (){
-            console.log('2')
             setTimeout(
                 function(){
                     document.getElementsByClassName("_modalSlide")[0].style.display='none';
-                }, 500
+                }, 2000
             );
             $('._modalSlide').removeClass('up').addClass('down');
             $('.modal-slide-backdrop').removeClass('show');
