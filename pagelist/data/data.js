@@ -4,46 +4,46 @@ data.renewal = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 전)',
+            'url': '02_Input_list_01',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 전)'
         },
         {
             'stateClass': 'complete',
-            'url': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 후)',
+            'url': '02_Input_list_02',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 후)'
         },  {
             'stateClass': 'complete',
-            'url': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(02_카테고리 아이콘 설정)',
+            'url': '02_Input_list_03',
             'category': 'renewal 2.0',
             'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(02_카테고리 아이콘 설정)'
-        },   {
+        }, {
             'stateClass': 'complete',
-            'url': '02.입력목록_1.6필수입력 값(01_필수입력값 미입력 시)',
+            'url': '02_Input_list_04',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세'
+        },  {
+            'stateClass': 'complete',
+            'url': '02_Input_list_popup_01',
+            'category': 'renewal 2.0',
+            'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(01_카테고리 생성 팝업)'
+        },  {
+            'stateClass': 'complete',
+            'url': '02_Input_list_popup_02',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.6필수입력 값(01_필수입력값 미입력 시)'
         }, {
             'stateClass': 'complete',
-            'url': '02.입력목록_1.6필수입력 값(02_지출금액 0원 입력 시)',
+            'url': '02_Input_list_popup_03',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.6필수입력 값(02_지출금액 0원 입력 시)'
-        }, {
-            'stateClass': 'complete',
-            'url': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(01_카테고리 생성 팝업)',
-            'category': 'renewal 2.0',
-            'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(01_카테고리 생성 팝업)'
         },{
             'stateClass': 'complete',
-            'url': '03.입력완료_1.2연 단위 입력 시(01_메인)',
+            'url': '02_Input_list_popup_04',
             'category': 'renewal 2.0',
             'page': '03.입력완료_1.2연 단위 입력 시(01_메인)'
-        },{
-            'stateClass': 'complete',
-            'url': '04.직접입력 상세',
-            'category': 'renewal 2.0',
-            'page': '04.직접입력 상세'
-        },
+        }
     ]
 };
 data.tax2 = {
