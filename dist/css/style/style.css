@@ -26655,3 +26655,305 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+/*
+    작성자 : 이주연
+    제목 : 마이페이지
+    날짜 : 2021.05.21
+*/
+
+.my-page-info {
+    padding: 0 20px
+}
+
+.my-page-info .profile {
+        padding-top: 20px
+    }
+
+.my-page-info .profile .img {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-color: #f7f8fc;
+            text-align: center
+        }
+
+.my-page-info .profile .img.default::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../../img/common/profile-noimg.svg);
+                    background-size: cover;
+                }
+
+.my-page-info .profile .img.default img {
+                    display: none;
+                }
+
+.my-page-info .profile .img img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+.my-page-info .profile .img .btn-edit {
+                position: absolute;
+                display: block;
+                width: 26px;
+                height: 26px;
+                background-color: #6839d3;
+                background-color: var(--color-point);
+                text-align: center;
+                border-radius: 50%;
+                line-height: 30px;
+                right: -6px;
+                bottom: -6px
+            }
+
+.my-page-info .profile .img .btn-edit .ico-expense-modify-w {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url(../../img/common/ico-expense-modify-w.svg);
+                    background-size: cover;
+                }
+
+.my-page-info .profile .info-list {
+            padding-bottom: 25px
+        }
+
+.my-page-info .profile .info-list ul .item {
+                    overflow: hidden;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                    border-bottom: 1px solid #f5f6f8
+                }
+
+.my-page-info .profile .info-list ul .item:last-child {
+                        border-bottom: 0;
+                    }
+
+.my-page-info .profile .info-list ul .item .tit {
+                        float: left;
+                        width: 100px;
+                        font-size: 13px;
+                        line-height: 19px;
+                        letter-spacing: -0.33px;
+                        color: #737183;
+                        color: var(--text-02);
+                    }
+
+.my-page-info .profile .info-list ul .item .val {
+                        float: right;
+                        text-align: right;
+                        width: calc(100% - 100px);
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 19px;
+                        letter-spacing: -0.33px;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
+.my-page-category {
+    padding: 36px 20px 40px
+}
+
+.my-page-category .title-area {
+        font-family: 'Noto Sans CJK KR Medium';
+        font-family: var(--font2);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+        color: #37354e;
+        color: var(--text-01);
+        padding-bottom: 14px;
+        border-bottom: 1px solid #37354e;
+        border-bottom: 1px solid var(--text-01);
+    }
+
+.my-page-category .empty {
+        margin-top: 40px
+    }
+
+.my-page-category .empty .img {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 12px
+        }
+
+.my-page-category .empty .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.my-page-category .empty .txt-lg {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            text-align: center;
+            color: #37354e;
+            color: var(--text-01);
+            margin-bottom: 7px;
+        }
+
+.my-page-category .empty .txt {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: center;
+            color: #737183;
+            color: var(--text-02);
+            margin-bottom: 20px;
+        }
+
+.my-page-category .link {
+        text-align: center
+    }
+
+.my-page-category .link a {
+            display: inline-block;
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            color: #6839d3;
+            color: var(--color-point);
+            vertical-align: middle;
+            text-decoration: underline;
+            margin-right: 4px;
+
+        }
+
+.my-page-category .link .arrow-left {
+            display: inline-block;
+            vertical-align: middle;
+            width: 6px;
+            height: 16px;
+            background-image: url(../../img/common/ico-arrow-pur-nor.svg);
+            background-size: cover;
+        }
+
+.my-page-category .ex-list {
+        width: 100%;
+        border-bottom: 1px solid #e3e4e8;
+        margin-bottom: 20px
+    }
+
+.my-page-category .ex-list ul .item {
+                padding: 20px 0;
+                border-bottom: 1px solid #f5f6f8
+            }
+
+.my-page-category .ex-list ul .item:last-child {
+                    border-bottom: 0;
+                }
+
+.my-page-category .ex-list ul .item a {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden
+                }
+
+.my-page-category .ex-list ul .item a .img {
+                        float: left;
+                        width: 36px;
+                        height: 36px;
+                        border: 1px solid #f2f4f7;
+                        border-radius: 50%;
+                        text-align: center;
+                        padding-top: 5px;
+                        margin-right: 10px
+                    }
+
+.my-page-category .ex-list ul .item a .img img {
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                        }
+
+.my-page-category .ex-list ul .item a .info {
+                        float: left;
+                        width: calc(100% - 10px - 36px - 54px);
+                        display: flex;
+                        flex-direction: column
+                    }
+
+.my-page-category .ex-list ul .item a .info .tit {
+                            font-family: 'Noto Sans CJK KR Medium';
+                            font-family: var(--font2);
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 19px;
+                            letter-spacing: -0.33px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            color: #37354e;
+                            color: var(--text-01);
+                            margin-bottom: 3px;
+                        }
+
+.my-page-category .ex-list ul .item a .info .date {
+                            font-family: 'Roboto';
+                            font-family: var(--font4);
+                            font-size: 11px;
+                            line-height: 15px;
+                            color: #9b9aa6;
+                            color: var(--text-03);
+                        }
+
+.my-page-category .ex-list ul .item a .badge {
+                        float: right;
+                        width: 54px;
+                        height: 21px;
+                        padding: 0;
+                        font-size: 11px;
+                        line-height: 19px;
+                        letter-spacing: -0.28px;
+                        text-align: center;
+                        color: #6839d3;
+                        color: var(--color-point);
+                        border-radius: 50px;
+                        border: solid 1px #6839d3;
+                        border: solid 1px var(--color-point);
+                        transform: translateY(8px)
+                    }
+
+.my-page-category .ex-list ul .item a .badge.month {
+                            color: #6839d3;
+                            color: var(--color-point);
+                            border: solid 1px #6839d3;
+                            border: solid 1px var(--color-point);
+                        }
+
+.my-page-category .ex-list ul .item a .badge.year {
+                            color: #37354e;
+                            color: var(--text-01);
+                            border: solid 1px #37354e;
+                            border: solid 1px var(--text-01);
+                        }
+
+.my-page-category .ex-list ul .item a .badge.once {
+                            color: #737183;
+                            color: var(--text-02);
+                            border: solid 1px #737183;
+                            border: solid 1px var(--text-02);
+                        }

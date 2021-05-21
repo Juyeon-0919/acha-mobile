@@ -1,0 +1,279 @@
+/*
+    작성자 : 이주연
+    제목 : 마이페이지
+    날짜 : 2021.05.21
+*/
+.my-page-info {
+    padding: 0 20px;
+
+    & .profile {
+        padding-top: 20px;
+
+        & .img {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-color: #f7f8fc;
+            text-align: center;
+
+            &.default {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../../img/common/profile-noimg.svg);
+                    background-size: cover;
+                }
+                & img {
+                    display: none;
+                }
+            }
+
+            & img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+            & .btn-edit {
+                position: absolute;
+                display: block;
+                width: 26px;
+                height: 26px;
+                background-color: var(--color-point);
+                text-align: center;
+                border-radius: 50%;
+                line-height: 30px;
+                right: -6px;
+                bottom: -6px;
+
+                & .ico-expense-modify-w {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url(../../img/common/ico-expense-modify-w.svg);
+                    background-size: cover;
+                }
+            }
+        }
+
+        & .info-list {
+            padding-bottom: 25px;
+
+            & ul {
+                & .item {
+                    overflow: hidden;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                    border-bottom: 1px solid #f5f6f8;
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    & .tit {
+                        float: left;
+                        width: 100px;
+                        font-size: 13px;
+                        line-height: 19px;
+                        letter-spacing: -0.33px;
+                        color: var(--text-02);
+                    }
+
+                    & .val {
+                        float: right;
+                        text-align: right;
+                        width: calc(100% - 100px);
+                        font-family: var(--font2);
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 19px;
+                        letter-spacing: -0.33px;
+                        color: var(--text-01);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.my-page-category {
+    padding: 36px 20px 40px;
+
+    & .title-area {
+        font-family: var(--font2);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+        color: var(--text-01);
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--text-01);
+    }
+
+    & .empty {
+        margin-top: 40px;
+
+        & .img {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 12px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .txt-lg {
+            font-family: var(--font2);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            text-align: center;
+            color: var(--text-01);
+            margin-bottom: 7px;
+        }
+
+        & .txt {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: center;
+            color: var(--text-02);
+            margin-bottom: 20px;
+        }
+    }
+
+    & .link {
+        text-align: center;
+
+        & a {
+            display: inline-block;
+            font-family: var(--font2);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            color: var(--color-point);
+            vertical-align: middle;
+            text-decoration: underline;
+            margin-right: 4px;
+
+        }
+
+        & .arrow-left {
+            display: inline-block;
+            vertical-align: middle;
+            width: 6px;
+            height: 16px;
+            background-image: url(../../img/common/ico-arrow-pur-nor.svg);
+            background-size: cover;
+        }
+    }
+
+    & .ex-list {
+        width: 100%;
+        border-bottom: 1px solid #e3e4e8;
+        margin-bottom: 20px;
+
+        & ul {
+            & .item {
+                padding: 20px 0;
+                border-bottom: 1px solid #f5f6f8;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+
+                & a {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+
+                    & .img {
+                        float: left;
+                        width: 36px;
+                        height: 36px;
+                        border: 1px solid #f2f4f7;
+                        border-radius: 50%;
+                        text-align: center;
+                        padding-top: 5px;
+                        margin-right: 10px;
+
+                        & img {
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+
+                    & .info {
+                        float: left;
+                        width: calc(100% - 10px - 36px - 54px);
+                        display: flex;
+                        flex-direction: column;
+
+                        & .tit {
+                            font-family: var(--font2);
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 19px;
+                            letter-spacing: -0.33px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            color: var(--text-01);
+                            margin-bottom: 3px;
+                        }
+
+                        & .date {
+                            font-family: var(--font4);
+                            font-size: 11px;
+                            line-height: 15px;
+                            color: var(--text-03);
+                        }
+                    }
+
+                    & .badge {
+                        float: right;
+                        width: 54px;
+                        height: 21px;
+                        padding: 0;
+                        font-size: 11px;
+                        line-height: 19px;
+                        letter-spacing: -0.28px;
+                        text-align: center;
+                        color: var(--color-point);
+                        border-radius: 50px;
+                        border: solid 1px var(--color-point);
+                        transform: translateY(8px);
+
+                        &.month {
+                            color: var(--color-point);
+                            border: solid 1px var(--color-point);
+                        }
+                        &.year {
+                            color: var(--text-01);
+                            border: solid 1px var(--text-01);
+                        }
+                        &.once {
+                            color: var(--text-02);
+                            border: solid 1px var(--text-02);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
