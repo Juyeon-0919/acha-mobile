@@ -95,13 +95,17 @@ function jsLib() {
     let sourceLib = [
         'src/js/lib/jquery.js',
         'src/js/lib/bootstrap.bundle.min.js',
+
         'src/js/lib/jquery.sticky.js',
+
         'src/js/lib/jquery-ui.min.js',
         'src/js/lib/jquery.ui.touch-punch.min.js',
+
         'src/js/lib/moment/moment.min.js',
         'src/js/lib/core/main.js',
         'src/js/lib/daygrid/main.js',
         'src/js/lib/interaction/main.js',
+
         'src/js/lib/Chart.min.js',
         'src/js/lib/chartjs-plugin-datalabels.js',
         'src/js/lib/chartjs-plugin-annotation.min.js',
