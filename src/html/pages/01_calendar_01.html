@@ -196,6 +196,11 @@
             $('.fc-day-top[data-date="2021-05-28"]').addClass('fc-day-selected')
         })
     </script>
+    <script>
+        $('.sort-area li a').on('click',function (){
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
 </div>
 </body>
 </html>

@@ -28108,8 +28108,10 @@ input[type=number] {
             display: inline-flex;
             height: 28px;
             align-items: center;
-            border: 1px dotted #e3e4e8;
-            padding:  0 10px
+            padding:  0 10px;
+            background-image: url(../../img/common/btn-dash-bg-01.svg);
+            width: 86px;
+            background-size: cover
         }
 
 .box_ex_calendar .sort-area .btn-reset em {
@@ -28402,11 +28404,11 @@ input[type=number] {
     padding: 10px 20px 0
 }
 
-.my-data-sign-in > .title_area {
+.my-data-sign-in > .title-area {
         margin-bottom: 57px
     }
 
-.my-data-sign-in > .title_area .title {
+.my-data-sign-in > .title-area .title {
             font-family: 'Noto Sans CJK KR Medium';
             font-family: var(--font2);
             font-weight: 500;
@@ -28415,7 +28417,7 @@ input[type=number] {
             line-height: 28px
         }
 
-.my-data-sign-in > .title_area .title span {
+.my-data-sign-in > .title-area .title span {
                 color: #6839d3;
                 color: var(--color-point);
             }
@@ -28466,13 +28468,14 @@ input[type=number] {
 
 .my-data-required {
     padding: 10px 20px 52px
+
 }
 
-.my-data-required > .title_area {
+.my-data-required > .title-area {
         margin-bottom: 30px
     }
 
-.my-data-required > .title_area .title {
+.my-data-required > .title-area .title {
             font-family: 'Noto Sans CJK KR Medium';
             font-family: var(--font2);
             font-weight: 500;
@@ -28481,7 +28484,7 @@ input[type=number] {
             line-height: 28px
         }
 
-.my-data-required > .title_area .title span {
+.my-data-required > .title-area .title span {
                 color: #6839d3;
                 color: var(--color-point);
             }
@@ -28492,7 +28495,8 @@ input[type=number] {
             border: solid 1px #f5f6f8;
             background-color: #fff;
             background-color: var(--white);
-            margin-bottom: 36px
+            margin-bottom: 36px;
+            overflow: hidden
         }
 
 .my-data-required > .card-list .card-item .card-header {
@@ -28526,7 +28530,7 @@ input[type=number] {
                 }
 
 .my-data-required > .card-list .card-item .card-body {
-                padding: 21px 20px 0
+                padding: 0 20px
             }
 
 .my-data-required > .card-list .card-item .card-body > .tit {
@@ -28539,6 +28543,7 @@ input[type=number] {
                     color: #37354e;
                     color: var(--text-01);
                     margin-bottom: 7px;
+                    padding-top: 21px;
                 }
 
 .my-data-required > .card-list .card-item .card-body > .desc {
@@ -28611,14 +28616,172 @@ input[type=number] {
                                     margin-left: 6px;
                                 }
 
-.my-data-btn {
+.my-data-required > .card-list .card-item .card-body > .info-tit {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: -0.35px;
+                    color: #37354e;
+                    color: var(--text-01);
+                    padding-top: 20px;
+                    padding-bottom: 14px;
+                    border-bottom: 1px solid #37354e;
+                    border-bottom: 1px solid var(--text-01);
+                }
+
+.my-data-required > .card-list .card-item .card-body > .info-list ul .item {
+                            position: relative;
+                            width: 100%;
+                            height: 80px;
+                            border-bottom: 1px solid #f5f6f8
+                        }
+
+.my-data-required > .card-list .card-item .card-body > .info-list ul .item:last-child {
+                                border-bottom: 0;
+                            }
+
+.my-data-required > .card-list .card-item .card-body > .info-list ul .item .info {
+                                display: flex;
+                                height: 100%;
+                                flex-direction: column;
+                                justify-content: center
+                            }
+
+.my-data-required > .card-list .card-item .card-body > .info-list ul .item .info .tit {
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    line-height: 19px;
+                                    letter-spacing: -0.33px;
+                                    margin-bottom: 3px;
+                                }
+
+.my-data-required > .card-list .card-item .card-body > .info-list ul .item .info .num {
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.33;
+                                    letter-spacing: -0.3px;
+                                    text-align: left;
+                                    color: #9b9aa6;
+                                    color: var(--text-03);
+                                }
+
+.my-data-required > .card-list .card-item .card-body > .info-list ul .item > label {
+                                position: absolute;
+                                width: calc(100% + 40px);
+                                height: 100%;
+                                right: -20px;
+                                top: 0;
+                                padding-left: 100%;
+                                padding-top: 25px;
+                            }
+
+.my-data-required > .security-area .desc {
+            margin-bottom: 40px
+        }
+
+.my-data-required > .security-area .desc .ico-lock {
+                display: inline-block;
+                width: 13px;
+                height: 14px;
+                margin-right: 5px;
+                vertical-align: middle;
+                background-image: url(../../img/common/ico-lock.svg);
+                background-size: cover;
+            }
+
+.my-data-required > .security-area .desc .txt {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                color: #6839d3;
+                color: var(--color-point);
+            }
+
+.my-data-required > .security-area .custom-light input {
+                margin-right: 0;
+            }
+
+.my-data-completed {
+    padding-top: 131px
+}
+
+.my-data-completed .img {
+        display: block;
+        width: 200px;
+        height: 90px;
+        margin: 0 auto 24px
+    }
+
+.my-data-completed .img img {
+            width: 100%;
+            height: 100%;
+        }
+
+.my-data-completed .txt {
+        font-family: 'Noto Sans CJK KR Medium';
+        font-family: var(--font2);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: -0.38px;
+        text-align: center;
+        color: #37354e;
+        color: var(--text-01);
+    }
+
+.my-data-connected {
+    padding-top: 131px
+}
+
+.my-data-connected .img {
+        display: block;
+        width: 200px;
+        height: 90px;
+        margin: 0 auto 24px
+    }
+
+.my-data-connected .img img {
+            width: 100%;
+            height: 100%;
+        }
+
+.my-data-connected .tit-lg {
+        font-family: 'Noto Sans CJK KR Bold';
+        font-family: var(--font3);
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 25px;
+        letter-spacing: -0.43px;
+        text-align: center;
+        color: #37354e;
+        color: var(--text-01);
+        margin-bottom: 12px;
+    }
+
+.my-data-connected .tit-md {
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: -0.38px;
+        text-align: center;
+        color: #37354e;
+        color: var(--text-01);
+    }
+
+.my-data-btn-fixed {
     width: 100%;
     position: fixed;
     bottom: 0;
-    left: 0
+    left: 0;
+    z-index: 5
 }
 
-.my-data-btn .btn {
+.my-data-btn-fixed .btn {
         width: 100%;
         height: 56px;
         background-color: #6839d3;
@@ -28632,3 +28795,12 @@ input[type=number] {
         letter-spacing: -0.38px;
         color: #fff;
     }
+
+.my-data-btn-absolute {
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px;
+}

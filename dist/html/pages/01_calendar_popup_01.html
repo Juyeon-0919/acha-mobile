@@ -276,5 +276,10 @@
         btnSlideOpen.trigger('click');
     })
 </script>
+<script>
+    $('.sort-area li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
 </body>
 </html>

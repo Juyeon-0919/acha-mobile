@@ -113,6 +113,11 @@
             calendar.render();
         });
     </script>
+    <script>
+        $('.sort-area li a').on('click',function (){
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
 </div>
 </body>
 </html>

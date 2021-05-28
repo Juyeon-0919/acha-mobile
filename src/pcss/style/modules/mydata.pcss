@@ -1,7 +1,7 @@
 .my-data-sign-in {
     padding: 10px 20px 0;
 
-    & > .title_area {
+    & > .title-area {
         margin-bottom: 57px;
 
         & .title {
@@ -65,7 +65,7 @@
 .my-data-required {
     padding: 10px 20px 52px;
 
-    & > .title_area {
+    & > .title-area {
         margin-bottom: 30px;
 
         & .title {
@@ -88,6 +88,7 @@
             border: solid 1px #f5f6f8;
             background-color: var(--white);
             margin-bottom: 36px;
+            overflow: hidden;
 
             & .card-header {
                 overflow: hidden;
@@ -117,7 +118,8 @@
             }
 
             & .card-body {
-                padding: 21px 20px 0;
+                padding: 0 20px;
+
                 & > .tit {
                     font-family: var(--font3);
                     font-size: 14px;
@@ -126,7 +128,9 @@
                     letter-spacing: -0.35px;
                     color: var(--text-01);
                     margin-bottom: 7px;
+                    padding-top: 21px;
                 }
+
                 & > .desc {
                     font-size: 13px;
                     line-height: 21px;
@@ -135,10 +139,12 @@
                     color: var(--text-02);
                     margin-bottom: 17px;
                 }
+
                 & > .checkbox {
                     border-bottom: 1px solid var(--text-01);
                     padding-bottom: 20px;
                 }
+
                 & > .cont {
                     & .list-body {
                         width: 100%;
@@ -190,16 +196,169 @@
                         }
                     }
                 }
+
+                & > .info-tit {
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: -0.35px;
+                    color: var(--text-01);
+                    padding-top: 20px;
+                    padding-bottom: 14px;
+                    border-bottom: 1px solid var(--text-01);
+                }
+
+                & > .info-list {
+                    & ul {
+                        & .item {
+                            position: relative;
+                            width: 100%;
+                            height: 80px;
+                            border-bottom: 1px solid #f5f6f8;
+
+                            &:last-child {
+                                border-bottom: 0;
+                            }
+
+                            & .info {
+                                display: flex;
+                                height: 100%;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                & .tit {
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    line-height: 19px;
+                                    letter-spacing: -0.33px;
+                                    margin-bottom: 3px;
+                                }
+
+                                & .num {
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.33;
+                                    letter-spacing: -0.3px;
+                                    text-align: left;
+                                    color: var(--text-03);
+                                }
+                            }
+
+                            & > label {
+                                position: absolute;
+                                width: calc(100% + 40px);
+                                height: 100%;
+                                right: -20px;
+                                top: 0;
+                                padding-left: 100%;
+                                padding-top: 25px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
+
+    & > .security-area {
+        & .desc {
+            margin-bottom: 40px;
+
+            & .ico-lock {
+                display: inline-block;
+                width: 13px;
+                height: 14px;
+                margin-right: 5px;
+                vertical-align: middle;
+                background-image: url(../../img/common/ico-lock.svg);
+                background-size: cover;
+            }
+
+            & .txt {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.3px;
+                color: var(--color-point);
+            }
+        }
+        & .custom-light {
+            & input {
+                margin-right: 0;
+            }
+        }
+    }
+
 }
 
-.my-data-btn {
+.my-data-completed {
+    padding-top: 131px;
+
+    & .img {
+        display: block;
+        width: 200px;
+        height: 90px;
+        margin: 0 auto 24px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .txt {
+        font-family: var(--font2);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: -0.38px;
+        text-align: center;
+        color: var(--text-01);
+    }
+}
+
+.my-data-connected {
+    padding-top: 131px;
+
+    & .img {
+        display: block;
+        width: 200px;
+        height: 90px;
+        margin: 0 auto 24px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .tit-lg {
+        font-family: var(--font3);
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 25px;
+        letter-spacing: -0.43px;
+        text-align: center;
+        color: var(--text-01);
+        margin-bottom: 12px;
+    }
+    & .tit-md {
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: -0.38px;
+        text-align: center;
+        color: var(--text-01);
+    }
+}
+
+.my-data-btn-fixed {
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 5;
 
     & .btn {
         width: 100%;
@@ -213,4 +372,13 @@
         letter-spacing: -0.38px;
         color: #fff;
     }
+}
+
+.my-data-btn-absolute {
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px;
 }

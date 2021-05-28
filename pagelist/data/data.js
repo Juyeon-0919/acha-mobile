@@ -1,6 +1,6 @@
 var data = {}
-data.renewal = {
-    'title': 'renewal 2.0',
+data.input = {
+    'title': '추가하기(직접입력)',
     'list': [
         {
             'stateClass': 'complete',
@@ -44,6 +44,147 @@ data.renewal = {
             'category': 'renewal 2.0',
             'page': '03.입력완료_1.2연 단위 입력 시(01_메인)'
         }
+    ]
+};
+data.my = {
+    'title': 'My',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '01_my_01',
+            'category': 'My',
+            'page': '연결정보, 직접입력 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_02',
+            'category': 'My',
+            'page': '직접입력만 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_03',
+            'category': 'My',
+            'page': '연결정보 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_04',
+            'category': 'My',
+            'page': '연결정보 데이터 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_05',
+            'category': 'My',
+            'page': '전송요구내역 변경'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_06',
+            'category': 'My',
+            'page': '철회 안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_07',
+            'category': 'My',
+            'page': '고정지출 설정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_popup_01',
+            'category': 'My',
+            'page': '프로필 사진 설정 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_my_popup_02',
+            'category': 'My',
+            'page': '연걀철회 확인 팝업'
+        },
+    ]
+};
+data.calendar = {
+    'title': '캘린더',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '01_calendar_01',
+            'category': 'calendar',
+            'page': '캘린더'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_calendar_02',
+            'category': 'calendar',
+            'page': '캘린더 (표시할 데이터가 없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_calendar_popup_01',
+            'category': 'calendar',
+            'page': '캘린더'
+        },
+    ]
+};
+data.mydata = {
+    'title': '마이데이터 연결',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_01',
+            'category': 'mydata',
+            'page': '통합인증 약관동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_02',
+            'category': 'mydata',
+            'page': '전송요구 내역 확인'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_03',
+            'category': 'mydata',
+            'page': '개인신용정보 전송요구'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_04',
+            'category': 'mydata',
+            'page': '보유계좌(상품) 목록 전송요구 완료'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_05',
+            'category': 'mydata',
+            'page': '개인신용정보 선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_06',
+            'category': 'mydata',
+            'page': '전송요구내역 확인'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_07',
+            'category': 'mydata',
+            'page': '통합인증 완료'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_08',
+            'category': 'mydata',
+            'page': '전송요구내역 선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_09',
+            'category': 'mydata',
+            'page': '개별인증'
+        },
     ]
 };
 data.tax2 = {
