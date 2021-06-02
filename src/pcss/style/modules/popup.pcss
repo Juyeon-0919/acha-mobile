@@ -940,6 +940,49 @@
                 letter-spacing: -0.33px;
             }
         }
+
+        & .modal-footer {
+            padding: 0;
+            margin: 0;
+
+            & > :not(:last-child) {
+                margin-right: 0;
+            }
+
+            & .btn-footer {
+                display: inline-block;
+                float: left;
+                width: 50%;
+                text-align: center;
+                color: #ffffff;
+                line-height: 42px;
+                letter-spacing: -.6px;
+                font-size: 12px;
+                font-family: var(--font1);
+                background-color: var(--blurple);
+                margin-left: 0;
+
+                &.bg-grey {
+                    background-color: var(--text-03);
+                }
+
+                &.single {
+                    width: 100% !important;
+                    background-color: var(--blurple);
+                }
+            }
+        }
+    }
+
+    &.modal-sm {
+        & .modal-dialog {
+            width: 270px;
+            max-width: 270px !important;
+
+            & .modal-content {
+                width: 270px;
+            }
+        }
     }
 }
 
@@ -1367,5 +1410,11 @@
             animation: modal-sticky-bottom-animation-out .5s;
             height: 0;
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-sm {
+        max-width: 100%;
     }
 }

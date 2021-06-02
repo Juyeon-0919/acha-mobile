@@ -231,9 +231,22 @@ front.common = (function () {
                     $(this).parent().siblings().find($('._btnOpen')).html(`펼치기<i class="sprite arrow_folding_on"></i>`);
                 }
             })
+
+            // 카드 비율 유지
+            var winWidth = $(window).width();
+            var box =  $('.main-card-empty');
+            var boxWidth = box.width();
+
+            box.height(boxWidth*0.539);
+
+            $(window).resize(function(){
+                var box =  $('.main-card-empty');
+                var boxWidth = box.width();
+
+                box.height(boxWidth*0.539);
+            });
         })
     };
-
 
     return {
         a,

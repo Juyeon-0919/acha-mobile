@@ -4,43 +4,43 @@ data.input = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '02_Input_list_01',
+            'url': '01_Input_list_01',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 전)'
         },
         {
             'stateClass': 'complete',
-            'url': '02_Input_list_02',
+            'url': '01_Input_list_02',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 후)'
         },  {
             'stateClass': 'complete',
-            'url': '02_Input_list_03',
+            'url': '01_Input_list_03',
             'category': 'renewal 2.0',
             'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(02_카테고리 아이콘 설정)'
         }, {
             'stateClass': 'complete',
-            'url': '02_Input_list_04',
+            'url': '01_Input_list_04',
             'category': 'renewal 2.0',
             'page': '04.직접입력 상세'
         },  {
             'stateClass': 'complete',
-            'url': '02_Input_list_popup_01',
+            'url': '01_Input_list_popup_01',
             'category': 'renewal 2.0',
             'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(01_카테고리 생성 팝업)'
         },  {
             'stateClass': 'complete',
-            'url': '02_Input_list_popup_02',
+            'url': '01_Input_list_popup_02',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.6필수입력 값(01_필수입력값 미입력 시)'
         }, {
             'stateClass': 'complete',
-            'url': '02_Input_list_popup_03',
+            'url': '01_Input_list_popup_03',
             'category': 'renewal 2.0',
             'page': '02.입력목록_1.6필수입력 값(02_지출금액 0원 입력 시)'
         },{
             'stateClass': 'complete',
-            'url': '02_Input_list_popup_04',
+            'url': '01_Input_list_popup_04',
             'category': 'renewal 2.0',
             'page': '03.입력완료_1.2연 단위 입력 시(01_메인)'
         }
@@ -51,55 +51,55 @@ data.my = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '01_my_01',
+            'url': '02_my_01',
             'category': 'My',
             'page': '연결정보, 직접입력 없는 경우'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_02',
+            'url': '02_my_02',
             'category': 'My',
             'page': '직접입력만 있는 경우'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_03',
+            'url': '02_my_03',
             'category': 'My',
             'page': '연결정보 있는 경우'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_04',
+            'url': '02_my_04',
             'category': 'My',
             'page': '연결정보 데이터 있는 경우'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_05',
+            'url': '02_my_05',
             'category': 'My',
             'page': '전송요구내역 변경'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_06',
+            'url': '02_my_06',
             'category': 'My',
             'page': '철회 안내'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_07',
+            'url': '02_my_07',
             'category': 'My',
             'page': '고정지출 설정'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_popup_01',
+            'url': '02_my_popup_01',
             'category': 'My',
             'page': '프로필 사진 설정 팝업'
         },
         {
             'stateClass': 'complete',
-            'url': '01_my_popup_02',
+            'url': '02_my_popup_02',
             'category': 'My',
             'page': '연걀철회 확인 팝업'
         },
@@ -110,19 +110,19 @@ data.calendar = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '01_calendar_01',
+            'url': '03_calendar_01',
             'category': 'calendar',
             'page': '캘린더'
         },
         {
             'stateClass': 'complete',
-            'url': '01_calendar_02',
+            'url': '03_calendar_02',
             'category': 'calendar',
             'page': '캘린더 (표시할 데이터가 없는 경우)'
         },
         {
             'stateClass': 'complete',
-            'url': '01_calendar_popup_01',
+            'url': '03_calendar_popup_01',
             'category': 'calendar',
             'page': '캘린더'
         },
@@ -184,6 +184,29 @@ data.mydata = {
             'url': '04_my_data_09',
             'category': 'mydata',
             'page': '개별인증'
+        },
+    ]
+};
+data.mycard = {
+    'title': '내카드',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_01',
+            'category': 'mycard',
+            'page': '연결한 데이터가 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_02',
+            'category': 'mycard',
+            'page': '연결한 데이터가 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_popup_01',
+            'category': 'mycard',
+            'page': '실적 산정 안내 팝업'
         },
     ]
 };

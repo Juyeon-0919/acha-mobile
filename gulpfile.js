@@ -81,15 +81,13 @@ function htmlPage() {
 }
 
 function copyImg() {
-    return gulp.src('src/img/**/**')
-        .pipe(gulp.dest('dist/img'));
+    return gulp.src('src/img/**/**').pipe(gulp.dest('dist/img'));
 }
 
 function copyFonts() {
     return gulp.src('src/fonts/**/**')
         .pipe(gulp.dest('dist/fonts'));
 }
-
 
 function jsLib() {
     let sourceLib = [
@@ -109,6 +107,8 @@ function jsLib() {
         'src/js/lib/Chart.min.js',
         'src/js/lib/chartjs-plugin-datalabels.js',
         'src/js/lib/chartjs-plugin-annotation.min.js',
+
+        'src/js/lib/swiper.min.js',
     ];
     return gulp.src(sourceLib)
         .pipe(concat('front.lib.js'))
@@ -121,8 +121,9 @@ function jsCommon() {
         .pipe(concat('front.common.js'))
         .pipe(gulp.dest('dist/js/ui'))
 }
-
-gulp.task("release", gulp.series(pcss, copyImg, copyFonts, jsLib, jsCommon, htmlInclude, htmlPage));
+function watchImage() {
+    gulp.watch(['src/img/*/*.png','src/img/*/*.svg'], gulp.series(copyImg));
+}
 
 function watchPcss() {
     gulp.watch('src/pcss/*/*/*.pcss', gulp.series(pcss));
@@ -139,12 +140,14 @@ function watchInclude() {
 function watchJs() {
     gulp.watch('src/js/*/*.js', gulp.series(jsLib, jsCommon));
 }
+gulp.task("release", gulp.series(pcss, copyImg, copyFonts, jsLib, jsCommon, htmlInclude, htmlPage));
 
 gulp.task("watchCss", watchPcss);
 gulp.task("watchHtml", watchHtml);
 gulp.task("watchInclude", watchInclude);
 gulp.task("watchJs", watchJs);
 
+gulp.task("watchImage", gulp.series(watchImage, watchPcss, watchHtml, watchInclude, watchJs));
 
 gulp.task('htmlbeautify', function () {
     var options = {
