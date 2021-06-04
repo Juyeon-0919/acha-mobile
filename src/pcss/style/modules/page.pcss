@@ -185,6 +185,7 @@
                 letter-spacing: -0.33px;
                 vertical-align: top;
             }
+
             & .ic-new {
                 display: inline-block;
                 width: 14px;
@@ -196,7 +197,7 @@
             }
         }
 
-        & >.desc {
+        & > .desc {
             font-family: var(--font2);
             font-size: 11px;
             line-height: 21px;
@@ -219,7 +220,7 @@
             color: #737183;
         }
 
-        & >.custom-switch {
+        & > .custom-switch {
             top: 17px;
         }
 
@@ -244,6 +245,7 @@
             padding: 16px 18px 20px;
             background-color: #f7f8fc;
             margin-top: 20px;
+
             & .desc {
                 font-size: 11px;
                 line-height: 17px;
@@ -251,12 +253,15 @@
                 color: var(--text-point-color);
                 margin-bottom: 14px;
             }
-            &>.item {
+
+            & > .item {
                 position: relative;
                 margin-bottom: 16px;
+
                 & .custom-switch {
                     top: -3px !important;
                 }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -289,13 +294,16 @@
                     color: #9b9aa6;
                 }
             }
+
             & .btn_more {
                 height: 67px;
             }
+
             & .box-switch {
                 margin-top: 12px;
                 width: 120px;
                 transform: none;
+
                 & a {
                     width: 60px;
                 }
@@ -385,7 +393,7 @@
 
             & .card-header {
                 margin-bottom: 0;
-                padding:0;
+                padding: 0;
 
                 & .title {
                     position: relative;
@@ -614,6 +622,7 @@
         & .card-header {
             & .question {
                 padding-left: 4px;
+
                 &::before {
                     content: none;
                 }
@@ -666,6 +675,7 @@
 .withdrawal {
     padding: 10px 20px 45px;
     margin-bottom: 33px;
+
     & .title_list {
         margin-bottom: 28px;
         padding-top: 1px;
@@ -978,7 +988,8 @@
 
 .dropdown-wrap {
     padding: 0 20px 0;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+
     & .dropdown {
         & .dropdown-toggle {
             position: relative;
@@ -992,10 +1003,16 @@
             text-align: left;
             font-size: 13px;
             letter-spacing: -.33px;
+
+            &[aria-expanded="true"] {
+                background-color: #f5f6f8;
+            }
+
             &:focus, &:hover, &:active {
                 color: var(--text-01);
                 box-shadow: none;
             }
+
             &::after {
                 position: absolute;
                 display: block;
@@ -1008,11 +1025,17 @@
                 top: 9px;
             }
         }
+
         & .dropdown-menu {
             max-height: 421px;
-            overflow-y: scroll;
+            overflow-y: auto;
             min-width: auto;
             width: 115px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+            border: solid 1px #e2e3e6;
+            background-color: var(--white);
+
             & .dropdown-item {
                 font-size: 13px;
                 line-height: 36px;
@@ -1027,10 +1050,11 @@
 
     & .title {
         font-size: 16px;
+        font-family: var(--font3);
         font-weight: bold;
         line-height: 29px;
         letter-spacing: -0.5px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     & .title-lg {
@@ -1044,17 +1068,19 @@
 
     & .title-sm {
         font-family: var(--font2);
+        font-weight: 500;
         font-size: 12px;
         line-height: 22px;
         letter-spacing: -0.38px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     & .content {
         font-size: 12px;
-        line-height: 23px;
-        letter-spacing: -0.35px;
-        margin-bottom: 20px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        margin-bottom: 25px;
+        color: #5c5a6f;
     }
 
     & .color-grey {
@@ -1063,6 +1089,7 @@
 
     & .t-table {
         margin-bottom: 30px;
+
         & .table {
             & thead {
                 & tr {
@@ -1078,6 +1105,7 @@
                     }
                 }
             }
+
             & tbody {
                 & tr {
                     & td {
@@ -1095,6 +1123,7 @@
                         }
                     }
                 }
+
                 &.font-small {
                     & tr {
                         & td {
@@ -1112,8 +1141,10 @@
     .dropdown-wrap {
         padding: 100px 20px 0;
         margin: 0 auto;
+
         & .dropdown {
             margin-bottom: 50px;
+
             & .dropdown-toggle {
                 width: 150px;
                 height: 42px;
@@ -1129,11 +1160,13 @@
                     top: 9px;
                 }
             }
+
             & .dropdown-menu {
                 max-height: 421px;
                 overflow-y: scroll;
                 min-width: auto;
                 width: 150px;
+
                 & .dropdown-item {
                     font-size: 16px;
                     line-height: 42px;
@@ -1168,6 +1201,7 @@
             font-size: 16px;
             line-height: 26px;
         }
+
         & .t-table {
             & .table {
                 & tbody {
@@ -1188,6 +1222,7 @@
         width: 1060px;
         padding: 150px 0 0;
     }
+
     .terms_of_service {
         padding: 0 0 30px 0;
         width: 1060px;
@@ -1219,6 +1254,7 @@
                         }
                     }
                 }
+
                 & tbody {
                     & tr {
                         & td {
@@ -1615,6 +1651,7 @@
                 left: 1px;
             }
         }
+
         &.mb {
             margin-bottom: 33px;
         }
@@ -1622,6 +1659,7 @@
 
     &.box_tax_sub_lg {
         padding-top: 36px;
+
         & .btn-area {
             padding-bottom: 40px;
         }
@@ -1660,6 +1698,7 @@
             border: 1px solid #f5f6f8;
             margin-right: 7px;
             margin-bottom: 7px;
+
             & a {
                 display: block;
                 padding: 20px 0 22px;
@@ -1705,6 +1744,7 @@
                 }
 
             }
+
             &:last-child {
                 margin-right: 0;
             }
@@ -2029,6 +2069,7 @@
     & .item-radio {
         display: block;
         margin-bottom: 40px;
+
         &.single {
             margin-bottom: 20px;
         }
@@ -2399,27 +2440,34 @@
         padding-left: 5px;
         padding-right: 5px;
     }
+
     .box_guide .info-guide .statement > .item .table tbody tr.line-2 td span {
         font-size: 10px;
     }
+
     .box_guide .info-guide .statement > .item .table tbody tr.line-2 td {
         font-size: 10px;
         padding: 0 5px;
     }
+
     .box_guide .info-guide .statement > .item .table tbody tr td {
         font-size: 10px;
     }
+
     .v-table tbody tr td {
         font-size: 10px !important;
     }
+
     .v-table thead tr th span {
         font-size: 10px;
         padding: 0 0 0 5px !important;
     }
+
     .v-table tbody tr td span {
         font-size: 10px;
     }
 }
+
 /*
   E 아이폰5/SE 대응
 */

@@ -208,8 +208,147 @@ data.mycard = {
             'category': 'mycard',
             'page': '실적 산정 안내 팝업'
         },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03',
+            'category': 'mycard',
+            'page': '상세화면'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_popup_02',
+            'category': 'mycard',
+            'page': '실적 직접등록 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_popup_03',
+            'category': 'mycard',
+            'page': '실적 직접등록 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_04',
+            'category': 'mycard',
+            'page': '카드 결제예정 정보'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_popup_04',
+            'category': 'mycard',
+            'page': '실적 산정 안내 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_popup_05',
+            'category': 'mycard',
+            'page': '실적 산정 안내 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_05',
+            'category': 'mycard',
+            'page': '자동결제내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_06',
+            'category': 'mycard',
+            'page': '자동결제내역 데이터가 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_07',
+            'category': 'mycard',
+            'page': '어드민에 등록한 혜택 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_08',
+            'category': 'mycard',
+            'page': '어드민에 등록한 혜택 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_09',
+            'category': 'mycard',
+            'page': '혜택 직접입력/수정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_popup_06',
+            'category': 'mycard',
+            'page': '실적 산정 안내 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_10',
+            'category': 'mycard',
+            'page': '맵핑된 카드 있을 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_11',
+            'category': 'mycard',
+            'page': '맵핑된 카드 없을 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_12',
+            'category': 'mycard',
+            'page': '내 카드 찾기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_13',
+            'category': 'mycard',
+            'page': '카드사별 검색'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_14',
+            'category': 'mycard',
+            'page': '내 카드 편집'
+        },
     ]
 };
+data.signIn = {
+    'title': '회원가입',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_01',
+            'category': '회원가입',
+            'page': '본인확인 안내'
+        }, {
+            'stateClass': 'complete',
+            'url': '06_sign_in_02',
+            'category': '회원가입',
+            'page': '약관동의'
+        }, {
+            'stateClass': 'complete',
+            'url': '06_sign_in_03',
+            'category': '회원가입',
+            'page': '약관상세'
+        }, {
+            'stateClass': 'complete',
+            'url': '06_sign_in_04',
+            'category': '회원가입',
+            'page': '정보입력'
+        }, {
+            'stateClass': 'complete',
+            'url': '06_sign_in_05',
+            'category': '회원가입',
+            'page': '비밀번호 설정 안내'
+        },
+    ]
+};
+
+
+
+
+
+
 data.tax2 = {
     'title': '연말정산 TIP_21.01 개편',
     'list': [
