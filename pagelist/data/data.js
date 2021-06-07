@@ -101,7 +101,7 @@ data.my = {
             'stateClass': 'complete',
             'url': '02_my_popup_02',
             'category': 'My',
-            'page': '연걀철회 확인 팝업'
+            'page': '연결철회 확인 팝업'
         },
     ]
 };
@@ -343,7 +343,137 @@ data.signIn = {
         },
     ]
 };
-
+data.taxRenewal = {
+    'title': '연말정산',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '07_tax_01',
+            'category': '연말정산',
+            'page': '메인_데이터 없는 경우'
+        },  {
+            'stateClass': 'complete',
+            'url': '07_tax_02',
+            'category': '연말정산',
+            'page': '메인_연결 후 항목'
+        },  {
+            'stateClass': 'complete',
+            'url': '07_tax_03',
+            'category': '연말정산',
+            'page': '데이터가 없는 경우'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_popup_01',
+            'category': '연말정산',
+            'page': '소득정보 미입력 시 상세화면'
+        },  {
+            'stateClass': 'complete',
+            'url': '07_tax_04',
+            'category': '연말정산',
+            'page': '데이터 연결 로딩'
+        },  {
+            'stateClass': 'complete',
+            'url': '07_tax_05',
+            'category': '연말정산',
+            'page': '교육비 세액공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_18',
+            'category': '연말정산',
+            'page': '교육비 세액공제란?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_06',
+            'category': '연말정산',
+            'page': '의료비 세액공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_19',
+            'category': '연말정산',
+            'page': '의료비 세액공제란?'
+        },  {
+            'stateClass': 'complete',
+            'url': '07_tax_07',
+            'category': '연말정산',
+            'page': '기부금 세액공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_08',
+            'category': '연말정산',
+            'page': '카드/현금 소득공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_09',
+            'category': '연말정산',
+            'page': '신용카드 등 소득공제란?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_10',
+            'category': '연말정산',
+            'page': '개인연금저축 소득공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_11',
+            'category': '연말정산',
+            'page': '개인연금저축 소득공제란?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_12',
+            'category': '연말정산',
+            'page': '연금계좌 세액공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_13',
+            'category': '연말정산',
+            'page': '연금계좌 세액공제란?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_14',
+            'category': '연말정산',
+            'page': '주택자금 소득공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_15',
+            'category': '연말정산',
+            'page': '주택마련저축 소득공제란?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_16',
+            'category': '연말정산',
+            'page': '보험료 세액공제'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_17',
+            'category': '연말정산',
+            'page': '보험료 세액공제란?'
+        },{
+            'stateClass': 'complete',
+            'url': '07_tax_20',
+            'category': '연말정산',
+            'page': '기부금 세액공제란?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_21',
+            'category': '연말정산',
+            'page': '13월의 월급 계산법은?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_22',
+            'category': '연말정산',
+            'page': '2020연말정산 달라진 점은?'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_23',
+            'category': '연말정산',
+            'page': '금융상품으로 세테크!'
+        }, {
+            'stateClass': 'complete',
+            'url': '07_tax_24',
+            'category': '연말정산',
+            'page': '편집'
+        },
+    ]
+};
 
 
 

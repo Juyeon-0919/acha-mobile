@@ -754,7 +754,7 @@ common
 */
 
 .sprite.arrow_main_top_b_nor {
-    background-image: url("../../img/sprite/common/arrow_main_top_b_nor@3x.png");
+    background-image: url("../../img/sprite/common/arrow_main_top_b_nor@2x.png");
     width: 13px;
     height: 13px;
 }

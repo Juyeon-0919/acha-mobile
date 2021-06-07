@@ -12432,7 +12432,7 @@ common
 */
 
 .sprite.arrow_main_top_b_nor {
-    background-image: url("../../img/sprite/common/arrow_main_top_b_nor@3x.png");
+    background-image: url("../../img/sprite/common/arrow_main_top_b_nor@2x.png");
     width: 13px;
     height: 13px;
 }
@@ -13503,8 +13503,8 @@ input.custom:focus {
     }
 
 .title_area .title {
-        font-family: 'Noto Sans CJK KR Regular';
-        font-family: var(--font1);
+        font-family: 'Noto Sans CJK KR Bold';
+        font-family: var(--font3);
         font-size: 18px;
         line-height: 28px;
         letter-spacing: -.45px;
@@ -17465,8 +17465,12 @@ input.custom:focus {
         }
 
 .modal.modal-sm .modal-dialog .modal-content {
-                width: 270px;
+                width: 270px
             }
+
+.modal.modal-sm .modal-dialog .modal-content .modal-header {
+                    border-bottom: 0;
+                }
 
 @-webkit-keyframes modal-fade-animation {
     from { opacity: 0; }
@@ -24532,6 +24536,8 @@ textarea.custom:focus {
             line-height: 20px;
             letter-spacing: -0.33px;
             text-align: left;
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             color: #737183;
             color: var(--text-02)
         }
@@ -24625,8 +24631,13 @@ textarea.custom:focus {
                 line-height: 20px;
                 letter-spacing: -0.33px;
                 color: #737183;
-                color: var(--text-02);
+                color: var(--text-02)
             }
+
+.box_guide .info-guide .desc_area .desc .primary {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                }
 
 .box_guide .info-guide .statement {
             border-bottom: 1px solid #e3e4e8;
@@ -24646,7 +24657,9 @@ textarea.custom:focus {
 .box_guide .info-guide .statement > .item .table thead tr th {
                                 height: 28px;
                                 line-height: 26px;
-                                font-size: 11px
+                                font-size: 11px;
+                                font-family: 'Noto Sans CJK KR Medium';
+                                font-family: var(--font2)
                             }
 
 .box_guide .info-guide .statement > .item .table thead tr th.crossed {
@@ -24683,6 +24696,8 @@ textarea.custom:focus {
 
 .box_guide .info-guide .statement > .item .table tbody tr td {
                                 height: 34px;
+                                font-family: 'Noto Sans CJK KR Regular';
+                                font-family: var(--font1);
                                 color: #737183;
                                 color: var(--text-02)
                             }
@@ -24908,6 +24923,11 @@ textarea.custom:focus {
                         color: var(--text-02);
                         margin-bottom: 6px
                     }
+
+.box_guide .info-guide .statement .d-list ul li .primary {
+                            font-family: 'Noto Sans CJK KR Medium';
+                            font-family: var(--font2);
+                        }
 
 .box_guide .info-guide .statement .d-list ul li:last-child {
                             margin-bottom: 0;
@@ -25189,11 +25209,12 @@ textarea.custom:focus {
 
 .box_tax_home {
     position: relative;
-    height: 113px
+    padding-top: 30px
 }
 
 .box_tax_home .title_area {
-        padding-left: 28px
+        padding-left: 28px;
+        margin-bottom: 0
     }
 
 .box_tax_home .title_area .tit {
@@ -25244,12 +25265,8 @@ textarea.custom:focus {
                 color: #37354e;
                 color: var(--text-01);
                 margin-left: 4px;
-                transform: translateY(-2px)
+                transform: translateY(-2px);
             }
-
-.box_tax_home .title_area .val em i {
-                    transform: translateY(-3px);
-                }
 
 .box_tax_home .title_area .badge {
             display: inline-block;
@@ -25258,13 +25275,12 @@ textarea.custom:focus {
             border: 1px solid #e2e3e6;
             text-align: center;
             font-size: 11px;
-            font-weight: 'Noto Sans CJK KR Regular';
-            font-weight: var(--font1);
             line-height: 20px;
             letter-spacing: -0.28px;
             color: #9b9aa6;
             color: var(--text-03);
             border-radius: 11px;
+            margin-bottom: 20px;
         }
 
 .box_tax_home .title_area .badge-lg {
@@ -25281,7 +25297,8 @@ textarea.custom:focus {
             font-weight: 500;
             letter-spacing: -.65px;
             font-size: 13px;
-            margin-top: 6px
+            margin-top: 6px;
+            margin-bottom: 48px
         }
 
 .box_tax_home .title_area .badge-lg i {
@@ -25294,7 +25311,7 @@ textarea.custom:focus {
         width: 86px;
         height: 72px;
         right: 26px;
-        top: 0
+        top: 30px
     }
 
 .box_tax_home .img_area img {
@@ -25318,6 +25335,27 @@ textarea.custom:focus {
 .box_tax_category {
     padding: 0 20px
 }
+
+.box_tax_category > .title-lg {
+        font-family: 'Noto Sans CJK KR Bold';
+        font-family: var(--font3);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 27px;
+        letter-spacing: -0.18px;
+        text-align: left;
+        color: #6839d3;
+        color: var(--blurple);
+        margin-top: 20px
+    }
+
+.box_tax_category > .title-lg em {
+            color: #37354e;
+            color: var(--text-01);
+            border-bottom: 1px solid #37354e;
+            border-bottom: 1px solid var(--text-01);
+            padding-bottom: 1px;
+        }
 
 .box_tax_category .event-banner {
         position: relative;
@@ -25375,8 +25413,32 @@ textarea.custom:focus {
         letter-spacing: -0.35px;
         color: #737183;
         color: var(--text-02);
-        margin: 20px 0 3px;
+        margin: 20px 0 15px;
     }
+
+.box_tax_category .list.info {
+        padding-left: 16px;
+        font-size: 11px;
+        line-height: 17px;
+        letter-spacing: -0.28px;
+        text-align: left;
+        color: #9b9aa6;
+        color: var(--text-03);
+        margin-top: 0;
+        margin-bottom: 15px
+    }
+
+.box_tax_category .list.info::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-image: url(../../img/common/ico-caution@2x.png);
+            background-size: cover;
+            top: 3px;
+            left: 0;
+            background-color: transparent;
+        }
 
 .box_tax_category .list.caution {
         padding-left: 0;
@@ -25432,6 +25494,18 @@ textarea.custom:focus {
                     padding: 30px 0
                 }
 
+.box_tax_category ul li.event .tit-lg.line-2 {
+                        padding: 20px 0
+                    }
+
+.box_tax_category ul li.event .tit-lg.line-2 span:last-child i {
+                                    transform: translateY(17px);
+                                }
+
+.box_tax_category ul li.event .tit-lg.line-2 span:first-child .badge-new {
+                                    top: 27px;
+                                }
+
 .box_tax_category ul li.event .tit-lg span {
                         font-size: 18px;
                         line-height: 28px;
@@ -25454,7 +25528,7 @@ textarea.custom:focus {
 
 .box_tax_category ul li.event .tit-lg span:first-child .badge-new {
                                 position: absolute;
-                                right: -17px;
+                                right: -20px;
                                 top: 0;
                             }
 
@@ -25473,6 +25547,8 @@ textarea.custom:focus {
                         line-height: 24px;
                         letter-spacing: -0.4px;
                         text-align: left;
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
                         color: #37354e;
                         color: var(--text-01)
                     }
@@ -25502,8 +25578,8 @@ textarea.custom:focus {
 
 .box_tax_category ul li .tit-lg span:last-child em::after {
                                 content: '원';
-                                font-family: 'Noto Sans CJK KR Regular';
-                                font-family: var(--font1);
+                                font-family: 'Noto Sans CJK KR Bold';
+                                font-family: var(--font3);
                                 font-size: 14px;
                                 letter-spacing: -.35px;
                             }
@@ -26046,12 +26122,13 @@ textarea.custom:focus {
                         display: inline-block;
                         padding: 0 10px;
                         height: 25px;
-                        line-height: 23px;
+                        line-height: 25px;
                         border-radius: 50px;
                         border: 1px solid #6839d3;
                         color: #6839d3;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+                        font-family: 'Roboto';
+                        font-family: var(--font4);
+                        font-weight: bold;
                         font-size: 12px;
                         letter-spacing: -.3px;
                         text-align: center;
@@ -26257,6 +26334,8 @@ textarea.custom:focus {
         }
 
 .box_tax_sub.ver2 .sec-deduct .area-title .title {
+                    font-family: 'Noto Sans CJK KR Bold';
+                    font-family: var(--font3);
                     margin-bottom: 0;
                 }
 
@@ -26428,7 +26507,7 @@ textarea.custom:focus {
                         }
 
 .box_tax_sub.ver2 .chart_graph .sort .bar .amount .tooltip_box .tooltip_text::after {
-                                    bottom: -4px;
+                                    bottom: -5px;
                                     transform: rotate(175deg);
                                 }
 
@@ -26455,7 +26534,7 @@ textarea.custom:focus {
                                         background-image: url(../../img/common/tooltip_shot_dark.png);
                                         background-size: cover;
                                         width: 8px;
-                                        height: 5.5px;
+                                        height: 5px;
                                         transform: none;
                                     }
 
@@ -26466,6 +26545,7 @@ textarea.custom:focus {
                 text-align: right;
                 color: #737183;
                 color: var(--text-02);
+                margin-top: 10px;
             }
 
 .box_tax_sub.ver2 > .list.caution {
@@ -26475,6 +26555,8 @@ textarea.custom:focus {
 .box_tax_sub.ver2 > .list.caution p {
                     color: #9b9aa6;
                     color: var(--text-03);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                 }
 
 .box_tax_sub.ver2 .list-connect {
@@ -26647,6 +26729,34 @@ textarea.custom:focus {
             font-size: 18px;
         }
 
+.tax-loading {
+    padding-top: 131px;
+    padding-bottom: 100px
+}
+
+.tax-loading .img {
+        width: 200px;
+        height: 90px;
+        margin: 0 auto 24px
+    }
+
+.tax-loading .img img {
+            width: 100%;
+            height: 100%;
+        }
+
+.tax-loading .txt {
+        font-family: 'Noto Sans CJK KR Medium';
+        font-family: var(--font2);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: -0.38px;
+        text-align: center;
+        color: #37354e;
+        color: var(--text-01);
+    }
+
 .mb-20 {
     margin-bottom: 20px !important;
 }
@@ -26669,38 +26779,39 @@ textarea.custom:focus {
 
 /*  팝업  */
 
-.popup-normal.popup_tax_tip {
-        width: 270px
-    }
-
-.popup-normal.popup_tax_tip .popup-header {
-            height: 48px
+.modal-tax .modal-dialog .modal-content {
+            border-radius: 0
         }
 
-.popup-normal.popup_tax_tip .popup-header .btn-close {
-                top: 13px;
+.modal-tax .modal-dialog .modal-content .btn-close {
+                top: 15px;
+                right: 15px;
             }
 
-.popup-normal.popup_tax_tip .popup-body {
-            padding: 0 0 46px 0
+.modal-tax .modal-dialog .modal-body {
+            padding: 16px 0
         }
 
-.popup-normal.popup_tax_tip .popup-body p {
-                font-size: 14px;
-                line-height: 23px;
-                letter-spacing: -0.35px;
-                text-align: center
+.modal-tax .modal-dialog .modal-body .inner {
+                padding: 0
             }
 
-.popup-normal.popup_tax_tip .popup-body p span {
-                    font-size: 16px;
-                    font-family: 'Noto Sans CJK KR Medium';
-                    font-family: var(--font2);
-                    font-weight: 500;
-                    letter-spacing: -0.4px;
-                    color: #6839d3;
-                    color: var(--text-point-color);
+.modal-tax .modal-dialog .modal-body .inner p {
+                    font-size: 14px;
+                    line-height: 23px;
+                    letter-spacing: -0.35px;
+                    text-align: center
                 }
+
+.modal-tax .modal-dialog .modal-body .inner p span {
+                        font-size: 16px;
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        font-weight: 500;
+                        letter-spacing: -0.4px;
+                        color: #6839d3;
+                        color: var(--text-point-color);
+                    }
 
 .popupNormal.home-tax {
     background-color: #fff;
@@ -26784,7 +26895,7 @@ textarea.custom:focus {
         }
 
 .box_tax_guide .text .small {
-            font-size: 10px;
+            font-size: 11px;
             font-family: 'Noto Sans CJK KR Regular';
             font-family: var(--font1);
             letter-spacing: -.25px;
@@ -26810,15 +26921,24 @@ textarea.custom:focus {
     }
 
 .box_tax_guide .text-lg {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
         font-family: 'Noto Sans CJK KR Bold';
         font-family: var(--font3);
-        line-height: 27px;
+        line-height: 32px;
         letter-spacing: -0.45px;
         color: #37354e;
         color: var(--text-01);
+        margin-bottom: 25px
     }
+
+.box_tax_guide .text-lg .primary {
+            color: #6839d3;
+            color: var(--blurple);
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
+            line-height: 32px;
+        }
 
 .box_tax_guide img {
         width: 100%;
@@ -26832,15 +26952,18 @@ textarea.custom:focus {
     }
 
 @media (max-width: 355px) {
-        .box_tax_guide .img {
-            width: 280px;
-        }
     .expenditure-report-wrap .open-report {
         padding: 20px 20px 30px;
     }
     .expenditure-report-wrap .open-report .list.caution {
         margin-bottom: 0;
     }
+}
+
+@media (max-width: 370px) {
+        .box_tax_guide .img {
+            width: 280px;
+        }
 }
 
 /*

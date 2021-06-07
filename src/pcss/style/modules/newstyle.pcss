@@ -4750,6 +4750,7 @@ textarea.custom {
             line-height: 20px;
             letter-spacing: -0.33px;
             text-align: left;
+            font-family: var(--font1);
             color: var(--text-02);
 
             & .text-color {
@@ -4831,6 +4832,10 @@ textarea.custom {
                 line-height: 20px;
                 letter-spacing: -0.33px;
                 color: var(--text-02);
+
+                & .primary {
+                    font-family: var(--font2);
+                }
             }
         }
 
@@ -4854,6 +4859,8 @@ textarea.custom {
                                 height: 28px;
                                 line-height: 26px;
                                 font-size: 11px;
+                                font-family: var(--font2);
+
                                 &.crossed {
                                     background-image: linear-gradient(to bottom left,  transparent calc(50% - 1px), #e3e4e8, transparent calc(50% + 1px));
                                     & .right {
@@ -4870,6 +4877,7 @@ textarea.custom {
                                     }
                                 }
                             }
+
                             &.line-2 {
                                 & th {
                                     position: relative;
@@ -4892,7 +4900,9 @@ textarea.custom {
                         & tr {
                             & td {
                                 height: 34px;
+                                font-family: var(--font1);
                                 color: var(--text-02);
+
                                 &.h-140 {
                                     position: relative;
                                     & span {
@@ -5127,6 +5137,11 @@ textarea.custom {
                         letter-spacing: -0.33px;
                         color: var(--text-02);
                         margin-bottom: 6px;
+
+
+                        & .primary {
+                            font-family: var(--font2);
+                        }
 
                         &:last-child {
                             margin-bottom: 0;
