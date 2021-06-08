@@ -27,16 +27,42 @@
         </ul>
     </div>
     <div class="contents">
-        <div class="box_tax_home hide">
+        <!-- case 2 -->
+        <div class="box_tax_home">
             <div class="title_area">
                 <div class="tit">나의 총 급여<span>(근로소득자 대상)</span></div>
-                <div><a href="#" class="val">0000<em>만원<i class="sprite arrow_main_top_b_nor"></i></em></a></div>
-                <div><a href="#" class="badge">금액보기</a></div>
+                <div><a href="#" class="val"><span class="_num" data-value="2500">2500</span><em>만원<i class="sprite arrow_main_top_b_nor"></i></em></a></div>
+                <div><a href="#" class="badge _hideBtn">금액숨기기</a></div>
             </div>
             <div class="img_area">
                 <img src="../../img/common/img_tax_main_02@2x.png" alt="">
             </div>
         </div>
+        <script>
+            $('._hideBtn').on('click',function (){
+                let box = $('.box_tax_home');
+                let num = $('._num');
+                let numLength = num.text().length;
+                let val = "";
+
+                // 금액이 보일 때
+                if(!box.hasClass('hide')) {ㅊ
+                    box.addClass('hide');
+                    for(let i = 0; i < numLength; i++) {
+                        val+=0;
+                    }
+                    num.text(val);
+                    $(this).text('금액보기')
+                }
+
+                // 금액이 안보일 때
+                else {
+                    box.removeClass('hide');
+                    num.text(num.data('value'));
+                    $(this).text('금액숨기기')
+                }
+            })
+        </script>
         <div class="divider"></div>
         <div class="box_tax_category">
             <div class="title-lg">13월의 월급 <em>계산법은?</em></div>
