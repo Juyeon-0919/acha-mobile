@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li class="active"><a href="#">지출상세</a></li>
+            <li><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <!-- s 추가 -- 2021.06.11 -->
+    <div class="ex-menu-top _exMenu">
+        <ul>
+            <li><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li class="active"><a href="#">지출계좌</a></li>
+            <li><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <!-- e 추가 -- 2021.06.11 -->
+    <div class="contents">
+        <div class="fixed-card-wrap">
+            <div class="select-wrap">
+                <div class="select-box">
+                    <span class="bank-img"><img src="../../img/common/ci_uribank@2x.png" alt=""></span>
+                    <select title="account">
+                        <option value="1" selected="">KB국민카드</option>
+                        <option value="2">카카오뱅크</option>
+                        <option value="3">우리은행</option>
+                    </select>
+                </div>
+            </div>
+            <div class="title">
+                <span class="font-medium">5월 </span>예상 고정비는 <span class="font-num-medium">1,200,000</span><span class="font-medium">원</span>으로<br/>
+                <span class="font-bold">전월대비 </span><span class="font-num-medium">22%</span><span> 증가 되었어요 🤔</span> <!--<span> 감소 되었어요 😀</span>-->
+            </div>
+            <div class="table-wrap">
+                <div class="table-fixed">
+                    <div class="table-header">
+                        <div class="table-col month">월<br/>(예상) 고정비</div>
+                        <div class="table-col sum">카드 할부 합계</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col sum">정기 결제 합계</div>
+                    </div>
+                    <!-- todo! table-row에 table-col width() 더한 값 넣기 -->
+                    <div class="table-body">
+                        <div class="inner" style="width: 1000px">
+                            <div class="table-row month">
+                                <div class="table-col">5월<br/>380,000</div>
+                                <div class="table-col">6월<br/>380,000</div>
+                                <div class="table-col">7월<br/>380,000</div>
+                                <div class="table-col">8월<br/>380,000</div>
+                                <div class="table-col">9월<br/>380,000</div>
+                                <div class="table-col">10월<br/>380,000</div>
+                                <div class="table-col">11월<br/>380,000</div>
+                                <div class="table-col">12월<br/>380,000</div>
+                            </div>
+                            <div class="table-row sum">
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row sum">
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var itemLength = $('.table-body .table-row.month .table-col').length
+    var contentWidth = itemLength * 70
+
+    $('.table-body .inner').css('width', contentWidth)
+</script>
+</html>

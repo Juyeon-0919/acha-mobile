@@ -16359,6 +16359,30 @@ input.custom:focus {
                 border-bottom: 1px solid #e3e4e8;
             }
 
+.font-bold {
+    font-family: 'Noto Sans CJK KR Bold' !important;
+    font-family: var(--font3) !important;
+    font-weight: bold !important;
+}
+
+.font-medium {
+    font-family: 'Noto Sans CJK KR Medium' !important;
+    font-family: var(--font2) !important;
+    font-weight: 500 !important;
+}
+
+.font-num-medium {
+    font-family: 'Roboto Medium' !important;
+    font-family: var(--font5) !important;
+    font-weight: 500 !important;
+}
+
+.font-num-bold {
+    font-family: 'Roboto' !important;
+    font-family: var(--font4) !important;
+    font-weight: bold !important;
+}
+
 /*
   E 06_연말정산
 */
@@ -29282,6 +29306,20 @@ input[type=number] {
     width: 100%
 }
 
+.my-card-main .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+.my-card-main .swiper-slider {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        transition-property: transform;
+        flex-shrink: 0;
+    }
+
 .my-card-main .btn-more {
         position: absolute;
         display: block;
@@ -29434,479 +29472,479 @@ input[type=number] {
                     transform: translate(3px, 2px);
                 }
 
-.my-card-main .main-card-list .card-list {
-            padding-left: 0
+.main-card-list .card-list {
+        padding-left: 0
+    }
+
+.main-card-list .card-list::before {
+            content: none;
         }
 
-.my-card-main .main-card-list .card-list::before {
-                content: none;
-            }
+.main-card-list .card-list .card {
+            width: 100%;
+            height: 80px;
+            border: 0;
+            border-radius: 6px;
+            padding: 0;
+            margin-bottom: 12px
+        }
 
-.my-card-main .main-card-list .card-list .card {
+.main-card-list .card-list .card a {
+                display: block;
                 width: 100%;
-                height: 80px;
-                border: 0;
-                border-radius: 6px;
-                padding: 0;
-                margin-bottom: 12px
+                height: 100%;
+                padding: 27px 75px 27px 20px;
+                box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+                border-radius: 6px
             }
 
-.my-card-main .main-card-list .card-list .card a {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    padding: 27px 75px 27px 20px;
-                    box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
-                    border-radius: 6px
+.main-card-list .card-list .card a .img {
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    transform: translate(0, 0)
                 }
 
-.my-card-main .main-card-list .card-list .card a .img {
-                        display: inline-block;
-                        width: 22px;
-                        height: 22px;
-                        transform: translate(0, 0)
+.main-card-list .card-list .card a .img img {
+                        width: 100%;
+                        height: 100%;
                     }
 
-.my-card-main .main-card-list .card-list .card a .img img {
+.main-card-list .card-list .card a .title {
+                    display: inline-block;
+                    width: calc(100% - 30px);
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: #37354e;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    letter-spacing: -.33px;
+                    margin-left: 3px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    vertical-align: middle;
+                }
+
+.main-card-list .card-list .card a .open {
+                    position: absolute;
+                    right: 32px;
+                    top: 30px;
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
+                    color: #737183;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: -.6px
+                }
+
+.main-card-list .card-list .card a .open i {
+                        position: absolute;
+                        right: -11px;
+                        top: 2px;
+                    }
+
+.main-card-list .card-list .card a:hover {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+.main-card-list .card-list .card:last-child {
+                margin-bottom: 94px;
+            }
+
+.main-card-list .card-list .item {
+            position: relative;
+            cursor: pointer;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+            margin-bottom: 12px;
+            background-color: #ffffff;
+            padding: 20px
+        }
+
+.main-card-list .card-list .item.last li.bar-graph {
+                        margin-bottom: 35px
+                    }
+
+.main-card-list .card-list .item.last li.bar-graph .bar {
+                            background-color: #3e5baf;
+                        }
+
+.main-card-list .card-list .item.last li.bar-graph .val {
+                            top: 18px;
+                        }
+
+.main-card-list .card-list .item.on li.required-performance .txt {
+                            color: #3eadff;
+                        }
+
+.main-card-list .card-list .item.on li.bar-graph .bar {
+                            background-color: #3eadff;
+                        }
+
+.main-card-list .card-list .item.on li.bar-graph .sec span.on::after {
+                                        border-color: #3eadff;
+                                    }
+
+.main-card-list .card-list .item li {
+                display: block
+            }
+
+.main-card-list .card-list .item li.info .img {
+                        display: inline-block;
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 3px;
+                        vertical-align: middle
+                    }
+
+.main-card-list .card-list .item li.info .img img {
                             width: 100%;
                             height: 100%;
                         }
 
-.my-card-main .main-card-list .card-list .card a .title {
+.main-card-list .card-list .item li.info .title {
                         display: inline-block;
-                        width: calc(100% - 30px);
+                        padding-top: 2px;
                         font-size: 13px;
-                        line-height: 19px;
+                        line-height: 16px;
+                        letter-spacing: -.33px;
                         color: #37354e;
                         font-family: 'Noto Sans CJK KR Medium';
                         font-family: var(--font2);
-                        letter-spacing: -.33px;
-                        margin-left: 3px;
+                        vertical-align: middle;
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        vertical-align: middle;
+                        width: calc(100% - 130px);
                     }
 
-.my-card-main .main-card-list .card-list .card a .open {
-                        position: absolute;
-                        right: 32px;
-                        top: 30px;
-                        font-family: 'Noto Sans CJK KR Regular';
-                        font-family: var(--font1);
-                        color: #737183;
-                        font-size: 12px;
-                        line-height: 18px;
-                        letter-spacing: -.6px
+.main-card-list .card-list .item li.info .sum {
+                        float: right;
+                        position: relative;
+                        font-size: 16px;
+                        font-family: 'Roboto Medium';
+                        font-family: var(--font5);
+                        color: #37354e;
+                        letter-spacing: -.14px;
+                        line-height: 21px;
+                        padding-top: 6px
                     }
 
-.my-card-main .main-card-list .card-list .card a .open i {
-                            position: absolute;
-                            right: -11px;
-                            top: 2px;
+.main-card-list .card-list .item li.info .sum::after {
+                            content: '원';
+                            font-family: 'Noto Sans CJK KR Medium';
+                            font-family: var(--font2);
+                            font-size: 13px;
+                            line-height: 19px;
                         }
 
-.my-card-main .main-card-list .card-list .card a:hover {
-                        color: inherit;
-                        text-decoration: none;
-                    }
-
-.my-card-main .main-card-list .card-list .card:last-child {
-                    margin-bottom: 94px;
+.main-card-list .card-list .item li.required-performance {
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 15px
                 }
 
-.my-card-main .main-card-list .card-list .item {
-                position: relative;
-                cursor: pointer;
-                display: block;
-                border-radius: 6px;
-                box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
-                margin-bottom: 12px;
-                background-color: #ffffff;
-                padding: 20px
-            }
+.main-card-list .card-list .item li.required-performance .comp {
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 17px;
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        font-size: 11px;
+                        letter-spacing: -.28px;
+                        color: #3e5baf;
+                    }
 
-.my-card-main .main-card-list .card-list .item.last li.bar-graph {
-                            margin-bottom: 35px
+.main-card-list .card-list .item li.required-performance .txt {
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 17px;
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        font-size: 11px;
+                        letter-spacing: -.28px;
+                        color: #6839d3;
+                        color: var(--blurple);
+                    }
+
+.main-card-list .card-list .item li.required-performance .val {
+                        display: inline-block;
+                        line-height: 17px;
+                        font-family: 'Roboto';
+                        font-family: var(--font4);
+                        font-size: 11px;
+                        letter-spacing: 0;
+                        color: #6839d3;
+                        color: var(--blurple);
+                        transform: translateY(1px);
+                    }
+
+.main-card-list .card-list .item li.bar-graph {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 66px;
+                    background-color: #f5f6f8;
+                    margin-bottom: 21px
+                }
+
+.main-card-list .card-list .item li.bar-graph .bar {
+                        display: block;
+                        position: absolute;
+                        height: 4px;
+                        top: 0;
+                        left: 0;
+                        background-color: #6839d3;
+                        border-radius: 66px;
+                        margin-bottom: 6px
+                    }
+
+.main-card-list .card-list .item li.bar-graph .bar.bar-full {
+                            background-color: #3eadff;
                         }
 
-.my-card-main .main-card-list .card-list .item.last li.bar-graph .bar {
-                                background-color: #3e5baf;
-                            }
+.main-card-list .card-list .item li.bar-graph .txt {
+                        display: block;
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        font-size: 11px;
+                        letter-spacing: -.28px;
+                        color: #6839d3;
+                        position: absolute;
+                        right: 51px;
+                        top: 11px;
 
-.my-card-main .main-card-list .card-list .item.last li.bar-graph .val {
-                                top: 18px;
-                            }
+                    }
 
-.my-card-main .main-card-list .card-list .item.on li.required-performance .txt {
+.main-card-list .card-list .item li.bar-graph .val {
+                        font-family: 'Roboto';
+                        font-family: var(--font4);
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: 0;
+                        display: inline-block;
+                        position: absolute;
+                        right: 0;
+                        top: 7px;
+                        color: #737183;
+                        color: var(--text-02)
+                    }
+
+.main-card-list .card-list .item li.bar-graph .val.val-full {
+                            color: #3eadff
+                        }
+
+.main-card-list .card-list .item li.bar-graph .val.val-full::before {
                                 color: #3eadff;
                             }
 
-.my-card-main .main-card-list .card-list .item.on li.bar-graph .bar {
-                                background-color: #3eadff;
+.main-card-list .card-list .item li.bar-graph .val.val-full::after {
+                                color: #3eadff;
                             }
 
-.my-card-main .main-card-list .card-list .item.on li.bar-graph .sec span.on::after {
-                                            border-color: #3eadff;
-                                        }
-
-.my-card-main .main-card-list .card-list .item li {
-                    display: block
-                }
-
-.my-card-main .main-card-list .card-list .item li.info .img {
-                            display: inline-block;
-                            width: 32px;
-                            height: 32px;
-                            margin-right: 3px;
-                            vertical-align: middle
-                        }
-
-.my-card-main .main-card-list .card-list .item li.info .img img {
-                                width: 100%;
-                                height: 100%;
-                            }
-
-.my-card-main .main-card-list .card-list .item li.info .title {
-                            display: inline-block;
-                            padding-top: 2px;
-                            font-size: 13px;
-                            line-height: 16px;
-                            letter-spacing: -.33px;
-                            color: #37354e;
-                            font-family: 'Noto Sans CJK KR Medium';
-                            font-family: var(--font2);
-                            vertical-align: middle;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-                            width: calc(100% - 130px);
-                        }
-
-.my-card-main .main-card-list .card-list .item li.info .sum {
-                            float: right;
-                            position: relative;
-                            font-size: 16px;
-                            font-family: 'Roboto Medium';
-                            font-family: var(--font5);
-                            color: #37354e;
-                            letter-spacing: -.14px;
-                            line-height: 21px;
-                            padding-top: 6px
-                        }
-
-.my-card-main .main-card-list .card-list .item li.info .sum::after {
-                                content: '원';
-                                font-family: 'Noto Sans CJK KR Medium';
-                                font-family: var(--font2);
-                                font-size: 13px;
-                                line-height: 19px;
-                            }
-
-.my-card-main .main-card-list .card-list .item li.required-performance {
-                        position: relative;
-                        display: flex;
-                        justify-content: flex-end;
-                        margin-bottom: 15px
-                    }
-
-.my-card-main .main-card-list .card-list .item li.required-performance .comp {
-                            display: inline-block;
-                            vertical-align: middle;
-                            line-height: 17px;
-                            font-family: 'Noto Sans CJK KR Regular';
-                            font-family: var(--font1);
-                            font-size: 11px;
-                            letter-spacing: -.28px;
-                            color: #3e5baf;
-                        }
-
-.my-card-main .main-card-list .card-list .item li.required-performance .txt {
-                            display: inline-block;
-                            vertical-align: middle;
-                            line-height: 17px;
-                            font-family: 'Noto Sans CJK KR Regular';
-                            font-family: var(--font1);
-                            font-size: 11px;
-                            letter-spacing: -.28px;
-                            color: #6839d3;
-                            color: var(--blurple);
-                        }
-
-.my-card-main .main-card-list .card-list .item li.required-performance .val {
-                            display: inline-block;
-                            line-height: 17px;
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
-                            font-size: 11px;
-                            letter-spacing: 0;
-                            color: #6839d3;
-                            color: var(--blurple);
-                            transform: translateY(1px);
-                        }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph {
-                        display: block;
-                        position: relative;
+.main-card-list .card-list .item li.bar-graph .sec {
+                        position: absolute;
                         width: 100%;
-                        height: 4px;
-                        border-radius: 66px;
-                        background-color: #f5f6f8;
-                        margin-bottom: 21px
+                        top: -2px;
+                        left: 0
                     }
 
-.my-card-main .main-card-list .card-list .item li.bar-graph .bar {
+.main-card-list .card-list .item li.bar-graph .sec span {
+                            position: relative;
                             display: block;
-                            position: absolute;
-                            height: 4px;
-                            top: 0;
-                            left: 0;
-                            background-color: #6839d3;
-                            border-radius: 66px;
-                            margin-bottom: 6px
+                            float: left;
+                            height: 8px
                         }
 
-.my-card-main .main-card-list .card-list .item li.bar-graph .bar.bar-full {
-                                background-color: #3eadff;
-                            }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .txt {
-                            display: block;
-                            font-family: 'Noto Sans CJK KR Regular';
-                            font-family: var(--font1);
-                            font-size: 11px;
-                            letter-spacing: -.28px;
-                            color: #6839d3;
-                            position: absolute;
-                            right: 51px;
-                            top: 11px;
-
-                        }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .val {
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
-                            font-size: 11px;
-                            line-height: 17px;
-                            letter-spacing: 0;
-                            display: inline-block;
-                            position: absolute;
-                            right: 0;
-                            top: 7px;
-                            color: #737183;
-                            color: var(--text-02)
-                        }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .val.val-full {
-                                color: #3eadff
-                            }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .val.val-full::before {
-                                    color: #3eadff;
-                                }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .val.val-full::after {
-                                    color: #3eadff;
-                                }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec {
-                            position: absolute;
-                            width: 100%;
-                            top: -2px;
-                            left: 0
-                        }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec span {
-                                position: relative;
-                                display: block;
-                                float: left;
-                                height: 8px
-                            }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec span.on::after {
-                                        border: solid 2px #6839d3;
-                                        border: solid 2px var(--blurple);
-                                        background-color: #fff;
-                                        background-color: var(--white);
-                                    }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec span:last-child em {
-                                        text-decoration: underline;
-                                        right: 0;
-                                    }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec span em {
-                                    position: absolute;
-                                    bottom: -20px;
-                                    right: -11px;
-                                    font-family: 'Roboto';
-                                    font-family: var(--font4);
-                                    font-size: 11px;
-                                    line-height: 17px;
-                                    display: inline-block;
-                                    color: #737183;
-                                    color: var(--text-02);
-                                }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec span::after {
-                                    content: '';
-                                    position: absolute;
-                                    width: 8px;
-                                    height: 8px;
-                                    border-radius: 50%;
-                                    right: 0;
-                                    top: 0;
-                                    border: solid 2px #eff0f5;
+.main-card-list .card-list .item li.bar-graph .sec span.on::after {
+                                    border: solid 2px #6839d3;
+                                    border: solid 2px var(--blurple);
                                     background-color: #fff;
                                     background-color: var(--white);
                                 }
 
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec.sec-1 span {
-                                    width: 100%
+.main-card-list .card-list .item li.bar-graph .sec span:last-child em {
+                                    text-decoration: underline;
+                                    right: 0;
                                 }
 
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec.sec-1 span::after {
-                                        content: none;
-                                    }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec.sec-2 span {
-                                    width: 50%;
-                                }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec.sec-3 span {
-                                    width: 33.333333333%;
-                                }
-
-.my-card-main .main-card-list .card-list .item li.bar-graph .sec.sec-4 span {
-                                    width: 25%;
-                                }
-
-.my-card-main .main-card-list .card-list .item li.performance {
-                        width: 100%;
-                        height: 36px;
-                        text-align: center;
-                        background-color: #f7f8fc;
-                        border-radius: 6px
-                    }
-
-.my-card-main .main-card-list .card-list .item li.performance .val {
-                            position: relative;
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
-                            font-size: 11px;
-                            line-height: 36px;
-                            letter-spacing: -.11px;
-                            color: #37354e
-                        }
-
-.my-card-main .main-card-list .card-list .item li.performance .val::after {
-                                content: '원';
-                                font-family: 'Noto Sans CJK KR Regular';
-                                font-family: var(--font1);
+.main-card-list .card-list .item li.bar-graph .sec span em {
+                                position: absolute;
+                                bottom: -20px;
+                                right: -11px;
+                                font-family: 'Roboto';
+                                font-family: var(--font4);
                                 font-size: 11px;
-                                letter-spacing: -.28px;
-                                color: #37354e;
+                                line-height: 17px;
+                                display: inline-block;
+                                color: #737183;
+                                color: var(--text-02);
                             }
 
-.my-card-main .main-card-list .card-list .item li.performance .txt {
+.main-card-list .card-list .item li.bar-graph .sec span::after {
+                                content: '';
+                                position: absolute;
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                right: 0;
+                                top: 0;
+                                border: solid 2px #eff0f5;
+                                background-color: #fff;
+                                background-color: var(--white);
+                            }
+
+.main-card-list .card-list .item li.bar-graph .sec.sec-1 span {
+                                width: 100%
+                            }
+
+.main-card-list .card-list .item li.bar-graph .sec.sec-1 span::after {
+                                    content: none;
+                                }
+
+.main-card-list .card-list .item li.bar-graph .sec.sec-2 span {
+                                width: 50%;
+                            }
+
+.main-card-list .card-list .item li.bar-graph .sec.sec-3 span {
+                                width: 33.333333333%;
+                            }
+
+.main-card-list .card-list .item li.bar-graph .sec.sec-4 span {
+                                width: 25%;
+                            }
+
+.main-card-list .card-list .item li.performance {
+                    width: 100%;
+                    height: 36px;
+                    text-align: center;
+                    background-color: #f7f8fc;
+                    border-radius: 6px
+                }
+
+.main-card-list .card-list .item li.performance .val {
+                        position: relative;
+                        font-family: 'Roboto';
+                        font-family: var(--font4);
+                        font-size: 11px;
+                        line-height: 36px;
+                        letter-spacing: -.11px;
+                        color: #37354e
+                    }
+
+.main-card-list .card-list .item li.performance .val::after {
+                            content: '원';
                             font-family: 'Noto Sans CJK KR Regular';
                             font-family: var(--font1);
                             font-size: 11px;
                             letter-spacing: -.28px;
                             color: #37354e;
-                            line-height: 36px;
                         }
 
-.my-card-main .main-card-list .card-list .item li.performance.double {
-                            height: 53px;
-                            line-height: 53px;
-                            padding: 8px 0 10px
-                        }
-
-.my-card-main .main-card-list .card-list .item li.performance.double .txt {
-                                display: block;
-                                line-height: 17px
-                            }
-
-.my-card-main .main-card-list .card-list .item li.performance.double .txt:first-child {
-                                    margin-bottom: 2px;
-                                }
-
-.my-card-main .main-card-list .card-list .item li.btn-wrap .btn-direct {
-                            display: block;
-                            width: 59px;
-                            height: 26px;
-                            line-height: 24px;
-                            border: 1px solid #e3e4e8;
-                            background-color: #fff;
-                            border-radius: 2px;
-                            color: #737183;
-                            letter-spacing: -.55px;
-                            font-size: 11px;
-                            text-align: center;
-                            padding: 0;
-                            position: absolute;
-                            left: 20px;
-                            bottom: 20px;
-                        }
-
-.my-card-main .main-card-list .card-list .card-edit {
-                margin-bottom: 12px;
-                margin-top: 20px;
-                background-color: #ffffff;
-                border-radius: 6px;
-                background-color: rgba(255, 255, 255, .8)
-            }
-
-.my-card-main .main-card-list .card-list .card-edit .btn-edit {
-                    display: block;
-                    width: 100%;
-                    height: 46px;
-                    line-height: 46px;
-                    color: #9b9aa6;
-                    letter-spacing: -.6px;
-                    padding: 0;
-                    text-align: center
-                }
-
-.my-card-main .main-card-list .card-list .card-edit .btn-edit i {
-                        vertical-align: inherit;
-                        margin-right: 5px;
+.main-card-list .card-list .item li.performance .txt {
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        font-size: 11px;
+                        letter-spacing: -.28px;
+                        color: #37354e;
+                        line-height: 36px;
                     }
 
-.my-card-main .main-card-list .card-list > .list {
-                font-size: 11px;
-                letter-spacing: -0.28px;
-                text-align: left;
+.main-card-list .card-list .item li.performance.double {
+                        height: 53px;
+                        line-height: 53px;
+                        padding: 8px 0 10px
+                    }
+
+.main-card-list .card-list .item li.performance.double .txt {
+                            display: block;
+                            line-height: 17px
+                        }
+
+.main-card-list .card-list .item li.performance.double .txt:first-child {
+                                margin-bottom: 2px;
+                            }
+
+.main-card-list .card-list .item li.btn-wrap .btn-direct {
+                        display: block;
+                        width: 59px;
+                        height: 26px;
+                        line-height: 24px;
+                        border: 1px solid #e3e4e8;
+                        background-color: #fff;
+                        border-radius: 2px;
+                        color: #737183;
+                        letter-spacing: -.55px;
+                        font-size: 11px;
+                        text-align: center;
+                        padding: 0;
+                        position: absolute;
+                        left: 20px;
+                        bottom: 20px;
+                    }
+
+.main-card-list .card-list .card-edit {
+            margin-bottom: 12px;
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, .8)
+        }
+
+.main-card-list .card-list .card-edit .btn-edit {
+                display: block;
+                width: 100%;
+                height: 46px;
+                line-height: 46px;
                 color: #9b9aa6;
-                color: var(--text-03);
+                letter-spacing: -.6px;
+                padding: 0;
+                text-align: center
             }
 
-.my-card-main .main-list-caution {
-        position: relative;
-        display: block;
-        font-size: 11px;
-        line-height: 18px;
-        padding-left: 20px;
-        letter-spacing: -0.28px;
-        text-align: left;
-        color: #9b9aa6;
-        color: var(--text-03)
-    }
+.main-card-list .card-list .card-edit .btn-edit i {
+                    vertical-align: inherit;
+                    margin-right: 5px;
+                }
 
-.my-card-main .main-list-caution::before {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            background-color: transparent;
-            background-image: url(../../img/sprite/common/ico_caution@2x.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            vertical-align: middle;
-            top: 3px;
-            left: 5px;
+.main-card-list .card-list > .list {
+            font-size: 11px;
+            letter-spacing: -0.28px;
+            text-align: left;
+            color: #9b9aa6;
+            color: var(--text-03);
         }
+
+.main-list-caution {
+    position: relative;
+    display: block;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    text-align: left;
+    color: #9b9aa6;
+    color: var(--text-03);
+    padding: 0 32px 33px
+}
+
+.main-list-caution::before {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        background-image: url(../../img/sprite/common/ico_caution@2x.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        top: 3px;
+        left: 16px;
+    }
 
 .my-card-desc-box {
     position: absolute;
@@ -32478,3 +32516,433 @@ input[type=number] {
         white-space: nowrap;
         text-overflow: ellipsis;
     }
+
+/*
+    작성자 : 이주연
+    제목 : 지출상세
+    날짜 : 2021.06.11
+*/
+
+.ex-menu-top {
+    width: 100%;
+    height: 52px;
+    background-color: #f5f6f8;
+    padding: 0 20px
+}
+
+.ex-menu-top ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+.ex-menu-top ul li {
+            display: flex;
+            padding: 0 12px;
+            height: 28px;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 999px;
+            margin-right: 6px
+        }
+
+.ex-menu-top ul li.active {
+                background-color: #6f42c1;
+                background-color: var(--purple)
+            }
+
+.ex-menu-top ul li.active a {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    color: #fff;
+                }
+
+.ex-menu-top ul li:last-child {
+                margin-right: 0;
+            }
+
+.ex-menu-top ul li a {
+                display: block;
+                font-size: 12px;
+                letter-spacing: -0.6px;
+                text-align: center;
+                color: #9b9aa6;
+                color: var(--text-03);
+                white-space: nowrap;
+            }
+
+.box_ex_account .card-detail-calendar {
+        overflow: hidden;
+        margin-bottom: 15px;
+        padding-top: 4px
+    }
+
+.box_ex_account .card-detail-calendar .input-calendar {
+            float: left;
+            position: relative;
+            width: calc(50% - 37px / 2);
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #e2e3e6;
+            background-color: #fff;
+            background-color: var(--white);
+            color: #9b9aa6;
+            color: var(--text-03);
+            overflow: hidden
+        }
+
+.box_ex_account .card-detail-calendar .input-calendar label {
+                display: none;
+            }
+
+.box_ex_account .card-detail-calendar .input-calendar input[type="date"]::-webkit-inner-spin-button,
+            .box_ex_account .card-detail-calendar .input-calendar input[type="date"]::-webkit-calendar-picker-indicator {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                background-image: url(../../img/common/ico-input-calendar@2x.png);
+                background-size: cover;
+                right: 12px;
+                top: 9px;
+            }
+
+.box_ex_account .card-detail-calendar .input-calendar input {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                padding: 10px 12px 11px;
+                font-family: 'Roboto';
+                font-family: var(--font4);
+                font-size: 13px;
+                line-height: 38px;
+                text-align: left;
+                color: #9b9aa6;
+                color: var(--text-03);
+                border-radius: 4px
+            }
+
+.box_ex_account .card-detail-calendar .input-calendar input:focus {
+                    outline: none;
+                }
+
+.box_ex_account .card-detail-calendar .icon {
+            float: left;
+            width: 37px;
+            font-family: 'Roboto Medium';
+            font-family: var(--font5);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 40px;
+            text-align: center;
+            color: #37354e;
+            color: var(--text-01);
+        }
+
+.box_ex_account .card-detail-badge {
+        margin-bottom: 25px
+    }
+
+.box_ex_account .card-detail-badge ul {
+            overflow: hidden
+        }
+
+.box_ex_account .card-detail-badge ul li {
+                float: left;
+                margin-right: 6px
+            }
+
+.box_ex_account .card-detail-badge ul li:last-child {
+                    margin-right: 0;
+                }
+
+.box_ex_account .card-detail-badge ul li a {
+                    display: inline-block;
+                    padding: 0 12px;
+                    height: 28px;
+                    line-height: 26px;
+                    border-radius: 999px;
+                    background-color: #f5f6f8;
+                    font-size: 12px;
+                    letter-spacing: -0.6px;
+                    text-align: center;
+                    color: #9b9aa6;
+                    color: var(--text-03);
+                    border: 1px solid #f5f6f8;
+                }
+
+.box_ex_account .card-detail-badge ul li.active a {
+                        border: 1px solid #6839d3;
+                        border: 1px solid var(--blurple);
+                        background-color: #fff;
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        color: #6839d3;
+                        color: var(--blurple);
+                    }
+
+.box_ex_account .ex-account > ul {
+            padding: 26px 20px 24px;
+        }
+
+.box_ex_account .accordion .card .card-body {
+                padding: 18px 20px 20px
+            }
+
+.box_ex_account .accordion .card .card-body > .total-sum {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 25px
+                }
+
+.box_ex_account .accordion .card .card-body > .total-sum .tit {
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
+                        font-size: 15px;
+                        font-weight: bold;
+                        line-height: 23px;
+                        letter-spacing: -0.38px;
+                        text-align: left;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
+.box_ex_account .accordion .card .card-body > .total-sum .sum {
+                        font-family: 'Roboto';
+                        font-family: var(--font4);
+                        font-size: 17px;
+                        font-weight: bold;
+                        line-height: 23px;
+                        text-align: right;
+                        color: #37354e;
+                        color: var(--text-01)
+                    }
+
+.box_ex_account .accordion .card .card-body > .total-sum .sum::after {
+                            content: '원';
+                            font-family: 'Noto Sans CJK KR Bold';
+                            font-family: var(--font3);
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin-left: 1px;
+                        }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info {
+                        margin-bottom: 31px
+                    }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .date-wrap {
+                            width: 42px
+                        }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .date-wrap .date {
+                                min-width: 42px;
+                                padding: 0;
+                                height: 18px;
+                            }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .title {
+                            width: calc(100% - 56px - 80px);
+                            line-height: 18px;
+                            padding-left: 56px;
+                        }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .value-wrap {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            display: flex;
+                            flex-direction: column;
+                            width: -webkit-fit-content;
+                            width: -moz-fit-content;
+                            width: fit-content
+                        }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value {
+                                line-height: 18px;
+                                padding-right: 0;
+                                font-family: 'Roboto Medium';
+                                font-family: var(--font5);
+                                font-weight: 500
+                            }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value::after {
+                                    content: '원';
+                                    font-family: 'Noto Sans CJK KR Medium';
+                                    font-family: var(--font2);
+                                    font-weight: 500;
+                                }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value2 {
+                                font-family: 'Roboto';
+                                font-family: var(--font4);
+                                font-size: 13px;
+                                line-height: 18px;
+                                text-align: right;
+                                color: #9b9aa6;
+                                color: var(--text-03);
+                                padding-right: 1px
+                            }
+
+.box_ex_account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value2.red {
+                                    color: #ef4b61;
+                                }
+
+.fixed-card-wrap {
+    padding-left: 20px
+}
+
+.fixed-card-wrap .select-wrap {
+        margin-top: 26px;
+        margin-bottom: 24px
+    }
+
+.fixed-card-wrap .select-wrap .select-box {
+            position: relative;
+            width: 165px
+        }
+
+.fixed-card-wrap .select-wrap .select-box .bank-img {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 5px;
+                top: 10px
+            }
+
+.fixed-card-wrap .select-wrap .select-box .bank-img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+.fixed-card-wrap .select-wrap .select-box select {
+                padding-left: 29px;
+                border: 0;
+                border-bottom: 1px solid #37354e;
+                border-bottom: 1px solid var(--text-01);
+                border-radius: 0;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                font-weight: 500;
+                color: #37354e;
+                color: var(--text-01);
+            }
+
+.fixed-card-wrap > .title {
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: -0.43px;
+        text-align: left;
+        color: #37354e;
+        color: var(--text-01);
+        margin-bottom: 30px;
+    }
+
+.fixed-card-wrap .table-wrap {
+        position: relative
+    }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-col {
+                padding: 5px 10px;
+            }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 115px;
+                border-right: 1px solid #9b9aa6;
+                border-right: 1px solid var(--text-03)
+            }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-header .table-col {
+                    font-size: 11px;
+                    line-height: 16px;
+                    letter-spacing: -0.28px;
+                    text-align: left;
+                    color: #737183;
+                    color: var(--text-02)
+                }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-header .table-col.month {
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        font-weight: 500;
+                        background-color: #f5f6f8;
+                        color: #37354e;
+                        color: var(--text-01);
+                        border-top: 1px solid #e3e4e8;
+                    }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-header .table-col.item, .fixed-card-wrap .table-wrap .table-fixed .table-header .table-col.sum {
+                        background-color: #f5f6f8;
+                        color: #737183;
+                        color: var(--text-02);
+                        padding: 8px 10px;
+                    }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-header .table-col.sum {
+                        background-color: #f7f8fc;
+                        border-bottom: 1px solid #e3e4e8;
+                        border-top: 1px solid #e3e4e8;
+                        margin-top: -1px;
+                    }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-header .table-col.item {
+                        background-color: #fff;
+                        border-bottom: 1px solid #f5f6f8;
+                    }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-body {
+                margin-left: 115px;
+                overflow-x: auto
+            }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-body .inner {
+                    overflow-x: auto;
+                }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-body .table-row {
+                    overflow: hidden
+                }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-body .table-row .table-col {
+                        float: left;
+                        width: 70px;
+                        border-right: 1px solid #e3e4e8;
+                    }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-body .table-row.month .table-col {
+                            font-family: 'Noto Sans CJK KR Medium';
+                            font-family: var(--font2);
+                            font-weight: 500;
+                            background-color: #f5f6f8;
+                            color: #37354e;
+                            color: var(--text-01);
+                            border-top: 1px solid #e3e4e8;
+                            padding: 5px 10px 6px;
+                        }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-body .table-row.sum .table-col {
+                            background-color: #f7f8fc;
+                            border-bottom: 1px solid #e3e4e8;
+                            border-top: 1px solid #e3e4e8;
+                            color: #37354e;
+                            color: var(--text-01);
+                            padding: 8px 10px 9px;
+                        }
+
+.fixed-card-wrap .table-wrap .table-fixed .table-body .table-row.item .table-col {
+                            background-color: #fff;
+                            border-bottom: 1px solid #f5f6f8;
+                            color: #737183;
+                            color: var(--text-02);
+                            height: 65px;
+                        }
+
+@media (max-width: 350px) {
+    .box_ex_account .card-detail-calendar .input-calendar input {
+        font-size: 11px;
+    }
+}
