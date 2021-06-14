@@ -10,16 +10,16 @@
             <li><a href="#">연말정산</a></li>
         </ul>
     </div>
-    <!-- s 추가 -- 2021.06.11 -->
+    <!-- s 추가 -- 2021.06.14 -->
     <div class="ex-menu-top _exMenu">
-        <ul>
+        <ul class="clearfix">
             <li><a href="#">월별</a></li>
             <li><a href="#">카테고리</a></li>
-            <li class="active"><a href="#">지출계좌</a></li>
-            <li><a href="#">카드 고정비</a></li>
+            <li><a href="#">지출계좌</a></li>
+            <li class="active"><a href="#">카드 고정비</a></li>
         </ul>
     </div>
-    <!-- e 추가 -- 2021.06.11 -->
+    <!-- e 추가 -- 2021.06.14 -->
     <div class="contents">
         <div class="fixed-card-wrap">
             <div class="select-wrap">
@@ -45,6 +45,9 @@
                         <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
                         <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
                         <div class="table-col sum">정기 결제 합계</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
                     </div>
                     <!-- todo! table-row에 table-col width() 더한 값 넣기 -->
                     <div class="table-body">
@@ -109,18 +112,92 @@
                                 <div class="table-col">480,000</div>
                                 <div class="table-col">480,000</div>
                             </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--
+        ** 화살표 이미지 방향에 따른 클래스 명
+        <i class="right"></i>
+        <i class="left"></i>
+        <i class="top"></i>
+        <i class="bottom"></i>
+
+        ** 스크롤 함수
+        scrollGoTop() // 최상단으로 이동
+        scrollGoBottom() // 최하단으로 이동
+        scrollGoLeft()
+        scrollGoRight()
+    -->
+    <a href="#" class="btn-scroll right" onclick="scrollGoRight()"><i class="right"></i></a>
+    <a href="#" class="btn-scroll bottom" onclick="scrollGoBottom()"><i class="bottom"></i></a>
 </div>
 </body>
 <script>
-    var itemLength = $('.table-body .table-row.month .table-col').length
-    var contentWidth = itemLength * 70
+    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+    var index = 3; // (li 갯수) - 1
+    var sum = 0;
+    for (var j=0; j <= index; j++) {
+        sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
+    }
+    $('._exMenu ul').css('width', sum + 1);
 
-    $('.table-body .inner').css('width', contentWidth)
+    // 테이블 - 컨텐츠 따른 스크롤 넓이
+    var itemLength = $('.table-body .table-row.month .table-col').length;
+    var contentWidth = itemLength * 70;
+    $('.table-body .inner').css('width', contentWidth);
+
+    // scroll - top
+    function scrollGoTop() {
+        $('html, body').animate( { scrollTop: '0' }, 600);
+    }
+
+    // scroll - bottom
+    function scrollGoBottom() {
+        $("html, body").animate({ scrollTop: $(document).height() }, 600);
+    }
+
+    // scroll - left
+    function scrollGoLeft() {
+        $('.table-body').animate( { scrollLeft: '0' }, 600);
+    }
+
+    // scroll - Right
+    function scrollGoRight() {
+        var leftPos = $('.table-body').scrollLeft();
+        $('.table-body').animate( { scrollLeft: leftPos + 210 }, 600);
+    }
 </script>
 </html>

@@ -474,7 +474,42 @@ data.taxRenewal = {
         },
     ]
 };
-
+data.expenditure = {
+    'title': '지출관리',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_01',
+            'category': '지출관리',
+            'page': '지출계좌 목록'
+        },    {
+            'stateClass': 'complete',
+            'url': '08_exependiture_02',
+            'category': '지출관리',
+            'page': '카드 고정비'
+        },    {
+            'stateClass': 'complete',
+            'url': '08_exependiture_03',
+            'category': '지출관리',
+            'page': '지출상세'
+        },    {
+            'stateClass': 'complete',
+            'url': '08_exependiture_04',
+            'category': '지출관리',
+            'page': '지출상세 - 데이터 없을 경우'
+        },    {
+            'stateClass': 'complete',
+            'url': '08_exependiture_05',
+            'category': '지출관리',
+            'page': '필터설정'
+        },    {
+            'stateClass': 'complete',
+            'url': '08_exependiture_06',
+            'category': '지출관리',
+            'page': '지출상세 - 카테고리'
+        }
+    ]
+};
 
 
 
