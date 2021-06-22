@@ -28,6 +28,7 @@
 }
 
 .badge-pill {
+    position: relative;
     display: inline-block;
     min-width: 56px;
     padding: 0 9px;
@@ -55,6 +56,19 @@
 
     &.bg-last {
         background-color: #40466a;
+    }
+
+    &.updated {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background-color: #ef4b61;
+            border-radius: 50%;
+            top: 2px;
+            right: 0;
+        }
     }
 }
 
@@ -1271,280 +1285,6 @@ textarea.custom {
             display: inline-block;
             right: 22px;
             top: 32px;
-        }
-    }
-}
-
-/*
-    더보기
-*/
-.even_list {
-    padding: 10px 20px;
-
-    & .event {
-        margin-bottom: 35px;
-
-        & span {
-            display: block;
-        }
-
-        & .title {
-            font-family: var(--font2);
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            letter-spacing: -0.35px;
-            color: #37354e;
-            margin-bottom: 5px;
-            padding-left: 4px;
-
-        }
-
-        & .date {
-            font-family: var(--font4);
-            font-size: 12px;
-            line-height: 14px;
-            color: #9b9aa6;
-            margin-bottom: 13px;
-            padding-left: 4px;
-        }
-
-        & .img {
-            width: 100%;
-            height: 140px;
-            border-radius: 6px;
-
-            & img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-
-    &.detail {
-        padding-bottom: 0;
-
-        & .event {
-            margin-bottom: 30px;
-
-            & .title {
-                font-family: var(--font2);
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 27px;
-                letter-spacing: -0.45px;
-                padding-left: 0;
-                margin-bottom: 12px;
-            }
-
-            & .date {
-                padding-left: 0;
-                margin-bottom: 20px;
-            }
-
-            & .img {
-                width: 100%;
-                height: 388px;
-                border-radius: 0;
-
-                & img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-    }
-}
-
-.faq_list_detail {
-    padding: 11px 20px 0;
-
-    & .faq_info {
-        position: relative;
-        width: 100%;
-        padding-bottom: 25px;
-        border-bottom: 1px solid #f5f6f8;
-
-        & .title {
-            font-family: var(--font2);
-            font-size: 18px;
-            line-height: 26px;
-            letter-spacing: -0.45px;
-            margin-bottom: 5px;
-        }
-
-        & .title-sm {
-            & span {
-                font-size: 11px;
-                line-height: 26px;
-                letter-spacing: -0.28px;
-                color: #9b9aa6;
-            }
-
-            & .date {
-                position: relative;
-                padding-left: 12px;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: 4px;
-                    top: 4px;
-                    width: 1px;
-                    height: 8px;
-                    border: solid 1px #d5d5d5;
-                }
-            }
-        }
-
-        & .badge-pill {
-            position: absolute;
-            right: 0;
-            bottom: 28px;
-        }
-    }
-
-    & .faq_content {
-        padding: 30px 0 100px;
-
-        & p {
-            font-size: 13px;
-            line-height: 20px;
-            letter-spacing: -0.33px;
-        }
-    }
-
-    & .faq_answer {
-        margin-bottom: 40px;
-
-        & .content {
-            position: relative;
-            width: 100%;
-            padding: 50px 20px 22px;
-            background-color: #f7f8fc;
-            margin-top: -25px;
-
-            & p {
-                font-size: 12px;
-                line-height: 19px;
-                letter-spacing: -0.3px;
-                color: #737183;
-            }
-
-            & .date {
-                font-family: var(--font4);
-                font-size: 11px;
-                line-height: 26px;
-                color: #9b9aa6;
-            }
-
-            &::before {
-                content: 'A';
-                position: absolute;
-                width: auto;
-                height: auto;
-                background: unset;
-                border-radius: 50%;
-                vertical-align: middle;
-                top: 20px;
-                left: 20px;
-                font-size: 15px;
-                font-family: var(--font5);
-                color: #ff2e60;
-                letter-spacing: -0.75px;
-                line-height: 21px;
-                font-weight: bold;
-            }
-        }
-    }
-
-    & .faq_question {
-        & label {
-            display: block;
-            font-family: var(--font2);
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
-            letter-spacing: -0.3px;
-            text-align: left;
-            color: #afaeb8;
-            margin-bottom: 9px;
-        }
-
-        & .category, & .title {
-            margin-bottom: 36px;
-        }
-
-        & textarea.custom {
-            height: 180px;
-            padding: 9px 12px;
-            margin-bottom: 6px;
-        }
-
-        & .push_alert {
-            margin-bottom: 40px;
-
-            & label {
-                & span {
-                    font-family: var(--font2);
-                    font-size: 13px;
-                    line-height: 26px;
-                    letter-spacing: -0.33px;
-                    color: #000000;
-                }
-            }
-        }
-    }
-}
-
-.faq-category {
-    margin-bottom: 20px;
-
-    & .faq-item {
-        position: relative;
-        width: 33%;
-        float: left;
-        text-align: center;
-        border-right: 1px solid #e2e3e6;
-        border-bottom: 1px solid #e2e3e6;
-
-        & a {
-            display: block;
-            color: var(--text-01);
-            height: 44px;
-            line-height: 42px;
-            font-family: var(--font2);
-            font-size: 12px;
-            letter-spacing: -0.6px;
-        }
-
-        &.active {
-            border-color: var(--color-point);
-
-            & a {
-                color: var(--color-point);
-
-                &:after {
-                    content: '';
-                }
-            }
-        }
-
-        &:first-child {
-            border-left: 1px solid #e2e3e6;
-        }
-
-        &:first-child, &:nth-child(2), &:nth-child(3) {
-            border-top: 1px solid #e2e3e6;
-        }
-
-        &:nth-child(4) {
-            border-left: 1px solid #e2e3e6;
-        }
-
-        &.active {
-            border-top: 1px solid var(--color-point);
-            border-left: 1px solid var(--color-point);
         }
     }
 }
@@ -3081,6 +2821,7 @@ textarea.custom {
 
             & .primary {
                 font-weight: bold;
+                font-family: var(--font3);
             }
         }
 

@@ -1,4 +1,170 @@
 var data = {}
+data.moreview = {
+    'title': '더보기',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_01',
+            'category': '더보기',
+            'page': '메인'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_02',
+            'category': '더보기',
+            'page': '알림 목록없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_03',
+            'category': '더보기',
+            'page': '알림 더보기/알림 불러오는중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_04',
+            'category': '더보기',
+            'page': '공지사항'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_05',
+            'category': '더보기',
+            'page': '공지사항 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_06',
+            'category': '더보기',
+            'page': '이벤트 목록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_07',
+            'category': '더보기',
+            'page': '이벤트 없음'
+        },  {
+            'stateClass': 'complete',
+            'url': '09_moreview_08',
+            'category': '더보기',
+            'page': '진행중 이벤트 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_09',
+            'category': '더보기',
+            'page': '종료된 이벤트 목록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_10',
+            'category': '더보기',
+            'page': '종료된 이벤트 없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_11',
+            'category': '더보기',
+            'page': '당첨자 확인 목록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_12',
+            'category': '더보기',
+            'page': '당첨자 확인 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_13',
+            'category': '더보기',
+            'page': '자주 묻는 질문'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_14',
+            'category': '더보기',
+            'page': '자주 묻는 질문 없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_15',
+            'category': '더보기',
+            'page': '자주 묻는 질문 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_16',
+            'category': '더보기',
+            'page': '1:1 문의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_17',
+            'category': '더보기',
+            'page': '1:1 문의 없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_18',
+            'category': '더보기',
+            'page': '문의 접수'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_19',
+            'category': '더보기',
+            'page': '문의 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_20',
+            'category': '더보기',
+            'page': '문의 상세 (댓글)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_21',
+            'category': '더보기',
+            'page': '잠금 및 보안'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_22',
+            'category': '더보기',
+            'page': '알림설정 + 토스트 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_23',
+            'category': '더보기',
+            'page': '동의관리'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_24',
+            'category': '더보기',
+            'page': '회사소개'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_25',
+            'category': '더보기',
+            'page': '오픈소스 라이센스'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_26',
+            'category': '더보기',
+            'page': '회원탈퇴'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_27',
+            'category': '더보기',
+            'page': '탈퇴 완료'
+        },
+    ]
+};
 data.input = {
     'title': '추가하기(직접입력)',
     'list': [
