@@ -38,6 +38,10 @@
     </div>
 </div>
 <script>
+    $('._faqMenu li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
     // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
     var index = 6; // (li 갯수) - 1
     var sum = 0;

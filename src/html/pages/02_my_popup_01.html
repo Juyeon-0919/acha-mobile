@@ -112,50 +112,48 @@
                 </div>
             </div>
             <div class="icon-list">
-                <ul class="clearfix">
-                    <div class="row">
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
+                <div class="row">
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
                     </div>
-                    <div class="row">
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
                     </div>
-                    <div class="row">
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-camera-big.svg" alt="아이콘"></a></div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
-                        </div>
-<!--                        <div class="col col-3">-->
-<!--                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>-->
-<!--                        </div>-->
-<!--                        <div class="col col-3">-->
-<!--                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>-->
-<!--                        </div>-->
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
                     </div>
-                </ul>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-camera-big.svg" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
+                    </div>
+                    <!--                        <div class="col col-3">-->
+                    <!--                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="col col-3">-->
+                    <!--                            <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>-->
+                    <!--                        </div>-->
+                </div>
             </div>
             <div class="btn-wrap">
                 <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">삭제하기</a>
@@ -178,6 +176,7 @@
             );
             $('._modalSlide').addClass('up').removeClass('down');
             $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
         });
 
         btnSlideClose.on('click',function (){
@@ -188,6 +187,7 @@
             );
             $('._modalSlide').removeClass('up').addClass('down');
             $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
         });
 
         btnSlideOpen.trigger('click');

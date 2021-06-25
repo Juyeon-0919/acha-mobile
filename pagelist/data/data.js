@@ -1,4 +1,75 @@
 var data = {}
+data.story = {
+    'title': 'story',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '10_story_01',
+            'category': '스토리',
+            'page': '타임라인-연결한 데이터가 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': '스토리',
+            'page': '타임라인 - 항목'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_03',
+            'category': '스토리',
+            'page': '거래내역 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_04',
+            'category': '스토리',
+            'page': '지출 스토리 입력'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_popup_01',
+            'category': '스토리',
+            'page': '지출 카테고리 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_popup_02',
+            'category': '스토리',
+            'page': '스토리 사진 업로드 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_05',
+            'category': '스토리',
+            'page': '스토리 - 입력한 스토리 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_06',
+            'category': '스토리',
+            'page': '스토리 - 항목'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_popup_03',
+            'category': '스토리',
+            'page': '영수증 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_07',
+            'category': '스토리',
+            'page': '태그 전체보기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_08',
+            'category': '스토리',
+            'page': '태그검색 상세'
+        }
+    ]
+};
 data.moreview = {
     'title': '더보기',
     'list': [

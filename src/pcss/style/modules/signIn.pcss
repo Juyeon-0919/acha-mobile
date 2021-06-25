@@ -447,7 +447,7 @@
 @media (max-width: 330px) {
 }
 
-
+/* 자동 완성 */
 .ui-autocomplete {
     position: absolute;
     top: 0;
@@ -465,6 +465,9 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-height: 173px;
+    overflow-y: auto;
+    border-radius: 4px;
 
     & .ui-menu-item {
         margin: 0;
@@ -498,5 +501,11 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+    }
+}
+
+.ui-helper-hidden-accessible {
+    & > div:last-child {
+        display: none;
     }
 }
