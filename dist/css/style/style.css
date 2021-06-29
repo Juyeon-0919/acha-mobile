@@ -32042,15 +32042,14 @@ input[type=number] {
         padding: 0 20px;
     }
 
+.sign-in-wrap .sign-in-btn-relative {
+        padding: 0 20px 30px;
+        margin-top: 228px;
+    }
+
 .sign-in-wrap .sign-in-btn {
         padding: 0 20px 30px;
     }
-
-@media (max-width: 350px) {
-}
-
-@media (max-width: 330px) {
-}
 
 /* 자동 완성 */
 
@@ -33069,14 +33068,6 @@ input[type=number] {
         text-align: left;
         color: #737183;
         color: var(--text-02);
-    }
-
-.event-tab-content {
-    display: none
-}
-
-.event-tab-content.active {
-        display: block;
     }
 
 .event-tab {
