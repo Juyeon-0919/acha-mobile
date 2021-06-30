@@ -1,4 +1,15 @@
 var data = {}
+data.common = {
+    'title': '공통',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '00_common_popup',
+            'category': '팝업',
+            'page': '팝업'
+        },
+    ]
+};
 data.story = {
     'title': 'story',
     'list': [

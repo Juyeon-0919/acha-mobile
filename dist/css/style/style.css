@@ -17179,6 +17179,45 @@ input.custom:focus {
                     border-bottom: 0;
                 }
 
+.modal.modal-common .modal-dialog .modal-content {
+                border-radius: 0;
+                text-align: left;
+                padding: 20px 0 0
+            }
+
+.modal.modal-common .modal-dialog .modal-content .modal-header {
+                    padding: 0;
+                    margin-bottom: 18px;
+                    justify-content: center
+                }
+
+.modal.modal-common .modal-dialog .modal-content .modal-header .title {
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
+                        font-size: 15px;
+                        font-weight: 800;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 19px;
+                        letter-spacing: -0.75px;
+                        text-align: center;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
+.modal.modal-common .modal-dialog .modal-content .modal-body {
+                    padding: 0 30px 30px
+                }
+
+.modal.modal-common .modal-dialog .modal-content .modal-body .txt {
+                        font-size: 13px;
+                        line-height: 20px;
+                        letter-spacing: -0.65px;
+                        text-align: center;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
 @-webkit-keyframes modal-fade-animation {
     from {
         opacity: 0;
