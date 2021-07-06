@@ -10,6 +10,154 @@ data.common = {
         },
     ]
 };
+data.expenditure1 = {
+    'title': '홈계좌(현금흐름)',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_01',
+            'category': '홈계좌',
+            'page': '계좌 잔고 목록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_02',
+            'category': '홈계좌',
+            'page': '계좌 미등록 및 표시 할 데이터 없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_03',
+            'category': '홈계좌',
+            'page': '계좌 전체 목록 및 편집'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_04',
+            'category': '홈계좌',
+            'page': '계좌 상세 화면'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_05',
+            'category': '홈계좌',
+            'page': '계좌별 상세 더보기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_06',
+            'category': '홈계좌',
+            'page': '현금흐름 소개'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_07',
+            'category': '홈계좌',
+            'page': '현금흐름 조회하기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_08',
+            'category': '홈계좌',
+            'page': '내수입 추가'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_09',
+            'category': '홈계좌',
+            'page': '내수입 추가(입력완료)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_10',
+            'category': '홈계좌',
+            'page': '현금흐름 조회'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_11',
+            'category': '홈계좌',
+            'page': '현금흐름 조회 결과'
+        },
+    ]
+};
+data.expenditure2 = {
+    'title': '홈계좌(지출항목상세)',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_12',
+            'category': '홈계좌',
+            'page': '3.1 여수신정보(정액적립식) (01_고정지출, My 상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_13',
+            'category': '홈계좌',
+            'page': '3.1 여수신정보(정액적립식) (04_상세_거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_14',
+            'category': '홈계좌',
+            'page': '3.1 여수신정보(자유적립식, 거치식) (01_홈-계좌, My상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_15',
+            'category': '홈계좌',
+            'page': '3.1 여수신정보(요구불식) (01_고정지출, My 상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_16',
+            'category': '홈계좌',
+            'page': '3.1 여수신정보(요구불식) (02_계좌 정보)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_17',
+            'category': '홈계좌',
+            'page': '3.3 보험(일반) (01_고정지출, My 상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18',
+            'category': '홈계좌',
+            'page': '3.5 카드 청구서(카드대출) (01_고정지출, My 상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_19',
+            'category': '홈계좌',
+            'page': '3.5 카드 청구서(카드대출) (02_상세_카드대출)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_20',
+            'category': '홈계좌',
+            'page': '3.5 카드 청구서(청구서 미발행)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_21',
+            'category': '홈계좌',
+            'page': '3.6 금융투자정보 (01_홈,계좌, My 상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_22',
+            'category': '홈계좌',
+            'page': '3.7 선불전자지급수단 정보 (01_내카드, My 상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_23',
+            'category': '홈계좌',
+            'page': '3.8 선불전자지급수단 정보 (01_내카드, My 상세)'
+        },
+    ]
+};
 data.story = {
     'title': 'story',
     'list': [
