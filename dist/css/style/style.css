@@ -34543,8 +34543,13 @@ input[type=number] {
     }
 
 .event-tab {
+    position: fixed;
+    width: 100%;
+    height: 36px;
+    background-color: #fff;
     padding: 10px 43px 0;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    z-index: 3
 }
 
 .event-tab ul li {
@@ -34901,6 +34906,10 @@ input[type=number] {
                     top: 50%;
                     transform: translateY(-50%);
                 }
+
+.event-content-wrap {
+    padding: 66px 0 0
+}
 
 .event-content-wrap .event-item-detail-wrap {
         padding: 10px 20px 0
