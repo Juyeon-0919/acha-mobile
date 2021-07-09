@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=0.1">
+    <script src="../../js/lib/front.lib.js?v=0.1"></script>
+    <script src="../../js/ui/front.common.js?v=0.1"></script>
+</head>
+
+<body>
+<!-- 06_연말정산TIP_02_지출추가하기_04_이자상환액소득공제_200602 -->
+<!-- 2020.06.16 수정 -->
+<div class="wrap">
+    <!--  S header  -->
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>직접 입력</h2>
+    </div>
+    <!--  E header  -->
+
+    <!--  S contents  -->
+    <div id="contents" class="contents">
+
+        <!--   S  box_tax_sub  -->
+        <div class="box_tax_sub has_fixed_btn">
+            <div class="title">이자 상환액 소득공제</div>
+            <div class="deduct-input">
+                <div class="title">이자 상환금액</div>
+                <input type="text" onkeyup="inputNumberFormat(this)" placeholder="0"/><span class="won">원</span>
+            </div>
+            <ul class="deduct-list-group mb"> <!-- 2020.06.16 --- mb클래스 추가 -->
+                <li class="list">주택을 구입할 목적으로 대출하여 갚고 있는 대출 이자(원금 X)</li>
+            </ul>
+            <div class="deduct-input">
+                <div class="title">상환기간</div>
+                <label class="item-radio">
+                    <input class="with-gap" name="group" type="radio" checked="checked" />
+                    <span>상환기간 : 15년 이상<br/>고정금리이고 비거치식분할상환</span>
+                </label>
+                <label class="item-radio">
+                    <input class="with-gap" name="group" type="radio" />
+                    <span>상환기간 : 15년 이상<br/>고정금리이거나 비거치식분할상환</span>
+                </label>
+                <label class="item-radio single"> <!-- 한 줄일 경우 single 클래스 추가 -->
+                    <input class="with-gap" name="group" type="radio" />
+                    <span>상환기간 : 15년 이상</span>
+                </label>
+                <label class="item-radio">
+                    <input class="with-gap" name="group" type="radio" />
+                    <span>상환기간 : 10년 이상<br/>고정금리이거나 비거치식분할상환</span>
+                </label>
+            </div>
+        </div>
+        <!--   E  box_tax_sub  -->
+
+        <!--   S  bottom-fixed  -->
+        <div class="bottom-fixed btn_area">
+            <a class="btn btn-lg btn-block btn-big btn-save" href="javascript:void(0)">저장</a>
+        </div>
+        <!--   E  bottom-fixed  -->
+
+    </div>
+<!--  E contents  -->
+</div>
+</body>
+</html>
+
+

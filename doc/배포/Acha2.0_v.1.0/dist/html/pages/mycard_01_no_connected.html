@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=0.1">
+    <script src="../../js/lib/front.lib.js?v=0.1"></script>
+    <script src="../../js/ui/front.common.js?v=0.1"></script>
+</head>
+
+<body>
+<div id="wrap" class="wrap bg_purple mycard">
+    <div class="header">
+        <div class="btn_area">
+            <a class="btn-alarm" href="javascript:void(0)">
+                <span class="img"><img src="../../img/common/ico_top_noti_b_nor@2x.png" alt="알림"></span>
+                <span class="badge-alarm">3</span>
+            </a>
+            <a class="btn-more" href="javascript:void(0)"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="더보기"></a>
+        </div>
+    </div>
+    <div id="contents" class="contents">
+        <div class="select_box">
+                <label for="ex_select">5월</label>
+                <select id="ex_select">
+                    <option>1월</option>
+                    <option>2월</option>
+                    <option>3월</option>
+                    <option>4월</option>
+                    <option selected>5월</option>
+                    <option>6월</option>
+                    <option>7월</option>
+                    <option>8월</option>
+                    <option>9월</option>
+                    <option>10월</option>
+                    <option>11월</option>
+                    <option>12월</option>
+                </select>
+            <span class="txt">사용금액은</span>
+            <p class="txt2"><span class="sum">1,123,000</span><span class="won">원</span>입니다 😀</p>
+            <p class="txt3">3월1일~3월31일 기준으로 산정된 내역</p>
+            <!-- E 2020.06.09 tooltip 버튼 추가  -->
+            <a class="btn-tooltip _btnPopup" href="#"><img src="../../img/common/ico_tooltip@2x.png" alt="tooltip"/></a>
+            <!-- E 2020.06.09 tooltip 버튼 추가  -->
+        </div>
+        <div class="card_box list">
+            <ul>
+                <li class="card">
+                    <a href="javascript:void(0)">
+                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                        <span class="title">국민카드</span>
+                        <span class="open">불러오기<i class="sprite arrow_list_add"></i></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="javascript:void(0)">
+                        <span class="img"><img src="../../img/common/woori.png" alt=""></span>
+                        <span class="title">우리카드</span>
+                        <span class="open">불러오기<i class="sprite arrow_list_add"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="desc_box">
+        <p>보유한 카드가 있으신가요?</p>
+        <p>불러오기를 통해 정보를 불러오세요!</p>
+        <p>실적충족 정보와 카드 혜택정보를 확인할 수 있어요.</p>
+        <div class="img"><img src="../../img/common/ico_card_none@2x.png" alt=""></div>
+    </div>
+
+    <!-- S 2020.06.09 추가 : 팝업 연결 -->
+    <div class="popup-layer" id="performanceCalculation">  <!-- active 클래스 추가 시, popup 활성화 -->
+        <div class="popup-dim _dimClose">
+            <div class="popup-normal caution">
+                <div class="popup-header">
+                    <h2>실적 산정 금액?</h2>
+                    <a class="btn-close _btnClose" href="javascript:void(0)"><i class="sprite btn_popup_close"></i></a>
+                </div>
+                <div class="popup-body">
+                    <ul>
+                        <li class="list">매월1일부터 말일을 기준으로 산정합니다.
+                            <span>(일부 상품은 산정기간이 다를수 있습니다.)</span></li>
+                        <li class="list">카드사용금액에서 실적에 포함되지 않는 금액을
+                            제외합니다.
+                        </li>
+                        <li class="list">실적에 포함되지 않는 항목
+                            <span>- 세금/공과금, APT관리비</span>
+                            <span>- 대학(대학원)등록금, 상품권</span>
+                            <span>- 연회비, 무이자할부 등</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup-footer">
+                    <div class="caution-area clearfix">
+                        <p>
+                            <i class="sprite ico_caution"></i>
+                            실적 포함여부는 카드상품에 따라 다를 수 있습니다. 정확한 정보는<br/>
+                            카드사 홈페이지에서 확인해주세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E 2020.06.09 추가 : 팝업 연결 -->
+
+</div>
+</body>
+</html>
+
+

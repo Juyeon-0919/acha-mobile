@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=0.1">
+    <script src="../../js/lib/front.lib.js?v=0.1"></script>
+    <script src="../../js/ui/front.common.js?v=0.1"></script>
+</head>
+
+<body>
+<!-- 06_연말정산TIP_02_지출추가하기_02_인적소득공제_200602 -->
+<div class="wrap">
+    <!--  S header  -->
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>직접 입력</h2>
+    </div>
+    <!--  E header  -->
+
+    <!--  S contents  -->
+    <div id="contents" class="contents">
+
+        <!--   S  box_tax_sub  -->
+        <div class="box_tax_sub">
+            <div class="title">인적 소득공제</div>
+            <div class="sec-deduct">
+                <div class="area-title">
+                    <span class="title">기본공제</span>
+                    <a class="btn-tooltip" href="#"><i class="sprite ico_tooltip"></i></a>
+                </div>
+                <ul class="list-deduct">
+                    <li class="list-deduct-item clearfix">
+                        <span class="title">근로자본인</span>
+                        <span class="item">1명</span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-lg clearfix">
+                        <!-- 스위치가 올 경우(있음/없음), list-deduct-item-lg 추가 -->
+                        <span class="title">배우자</span>
+                        <span class="box-switch">
+                            <a class="btn-no" href="#">없음</a>
+                            <a class="btn-yes active" href="#">있음</a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item clearfix">
+                        <span class="title">부양가족</span>
+                        <span class="item">1명</span>
+                        <ul class="box-number">
+                            <li class="list-number clearfix">
+                                <span class="title">직계비속(입양자 포함)</span>
+                                <span class="count-num">
+                                    <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                                    <input type="number" title="qty" value="1" class="qty" min="0">
+                                    <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                                </span>
+                            </li>
+                            <li class="list-number clearfix">
+                                <span class="title">직계존속</span>
+                                <span class="count-num">
+                                    <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                                    <input type="number" title="qty" value="0" class="qty" min="0">
+                                    <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                                </span>
+                            </li>
+                            <li class="list-number clearfix">
+                                <span class="title">형제자매</span>
+                                <span class="count-num">
+                                    <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                                    <input type="number" title="qty" value="0" class="qty" min="0">
+                                    <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                                </span>
+                            </li>
+                            <li class="list-number clearfix">
+                                <span class="title">위탁아동</span>
+                                <span class="count-num">
+                                    <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                                    <input type="number" title="qty" value="0" class="qty" min="0">
+                                    <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec-deduct">
+                <div class="area-title">
+                    <span class="title">추가공제</span>
+                    <a class="btn-tooltip" href="#"><i class="sprite ico_tooltip"></i></a>
+                    <span class="desc">추가공제는 기본공제대상자만 해당됩니다.</span>
+                </div>
+                <ul class="list-deduct">
+                    <li class="list-deduct-item list-deduct-item-lg clearfix"><!-- 카운터가 올 경우, list-deduct-item-lg 추가 -->
+                        <span class="title">경로자우대</span>
+                        <span class="count-num">
+                            <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                            <input type="number" title="qty" value="0" class="qty" min="0">
+                            <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-lg clearfix"><!-- 카운터가 올 경우, list-deduct-item-lg 추가 -->
+                        <span class="title">장애인</span>
+                        <span class="count-num">
+                            <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                            <input type="number" title="qty" value="0" class="qty" min="0">
+                            <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-lg clearfix"><!-- 스위치가 올 경우(있음/없음), list-deduct-item-lg 추가 -->
+                        <span class="title">부녀자</span>
+                        <span class="box-switch">
+                            <a class="btn-no" href="#">없음</a>
+                            <a class="btn-yes active" href="#">있음</a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-lg clearfix"><!-- 스위치가 올 경우(있음/없음), list-deduct-item-lg 추가 -->
+                        <span class="title">한부모소득</span>
+                        <span class="box-switch">
+                            <a class="btn-no" href="#">없음</a>
+                            <a class="btn-yes active" href="#">있음</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="javascript:void(0)">저장</a>
+            </div>
+        </div>
+        <!--   E  box_tax_sub  -->
+
+    </div>
+    <!--  E contents  -->
+</div>
+</body>
+</html>
+
+

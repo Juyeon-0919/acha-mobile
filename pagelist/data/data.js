@@ -10,6 +10,59 @@ data.common = {
         },
     ]
 };
+data.dormant = {
+    'title': '휴면계좌',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_01',
+            'category': '휴면계좌',
+            'page': '휴면 전화 안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_02',
+            'category': '휴면계좌',
+            'page': '회원탈퇴 안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_03',
+            'category': '휴면계좌',
+            'page': '휴면전환 완료 안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_popup_01',
+            'category': '휴면계좌',
+            'page': '본인인증 안내 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_04',
+            'category': '휴면계좌',
+            'page': '오류 안내 페이지'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_05',
+            'category': '휴면계좌',
+            'page': '휴면 해제 완료'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_06',
+            'category': '휴면계좌',
+            'page': '회원 정보 조회 불가'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '12_dormant_account_07',
+            'category': '휴면계좌',
+            'page': 'PC화면'
+        }
+    ]
+};
 data.expenditure1 = {
     'title': '홈계좌(현금흐름)',
     'list': [
