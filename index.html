@@ -85,6 +85,7 @@
 		var template = Handlebars.compile(source); //컴파일
 		$('.wrap_scroll')
 				.append(template(data.common))
+				.append(template(data.connection))
 				.append(template(data.dormant))
 				.append(template(data.expenditure1))
 				.append(template(data.expenditure2))

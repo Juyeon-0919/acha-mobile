@@ -10,6 +10,113 @@ data.common = {
         },
     ]
 };
+data.connection = {
+    'title': '커넥션',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_01',
+            'category': '커넥션',
+            'page': '초대하기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_02',
+            'category': '커넥션',
+            'page': '초대코드 발급'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_03',
+            'category': '커넥션',
+            'page': '커넥션 요청'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_04',
+            'category': '커넥션',
+            'page': '초대 수락하기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_05',
+            'category': '커넥션',
+            'page': '커넥션 연결 완료'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_06',
+            'category': '커넥션',
+            'page': '고정 지출 항목 선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_07',
+            'category': '커넥션',
+            'page': '커넥션 도움말'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_08',
+            'category': '커넥션',
+            'page': '커넥션 도움말 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_popup_01',
+            'category': '커넥션',
+            'page': '24시간 초과 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_09',
+            'category': '커넥션',
+            'page': '메인 - 일자별/구성원/카테고리'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_10',
+            'category': '커넥션',
+            'page': '메인 - 데이터 없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_12',
+            'category': '커넥션',
+            'page': '마이페이지'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_11',
+            'category': '커넥션',
+            'page': '마이페이지_데이터 없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_popup_02',
+            'category': '커넥션',
+            'page': '커넥션명 변경 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_13',
+            'category': '커넥션',
+            'page': '커넥션 끊기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_popup_03',
+            'category': '커넥션',
+            'page': '확인 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_popup_04',
+            'category': '커넥션',
+            'page': '커넥션 끊기 팝업'
+        },
+    ]
+};
 data.dormant = {
     'title': '휴면계좌',
     'list': [
@@ -17,7 +124,7 @@ data.dormant = {
             'stateClass': 'complete',
             'url': '12_dormant_account_01',
             'category': '휴면계좌',
-            'page': '휴면 전화 안내'
+            'page': '휴면전환 안내'
         },
         {
             'stateClass': 'complete',

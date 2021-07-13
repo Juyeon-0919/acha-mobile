@@ -1201,6 +1201,44 @@
     }
 }
 
+@keyframes modal-sticky-bottom-animation5 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 263px;
+    }
+}
+
+@keyframes modal-sticky-bottom-animation-out5 {
+    from {
+        height: 263px;
+    }
+    to {
+        height: 0;
+        display: none;
+    }
+}
+
+@keyframes modal-sticky-bottom-animation6 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 244px;
+    }
+}
+
+@keyframes modal-sticky-bottom-animation-out6 {
+    from {
+        height: 244px;
+    }
+    to {
+        height: 0;
+        display: none;
+    }
+}
+
 .modal-slide-backdrop {
     position: fixed;
     display: none;
@@ -1616,6 +1654,92 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    &.time-out {
+        &.up {
+            transition: .5s;
+
+            & .modal-slide-content {
+                height: 263px;
+                animation: modal-sticky-bottom-animation5 .5s;
+            }
+        }
+
+        &.down {
+            transition: .5s;
+
+            & .modal-slide-content {
+                animation: modal-sticky-bottom-animation-out5 .3s;
+                height: 0;
+            }
+        }
+
+        & .inner {
+            height: 100%;
+            padding: 30px;
+            overflow: hidden;
+
+            & > .title {
+                font-family: var(--font3);
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 29px;
+                letter-spacing: -0.5px;
+                text-align: center;
+                color: var(--text-01);
+                margin-bottom: 19px;
+            }
+
+            & > .desc {
+                font-size: 15px;
+                line-height: 23px;
+                letter-spacing: -0.38px;
+                text-align: center;
+                color: var(--text-01);
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &.connection-edit {
+        &.up {
+            transition: .5s;
+
+            & .modal-slide-content {
+                height: 244px;
+                animation: modal-sticky-bottom-animation6 .5s;
+            }
+        }
+
+        &.down {
+            transition: .5s;
+
+            & .modal-slide-content {
+                animation: modal-sticky-bottom-animation-out6 .3s;
+                height: 0;
+            }
+        }
+
+        & .inner {
+            height: 100%;
+            padding: 20px 30px;
+            overflow: hidden;
+
+            & > .title {
+                font-family: var(--font3);
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 22px;
+                letter-spacing: -0.38px;
+                text-align: center;
+                color: var(--text-01);
+                margin-bottom: 30px;
+            }
+            & .input-wrap {
+                margin-bottom: 50px;
             }
         }
     }
