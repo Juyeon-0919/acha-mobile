@@ -273,7 +273,7 @@
                     font-family: var(--font2);
                     font-size: 12px;
                     font-weight: 500;
-                    line-height: 2.83;
+                    line-height: 18px;
                     letter-spacing: -0.3px;
                     text-align: center;
                     color: var(--text-01);
@@ -1685,6 +1685,10 @@
     }
 
     &.app_lock {
+        &:nth-child(2) {
+            margin-bottom: 36px;
+        }
+
         & .list_group_item {
             padding: 21px 0 19px 5px;
 
@@ -1707,6 +1711,14 @@
                 & .custom-switch {
                     top: 27px;
                 }
+            }
+
+            & .txt {
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: -0.28px;
+                text-align: left;
+                color: var(--text-02);
             }
         }
     }
@@ -1738,12 +1750,18 @@
             height: fit-content;
             margin-bottom: 7px;
             padding-left: 23px;
+            width: 210px;
 
             & label {
+                width: 78px;
                 height: 18px;
 
-                &:first-child {
-                    margin-right: 25px;
+                &:first-child, &:nth-child(2) {
+                    margin-bottom: 12px;
+                }
+
+                &:first-child, &:nth-child(3) {
+                    margin-right: 28px;
                 }
             }
 

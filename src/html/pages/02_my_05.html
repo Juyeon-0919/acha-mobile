@@ -3,15 +3,10 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-
-    <!--  S header  -->
     <div class="header">
         <a href="#" class="sprite btn_back"></a>
         <h2>신한카드 전송요구내역 변경</h2>
     </div>
-    <!--  E header  -->
-
-    <!--  S contents  -->
     <div class="contents">
         <div class="my-page-connected-detail">
             <div class="tip">
@@ -26,10 +21,15 @@
         <div class="my-page-required-list">
             <div class="list-header">
                 <div class="tit">
+                    <!-- 추가 및 문구 수정 -- 2021.07.27 -->
                     <label>
-                        <input type="checkbox" class="filled-in"/>
-                        <span>정기전송</span>
-                     </label>
+                        <input type="checkbox" class="filled-in">
+                        <span>요구</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="filled-in">
+                        <span>미요구</span>
+                    </label>
                 </div>
             </div>
             <ul class="list-body">
@@ -67,7 +67,7 @@
                 </li>
                 <li class="item">
                     <span class="img"><img src="../../img/@temp/499.png" alt=""></span>
-                    <span class="val">[신용] 카카오뱅크 신한카드</span>
+                    <span class="val">[신용] 카카오뱅크 신한카드<span class="icon-new"></span></span> <!-- 아이콘 추가 -- 2021.07.27 -->
                     <label>
                         <input type="checkbox" class="filled-in"/>
                         <span></span>
@@ -76,10 +76,9 @@
             </ul>
         </div>
         <div class="my-page-btn-wrap fixed">
-            <a class="btn btn-block" href="javascript:void(0)">저장</a>
+            <a class="btn btn-block" href="#">저장</a>
         </div>
     </div>
-    <!--  E contents  -->
 </div>
 </body>
 </html>

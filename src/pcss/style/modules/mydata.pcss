@@ -12,6 +12,8 @@
             line-height: 28px;
 
             & span {
+                font-family: var(--font3);
+                font-weight: bold;
                 color: var(--color-point);
             }
         }
@@ -76,6 +78,8 @@
             line-height: 28px;
 
             & span {
+                font-family: var(--font3);
+                font-weight: bold;
                 color: var(--color-point);
             }
         }
@@ -143,6 +147,14 @@
                 & > .checkbox {
                     border-bottom: 1px solid var(--text-01);
                     padding-bottom: 20px;
+
+                    & label {
+                        margin-right: 40px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
                 }
 
                 & > .cont {
@@ -153,8 +165,8 @@
                         & .item {
                             display: flex;
                             width: 100%;
-                            height: 59px;
-                            align-items: center;
+                            padding: 20px 0;
+                            align-items: start;
                             border-bottom: 1px solid #f5f6f8;
 
                             &:last-child {
@@ -317,6 +329,14 @@
         letter-spacing: -0.38px;
         text-align: center;
         color: var(--text-01);
+        margin-bottom: 12px;
+    }
+    & .desc {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.35px;
+        text-align: center;
+        color: var(--text-02);
     }
 }
 
@@ -350,6 +370,15 @@
         letter-spacing: -0.38px;
         text-align: center;
         color: var(--text-01);
+    }
+
+    & .desc {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.35px;
+        text-align: center;
+        color: var(--text-02);
+        margin-top: 12px;
     }
 }
 

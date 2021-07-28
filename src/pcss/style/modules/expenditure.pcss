@@ -66,6 +66,23 @@
             overflow: hidden;
             background-color: #fff;
 
+            &.fix-data {
+                border: 0;
+
+                & input, & input[readonly] {
+                    color: var(--text-01);
+                    padding: 10px 11px 10px 30px;
+                }
+
+                & label {
+                    display: none;
+                }
+
+                & input[type="date"]::-webkit-calendar-picker-indicator {
+                    display: none;
+                }
+            }
+
             & label {
                 display: block;
                 position: absolute;
@@ -98,13 +115,27 @@
                 height: 100%;
                 border: 0;
                 padding: 10px 12px 11px;
-                font-family: var(--font4);
+                font-family: var(--font5);
+                font-weight: 500;
                 font-size: 13px;
                 line-height: 38px;
                 text-align: left;
-                color: var(--text-03);
+                color: var(--text-01);
                 border-radius: 4px;
                 background-color: #fff;
+                letter-spacing: -1px;
+
+                &.default {
+                    font-family: var(--font4);
+                    font-weight: 400;
+                    color: var(--text-03);
+                }
+
+                &::placeholder {
+                    font-family: var(--font4);
+                    font-weight: 400;
+                    color: var(--text-03);
+                }
 
                 &:focus {
                     outline: none;

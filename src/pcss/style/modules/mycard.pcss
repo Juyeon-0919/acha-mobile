@@ -759,7 +759,7 @@
 
             & .modal-header {
                 padding: 0;
-                margin-bottom: 24px;
+                margin-bottom: 20px;
                 border-bottom: 0;
 
                 & .btn-close {
@@ -789,6 +789,31 @@
             & .modal-body {
                 flex: none;
                 padding: 20px;
+
+                & .box-ex-account {
+                    padding: 0 20px 20px;
+
+                    & .card-detail-calendar {
+                        margin-bottom: 10px;
+
+                        & .input-calendar {
+                            & label {
+                                right: 11px;
+                            }
+                            & input[type="date"]::-webkit-calendar-picker-indicator {
+                                right: 8px;
+                            }
+                        }
+                    }
+
+                    & .desc {
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: -0.3px;
+                        color: var(--text-03);
+                        padding-bottom: 10px;
+                    }
+                }
 
                 & .txt-content {
                     & .inner {
@@ -1028,9 +1053,30 @@
 
         & .card-info {
             & .img {
+                position: relative;
                 width: 64px;
                 height: 40px;
                 margin: 1px auto 23px;
+
+                & .btn-search {
+                    position: absolute;
+                    top: -13px;
+                    right: -13px;
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    text-align: center;
+                    background-color: var(--blurple);
+                    padding-top: 6px;
+
+                    & .ico-card-find-w {
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url(../../img/common/ico-card-find-w@2x.png);
+                        background-size: cover;
+                    }
+                }
 
                 & img {
                     width: 100%;
@@ -1506,7 +1552,13 @@
 
             & .swiper-wrapper {
                 & .swiper-slide {
-                    padding: 20px 20px 48px;
+                    padding: 20px 20px 19px;
+
+                    & .card-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
                 }
             }
 
@@ -1526,11 +1578,69 @@
                 }
             }
         }
+
+        & .btn-area {
+            margin-top: 18px;
+        }
+
+        & .category-list {
+            margin-top: 18px;
+            display: flex;
+            justify-content: center;
+
+            & li {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 18px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                & img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        & .discount-list {
+            margin-top: 16px;
+
+            & li {
+                display: flex;
+                width: 100%;
+                height: 34px;
+                align-items: center;
+                margin-bottom: 6px;
+
+                & .txt {
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 2.31;
+                    letter-spacing: -0.33px;
+                }
+
+                & .img {
+                    width: 34px;
+                    height: 34px;
+                    margin-right: 6px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
 
     & .card-detail-info {
         padding: 20px 24px 30px;
         border-bottom: 1px solid #f5f6f8;
+
         & > .title {
             font-size: 18px;
             line-height: 27px;
@@ -1901,7 +2011,7 @@
 }
 
 .card-benefits-wrap {
-    padding: 0 20px;
+    padding: 10px 20px 0;
 
     & > .info-title {
         font-family: var(--font1);
@@ -2220,21 +2330,98 @@
     }
 
     & > .card_benefits {
-        border-top: 1px solid #f2f4f7;
-        padding: 30px 0 40px;
+        padding: 33px 0 40px;
+
+        & > .list.caution {
+            padding-left: 16px;
+            color: var(--text-03);
+            font-weight: normal;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+            &::before {
+                left: 0;
+            }
+        }
 
         & .badge-area {
-            margin-bottom: 14px;
+            position: relative;
+            margin-bottom: 17px;
 
             & .badge-pill {
                 &.grey {
                     background-color: var(--text-03);
                 }
             }
+
+            & .btn-arrow {
+                position: absolute;
+                padding: 0 18px 0 10px;
+                height: 26px;
+                line-height: 24px;
+                font-size: 11px;
+                right: 0;
+                top: -2px;
+                min-width: auto;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 6px;
+                    height: 10px;
+                    background-image: url(../../img/common/ico-arrow-btn@2x.png);
+                    background-size: cover;
+                }
+            }
         }
 
         & .list-area {
             margin-bottom: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+
+                &  .direct-register-area {
+                    padding: 6px 0 0;
+                    margin-bottom: 0;
+                    border-bottom: 0;
+                }
+
+                & .btn-txt {
+                    padding-bottom: 0;
+                }
+            }
+
+            & .list-area-tip {
+                position: relative;
+                font-family: var(--font2);
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: -0.38px;
+                text-align: left;
+                margin-bottom: 24px;
+
+                & span {
+                    display: inline-block;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 4px;
+                        left: 0;
+                        display: inline-block;
+                        width: 100%;
+                        height: 4px;
+                        background-color: #e0d3ff;
+                        z-index: -1;
+                    }
+                }
+            }
 
             & .list {
                 position: relative;
@@ -2243,6 +2430,10 @@
                 margin-bottom: 6px;
                 line-height: 34px;
                 padding-left: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
 
                 &.ico-card-bene-sale {
                     &::before {
@@ -2279,6 +2470,34 @@
 
                 & .primary-color {
                     font-weight: bold;
+                }
+            }
+
+            & .btn-txt {
+                margin-top: 14px;
+                border-bottom: 1px solid #f5f6f8;
+                padding-bottom: 30px;
+
+                & a {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    letter-spacing: -0.33px;
+                    color: var(--text-02);
+                    text-decoration: underline;
+                }
+                & .arrow-list-add {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 6px;
+                    height: 16px;
+                    background-image: url(../../img/common/arrow-list-add@2x.png);
+                    background-size: cover;
+                    margin-left: 4px;
                 }
             }
         }
@@ -2337,8 +2556,15 @@
     }
 
     & .direct-register-area {
-        padding: 30px 0 0;
-        border-top: 1px solid #f2f4f7;
+        padding: 6px 0 27px;
+        border-bottom: 1px solid #f2f4f7;
+        margin-bottom: 32px;
+
+        &.only-title {
+            margin-bottom: 0;
+            padding: 6px 0 0;
+            border-bottom: 0;
+        }
 
         & .title-area {
             position: relative;

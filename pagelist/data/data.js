@@ -619,6 +619,18 @@ data.my = {
         },
         {
             'stateClass': 'complete',
+            'url': '02_my_popup_01',
+            'category': 'My',
+            'page': '프로필 사진 설정 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_popup_03',
+            'category': 'My',
+            'page': '이메일 주소 변경 팝업'
+        },
+        {
+            'stateClass': 'complete',
             'url': '02_my_03',
             'category': 'My',
             'page': '연결정보 있는 경우'
@@ -643,21 +655,27 @@ data.my = {
         },
         {
             'stateClass': 'complete',
+            'url': '02_my_popup_02',
+            'category': 'My',
+            'page': '연결철회 확인 팝업'
+        },
+        {
+            'stateClass': 'complete',
             'url': '02_my_07',
             'category': 'My',
             'page': '고정지출 설정'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_popup_01',
+            'url': '02_my_08',
             'category': 'My',
-            'page': '프로필 사진 설정 팝업'
+            'page': '전송 종료시점 변경'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_popup_02',
+            'url': '02_my_09',
             'category': 'My',
-            'page': '연결철회 확인 팝업'
+            'page': '통합인증 완료'
         },
     ]
 };
@@ -685,7 +703,7 @@ data.calendar = {
     ]
 };
 data.mydata = {
-    'title': '마이데이터 연결',
+    'title': '추가하기(마이데이터 연결)',
     'list': [
         {
             'stateClass': 'complete',
@@ -698,6 +716,12 @@ data.mydata = {
             'url': '04_my_data_02',
             'category': 'mydata',
             'page': '전송요구 내역 확인'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_date_popup_01',
+            'category': 'mydata',
+            'page': '정기전송 주기 변경 팝업'
         },
         {
             'stateClass': 'complete',
@@ -739,7 +763,7 @@ data.mydata = {
             'stateClass': 'complete',
             'url': '04_my_data_09',
             'category': 'mydata',
-            'page': '개별인증'
+            'page': '개별인증 완료'
         },
     ]
 };
@@ -760,16 +784,46 @@ data.mycard = {
         },
         {
             'stateClass': 'complete',
-            'url': '05_my_card_popup_01',
+            'url': '05_my_card_03',
             'category': 'mycard',
-            'page': '실적 산정 안내 팝업'
+            'page': '카드 상세정보'
         },
         {
             'stateClass': 'complete',
-            'url': '05_my_card_03',
+            'url': '05_my_card_popup_04',
             'category': 'mycard',
-            'page': '상세화면'
+            'page': '연회비 팝업'
         },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_popup_05',
+            'category': 'mycard',
+            'page': '연회비 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_04',
+            'category': 'mycard',
+            'page': '결제예정 정보'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_07',
+            'category': 'mycard',
+            'page': '어드민에 등록한 혜택 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_08',
+            'category': 'mycard',
+            'page': '어드민에 등록한 혜택 없는 경우'
+        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '05_my_card_popup_01',
+        //     'category': 'mycard',
+        //     'page': '실적 산정 안내 팝업'
+        // },
         {
             'stateClass': 'complete',
             'url': '05_my_card_popup_02',
@@ -784,19 +838,19 @@ data.mycard = {
         },
         {
             'stateClass': 'complete',
-            'url': '05_my_card_04',
+            'url': '05_my_card_09',
             'category': 'mycard',
-            'page': '카드 결제예정 정보'
+            'page': '혜택 직접입력/수정'
         },
         {
             'stateClass': 'complete',
-            'url': '05_my_card_popup_04',
+            'url': '05_my_card_10',
             'category': 'mycard',
-            'page': '실적 산정 안내 팝업'
+            'page': '혜택 직접입력/수정'
         },
         {
             'stateClass': 'complete',
-            'url': '05_my_card_popup_05',
+            'url': '05_my_card_popup_06',
             'category': 'mycard',
             'page': '실적 산정 안내 팝업'
         },
@@ -812,41 +866,17 @@ data.mycard = {
             'category': 'mycard',
             'page': '자동결제내역 데이터가 없는 경우'
         },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_07',
-            'category': 'mycard',
-            'page': '어드민에 등록한 혜택 있는 경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_08',
-            'category': 'mycard',
-            'page': '어드민에 등록한 혜택 없는 경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_09',
-            'category': 'mycard',
-            'page': '혜택 직접입력/수정'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_popup_06',
-            'category': 'mycard',
-            'page': '실적 산정 안내 팝업'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_10',
-            'category': 'mycard',
-            'page': '맵핑된 카드 있을 경우'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '05_my_card_10',
+        //     'category': 'mycard',
+        //     'page': '맵핑된 카드 있을 경우'
+        // },
         {
             'stateClass': 'complete',
             'url': '05_my_card_11',
             'category': 'mycard',
-            'page': '맵핑된 카드 없을 경우'
+            'page': '내 카드 찾기'
         },
         {
             'stateClass': 'complete',
@@ -858,7 +888,7 @@ data.mycard = {
             'stateClass': 'complete',
             'url': '05_my_card_13',
             'category': 'mycard',
-            'page': '카드사별 검색'
+            'page': '내 카드 찾기 - 카드사별 검색'
         },
         {
             'stateClass': 'complete',

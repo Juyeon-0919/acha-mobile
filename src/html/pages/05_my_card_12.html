@@ -3,13 +3,10 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-    <!--  S header  -->
     <div class="header">
         <a href="#" class="sprite btn_back"></a>
         <h2>내 카드 찾기</h2>
     </div>
-    <!--  E header  -->
-
     <div class="contents">
         <div class="find-my-card-wrap">
             <div class="title-area">
@@ -17,18 +14,15 @@
                 선택해주세요 😀
             </div>
             <div class="badge-area">
+                <ul class="">
+                    <li><a href="#" class="badge-pill with-icon">우리카드</a></li>
+                    <li><a href="#" class="badge-pill with-icon">체크카드</a></li>
+                </ul>
+                <a href="#" class="btn btn-filter">조회 필터</a>
                 <ul class="_firstDepth">
-                    <li><a href="#" class="badge-pill active" data-id="item1">비슷한 카드</a></li>
-                    <li><a href="#" class="badge-pill" data-id="item2">전체카드</a></li>
-                </ul>
-                <ul class="_secondDepth" data-id="item1">
-<!--                    <li><a href="#" class="badge-pill active">전체</a></li>-->
-<!--                    <li><a href="#" class="badge-pill">신용카드</a></li>-->
-<!--                    <li><a href="#" class="badge-pill">체크카드</a></li>-->
-                </ul>
-                <ul class="_secondDepth" data-id="item2">
                     <li><a href="#" class="badge-pill active">전체</a></li>
                     <li><a href="#" class="badge-pill">신용카드</a></li>
+                    <li><a href="#" class="badge-pill">체크카드</a></li>
                 </ul>
             </div>
             <div class="input-search">
@@ -83,15 +77,15 @@
 </div>
 <script>
     $('._firstDepth li a').on('click',function (){
-        var thisId = $(this).attr('data-id')
+        // var thisId = $(this).attr('data-id')
 
         $(this).addClass('active').parent().siblings().children().removeClass('active');
-        $(`._secondDepth[data-id=${thisId}]`).addClass('active').siblings().removeClass('active');
+        // $(`._secondDepth[data-id=${thisId}]`).addClass('active').siblings().removeClass('active');
     })
 
-    $('._secondDepth li a').on('click',function (){
-        $(this).addClass('active').parent().siblings().children().removeClass('active');
-    })
+    // $('._secondDepth li a').on('click',function (){
+    //     $(this).addClass('active').parent().siblings().children().removeClass('active');
+    // })
 </script>
 </body>
 </html>

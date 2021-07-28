@@ -3,19 +3,18 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-    <!--  S header  -->
     <div class="header">
         <a href="#" class="sprite btn_back"></a>
         <h2>카드 상세정보</h2>
+        <div class="btn-refresh"><span>30분 전</span><a href="#" class="ico-refresh-mini"></a></div> <!-- 추가 -- 2021.07.27 -->
     </div>
-    <!--  E header  -->
-
     <div class="contents">
         <div class="my-card-detail">
             <div class="card-detail-wrap">
                 <div class="card-info">
                     <div class="img">
                         <img src="../../img/@temp/card_noimg_w_kb@2x.png" alt="">
+                        <a href="#" class="btn-search"><i class="ico-card-find-w"></i></a> <!-- 버튼 추가 -- 2021.07.27 -->
                     </div>
                     <p class="card-name">현대카드 스마일페이카드</p>
                     <ul class="crad-info-list">
@@ -38,134 +37,101 @@
                     </ul>
                 </div>
             </div>
+            <!-- s -- 추가 및 변경 -- 2021.07.27 -->
             <div class="card-total-ex-wrap">
                 <div class="card-item">
-                    <div class="swiper-container _swiper1">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="badge-wrap">
-<!--                                    <a href="#" class="badge">#지난달</a>-->
-                                    <a href="#" class="badge active">#이번달</a>
-                                </div>
                                 <div class="card-info">
-                                    <span class="txt">5월 26일 결제할 카드값</span>
-                                    <span class="val">634,431</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="badge-wrap">
-                                    <a href="#" class="badge">#지난달</a>
-<!--                                    <a href="#" class="badge active">#이번달</a>-->
-                                </div>
-                                <div class="card-info">
-                                    <span class="txt">5월 26일 결제할 카드값</span>
+                                    <span class="txt">5월 26일<br/>결제할 카드값 💰</span>
                                     <span class="val">634,431</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination _swiperPagination1"></div>
                     </div>
                 </div>
                 <div class="card-item">
-                    <div class="swiper-container _swiper2">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="info-title">
-                                    <a href="#">
-                                        4월 실적 달성까지<br/>
-                                        <span class="primary-color">849,462원</span> 남았어요 😃
-                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
-                                    </a>
+                                    내 카드를 매칭하면 실적에 따른<br/>
+                                    <span class="primary-color">카드 혜택을 편리</span>하게 관리할 수 있어요
                                 </div>
-                                <div class="graph-area">
-                                    <div class="required-performance">
-                                        <span class="txt">실적 </span>
-                                        <span class="val">150,538</span>
-                                        <span class="txt">원</span>
-                                    </div>
-                                    <div class="bar-graph">
-                                        <span class="bar" style="width: 50%"></span>
-                                        <span class="sec sec-2"> <!-- 실적 구간 2개 있을 경우 -->
-                                                <span class="on"><em>50만원</em></span>
-                                                <span><em>100만원</em></span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="info-title">
-                                    <a href="#">
-                                        4월 실적 달성까지<br/>
-                                        <span class="primary-color">849,462원</span> 남았어요 😃
-                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
-                                    </a>
-                                </div>
-                                <div class="graph-area">
-                                    <div class="required-performance">
-                                        <span class="txt">실적 </span>
-                                        <span class="val">150,538</span>
-                                        <span class="txt">원</span>
-                                    </div>
-                                    <div class="bar-graph">
-                                        <span class="bar" style="width: 50%"></span>
-                                        <span class="sec sec-3"> <!-- 실적 구간 3개 있을 경우 -->
-                                            <span class="on"><em>30만원</em></span>
-                                            <span><em>50만원</em></span>
-                                            <span><em>100만원</em></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="info-title">
-                                    <a href="#">
-                                        4월 실적 달성까지<br/>
-                                        <span class="primary-color">849,462원</span> 남았어요 😃
-                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
-                                    </a>
-                                </div>
-                                <div class="graph-area">
-                                    <div class="required-performance">
-                                        <span class="comp">지난달 보다 474,000원 적게 사용</span>
-                                    </div>
-                                    <div class="bar-graph">
-                                        <span class="bar" style="width: 50%"></span>
-                                        <!--                                    <span class="sec sec-1"> &lt;!&ndash; 실적 구간 1개 있을 경우 &ndash;&gt;-->
-                                        <!--                                            <span><em>100만원</em></span>-->
-                                        <!--                                        </span>-->
-                                        <span class="val">3월 사용금액 1,030,000원</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="info-title">
-                                    <a href="#">
-                                        4월 실적 달성까지<br/>
-                                        <span class="primary-color">849,462원</span> 남았어요 😃
-                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
-                                    </a>
-                                </div>
-                                <div class="graph-area on"> <!-- 실적 충족시 -->
-                                    <div class="required-performance">
-                                        <span class="txt">실적 달성 🎉</span>
-                                    </div>
-                                    <div class="bar-graph">
-                                        <span class="bar" style="width: 100%"></span>
-                                        <span class="sec sec-4"> <!-- 실적 구간 4개 있을 경우 -->
-                                            <span class="on"><em>25만원</em></span>
-                                            <span class="on"><em>50만원</em></span>
-                                            <span class="on"><em>75만원</em></span>
-                                            <span class="on"><em>100만원</em></span>
-                                        </span>
-                                    </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-block btn-lg btn-gray float-left btn-half">아니요,그냥 쓸래요</a>
+                                    <a href="#" class="btn btn-block btn-lg float-right btn-half">내 카드 찾기</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination _swiperPagination2"></div>
                     </div>
                 </div>
                 <div class="card-item">
-                    <div class="swiper-container _swiper3">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="info-title">
+                                    <a href="#">혜택을 직접 입력해서 <span class="primary-color">내 카드 실적</span>을<br/> 편리하게 관리하세요 😃
+                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
+                                    </a>
+                                </div>
+                                <ul class="category-list">
+                                    <li><img src="../../img/common/ico-card-bene-phone@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-auto@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-card@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-dona@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-finance@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="info-title">
+                                    <a href="#"><span class="primary-color">30만원 실적</span>을 채우면 받을 수 있는 혜택을<br/>직접 입력해주세요
+                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
+                                    </a>
+                                </div>
+                                <ul class="category-list">
+                                    <li><img src="../../img/common/ico-card-bene-phone@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-auto@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-card@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-dona@2x.png" alt=""></li>
+                                    <li><img src="../../img/common/ico-card-bene-finance@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="info-title">
+                                    <a href="#"><span class="primary-color">30만원 실적</span>을 채우면<br/>받을 수 있는 혜택 😃
+                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
+                                    </a>
+                                </div>
+                                <ul class="discount-list">
+                                    <li>
+                                        <div class="img"><img src="../../img/common/ico-card-bene-sale@2x.png" alt=""></div>
+                                        <div class="txt">모든 가맹점 <span class="font-bold primary-color">0.7% </span>청구할인</div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><img src="../../img/common/ico-card-bene-shopping@2x.png" alt=""></div>
+                                        <div class="txt">모든 가맹점 <span class="font-bold primary-color">0.7% </span>청구할인</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="info-title">
@@ -188,32 +154,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="info-title">
-                                    <a href="#">
-                                        자동결제내역 <span class="primary-color">5건 </span>💳
-                                        <img src="../../img/common/ico-list-arrow-small@2x.png" width="6" height="16" alt="">
-                                    </a>
-                                    <p class="info-title-sm">더 많은 내역을 보려면 탭 해주세요</p>
-                                </div>
-                                <div class="info-ex">
-                                    <ul>
-                                        <li>
-                                            <span>SKT(6930)</span>
-                                            <span>46,000</span>
-                                        </li>
-                                        <li>
-                                            <span>SKT(6930)</span>
-                                            <span>46,000</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
-                        <div class="swiper-pagination _swiperPagination3"></div>
                     </div>
                 </div>
             </div>
+            <!-- e -- 추가 및 변경 -- 2021.07.27 -->
             <div class="card-detail-list-wrap">
                 <div class="card-detail-title">
                     <div class="title">카드사용금액</div>
@@ -231,7 +176,7 @@
                 </div>
                 <div class="card-detail-badge">
                     <ul>
-                        <li class="active"><a href="#" id="cal">지난달</a></li>
+                        <li class="active"><a href="#" id="cal">1개월</a></li> <!-- 문구 수정 -- 2021.07.27 -->
                         <li><a href="#">2개월</a></li>
                         <li><a href="#">3개월</a></li>
                     </ul>
@@ -280,28 +225,6 @@
 </div>
 </body>
 <script>
-    // https://swiperjs.com/swiper-api
-    $(document).ready(function () {
-        var swiper = new Swiper("._swiper1", {
-            pagination: {
-                el: "._swiperPagination1",
-                clickable : true
-            }
-        });
-        var swiper2 = new Swiper("._swiper2", {
-            pagination: {
-                el: "._swiperPagination2",
-                clickable : true
-            }
-        });
-        var swiper3 = new Swiper("._swiper3", {
-            pagination: {
-                el: "._swiperPagination3",
-                clickable : true
-            }
-        });
-    })
-
     /* 날짜 객체 받아서 문자열로 리턴하는 함수 */
     function getDateStr(myDate){
         return (myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + myDate.getDate())

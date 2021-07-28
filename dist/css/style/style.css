@@ -13840,6 +13840,36 @@ input.custom:focus {
             height: 100%;
         }
 
+.header .btn-refresh {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+.header .btn-refresh span {
+            display: inline-block;
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: -0.6px;
+            color: #737183;
+            color: var(--text-02);
+            vertical-align: middle;
+        }
+
+.header .btn-refresh .ico-refresh-mini {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url(../../img/common/ico-refresh-mini@2x.png);
+            background-size: cover;
+            vertical-align: middle;
+            margin-left: 2px;
+        }
+
 .header-ex {
     position: relative;
     height: 66px;
@@ -18218,7 +18248,7 @@ a:hover {
         color: #888888
     }
 
-.btn.btn-gray:focus {
+.btn.btn-gray:focus, .btn.btn-gray:hover {
             color: #888888;
         }
 
@@ -18308,7 +18338,7 @@ a:hover {
     letter-spacing: -0.6px
 }
 
-.btn-lg:focus {
+.btn-lg:focus, .btn-lg:hover {
         color: #6839d3;
         color: var(--color-point);
     }
@@ -24034,6 +24064,23 @@ input[type=number] {
     padding: 36px 20px 40px
 }
 
+.my-page-category .txt-box {
+        display: flex;
+        width: 100%;
+        padding: 18px 0;
+        border-radius: 6px;
+        border: solid 1px #e3e4e8;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.33px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: #737183;
+        color: var(--text-02);
+        margin-top: 30px;
+    }
+
 .my-page-category > .title-area {
         font-family: 'Noto Sans CJK KR Medium';
         font-family: var(--font2);
@@ -24289,6 +24336,28 @@ input[type=number] {
                     padding-left: 14px
                 }
 
+.my-page-category .connected-list > .category > .list-item .info-header .icon-expired {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url(../../img/common/icon-expirationintend@2x.png);
+                        background-size: cover;
+                        transform: translateY(-1px);
+                        margin-left: 4px;
+                    }
+
+.my-page-category .connected-list > .category > .list-item .info-header .icon-new {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url(../../img/common/icon-new@2x.png);
+                        background-size: cover;
+                        transform: translateY(-1px);
+                        margin-left: 4px;
+                    }
+
 .my-page-category .connected-list > .category > .list-item .info-header::after {
                         content: '';
                         position: absolute;
@@ -24333,6 +24402,16 @@ input[type=number] {
                         overflow: hidden;
                         align-items: center
                     }
+
+.my-page-category .connected-list > .category > .list-item .info-list .item.disabled span {
+                                opacity: .6;
+                            }
+
+.my-page-category .connected-list > .category > .list-item .info-list .item.disabled em {
+                                font-size: 11px;
+                                color: #ef4b61;
+                                margin-left: 4px;
+                            }
 
 .my-page-category .connected-list > .category > .list-item .info-list .item:last-child {
                             border-bottom: 0;
@@ -24600,7 +24679,12 @@ input[type=number] {
 
 .my-page-required-list > .list-header > .tit > label {
                 margin-bottom: 9px;
+                margin-right: 40px
             }
+
+.my-page-required-list > .list-header > .tit > label:last-child {
+                    margin-right: 0;
+                }
 
 .my-page-required-list > .list-header .btn-wrap {
             float: right
@@ -24621,8 +24705,12 @@ input[type=number] {
                 color: var(--text-02)
             }
 
+.my-page-required-list > .list-header .btn-wrap .btn:last-child {
+                    margin-right: 0;
+                }
+
 .my-page-required-list > .list-header .btn-wrap .btn + .btn {
-                    margin-right: 7px;
+                    margin-left: 5px;
                 }
 
 .my-page-required-list .list-body {
@@ -24635,8 +24723,8 @@ input[type=number] {
 .my-page-required-list .list-body .item {
             display: flex;
             width: 100%;
-            height: 59px;
-            align-items: center;
+            padding: 20px 0;
+            align-items: start;
             border-bottom: 1px solid #f5f6f8
         }
 
@@ -24671,6 +24759,33 @@ input[type=number] {
                 text-overflow: ellipsis
             }
 
+.my-page-required-list .list-body .item .val.color-red {
+                    color: #ef4b61;
+                    font-family: 'Roboto Medium';
+                    font-family: var(--font5);
+                }
+
+.my-page-required-list .list-body .item .val > .btn-wrap {
+                    display: block;
+                    text-align: right;
+                    margin-top: 10px
+                }
+
+.my-page-required-list .list-body .item .val > .btn-wrap a.btn-sm {
+                        display: inline-block;
+                        width: 59px;
+                        min-width: auto;
+                        border-radius: 2px;
+                        border: solid 1px #e3e4e8;
+                        background-color: #fff;
+                        font-size: 11px;
+                        line-height: 24px;
+                        letter-spacing: -0.55px;
+                        text-decoration: none;
+                        color: #737183;
+                        color: var(--text-02);
+                    }
+
 .my-page-required-list .list-body .item .val > a {
                     font-size: 13px;
                     line-height: 19px;
@@ -24684,6 +24799,10 @@ input[type=number] {
 .my-page-connected-list {
     padding: 36px 20px 96px
 }
+
+.my-page-connected-list.no-btn {
+        padding: 36px 20px 40px;
+    }
 
 .my-page-connected-list > .list-header {
         overflow: hidden;
@@ -24765,8 +24884,30 @@ input[type=number] {
                 color: var(--text-01);
                 overflow: hidden;
                 white-space: nowrap;
-                text-overflow: ellipsis;
+                text-overflow: ellipsis
             }
+
+.my-page-connected-list .list-body .item .val .icon-expired {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url(../../img/common/icon-expirationintend@2x.png);
+                    background-size: cover;
+                    transform: translateY(-1px);
+                    margin-left: 4px;
+                }
+
+.my-page-connected-list .list-body .item .val .icon-new {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url(../../img/common/icon-new@2x.png);
+                    background-size: cover;
+                    transform: translateY(-1px);
+                    margin-left: 4px;
+                }
 
 .my-page-btn-wrap .btn {
         width: 100%;
@@ -24859,7 +25000,7 @@ input[type=number] {
           }
 
 .my-page-input-info {
-    padding: 40px 20px
+    padding: 40px 20px 30px
 }
 
 .my-page-input-info > .list-header {
@@ -24902,6 +25043,26 @@ input[type=number] {
                     margin-right: 7px;
                 }
 
+.my-page-input-info > .list-header .txt-bold {
+            font-family: 'Roboto';
+            font-family: var(--font4);
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 24px;
+            letter-spacing: -0.43px;
+            margin-bottom: 12px;
+        }
+
+.my-page-input-info > .list-header .txt-desc {
+            font-family: 'Roboto';
+            font-family: var(--font4);
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.35px;
+            color: #737183;
+            color: var(--text-02);
+        }
+
 .my-page-input-info .input-area {
         padding-top: 20px
     }
@@ -24932,6 +25093,85 @@ input[type=number] {
                     color: #afaeb8;
                     color: var(--text-04);
                 }
+
+.my-page-input-info .btn-area {
+        padding-top: 4px;
+    }
+
+.my-common-wrap {
+    padding: 10px 20px 90px
+}
+
+.my-common-wrap > .title {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.45px;
+        color: #37354e;
+        color: var(--text-01);
+        padding-bottom: 30px;
+        border-bottom: 1px solid #37354e;
+        border-bottom: 1px solid var(--text-01);
+        margin-bottom: 20px;
+    }
+
+.my-common-wrap .date-wrap {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: #37354e;
+        color: var(--text-01);
+        margin-bottom: 10px
+    }
+
+.my-common-wrap .date-wrap .num {
+            font-family: 'Roboto';
+            font-family: var(--font4);
+            font-weight: bold;
+        }
+
+.my-common-wrap .date-wrap a {
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: -0.33px;
+            text-decoration: underline;
+            color: #9b9aa6;
+            color: var(--text-03);
+        }
+
+.my-common-wrap > .desc {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+        text-align: left;
+        color: #737183;
+        color: var(--text-02);
+    }
+
+.my-common-wrap .completed-wrap {
+        padding: 187px 0 0
+    }
+
+.my-common-wrap .completed-wrap .img {
+            width: 200px;
+            height: 90px;
+            margin: 0 auto 24px
+        }
+
+.my-common-wrap .completed-wrap .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.my-common-wrap .completed-wrap .txt {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: -0.38px;
+            text-align: center;
+        }
 
 /*
     작성자 : 이주연
@@ -25330,6 +25570,9 @@ input[type=number] {
         }
 
 .my-data-sign-in > .title-area .title span {
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-weight: bold;
                 color: #6839d3;
                 color: var(--color-point);
             }
@@ -25397,6 +25640,9 @@ input[type=number] {
         }
 
 .my-data-required > .title-area .title span {
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-weight: bold;
                 color: #6839d3;
                 color: var(--color-point);
             }
@@ -25471,8 +25717,16 @@ input[type=number] {
 .my-data-required > .card-list .card-item .card-body > .checkbox {
                     border-bottom: 1px solid #37354e;
                     border-bottom: 1px solid var(--text-01);
-                    padding-bottom: 20px;
+                    padding-bottom: 20px
                 }
+
+.my-data-required > .card-list .card-item .card-body > .checkbox label {
+                        margin-right: 40px
+                    }
+
+.my-data-required > .card-list .card-item .card-body > .checkbox label:last-child {
+                            margin-right: 0;
+                        }
 
 .my-data-required > .card-list .card-item .card-body > .cont .list-body {
                         width: 100%;
@@ -25482,8 +25736,8 @@ input[type=number] {
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item {
                             display: flex;
                             width: 100%;
-                            height: 59px;
-                            align-items: center;
+                            padding: 20px 0;
+                            align-items: start;
                             border-bottom: 1px solid #f5f6f8
                         }
 
@@ -25645,6 +25899,16 @@ input[type=number] {
         text-align: center;
         color: #37354e;
         color: var(--text-01);
+        margin-bottom: 12px;
+    }
+
+.my-data-completed .desc {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.35px;
+        text-align: center;
+        color: #737183;
+        color: var(--text-02);
     }
 
 .my-data-connected {
@@ -25683,6 +25947,16 @@ input[type=number] {
         text-align: center;
         color: #37354e;
         color: var(--text-01);
+    }
+
+.my-data-connected .desc {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.35px;
+        text-align: center;
+        color: #737183;
+        color: var(--text-02);
+        margin-top: 12px;
     }
 
 .my-data-btn-fixed {
@@ -26481,7 +26755,7 @@ input[type=number] {
 
 .modal-my-card .modal-dialog .modal-content .modal-header {
                 padding: 0;
-                margin-bottom: 24px;
+                margin-bottom: 20px;
                 border-bottom: 0
             }
 
@@ -26514,6 +26788,31 @@ input[type=number] {
                 flex: none;
                 padding: 20px
             }
+
+.modal-my-card .modal-dialog .modal-content .modal-body .box-ex-account {
+                    padding: 0 20px 20px
+                }
+
+.modal-my-card .modal-dialog .modal-content .modal-body .box-ex-account .card-detail-calendar {
+                        margin-bottom: 10px
+                    }
+
+.modal-my-card .modal-dialog .modal-content .modal-body .box-ex-account .card-detail-calendar .input-calendar label {
+                                right: 11px;
+                            }
+
+.modal-my-card .modal-dialog .modal-content .modal-body .box-ex-account .card-detail-calendar .input-calendar input[type="date"]::-webkit-calendar-picker-indicator {
+                                right: 8px;
+                            }
+
+.modal-my-card .modal-dialog .modal-content .modal-body .box-ex-account .desc {
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: -0.3px;
+                        color: #9b9aa6;
+                        color: var(--text-03);
+                        padding-bottom: 10px;
+                    }
 
 .modal-my-card .modal-dialog .modal-content .modal-body .txt-content .inner {
                         padding-bottom: 20px;
@@ -26756,10 +27055,32 @@ input[type=number] {
     }
 
 .my-card-detail .card-detail-wrap .card-info .img {
+                position: relative;
                 width: 64px;
                 height: 40px;
                 margin: 1px auto 23px
             }
+
+.my-card-detail .card-detail-wrap .card-info .img .btn-search {
+                    position: absolute;
+                    top: -13px;
+                    right: -13px;
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    text-align: center;
+                    background-color: #6839d3;
+                    background-color: var(--blurple);
+                    padding-top: 6px
+                }
+
+.my-card-detail .card-detail-wrap .card-info .img .btn-search .ico-card-find-w {
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url(../../img/common/ico-card-find-w@2x.png);
+                        background-size: cover;
+                    }
 
 .my-card-detail .card-detail-wrap .card-info .img img {
                     width: 100%;
@@ -27245,8 +27566,14 @@ input[type=number] {
         }
 
 .my-card-detail .card-total-ex-wrap .swiper-container .swiper-wrapper .swiper-slide {
-                    padding: 20px 20px 48px;
+                    padding: 20px 20px 19px
                 }
+
+.my-card-detail .card-total-ex-wrap .swiper-container .swiper-wrapper .swiper-slide .card-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
 
 .my-card-detail .card-total-ex-wrap .swiper-container .swiper-pagination {
                 bottom: 18px
@@ -27263,6 +27590,64 @@ input[type=number] {
                         border-radius: 4px;
                         background-color: #6839d3;
                         background-color: var(--blurple);
+                    }
+
+.my-card-detail .card-total-ex-wrap .btn-area {
+            margin-top: 18px;
+        }
+
+.my-card-detail .card-total-ex-wrap .category-list {
+            margin-top: 18px;
+            display: flex;
+            justify-content: center
+        }
+
+.my-card-detail .card-total-ex-wrap .category-list li {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 18px
+            }
+
+.my-card-detail .card-total-ex-wrap .category-list li:last-child {
+                    margin-right: 0;
+                }
+
+.my-card-detail .card-total-ex-wrap .category-list li img {
+                    width: 100%;
+                    height: auto;
+                }
+
+.my-card-detail .card-total-ex-wrap .discount-list {
+            margin-top: 16px
+        }
+
+.my-card-detail .card-total-ex-wrap .discount-list li {
+                display: flex;
+                width: 100%;
+                height: 34px;
+                align-items: center;
+                margin-bottom: 6px
+            }
+
+.my-card-detail .card-total-ex-wrap .discount-list li .txt {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 2.31;
+                    letter-spacing: -0.33px;
+                }
+
+.my-card-detail .card-total-ex-wrap .discount-list li .img {
+                    width: 34px;
+                    height: 34px;
+                    margin-right: 6px
+                }
+
+.my-card-detail .card-total-ex-wrap .discount-list li .img img {
+                        width: 100%;
+                        height: 100%;
                     }
 
 .my-card-detail .card-detail-info {
@@ -27673,7 +28058,7 @@ input[type=number] {
             }
 
 .card-benefits-wrap {
-    padding: 0 20px
+    padding: 10px 20px 0
 }
 
 .card-benefits-wrap > .info-title {
@@ -27992,12 +28377,25 @@ input[type=number] {
                     }
 
 .card-benefits-wrap > .card_benefits {
-        border-top: 1px solid #f2f4f7;
-        padding: 30px 0 40px
+        padding: 33px 0 40px
     }
 
+.card-benefits-wrap > .card_benefits > .list.caution {
+            padding-left: 16px;
+            color: #9b9aa6;
+            color: var(--text-03);
+            font-weight: normal;
+            margin-bottom: 30px;
+            margin-top: 30px
+        }
+
+.card-benefits-wrap > .card_benefits > .list.caution::before {
+                left: 0;
+            }
+
 .card-benefits-wrap > .card_benefits .badge-area {
-            margin-bottom: 14px
+            position: relative;
+            margin-bottom: 17px
         }
 
 .card-benefits-wrap > .card_benefits .badge-area .badge-pill.grey {
@@ -28005,9 +28403,75 @@ input[type=number] {
                     background-color: var(--text-03);
                 }
 
+.card-benefits-wrap > .card_benefits .badge-area .btn-arrow {
+                position: absolute;
+                padding: 0 18px 0 10px;
+                height: 26px;
+                line-height: 24px;
+                font-size: 11px;
+                right: 0;
+                top: -2px;
+                min-width: auto
+            }
+
+.card-benefits-wrap > .card_benefits .badge-area .btn-arrow::after {
+                    content: '';
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 6px;
+                    height: 10px;
+                    background-image: url(../../img/common/ico-arrow-btn@2x.png);
+                    background-size: cover;
+                }
+
 .card-benefits-wrap > .card_benefits .list-area {
             margin-bottom: 24px
         }
+
+.card-benefits-wrap > .card_benefits .list-area:last-child {
+                margin-bottom: 0
+            }
+
+.card-benefits-wrap > .card_benefits .list-area:last-child  .direct-register-area {
+                    padding: 6px 0 0;
+                    margin-bottom: 0;
+                    border-bottom: 0;
+                }
+
+.card-benefits-wrap > .card_benefits .list-area:last-child .btn-txt {
+                    padding-bottom: 0;
+                }
+
+.card-benefits-wrap > .card_benefits .list-area .list-area-tip {
+                position: relative;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: -0.38px;
+                text-align: left;
+                margin-bottom: 24px
+            }
+
+.card-benefits-wrap > .card_benefits .list-area .list-area-tip span {
+                    display: inline-block;
+                    position: relative
+                }
+
+.card-benefits-wrap > .card_benefits .list-area .list-area-tip span::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 4px;
+                        left: 0;
+                        display: inline-block;
+                        width: 100%;
+                        height: 4px;
+                        background-color: #e0d3ff;
+                        z-index: -1;
+                    }
 
 .card-benefits-wrap > .card_benefits .list-area .list {
                 position: relative;
@@ -28018,6 +28482,10 @@ input[type=number] {
                 line-height: 34px;
                 padding-left: 40px
             }
+
+.card-benefits-wrap > .card_benefits .list-area .list:last-child {
+                    margin-bottom: 0;
+                }
 
 .card-benefits-wrap > .card_benefits .list-area .list.ico-card-bene-sale::before {
                         background-image: url(../../img/common/ico-card-bene-sale@2x.png);
@@ -28049,6 +28517,37 @@ input[type=number] {
 
 .card-benefits-wrap > .card_benefits .list-area .list .primary-color {
                     font-weight: bold;
+                }
+
+.card-benefits-wrap > .card_benefits .list-area .btn-txt {
+                margin-top: 14px;
+                border-bottom: 1px solid #f5f6f8;
+                padding-bottom: 30px
+            }
+
+.card-benefits-wrap > .card_benefits .list-area .btn-txt a {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    letter-spacing: -0.33px;
+                    color: #737183;
+                    color: var(--text-02);
+                    text-decoration: underline;
+                }
+
+.card-benefits-wrap > .card_benefits .list-area .btn-txt .arrow-list-add {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 6px;
+                    height: 16px;
+                    background-image: url(../../img/common/arrow-list-add@2x.png);
+                    background-size: cover;
+                    margin-left: 4px;
                 }
 
 .card-benefits-wrap > .card_benefits .btn-area {
@@ -28106,9 +28605,16 @@ input[type=number] {
                 }
 
 .card-benefits-wrap .direct-register-area {
-        padding: 30px 0 0;
-        border-top: 1px solid #f2f4f7
+        padding: 6px 0 27px;
+        border-bottom: 1px solid #f2f4f7;
+        margin-bottom: 32px
     }
+
+.card-benefits-wrap .direct-register-area.only-title {
+            margin-bottom: 0;
+            padding: 6px 0 0;
+            border-bottom: 0;
+        }
 
 .card-benefits-wrap .direct-register-area .title-area {
             position: relative;
@@ -29095,6 +29601,24 @@ input[type=number] {
             background-color: #fff
         }
 
+.box-ex-account .card-detail-calendar .input-calendar.fix-data {
+                border: 0
+            }
+
+.box-ex-account .card-detail-calendar .input-calendar.fix-data input, .box-ex-account .card-detail-calendar .input-calendar.fix-data input[readonly] {
+                    color: #37354e;
+                    color: var(--text-01);
+                    padding: 10px 11px 10px 30px;
+                }
+
+.box-ex-account .card-detail-calendar .input-calendar.fix-data label {
+                    display: none;
+                }
+
+.box-ex-account .card-detail-calendar .input-calendar.fix-data input[type="date"]::-webkit-calendar-picker-indicator {
+                    display: none;
+                }
+
 .box-ex-account .card-detail-calendar .input-calendar label {
                 display: block;
                 position: absolute;
@@ -29127,16 +29651,50 @@ input[type=number] {
                 height: 100%;
                 border: 0;
                 padding: 10px 12px 11px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Roboto Medium';
+                font-family: var(--font5);
+                font-weight: 500;
                 font-size: 13px;
                 line-height: 38px;
                 text-align: left;
-                color: #9b9aa6;
-                color: var(--text-03);
+                color: #37354e;
+                color: var(--text-01);
                 border-radius: 4px;
-                background-color: #fff
+                background-color: #fff;
+                letter-spacing: -1px
             }
+
+.box-ex-account .card-detail-calendar .input-calendar input.default {
+                    font-family: 'Roboto';
+                    font-family: var(--font4);
+                    font-weight: 400;
+                    color: #9b9aa6;
+                    color: var(--text-03);
+                }
+
+.box-ex-account .card-detail-calendar .input-calendar input::-moz-placeholder {
+                    font-family: 'Roboto';
+                    font-family: var(--font4);
+                    font-weight: 400;
+                    color: #9b9aa6;
+                    color: var(--text-03);
+                }
+
+.box-ex-account .card-detail-calendar .input-calendar input:-ms-input-placeholder {
+                    font-family: 'Roboto';
+                    font-family: var(--font4);
+                    font-weight: 400;
+                    color: #9b9aa6;
+                    color: var(--text-03);
+                }
+
+.box-ex-account .card-detail-calendar .input-calendar input::placeholder {
+                    font-family: 'Roboto';
+                    font-family: var(--font4);
+                    font-weight: 400;
+                    color: #9b9aa6;
+                    color: var(--text-03);
+                }
 
 .box-ex-account .card-detail-calendar .input-calendar input:focus {
                     outline: none;
@@ -34859,7 +35417,7 @@ input[type=number] {
                     font-family: var(--font2);
                     font-size: 12px;
                     font-weight: 500;
-                    line-height: 2.83;
+                    line-height: 18px;
                     letter-spacing: -0.3px;
                     text-align: center;
                     color: #37354e;
@@ -36387,6 +36945,10 @@ input[type=number] {
                 top: 27px;
             }
 
+.list_group.app_lock:nth-child(2) {
+            margin-bottom: 36px;
+        }
+
 .list_group.app_lock .list_group_item {
             padding: 21px 0 19px 5px
         }
@@ -36411,6 +36973,15 @@ input[type=number] {
 .list_group.app_lock .list_group_item.list_group_item_lg .custom-switch {
                     top: 27px;
                 }
+
+.list_group.app_lock .list_group_item .txt {
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: -0.28px;
+                text-align: left;
+                color: #737183;
+                color: var(--text-02);
+            }
 
 .list_group.list_group_item_xl {
         position: relative;
@@ -36443,15 +37014,21 @@ input[type=number] {
             height: -moz-fit-content;
             height: fit-content;
             margin-bottom: 7px;
-            padding-left: 23px
+            padding-left: 23px;
+            width: 210px
         }
 
 .list_group.list_group_item_xl > .checkbox-select label {
+                width: 78px;
                 height: 18px
             }
 
-.list_group.list_group_item_xl > .checkbox-select label:first-child {
-                    margin-right: 25px;
+.list_group.list_group_item_xl > .checkbox-select label:first-child, .list_group.list_group_item_xl > .checkbox-select label:nth-child(2) {
+                    margin-bottom: 12px;
+                }
+
+.list_group.list_group_item_xl > .checkbox-select label:first-child, .list_group.list_group_item_xl > .checkbox-select label:nth-child(3) {
+                    margin-right: 28px;
                 }
 
 .list_group.list_group_item_xl > .checkbox-select .filled-in {

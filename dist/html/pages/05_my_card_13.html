@@ -17,93 +17,49 @@
 </head>
 
 <body>
-<div class="wrap">
-    <!--  S header  -->
+<div class="wrap bg_purple">
     <div class="header">
         <a href="#" class="sprite btn_back"></a>
-        <h2>내 카드 찾기</h2>
+        <h2>편집</h2>
     </div>
-    <!--  E header  -->
-
     <div class="contents">
-        <div class="find-my-card-wrap">
-            <div class="title-area">
-                <span class="primary-color font-weight-bold">보유하신 카드</span>와 같은 상품을<br/>
-                선택해주세요 😀
-            </div>
-            <div class="badge-area">
-                <ul class="">
-                    <li><a href="#" class="badge-pill with-icon">우리카드</a></li>
-                    <li><a href="#" class="badge-pill with-icon">체크카드</a></li>
-                </ul>
-                <a href="#" class="btn btn-filter">조회 필터</a>
-                <ul class="_firstDepth">
-                    <li><a href="#" class="badge-pill active">전체</a></li>
-                    <li><a href="#" class="badge-pill">신용카드</a></li>
-                    <li><a href="#" class="badge-pill">체크카드</a></li>
-                </ul>
-            </div>
-            <div class="input-search">
-                <label for="search"></label>
-                <input type="text" id="search" placeholder="카드명으로 찾기" />
-            </div>
-            <div class="card-list">
-                <ul>
-                    <li>
+        <div class="my-card-edit-wrap">
+            <div class="mycard_edit">
+                <ul class="sortable">
+                    <li class="mycard ui-state-default">
                         <label>
-                            <input type="checkbox" class="filled-in" checked="">
+                            <input type="checkbox" class="filled-in" checked>
                             <span></span>
                         </label>
                         <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt="카드 이미지"></span>
                         <span class="name">KB 혜담 카드</span>
-                        <span class="badge-sm">체크</span>
+                        <a class="btn-mycard-edit handle" href="#"><i class="sprite ico_card_edit"></i></a>
                     </li>
-                    <li>
+                    <li class="mycard ui-state-default">
                         <label>
-                            <input type="checkbox" class="filled-in" checked="">
+                            <input type="checkbox" class="filled-in" checked>
                             <span></span>
                         </label>
-                        <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt="카드 이미지"></span>
-                        <span class="name">KB 혜담 카드</span>
-                        <span class="badge-sm">체크</span>
+                        <span class="img"><img src="../../img/common/img_card_height@2x.png" alt="카드 이미지"></span>
+                        <span class="name">현대카드 스마일페이카드</span>
+                        <a class="btn-mycard-edit handle" href="#"><i class="sprite ico_card_edit"></i></a>
                     </li>
-                    <li>
+                    <li class="mycard ui-state-default">
                         <label>
-                            <input type="checkbox" class="filled-in">
+                            <input type="checkbox" class="filled-in" checked>
                             <span></span>
                         </label>
-                        <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt="카드 이미지"></span>
-                        <span class="name">KB 혜담 카드</span>
-                        <span class="badge-sm">신용</span>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" class="filled-in">
-                            <span></span>
-                        </label>
-                        <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt="카드 이미지"></span>
-                        <span class="name">KB 혜담 카드</span>
-                        <span class="badge-sm">체크</span>
+                        <span class="img"><img src="../../img/common/img_card_height@2x.png" alt="카드 이미지"></span>
+                        <span class="name">현대카드 ZERO(할인형)</span>
+                        <a class="btn-mycard-edit handle" href="#"><i class="sprite ico_card_edit"></i></a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="my-card-btn-fixed">
-            <a href="#" class="btn btn-block">선택한 카드와 매칭하기</a>
+            <div class="bottom-fixed btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="#">저장</a>
+            </div>
         </div>
     </div>
 </div>
-<script>
-    $('._firstDepth li a').on('click',function (){
-        // var thisId = $(this).attr('data-id')
-
-        $(this).addClass('active').parent().siblings().children().removeClass('active');
-        // $(`._secondDepth[data-id=${thisId}]`).addClass('active').siblings().removeClass('active');
-    })
-
-    // $('._secondDepth li a').on('click',function (){
-    //     $(this).addClass('active').parent().siblings().children().removeClass('active');
-    // })
-</script>
 </body>
 </html>
