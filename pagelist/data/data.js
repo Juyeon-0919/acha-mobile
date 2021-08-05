@@ -15,6 +15,12 @@ data.connection = {
     'list': [
         {
             'stateClass': 'complete',
+            'url': '13_connection_00',
+            'category': '커넥션',
+            'page': '커넥션 소개 화면'
+        },
+        {
+            'stateClass': 'complete',
             'url': '13_connection_01',
             'category': '커넥션',
             'page': '초대하기'
@@ -1073,7 +1079,12 @@ data.expenditure = {
             'url': '08_exependiture_02',
             'category': '지출관리',
             'page': '카드 고정비'
-        },    {
+        },     {
+            'stateClass': 'complete',
+            'url': '08_exependiture_07',
+            'category': '지출관리',
+            'page': '카드 고정비가 없는 경우'
+        }, {
             'stateClass': 'complete',
             'url': '08_exependiture_03',
             'category': '지출관리',
@@ -1093,7 +1104,7 @@ data.expenditure = {
             'url': '08_exependiture_06',
             'category': '지출관리',
             'page': '지출상세 - 카테고리'
-        }
+        },
     ]
 };
 

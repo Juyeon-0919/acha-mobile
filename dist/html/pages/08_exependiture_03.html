@@ -44,9 +44,33 @@
                     상세 조건을 설정하여 지출을<br/>
                     확인 할 수 있어요 🙂
                 </div>
-                <div class="btn-wrap">
-                    <a href="#" class="btn btn-filter">필터</a>
+                <!-- s 추가 -- 2021.08.05 // script 추가-->
+                <div class="dropdown-wrap">
+                    <div class="dropdown disabled">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">결제수단 전체
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-value="전체" href="#">전체</a>
+                            <a class="dropdown-item" data-value="계좌이체" href="#">계좌이체</a>
+                            <a class="dropdown-item" data-value="카드결제" href="#">카드결제</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">지출 상태 전체
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <a class="dropdown-item disabled" data-value="전체" href="#">전체</a>
+                            <a class="dropdown-item" data-value="계좌이체" href="#">계좌이체</a>
+                            <a class="dropdown-item" data-value="카드결제" href="#">카드결제</a>
+                        </div>
+                    </div>
                 </div>
+                <!-- e 추가 -- 2021.08.05 -->
+                <!-- s 제거 -- 2021.08.05 -->
+<!--                <div class="btn-wrap">-->
+<!--                    <a href="#" class="btn btn-filter">필터</a>-->
+<!--                </div>-->
+                <!-- e 제거 -- 2021.08.05 -->
             </div>
             <!-- e 추가 -- 2021.06.14 -->
             <div>
@@ -175,16 +199,36 @@
         });
 
         // btnSlideOpen.trigger('click');
+
+        // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+        var index = 3; // (li 갯수) - 1
+        var sum = 0;
+        for (var j=0; j <= index; j++) {
+            sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
+        }
+        $('._exMenu ul').css('width', sum + 1);
+
+        $('#dropdownMenuButton').dropdown();
+        $('#dropdownMenuButton2').dropdown();
+
+        $(".dropdown-item").on("click", function(e){
+            var $dropdown = $(this).parent().siblings();
+            var value = $(this).attr("data-value");
+            $dropdown.text(value);
+
+            // if($('.dropdown').hasClass('disabled')) {
+            //     $(".dropdown-item").on("click", function(e){
+            //         e.preventDefault()
+            //     });
+            // }
+        });
+
+        if($('.dropdown').hasClass('disabled')) {
+            $(".dropdown-item").on("click", function(e){
+                e.preventDefault()
+            });
+        }
     })
-</script>
-<script>
-    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
-    var index = 3; // (li 갯수) - 1
-    var sum = 0;
-    for (var j=0; j <= index; j++) {
-        sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
-    }
-    $('._exMenu ul').css('width', sum + 1);
 </script>
 </body>
 </html>

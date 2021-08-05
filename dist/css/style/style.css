@@ -29582,6 +29582,30 @@ input[type=number] {
                 white-space: nowrap;
             }
 
+.box-ex-account .tip-box {
+        width: 100%;
+        height: 50px;
+        padding: 0 20px;
+        border-bottom: 1px solid #f2f4f7
+    }
+
+.box-ex-account .tip-box .list {
+            font-size: 11px;
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
+            line-height: 50px;
+            font-weight: normal;
+            color: #9b9aa6;
+            color: var(--text-03)
+        }
+
+.box-ex-account .tip-box .list::before {
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                padding-left: 16px;
+            }
+
 .box-ex-account .card-detail-calendar {
         overflow: hidden;
         margin-bottom: 15px;
@@ -29760,7 +29784,7 @@ input[type=number] {
         }
 
 .box-ex-account .accordion .card .card-body {
-                padding: 18px 20px 20px
+                padding: 18px 20px 12px
             }
 
 .box-ex-account .accordion .card .card-body > .total-sum {
@@ -29802,8 +29826,12 @@ input[type=number] {
                         }
 
 .box-ex-account .accordion .card .card-body .ex-pre .ex-info {
-                        margin-bottom: 31px
+                        margin-bottom: 13px
                     }
+
+.box-ex-account .accordion .card .card-body .ex-pre .ex-info:last-child {
+                            margin-bottom: 0;
+                        }
 
 .box-ex-account .accordion .card .card-body .ex-pre .ex-info .date-wrap {
                             width: 42px
@@ -29839,6 +29867,10 @@ input[type=number] {
                                 font-family: var(--font5);
                                 font-weight: 500
                             }
+
+.box-ex-account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value.red {
+                                    color: #ef4b61;
+                                }
 
 .box-ex-account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value::after {
                                     content: '원';
@@ -30016,6 +30048,32 @@ input[type=number] {
                             height: 65px;
                         }
 
+.fixed-card-wrap .empty {
+        padding-top: 96px;
+        padding-right: 20px
+    }
+
+.fixed-card-wrap .empty .img {
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 13px
+        }
+
+.fixed-card-wrap .empty .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.fixed-card-wrap .empty .txt {
+            font-size: 12px;
+            line-height: 19px;
+            letter-spacing: -0.3px;
+            text-align: center;
+            color: #737183;
+            color: var(--text-02);
+            margin-bottom: 40px;
+        }
+
 .btn-scroll {
     position: fixed;
     display: block;
@@ -30110,6 +30168,45 @@ input[type=number] {
             letter-spacing: -0.4px;
             margin-bottom: 10px;
         }
+
+.box_category_list .filter-area .dropdown-wrap {
+            padding: 0
+        }
+
+.box_category_list .filter-area .dropdown-wrap .dropdown {
+                display: inline-block;
+                width: 115px
+            }
+
+.box_category_list .filter-area .dropdown-wrap .dropdown.disabled .dropdown-toggle {
+                        border: solid 1px #e2e3e6;
+                        color: #9b9aa6;
+                        color: var(--text-03);
+                        background-color: #f5f6f8;
+                        cursor: default;
+                    }
+
+.box_category_list .filter-area .dropdown-wrap .dropdown.disabled .dropdown-menu {
+                        display: none;
+                    }
+
+.box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle {
+                    color: #37354e;
+                    color: var(--text-01)
+                }
+
+.box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle::after {
+                        top: 7px;
+                    }
+
+.box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle:hover, .box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle:focus {
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
+.box_category_list .filter-area .dropdown-wrap .dropdown + .dropdown {
+                    margin-left: 8px;
+                }
 
 .box_category_list .filter-area > .btn-wrap {
             overflow: hidden
@@ -41478,7 +41575,7 @@ input[type=number] {
 .modal-connection .modal-dialog .modal-content {
             border-radius: 0;
             text-align: left;
-            padding: 30px 0
+            padding: 30px 0 40px
         }
 
 .modal-connection .modal-dialog .modal-content .modal-header {
@@ -41531,8 +41628,8 @@ input[type=number] {
             }
 
 .modal-connection .modal-dialog .modal-content .modal-body .animation-img {
-                    width: 130px;
-                    height: 130px;
+                    width: 260px;
+                    height: auto;
                     margin: 0 auto
                 }
 
@@ -41540,3 +41637,314 @@ input[type=number] {
                         width: 100%;
                         height: 100%;
                     }
+
+.connection-invite-main-wrap .content-1 {
+        padding: 20px 20px 30px;
+        background-image: linear-gradient(to top, #8d5bfd, #a534ee)
+    }
+
+.connection-invite-main-wrap .content-1 .btn-top-wrap {
+            position: relative;
+            width: 100%;
+            height: 22px;
+            margin-bottom: 3px
+        }
+
+.connection-invite-main-wrap .content-1 .btn-top-wrap .btn-tooltip {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 22px;
+                height: 22px;
+                background-image: url(../../img/common/ico-tooltip-big-w@2x.png);
+                background-size: cover;
+            }
+
+.connection-invite-main-wrap .content-1 .txt-lg {
+            font-size: 26px;
+            line-height: 36px;
+            letter-spacing: -0.65px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 14px
+        }
+
+.connection-invite-main-wrap .content-1 .txt-lg span {
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                color: #fff500;
+            }
+
+.connection-invite-main-wrap .content-1 .txt {
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: -0.35px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 25px
+        }
+
+.connection-invite-main-wrap .content-1 .txt span {
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-weight: bold;
+            }
+
+.connection-invite-main-wrap .content-1 .img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto 25px
+        }
+
+.connection-invite-main-wrap .content-1 .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.connection-invite-main-wrap .content-1 .btn-bottom-wrap .btn {
+               border: 0;
+               border-radius: 6px;
+               height: 50px;
+               box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+               background-color: #6839d3;
+               background-color: var(--blurple);
+               font-family: 'Noto Sans CJK KR Bold';
+               font-family: var(--font3);
+               font-size: 15px;
+               font-weight: bold;
+               line-height: 50px;
+               letter-spacing: -0.38px;
+               text-align: center;
+               color: #fff500;
+           }
+
+.connection-invite-main-wrap .content-2 {
+        padding: 50px 26px 30px;
+        border-bottom: 1px solid #f5f6f8
+    }
+
+.connection-invite-main-wrap .content-2 .txt-lg {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+            letter-spacing: -0.6px;
+            text-align: center;
+            color: #37354e;
+            color: var(--text-01);
+            margin-bottom: 12px;
+        }
+
+.connection-invite-main-wrap .content-2 .txt {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+            text-align: center;
+            color: #737183;
+            color: var(--text-02);
+            margin-bottom: 30px;
+        }
+
+.connection-invite-main-wrap .content-2 .img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto
+        }
+
+.connection-invite-main-wrap .content-2 .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.connection-invite-main-wrap .content-3 {
+        padding: 50px 24px 50px
+    }
+
+.connection-invite-main-wrap .content-3 .txt-lg {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+            letter-spacing: -0.6px;
+            color: #37354e;
+            color: var(--text-01);
+            margin-bottom: 20px;
+        }
+
+.connection-invite-main-wrap .content-3 .txt-md {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: -0.42px;
+            color: #6839d3;
+            color: var(--blurple);
+            margin-bottom: 12px;
+        }
+
+.connection-invite-main-wrap .content-3 .txt {
+            font-size: 13px;
+            line-height: 21px;
+            letter-spacing: -0.32px;
+            color: #737183;
+            color: var(--text-02);
+            margin-bottom: 30px;
+        }
+
+.connection-invite-main-wrap .content-3 .img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            padding: 0 24px
+        }
+
+.connection-invite-main-wrap .content-3 .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.connection-invite-main-wrap .content-4 {
+        padding: 50px 24px 30px;
+        background-color: #f7f8fc
+    }
+
+.connection-invite-main-wrap .content-4 .txt-md {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: -0.42px;
+            color: #6839d3;
+            color: var(--blurple);
+            margin-bottom: 13px;
+        }
+
+.connection-invite-main-wrap .content-4 .txt {
+            font-size: 13px;
+            line-height: 21px;
+            letter-spacing: -0.32px;
+            color: #737183;
+            color: var(--text-02);
+            margin-bottom: 30px;
+        }
+
+.connection-invite-main-wrap .content-4 .img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto
+        }
+
+.connection-invite-main-wrap .content-4 .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.connection-invite-main-wrap .content-5 {
+        padding-bottom: 80px
+    }
+
+.connection-invite-main-wrap .content-5 .txt-sm {
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: -0.28px;
+            text-align: left;
+            color: #9b9aa6;
+            color: var(--text-03);
+            padding: 10px 20px 30px;
+        }
+
+.connection-invite-main-wrap .content-5 .accordion {
+            height: auto
+        }
+
+.connection-invite-main-wrap .content-5 .accordion .card {
+                padding: 0;
+                border-bottom: 1px solid #f5f6f8
+            }
+
+.connection-invite-main-wrap .content-5 .accordion .card .card-header {
+                    position: relative;
+                    padding: 24px 20px
+                }
+
+.connection-invite-main-wrap .content-5 .accordion .card .card-header .title {
+                        width: 100%;
+                        padding: 0;
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
+                        font-size: 14px;
+                        font-weight: bold;
+                        line-height: 20px;
+                        letter-spacing: -0.35px;
+                        text-align: left;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
+.connection-invite-main-wrap .content-5 .accordion .card .card-header .btn-arrow {
+                        width: 18px;
+                        height: 18px;
+                        right: 0;
+                        top: 0;
+                        left: auto
+                    }
+
+.connection-invite-main-wrap .content-5 .accordion .card .card-header .btn-arrow .icon_arrow {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+
+.connection-invite-main-wrap .content-5 .accordion .card .card-body {
+                    padding: 0 20px
+                }
+
+.connection-invite-main-wrap .content-5 .accordion .card .card-body .inner {
+                        padding: 18px 18px 20px;
+                        background-color: #f7f8fc;
+                        font-size: 13px;
+                        line-height: 20px;
+                        letter-spacing: -0.33px;
+                        text-align: left;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
+.connection-invite-main-wrap .content-5 .accordion .card:not(:first-of-type) .card-header:first-child {
+                        border-top: 0;
+                    }
+
+.connection-invite-main-wrap .content-5 .btn-bottom-wrap {
+            padding:  0 20px 30px;
+            width: 100%
+        }
+
+.connection-invite-main-wrap .content-5 .btn-bottom-wrap.scrolling {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+            }
+
+.connection-invite-main-wrap .content-5 .btn-bottom-wrap .btn {
+                display: block;
+                width: 100%;
+                border: 0;
+                border-radius: 6px;
+                height: 50px;
+                box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+                background-color: #6839d3;
+                background-color: var(--blurple);
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 50px;
+                letter-spacing: -0.38px;
+                text-align: center;
+                color: #fff500;
+            }
