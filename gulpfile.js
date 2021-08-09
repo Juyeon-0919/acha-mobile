@@ -109,6 +109,9 @@ function jsLib() {
         'src/js/lib/chartjs-plugin-annotation.min.js',
 
         'src/js/lib/swiper.min.js',
+
+        'src/js/lib/bootstrap-datepicker.min.js',
+        'src/js/lib/bootstrap-datepicker.ko.min.js',
     ];
     return gulp.src(sourceLib)
         .pipe(concat('front.lib.js'))

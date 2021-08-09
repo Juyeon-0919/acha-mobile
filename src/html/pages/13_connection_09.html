@@ -13,16 +13,16 @@
                         <div class="profile my">
                             <div class="img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
                             <div class="tag">나</div>
-                            <div class="toast-popup">
-                                <span class="txt">상대방에게 커넥션 공유를 요청해보세요</span>
-                                <a class="btn-close" href="#"><i class="btn-toast-popup-close"></i></a>
+                            <div class="speech-balloon active"> <!-- active 시, 활성화 -->
+                                <span class="txt">지출을 공유하여 함께 지출관리하세요</span>
+                                <a href="#" class="btn-close _btnClose"><i class="btn-toast-popup-close"></i></a>
                             </div>
                         </div>
                         <div class="profile">
-                            <div class="img" style=" -webkit-mask-image: url(../../img/common/profile-mask-area@2x.png);"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
-                            <div class="toast-popup">
+                            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQngB1QG2AuWPdfDGFYOvBVDEmcMBg-pB9h44RLaeocvKfOjg8Q7czga4yWSVpoKUWj9sI&usqp=CAU" alt=""></div>
+                            <div class="speech-balloon active"> <!-- active 시, 활성화 -->
                                 <span class="txt">상대방에게 커넥션 공유를 요청해보세요</span>
-                                <a class="btn-close" href="#"><i class="btn-toast-popup-close"></i></a>
+                                <a href="#" class="btn-close _btnClose"><i class="btn-toast-popup-close"></i></a>
                             </div>
                         </div>
                     </div>
@@ -46,307 +46,214 @@
                     </ul>
                 </div>
             </div>
-            <div class="connection-tab-content-container">
-                <div class="connection-tab-content active" data-tab="0">
-                    <div class="box-connection">
-                        <div class="box-spending">
-                            <ul>
-                                <li>
-                                    <span class="tit">총 지출</span>
-                                    <span class="val">2,480,520</span>
-                                </li>
-                                <li>
-                                    <span class="tit">지출완료</span>
-                                    <span class="val">320,000</span>
-                                </li>
-                                <li>
-                                    <span class="tit">남은 지출</span>
-                                    <span class="val primary-color">2,160,520</span>
-                                </li>
-                            </ul>
+            <div class="swiper-container _slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box-connection">
+                            <div class="box-spending">
+                                <ul>
+                                    <li>
+                                        <span class="tit">총 지출</span>
+                                        <span class="val">2,480,520</span>
+                                    </li>
+                                    <li>
+                                        <span class="tit">지출완료</span>
+                                        <span class="val">320,000</span>
+                                    </li>
+                                    <li>
+                                        <span class="tit">남은 지출</span>
+                                        <span class="val primary-color">2,160,520</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-daily-spending">
+                                <div class="spending-list-wrap">
+                                    <div class="list-item">
+                                        <div class="day"><em>25일</em><span class="line"></span></div>
+                                        <div class="item-wrap">
+                                            <a href="#" class="item">
+                                                <div class="profile-img my"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
+                                                        <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                    <div class="desc-2">청구서미발행</div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item disabled">
+                                                <div class="profile-img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
+                                                        <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="day"><em>25일</em><span class="line"></span></div>
+                                        <div class="item-wrap">
+                                            <a href="#" class="item">
+                                                <div class="profile-img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                                                <div class="info with-ico-caution"> <!-- info 아이콘이 나오는 경우 -->
+                                                    <div class="desc-1">
+                                                        <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                    <div class="desc-2">결제예정금액</div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="profile-img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
+                                                        <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="day"><em>25일</em><span class="line"></span></div>
+                                        <div class="item-wrap">
+                                            <a href="#" class="item">
+                                                <div class="profile-img"><img
+                                                        src="../../img/common/img-profile-default@2x.png"
+                                                        alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
+                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
+                                                                      alt=""></span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="profile-img"><img
+                                                        src="../../img/common/img-profile-default@2x.png"
+                                                        alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
+                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
+                                                                      alt=""></span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                    <div class="desc-2">청구서미발행</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-daily-spending">
-                            <div class="spending-list-wrap">
-                                <div class="list-item">
-                                    <div class="day"><em>25일</em><span class="line"></span></div>
-                                    <div class="item-wrap">
-                                        <a href="#" class="item">
-                                            <div class="profile-img my"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
+                        <div class="box-bg-receipt">
+                            <div class="top-area">
+                                <div class="txt-lg">카드 고정 결제 금액 💳</div>
+                                <div class="txt">카드로 결제하는 지출만 모았어요</div>
+                                <div class="val">11,250,000</div>
+                            </div>
+                            <div class="box-daily-spending">
+                                <div class="spending-list-wrap">
+                                    <div class="list-item">
+                                        <div class="day"><em>25일</em><span class="line"></span></div>
+                                        <div class="item-wrap">
+                                            <a href="#" class="item">
+                                                <div class="profile-img my"><img
+                                                        src="../../img/common/img-profile-default@2x.png"
+                                                        alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
                                             <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
                                                                       alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                    <div class="desc-2">청구서미발행</div>
                                                 </div>
-                                                <div class="desc-2">청구서미발행</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="item disabled">
-                                            <div class="profile-img"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
+                                            </a>
+                                            <a href="#" class="item disabled">
+                                                <div class="profile-img"><img
+                                                        src="../../img/common/img-profile-default@2x.png"
+                                                        alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
                                             <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
                                                                       alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="list-item">
-                                    <div class="day"><em>25일</em><span class="line"></span></div>
-                                    <div class="item-wrap">
-                                        <a href="#" class="item">
-                                            <div class="profile-img"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info with-ico-caution"> <!-- info 아이콘이 나오는 경우 -->
-                                                <div class="desc-1">
-                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
-                                                                      alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
-                                                </div>
-                                                <div class="desc-2">결제예정금액</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="item">
-                                            <div class="profile-img"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
-                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
-                                                                      alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="box-connection">
+                            <div class="link-area">
+                                <div class="tit">계좌 잔고 💰</div>
+                                <div class="link">
+                                    <span class="val">11,250,000</span>
+                                    <a href="#" class="btn-more"><i class="arrow-list-add"></i></a>
                                 </div>
-                                <div class="list-item">
-                                    <div class="day"><em>25일</em><span class="line"></span></div>
-                                    <div class="item-wrap">
-                                        <a href="#" class="item">
-                                            <div class="profile-img"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
+                            </div>
+                            <div class="box-daily-spending">
+                                <div class="spending-list-wrap">
+                                    <div class="list-item">
+                                        <div class="day"><em>25일</em><span class="line"></span></div>
+                                        <div class="item-wrap item-purple"> <!-- 말풍선 배경이 보라색일 경우 -->
+                                            <a href="#" class="item">
+                                                <div class="profile-img my"><img
+                                                        src="../../img/common/img-profile-default@2x.png"
+                                                        alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
                                             <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
                                                                       alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
+                                                    <div class="desc-2">청구서미발행</div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="item">
-                                            <div class="profile-img"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
+                                            </a>
+                                            <a href="#" class="item disabled">
+                                                <div class="profile-img"><img
+                                                        src="../../img/common/img-profile-default@2x.png"
+                                                        alt=""></div>
+                                                <div class="info">
+                                                    <div class="desc-1">
                                             <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
                                                                       alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
+                                                        <span class="tit">하나카드 이용 대금</span>
+                                                        <span class="val">11,000,000</span>
+                                                    </div>
                                                 </div>
-                                                <div class="desc-2">청구서미발행</div>
-                                            </div>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="box-bg-receipt">
-                        <div class="top-area">
-                            <div class="txt-lg">카드 고정 결제 금액 💳</div>
-                            <div class="txt">카드로 결제하는 지출만 모았어요</div>
-                            <div class="val">11,250,000</div>
-                        </div>
-                        <div class="box-daily-spending">
-                            <div class="spending-list-wrap">
-                                <div class="list-item">
-                                    <div class="day"><em>25일</em><span class="line"></span></div>
-                                    <div class="item-wrap">
-                                        <a href="#" class="item">
-                                            <div class="profile-img my"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
-                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
-                                                                      alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
-                                                </div>
-                                                <div class="desc-2">청구서미발행</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="item disabled">
-                                            <div class="profile-img"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
-                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
-                                                                      alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="swiper-slide">
+                        <div class="box-connection">
+                            <div class="box-profile">
+                                <div class="img my"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                                <div class="name">한미영</div>
+                                <div class="val">2,160,520</div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="box-connection">
-                        <div class="link-area">
-                            <div class="tit">계좌 잔고 💰</div>
-                            <div class="link">
-                                <span class="val">11,250,000</span>
-                                <a href="#" class="btn-more"><i class="arrow-list-add"></i></a>
-                            </div>
-                        </div>
-                        <div class="box-daily-spending">
-                            <div class="spending-list-wrap">
-                                <div class="list-item">
-                                    <div class="day"><em>25일</em><span class="line"></span></div>
-                                    <div class="item-wrap item-purple"> <!-- 말풍선 배경이 보라색일 경우 -->
-                                        <a href="#" class="item">
-                                            <div class="profile-img my"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
-                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
-                                                                      alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
-                                                </div>
-                                                <div class="desc-2">청구서미발행</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="item disabled">
-                                            <div class="profile-img"><img
-                                                    src="../../img/common/img-profile-default@2x.png"
-                                                    alt=""></div>
-                                            <div class="info">
-                                                <div class="desc-1">
-                                            <span class="ic-img"><img src="../../img/@temp/ci_kbbank@2x.png"
-                                                                      alt=""></span>
-                                                    <span class="tit">하나카드 이용 대금</span>
-                                                    <span class="val">11,000,000</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="connection-tab-content" data-tab="1">
-                    <div class="box-connection">
-                        <div class="box-profile">
-                            <div class="img my"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
-                            <div class="name">한미영</div>
-                            <div class="val">2,160,520</div>
-                        </div>
-                        <div class="box-daily-detail-spending">
-                            <ul>
-                                <li class="item">
-                                    <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                    <div class="info-01">
-                                        <div class="tit">하나카드 이용 대금</div>
-                                        <div class="val">280,000</div>
-                                    </div>
-                                    <div class="info-02">
-                                        <div class="name">하나은행</div>
-                                        <div class="num">6659-021-*****7</div>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                    <div class="info-01">
-                                        <div class="tit">하나카드 이용 대금</div>
-                                        <div class="val">280,000</div>
-                                    </div>
-                                    <div class="info-02">
-                                        <div class="name">하나은행</div>
-                                        <div class="num">6659-021-*****7</div>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                    <div class="info-01">
-                                        <div class="tit">하나카드 이용 대금</div>
-                                        <div class="val">280,000</div>
-                                    </div>
-                                    <div class="info-02">
-                                        <div class="name">하나은행</div>
-                                        <div class="num">6659-021-*****7</div>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                    <div class="info-01">
-                                        <div class="tit">하나카드 이용 대금</div>
-                                        <div class="val">280,000</div>
-                                    </div>
-                                    <div class="info-02">
-                                        <div class="name">하나은행</div>
-                                        <div class="num">6659-021-*****7</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="box-profile">
-                            <div class="img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
-                            <div class="name">한미영</div>
-                            <div class="val">2,160,520</div>
-                        </div>
-                        <div class="box-daily-detail-spending">
-                            <div class="no-data">
-                                <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
-                                <div class="txt-sm">표시 할 지출이 없어요 🙁</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="connection-tab-content" data-tab="2">
-                    <div class="box-connection">
-                        <div class="box-daily-detail-spending category">
-                            <div class="category-item">
-                                <div class="category-name">
-                                    <div class="name">카드</div>
-                                    <div class="val">2,160,520</div>
-                                </div>
+                            <div class="box-daily-detail-spending">
                                 <ul>
                                     <li class="item">
-                                        <div class="date">10일</div>
-                                        <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                        <div class="info-01">
-                                            <div class="tit">하나카드 이용 대금</div>
-                                            <div class="val">280,000</div>
-                                        </div>
-                                        <div class="info-02">
-                                            <div class="name">하나은행</div>
-                                            <div class="num">6659-021-*****7</div>
-                                            <div class="txt">청구서미발행</div>
-                                        </div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="date">12일</div>
                                         <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
                                         <div class="info-01">
                                             <div class="tit">하나카드 이용 대금</div>
@@ -358,7 +265,6 @@
                                         </div>
                                     </li>
                                     <li class="item">
-                                        <div class="date">12일</div>
                                         <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
                                         <div class="info-01">
                                             <div class="tit">하나카드 이용 대금</div>
@@ -370,7 +276,17 @@
                                         </div>
                                     </li>
                                     <li class="item">
-                                        <div class="date">12일</div>
+                                        <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                        <div class="info-01">
+                                            <div class="tit">하나카드 이용 대금</div>
+                                            <div class="val">280,000</div>
+                                        </div>
+                                        <div class="info-02">
+                                            <div class="name">하나은행</div>
+                                            <div class="num">6659-021-*****7</div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
                                         <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
                                         <div class="info-01">
                                             <div class="tit">하나카드 이용 대금</div>
@@ -383,95 +299,169 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="category-item">
-                                <div class="category-name">
-                                    <div class="name">보험</div>
-                                    <div class="val">2,160,520</div>
-                                </div>
-                                <ul>
-                                    <li class="item">
-                                        <div class="date">10일</div>
-                                        <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                        <div class="info-01">
-                                            <div class="tit">하나카드 이용 대금</div>
-                                            <div class="val">280,000</div>
-                                        </div>
-                                        <div class="info-02">
-                                            <div class="name">하나은행</div>
-                                            <div class="num">6659-021-*****7</div>
-                                            <div class="txt">청구서미발행</div>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="box-profile">
+                                <div class="img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                                <div class="name">한미영</div>
+                                <div class="val">2,160,520</div>
                             </div>
-                            <div class="category-item">
-                                <div class="category-name">
-                                    <div class="name">금융/투자 상품</div>
-                                    <div class="val">2,160,520</div>
-                                </div>
-                                <ul>
-                                    <li class="item">
-                                        <div class="date">12일</div>
-                                        <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                        <div class="info-01">
-                                            <div class="tit">하나카드 이용 대금</div>
-                                            <div class="val">280,000</div>
-                                        </div>
-                                        <div class="info-02">
-                                            <div class="name">하나은행</div>
-                                            <div class="num">6659-021-*****7</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="category-item">
-                                <div class="category-name">
-                                    <div class="name">통신</div>
-                                    <div class="val">2,160,520</div>
-                                </div>
-                                <ul>
-                                    <li class="item">
-                                        <div class="date">12일</div>
-                                        <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                        <div class="info-01">
-                                            <div class="tit">하나카드 이용 대금</div>
-                                            <div class="val">280,000</div>
-                                        </div>
-                                        <div class="info-02">
-                                            <div class="name">하나은행</div>
-                                            <div class="num">6659-021-*****7</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="category-item">
-                                <div class="category-name">
-                                    <div class="name">공과금</div>
-                                    <div class="val">2,160,520</div>
-                                </div>
-                                <ul>
-                                    <li class="item">
-                                        <div class="date">12일</div>
-                                        <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                        <div class="info-01">
-                                            <div class="tit">하나카드 이용 대금</div>
-                                            <div class="val">280,000</div>
-                                        </div>
-                                        <div class="info-02">
-                                            <div class="name">하나은행</div>
-                                            <div class="num">6659-021-*****7</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="category-item">
-                                <div class="category-name">
-                                    <div class="name">기타</div>
-                                    <div class="val">0</div>
-                                </div>
+                            <div class="box-daily-detail-spending">
                                 <div class="no-data">
                                     <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
                                     <div class="txt-sm">표시 할 지출이 없어요 🙁</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-connection">
+                            <div class="box-daily-detail-spending category">
+                                <div class="category-item">
+                                    <div class="category-name">
+                                        <div class="name">카드</div>
+                                        <div class="val">2,160,520</div>
+                                    </div>
+                                    <ul>
+                                        <li class="item">
+                                            <div class="date">10일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                                <div class="txt">청구서미발행</div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="date">12일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="date">12일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="date">12일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-name">
+                                        <div class="name">보험</div>
+                                        <div class="val">2,160,520</div>
+                                    </div>
+                                    <ul>
+                                        <li class="item">
+                                            <div class="date">10일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                                <div class="txt">청구서미발행</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-name">
+                                        <div class="name">금융/투자 상품</div>
+                                        <div class="val">2,160,520</div>
+                                    </div>
+                                    <ul>
+                                        <li class="item">
+                                            <div class="date">12일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-name">
+                                        <div class="name">통신</div>
+                                        <div class="val">2,160,520</div>
+                                    </div>
+                                    <ul>
+                                        <li class="item">
+                                            <div class="date">12일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-name">
+                                        <div class="name">공과금</div>
+                                        <div class="val">2,160,520</div>
+                                    </div>
+                                    <ul>
+                                        <li class="item">
+                                            <div class="date">12일</div>
+                                            <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                            <div class="info-01">
+                                                <div class="tit">하나카드 이용 대금</div>
+                                                <div class="val">280,000</div>
+                                            </div>
+                                            <div class="info-02">
+                                                <div class="name">하나은행</div>
+                                                <div class="num">6659-021-*****7</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-name">
+                                        <div class="name">기타</div>
+                                        <div class="val">0</div>
+                                    </div>
+                                    <div class="no-data">
+                                        <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
+                                        <div class="txt-sm">표시 할 지출이 없어요 🙁</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -483,11 +473,29 @@
 </div>
 </div>
 <script>
-    $('._tab li a').on('click', function (){
-        var tabInx = $(this).data('tab')
-        $(this).parent().addClass('active').siblings().removeClass('active');
-        $(`.connection-tab-content[data-tab=${tabInx}]`).addClass('active').siblings().removeClass('active');
-    })
+
+    var swiper = new Swiper("._slider", {
+        autoHeight: true,
+        calculateHeight:true,
+        on: {
+            activeIndexChange: function () {
+                $('._tab li').eq(this.realIndex).addClass('active').siblings().removeClass('active')
+            }
+        }
+    });
+
+    $('._tab li').on('click', function(){
+        var idx = $(this).index()
+        console.log(idx)
+        swiper.slideTo(idx,500,false);
+    });
+
+
+    // $('._tab li a').on('click', function (){
+    //     var tabInx = $(this).data('tab')
+    //     $(this).parent().addClass('active').siblings().removeClass('active');
+    //     $(`.connection-tab-content[data-tab=${tabInx}]`).addClass('active').siblings().removeClass('active');
+    // })
 </script>
 </body>
 </html>

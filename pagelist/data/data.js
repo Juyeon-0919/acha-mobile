@@ -8,6 +8,12 @@ data.common = {
             'category': '팝업',
             'page': '팝업'
         },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_datepicker',
+            'category': 'datepicker ',
+            'page': 'datepicker'
+        },
     ]
 };
 data.connection = {
@@ -894,12 +900,6 @@ data.mycard = {
             'stateClass': 'complete',
             'url': '05_my_card_13',
             'category': 'mycard',
-            'page': '내 카드 찾기 - 카드사별 검색'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_14',
-            'category': 'mycard',
             'page': '내 카드 편집'
         },
     ]
@@ -1071,6 +1071,12 @@ data.expenditure = {
     'list': [
         {
             'stateClass': 'complete',
+            'url': '08_exependiture_00',
+            'category': '지출관리',
+            'page': '지출계좌 목록_데이터 없을 경우'
+        },
+        {
+            'stateClass': 'complete',
             'url': '08_exependiture_01',
             'category': '지출관리',
             'page': '지출계좌 목록'
@@ -1089,7 +1095,12 @@ data.expenditure = {
             'url': '08_exependiture_03',
             'category': '지출관리',
             'page': '지출상세'
-        },    {
+        },   {
+            'stateClass': 'complete',
+            'url': '08_exependiture_03_01',
+            'category': '지출관리',
+            'page': '지출상세'
+        },   {
             'stateClass': 'complete',
             'url': '08_exependiture_04',
             'category': '지출관리',

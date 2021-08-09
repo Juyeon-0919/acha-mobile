@@ -365,6 +365,20 @@
                 font-weight: 500;
                 color: var(--text-01);
             }
+
+            &.disabled {
+                & .bank-img {
+                    display: none;
+                }
+                & select {
+                    padding-left: 5px;
+                    background: #ffffff url(../../img/common/ico-input-arrow-open-dim@2x.png) no-repeat;
+                    background-position: right 5px center;
+                    background-size: 18px;
+                    border-bottom: 1px solid #e2e3e6;
+                    color: var(--text-03);
+                }
+            }
         }
     }
 
@@ -596,6 +610,7 @@
 
         & .dropdown-wrap {
             padding: 0;
+            margin: 0;
 
             & .dropdown {
                 display: inline-block;
@@ -3364,6 +3379,14 @@
                 margin-bottom: 0;
             }
         }
+
+        & .empty-data {
+            padding: 40px 0 0;
+
+            & .txt {
+                margin-bottom: 16px;
+            }
+        }
     }
 
     & .ex-account {
@@ -3758,6 +3781,31 @@
             letter-spacing: -0.33px;
             text-align: center;
             color: var(--text-02);
+        }
+    }
+
+    & .empty-data {
+        padding:  120px 20px 0;
+
+        & .img {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 12px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .txt {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+            text-align: center;
+            color: var(--text-02);
+            margin-bottom: 40px;
         }
     }
 }
@@ -5371,11 +5419,62 @@
     }
 }
 
+.loading-gif {
+    position: absolute;
+    width: 65px;
+    height: 30px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.update-completed-gif {
+    position: absolute;
+    width: 120px;
+    height: 66.66666666666px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /*
   E 04_지출관리
 */
 @media (max-width: 350px) {
     .box-ex-account .card-detail-calendar .input-calendar input {
         font-size: 11px;
+    }
+}
+
+@media (min-width: 767px) {
+    .box_category_list .filter-area .dropdown-wrap .dropdown {
+        margin-bottom: 0;
+    }
+    .box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle {
+        width: 115px;
+        height: 36px;
+        line-height: 34px;
+        border-radius: 2px;
+        font-size: 13px;
+        padding: 0 12px;
+        text-align: left;
+        letter-spacing: -.33px;
+    }
+    .box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle::after {
+        width: 18px;
+        height: 18px;
+        right: 12px;
     }
 }
