@@ -5,14 +5,14 @@ data.common = {
         {
             'stateClass': 'complete',
             'url': '00_common_popup',
-            'category': '팝업',
+            'category': 'common',
             'page': '팝업'
         },
         {
             'stateClass': 'complete',
-            'url': '00_common_datepicker',
-            'category': 'datepicker ',
-            'page': 'datepicker'
+            'url': '00_common_calendar_popup',
+            'category': 'common ',
+            'page': '캘린더 팝업'
         },
     ]
 };

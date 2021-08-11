@@ -92,14 +92,14 @@ function copyFonts() {
 function jsLib() {
     let sourceLib = [
         'src/js/lib/jquery.js',
-        'src/js/lib/bootstrap.bundle.min.js',
+        'src/js/lib/bootstrap.js',
 
         'src/js/lib/jquery.sticky.js',
 
         'src/js/lib/jquery-ui.min.js',
         'src/js/lib/jquery.ui.touch-punch.min.js',
 
-        'src/js/lib/moment/moment.min.js',
+        'src/js/lib/moment/moment.js',
         'src/js/lib/core/main.js',
         'src/js/lib/daygrid/main.js',
         'src/js/lib/interaction/main.js',
@@ -108,10 +108,7 @@ function jsLib() {
         'src/js/lib/chartjs-plugin-datalabels.js',
         'src/js/lib/chartjs-plugin-annotation.min.js',
 
-        'src/js/lib/swiper.min.js',
-
-        'src/js/lib/bootstrap-datepicker.min.js',
-        'src/js/lib/bootstrap-datepicker.ko.min.js',
+        'src/js/lib/swiper.js',
     ];
     return gulp.src(sourceLib)
         .pipe(concat('front.lib.js'))
