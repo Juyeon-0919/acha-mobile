@@ -16,6 +16,101 @@ data.common = {
         },
     ]
 };
+data.dataPolicy = {
+    'title': '데이터 정책',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_00',
+            'category': 'dataPolicy',
+            'page': '캘린더 빈 화면'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_02',
+            'category': 'dataPolicy',
+            'page': '내 카드 메인 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03',
+            'category': 'dataPolicy',
+            'page': '카드 상세정보 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_01',
+            'category': 'dataPolicy',
+            'page': '지출상세 > 카드 고정비 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_02',
+            'category': 'dataPolicy',
+            'page': '지출상세 > 카드 고정비 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_02_01',
+            'category': 'dataPolicy',
+            'page': '지출상세 > 카드 고정비 > 데이터 없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_03',
+            'category': 'dataPolicy',
+            'page': '로딩 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_03_02',
+            'category': 'dataPolicy',
+            'page': '지출상세 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': 'dataPolicy',
+            'page': '타임라인 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_12',
+            'category': 'dataPolicy',
+            'page': '업데이트 완료'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_13',
+            'category': 'dataPolicy',
+            'page': '거래 내역 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_24',
+            'category': 'dataPolicy',
+            'page': '지출 상세 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_25',
+            'category': 'dataPolicy',
+            'page': '지출 상세 > 만료/해지'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_09',
+            'category': 'dataPolicy',
+            'page': '커넥션 > 업데이트 중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_12',
+            'category': 'dataPolicy',
+            'page': '마이페이지 > 업데이트 요청'
+        },
+    ]
+};
 data.connection = {
     'title': '커넥션',
     'list': [

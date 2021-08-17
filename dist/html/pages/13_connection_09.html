@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="Referrer" content="origin">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
     <meta name="robots" content="index,nofollow"/>
@@ -77,7 +76,13 @@
                                     </li>
                                     <li>
                                         <span class="tit">남은 지출</span>
-                                        <span class="val primary-color">2,160,520</span>
+<!--                                        <span class="val primary-color">2,160,520</span>-->
+                                        <!-- s 추가 2021.08.17 -->
+                                        <span class="update">
+                                            <img src="../../img/common/" alt="">
+                                            <em class="txt">최신 정보를 가져오는 중</em>
+                                        </span>
+                                        <!-- s 추가 2021.08.17 -->
                                     </li>
                                 </ul>
                             </div>
@@ -264,7 +269,11 @@
                             <div class="box-profile">
                                 <div class="img my"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
                                 <div class="name">한미영</div>
-                                <div class="val">2,160,520</div>
+<!--                                <div class="val">2,160,520</div>-->
+                                <div class="update">
+<!--                                    <img src="../../img/common/" alt="">-->
+                                    <span>최신 정보를 가져오는 중</span>
+                                </div>
                             </div>
                             <div class="box-daily-detail-spending">
                                 <ul>
@@ -329,6 +338,15 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="box-connection">
+                            <!-- s 추가 -- 2021.08.17 -->
+                            <div class="update-box">
+                                <div class="txt">최신 데이터로 가져오고 있어요 🙂</div>
+                                <div class="img">
+                                    <!-- <img src="../../img/@temp/woori.png" alt="">  // gif -->
+                                    <span>최신 정보를 가져오는 중</span>
+                                </div>
+                            </div>
+                            <!-- e 추가 -- 2021.08.17 -->
                             <div class="box-daily-detail-spending category">
                                 <div class="category-item">
                                     <div class="category-name">
@@ -487,6 +505,20 @@
     </div>
 </div>
 </div>
+<!-- s 추가 2021.08.17 -->
+<div class="toast-popup position-bottom _toastPopup">
+    <p>최신 데이터로 업데이트 됩니다<br/>
+        다소 시간이 소요될 수 있어요</p>
+</div>
+<!-- e 추가 2021.08.17 -->
+<script>
+    /**
+     * 토스트 팝업 *
+     1. toastPopupShow() : 토스트 팝업 show 함수
+     2. toastPopupHide() : 토스트 팝업 hide 함수
+     **/
+    toastPopupShow()
+</script>
 <script>
 
     var swiper = new Swiper("._slider", {

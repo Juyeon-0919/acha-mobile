@@ -72,6 +72,34 @@
         }
     }
 
+    & .update-box {
+        padding: 16px 20px;
+        border-bottom: 1px solid #f2f4f7;
+
+        & .txt {
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: -0.35px;
+            color: var(--text-02);
+            margin-bottom: 12px;
+        }
+
+        & .img {
+            & img {
+                display: inline-block;
+            }
+            & span {
+                display: inline-block;
+                font-family: var(--font2);
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                color: var(--blurple);
+            }
+        }
+    }
+
     & .card-detail-calendar {
         overflow: hidden;
         margin-bottom: 15px;
@@ -327,6 +355,16 @@
                 }
             }
         }
+
+        & .update-box {
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: -0.35px;
+            text-align: center;
+            color: var(--text-02);
+            padding: 15px 0 18px;
+            border-bottom: 0;
+        }
     }
 }
 
@@ -370,6 +408,7 @@
                 & .bank-img {
                     display: none;
                 }
+
                 & select {
                     padding-left: 5px;
                     background: #ffffff url(../../img/common/ico-input-arrow-open-dim@2x.png) no-repeat;
@@ -516,6 +555,33 @@
             margin-bottom: 40px;
         }
     }
+
+    & .update-box {
+        margin-bottom: 30px;
+
+        & .txt {
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: -0.35px;
+            text-align: left;
+            color: var(--text-02);
+            margin-bottom: 12px;
+        }
+        & .img {
+            & img {
+                display: inline-block;
+            }
+            & span {
+                display: inline-block;
+                font-family: var(--font2);
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                color: var(--blurple);
+            }
+        }
+    }
 }
 
 .btn-scroll {
@@ -623,6 +689,7 @@
                         background-color: #f5f6f8;
                         cursor: default;
                     }
+
                     & .dropdown-menu {
                         display: none;
                     }
@@ -749,6 +816,31 @@
                         margin-left: 4px;
                         transform: translateY(1px);
                     }
+                }
+            }
+        }
+
+        & .update-box {
+            & .txt {
+                font-size: 14px;
+                line-height: 23px;
+                letter-spacing: -0.35px;
+                color: var(--text-02);
+                margin-bottom: 12px;
+            }
+
+            & .img {
+                & img {
+                    display: inline-block;
+                }
+                & span {
+                    display: inline-block;
+                    font-family: var(--font2);
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    letter-spacing: -0.28px;
+                    color: var(--blurple);
                 }
             }
         }
@@ -1112,6 +1204,15 @@
                 vertical-align: middle;
                 margin-left: 2px;
             }
+            & .ico-caution-red {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background-image: url(../../img/common/ico-caution-red@2x.png);
+                background-size: cover;
+                vertical-align: middle;
+                margin-left: 2px;
+            }
         }
 
         & .info2 {
@@ -1191,6 +1292,38 @@
                     top: 12px;
                     transform: none;
                 }
+            }
+
+            & .update-box {
+                padding-top: 0;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    & .update-box {
+        padding-top: 30px;
+
+        & .txt {
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: -0.35px;
+            text-align: left;
+            color: var(--text-02);
+            margin-bottom: 12px;
+        }
+        & .img {
+            & img {
+                display: inline-block;
+            }
+            & span {
+                display: inline-block;
+                font-family: var(--font2);
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                color: var(--blurple);
             }
         }
     }
@@ -3290,6 +3423,12 @@
                     & i {
                         transform: translate(1px, 3px);
                     }
+                    & .ico-caution {
+                        width: 12px;
+                        height: 12px;
+                        background-image: url(../../img/common/ico-caution@2x.png);
+                        transform: none;
+                    }
                 }
             }
 
@@ -3785,7 +3924,7 @@
     }
 
     & .empty-data {
-        padding:  120px 20px 0;
+        padding: 120px 20px 0;
 
         & .img {
             display: block;
@@ -5020,6 +5159,82 @@
     border-bottom: 10px solid #f5f6f8;
     padding: 10px 20px 16px;
 
+    & .delete-area {
+        padding-top: 20px;
+        margin-bottom: 10px;
+
+        & .txt-lg {
+            font-family: var(--font2);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -0.35px;
+            text-align: center;
+            color: var(--text-01);
+            margin-bottom: 10px;
+        }
+        & .txt {
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -0.35px;
+            text-align: center;
+            color: var(--text-02);
+            margin-bottom: 20px;
+        }
+        & .btn-wrap {
+            text-align: center;
+            margin-bottom: 20px;
+
+            & .btn-delete {
+                display: inline-block;
+                padding: 0 10px;
+                height: 26px;
+                border-radius: 2px;
+                border: solid 1px #e3e4e8;
+                background-color: #fff;
+
+                & .ico-delete-btn {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 10px;
+                    height: 11px;
+                    background-image: url(../../img/common/ico-delete-btn@2x.png);
+                    background-size: cover;
+                    transform: translateY(-1px);
+                }
+                & .ico-refresh-btn {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 10px;
+                    height: 10.2px;
+                    background-image: url(../../img/common/ico-refresh-btn@2x.png);
+                    background-size: cover;
+                }
+                & span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 11px;
+                    line-height: 24px;
+                    letter-spacing: -0.55px;
+                    text-align: left;
+                    color: var(--text-02);
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        & .border-box {
+            padding: 15px 0;
+            border-radius: 4px;
+            border: solid 1px #f5f5f5;
+            text-align: center;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            color: var(--text-02);
+        }
+    }
+
     & > .month {
         font-size: 12px;
         line-height: 18px;
@@ -5420,10 +5635,10 @@
 }
 
 .loading-gif {
-    position: absolute;
+    position: fixed;
     width: 65px;
     height: 30px;
-    bottom: 30px;
+    bottom: 22px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;
@@ -5434,18 +5649,65 @@
     }
 }
 
-.update-completed-gif {
-    position: absolute;
-    width: 120px;
-    height: 66.66666666666px;
-    bottom: 30px;
+.update-toast {
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 11;
+    width: 120px;
+    height: 67px;
+    z-index: 10;
+    background-image: url(../../img/common/update-ok-10.png);
+    background-size: cover;
+    opacity: 1;
+    bottom: 0;
+    animation: updateAnimation 1s;
 
-    & img {
-        width: 100%;
-        height: 100%;
+    /*
+    height: 30px;
+    padding: 0 13px;
+    border-radius: 90px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: var(--blurple);
+    */
+
+    & .ic-update-check {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 14px;
+        background-image: url(../../img/common/ic-update-check.png);
+        background-size: cover;
+    }
+
+    & span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 11px;
+        color: #fff;
+        letter-spacing: -0.28px;
+        line-height: 30px;
+        margin-left: 2px;
+    }
+}
+
+.loading-wrap {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 26px;
+    z-index: 10;
+    bottom: 20px;
+}
+
+@keyframes updateAnimation {
+    from {
+        opacity: .3;
+        bottom: -20px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
     }
 }
 
@@ -5462,6 +5724,7 @@
     .box_category_list .filter-area .dropdown-wrap .dropdown {
         margin-bottom: 0;
     }
+
     .box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle {
         width: 115px;
         height: 36px;
@@ -5472,6 +5735,7 @@
         text-align: left;
         letter-spacing: -.33px;
     }
+
     .box_category_list .filter-area .dropdown-wrap .dropdown .dropdown-toggle::after {
         width: 18px;
         height: 18px;
