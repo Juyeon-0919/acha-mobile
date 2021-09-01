@@ -2,7 +2,7 @@
     padding: 10px 20px 0;
 
     & > .title-area {
-        margin-bottom: 57px;
+        margin-bottom: 40px;
 
         & .title {
             font-family: var(--font2);
@@ -16,6 +16,15 @@
                 font-weight: bold;
                 color: var(--color-point);
             }
+        }
+
+        & .desc {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+            text-align: left;
+            color: var(--text-02);
+            margin-top: 6px;
         }
     }
 
@@ -61,6 +70,26 @@
                 top: 15px;
             }
         }
+    }
+
+    & .sign-in-wrap {
+       & .card-wrap {
+           padding: 0;
+           margin-bottom: 0;
+
+           & .card-box {
+               & .item {
+                   & > label {
+                       left: 20px;
+                   }
+               }
+           }
+
+           & .card-title {
+               color: var(--text-01);
+               border-bottom: 2px solid var(--text-01);
+           }
+       }
     }
 }
 

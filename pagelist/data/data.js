@@ -784,6 +784,12 @@ data.my = {
             'category': 'My',
             'page': '통합인증 완료'
         },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_10',
+            'category': 'My',
+            'page': '개인신용정보 삭제'
+        },
     ]
 };
 data.calendar = {

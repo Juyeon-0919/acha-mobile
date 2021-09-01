@@ -17811,14 +17811,22 @@ input.custom:focus {
                         }
 
 .modal-slide.my-profile-edit .inner .icon-list .row .col .item a {
-                                display: block;
-                                padding-top: 20px
+                                display: block
                             }
 
+.modal-slide.my-profile-edit .inner .icon-list .row .col .item a.sm {
+                                    padding-top: 20px
+                                }
+
+.modal-slide.my-profile-edit .inner .icon-list .row .col .item a.sm img {
+                                        width: 30px;
+                                        height: 30px;
+                                        margin: 0 auto;
+                                    }
+
 .modal-slide.my-profile-edit .inner .icon-list .row .col .item a img {
-                                    width: 30px;
-                                    height: 30px;
-                                    margin: 0 auto;
+                                    width: 100%;
+                                    height: 100%;
                                 }
 
 .modal-slide.my-profile-edit .inner .box_ex_connect_item {
@@ -23995,7 +24003,7 @@ input[type=number] {
                     position: absolute;
                     left: 50%;
                     top: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     width: 40px;
                     height: 40px;
                     background-image: url(../../img/common/profile-noimg.svg);
@@ -24105,8 +24113,32 @@ input[type=number] {
         color: var(--text-01);
         padding-bottom: 14px;
         border-bottom: 1px solid #37354e;
-        border-bottom: 1px solid var(--text-01);
+        border-bottom: 1px solid var(--text-01)
     }
+
+.my-page-category > .title-area .btn-delete {
+            float: right;
+            padding: 0 10px;
+            height: 26px;
+            border-radius: 2px;
+            border: solid 1px #e3e4e8;
+            background-color: #fff;
+            font-size: 11px;
+            line-height: 24px;
+            letter-spacing: -0.55px;
+            color: #737183;
+            color: var(--text-02)
+        }
+
+.my-page-category > .title-area .btn-delete .ico-delete-btn {
+                display: inline-block;
+                background-image: url(../../img/common/ico-delete-btn@2x.png);
+                width: 10px;
+                height: 11px;
+                margin-right: 4px;
+                transform: translateY(1px);
+                background-size: cover;
+            }
 
 .my-page-category .empty {
         margin-top: 40px
@@ -24542,7 +24574,7 @@ input[type=number] {
         border: solid 1px #e3e4e8;
         display: flex;
         align-items: center;
-        padding: 0 20px 
+        padding: 0 20px
     }
 
 .my-page-connected-detail .info-header .img {
@@ -24600,10 +24632,18 @@ input[type=number] {
             line-height: 17px;
             letter-spacing: -0.25px;
             text-align: center;
-            padding:  0 6px;
+            padding: 0 6px;
             color: #6839d3;
-            color: var(--color-point);
+            color: var(--color-point)
         }
+
+.my-page-connected-detail .info-header .badge.badge-gray {
+                border: solid 1px #e3e4e8;
+                background-color: #fff;
+                background-color: var(--white);
+                color: #9b9aa6;
+                color: var(--text-03);
+            }
 
 .my-page-connected-detail .info-header .btn-auth {
             position: absolute;
@@ -24922,6 +24962,99 @@ input[type=number] {
                     margin-left: 4px;
                 }
 
+.my-page-sending-required-list {
+    padding: 0 20px
+}
+
+.my-page-sending-required-list .list-body {
+        width: 100%;
+        margin-bottom: 21px;
+        padding: 0 5px
+    }
+
+.my-page-sending-required-list .list-body .item {
+            display: block;
+            width: 100%;
+            padding: 20px 5px;
+            border-bottom: 1px solid #f5f6f8
+        }
+
+.my-page-sending-required-list .list-body .item:last-child {
+                border-bottom: 0;
+            }
+
+.my-page-sending-required-list .list-body .item .tit {
+                display: block;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.33px;
+                color: #737183;
+                color: var(--text-02);
+                margin-bottom: 4px;
+            }
+
+.my-page-sending-required-list .list-body .item .check-box {
+                display: block;
+                margin-top: 14px
+            }
+
+.my-page-sending-required-list .list-body .item .check-box label {
+                    margin-right: 40px
+                }
+
+.my-page-sending-required-list .list-body .item .check-box label:last-child {
+                        margin-right: 0;
+                    }
+
+.my-page-sending-required-list .list-body .item .val {
+                display: block;
+                font-size: 13px;
+                font-family: 'Roboto Medium';
+                font-family: var(--font5);
+                font-weight: 500;
+                line-height: 19px;
+                letter-spacing: -0.32px;
+                color: #37354e;
+                color: var(--text-01)
+            }
+
+.my-page-sending-required-list .list-body .item .val.color-red {
+                    color: #ef4b61;
+                    font-family: 'Roboto Medium';
+                    font-family: var(--font5);
+                }
+
+.my-page-sending-required-list .list-body .item .val > .btn-wrap {
+                    display: block;
+                    text-align: right;
+                    margin-top: 10px
+                }
+
+.my-page-sending-required-list .list-body .item .val > .btn-wrap a.btn-sm {
+                        display: inline-block;
+                        width: 59px;
+                        min-width: auto;
+                        border-radius: 2px;
+                        border: solid 1px #e3e4e8;
+                        background-color: #fff;
+                        font-size: 11px;
+                        line-height: 24px;
+                        letter-spacing: -0.55px;
+                        text-decoration: none;
+                        color: #737183;
+                        color: var(--text-02);
+                    }
+
+.my-page-sending-required-list .list-body .item .val > a {
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: -0.33px;
+                    color: #9b9aa6;
+                    color: var(--text-03);
+                    text-decoration: underline;
+                    margin-left: 6px;
+                }
+
 .my-page-btn-wrap .btn {
         width: 100%;
         min-width: auto;
@@ -24969,6 +25102,19 @@ input[type=number] {
         color: #5c5a6f;
     }
 
+.my-page-tutorial .check-box {
+        display: block;
+        margin-top: 30px
+    }
+
+.my-page-tutorial .check-box label {
+            margin-right: 40px
+        }
+
+.my-page-tutorial .check-box label:last-child {
+                margin-right: 0;
+            }
+
 .my-page-fixed-ex {
     width: 100%;
     padding: 0 20px;
@@ -24992,25 +25138,25 @@ input[type=number] {
             }
 
 .my-page-fixed-ex > .ex-list .item .tit {
-              float: left;
-              font-size: 13px;
-              line-height: 19px;
-              letter-spacing: -0.33px;
-              color: #737183;
-              color: var(--text-02);
-          }
+                float: left;
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                color: #737183;
+                color: var(--text-02);
+            }
 
 .my-page-fixed-ex > .ex-list .item .val {
-              float: right;
-              font-family: 'Roboto Medium';
-              font-family: var(--font5);
-              font-size: 13px;
-              font-weight: 500;
-              line-height: 19px;
-              letter-spacing: -0.13px;
-              color: #37354e;
-              color: var(--text-01);
-          }
+                float: right;
+                font-family: 'Roboto Medium';
+                font-family: var(--font5);
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 19px;
+                letter-spacing: -0.13px;
+                color: #37354e;
+                color: var(--text-01);
+            }
 
 .my-page-input-info {
     padding: 40px 20px 30px
@@ -25185,6 +25331,115 @@ input[type=number] {
             letter-spacing: -0.38px;
             text-align: center;
         }
+
+.my-page-info-delete {
+    padding: 10px 20px 40px
+}
+
+.my-page-info-delete .tip-box {
+        padding: 18px 0;
+        border-radius: 6px;
+        border: solid 1px #e3e4e8;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.33px;
+        text-align: center;
+        color: #737183;
+        color: var(--text-02);
+        margin-bottom: 30px;
+    }
+
+.my-page-info-delete .select-all {
+        margin-bottom: 20px;
+    }
+
+.my-page-info-delete .info-list {
+        margin-bottom: 36px
+    }
+
+.my-page-info-delete .info-list:last-child {
+            margin-bottom: 0;
+        }
+
+.my-page-info-delete .info-list .info-list-header {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            margin-bottom: 20px;
+        }
+
+.my-page-info-delete .info-list .item {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 62px;
+            margin: 0 0 12px;
+            padding: 0 14px;
+            border-radius: 6px;
+            box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+            border: solid 1px #f5f6f8;
+            background-color: #fff;
+            background-color: var(--white);
+            align-items: center
+        }
+
+.my-page-info-delete .info-list .item:last-child {
+                margin: 0;
+            }
+
+.my-page-info-delete .info-list .item .btn-more {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 50px;
+                height: 60px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                padding-right: 14px
+            }
+
+.my-page-info-delete .info-list .item .btn-more .ico-list-arrow-small {
+                    display: block;
+                    width: 6px;
+                    height: 16px;
+                    background-image: url(../../img/common/ico-list-arrow-small@2x.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+.my-page-info-delete .info-list .item label {
+                transform: translateY(3px);
+            }
+
+.my-page-info-delete .info-list .item .img {
+                width: 22px;
+                height: 22px;
+                margin-right: 6px
+            }
+
+.my-page-info-delete .info-list .item .img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+.my-page-info-delete .info-list .item .name {
+                width: calc(100% - 28px - 22px - 6px - 50px);
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
 
 /*
     작성자 : 이주연
@@ -25751,7 +26006,7 @@ input[type=number] {
 }
 
 .my-data-sign-in > .title-area {
-        margin-bottom: 57px
+        margin-bottom: 40px
     }
 
 .my-data-sign-in > .title-area .title {
@@ -25770,6 +26025,16 @@ input[type=number] {
                 color: #6839d3;
                 color: var(--color-point);
             }
+
+.my-data-sign-in > .title-area .desc {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.33px;
+            text-align: left;
+            color: #737183;
+            color: var(--text-02);
+            margin-top: 6px;
+        }
 
 .my-data-sign-in .agree {
         margin-bottom: 24px
@@ -25814,6 +26079,22 @@ input[type=number] {
                 right: 8px;
                 top: 15px;
             }
+
+.my-data-sign-in .sign-in-wrap .card-wrap {
+           padding: 0;
+           margin-bottom: 0
+       }
+
+.my-data-sign-in .sign-in-wrap .card-wrap .card-box .item > label {
+                       left: 20px;
+                   }
+
+.my-data-sign-in .sign-in-wrap .card-wrap .card-title {
+               color: #37354e;
+               color: var(--text-01);
+               border-bottom: 2px solid #37354e;
+               border-bottom: 2px solid var(--text-01);
+           }
 
 .my-data-required {
     padding: 10px 20px 52px
@@ -29361,7 +29642,7 @@ input[type=number] {
         }
 
 .sign-in-wrap .card-wrap {
-        padding: 0 28px;
+        padding: 0 20px;
         margin-bottom: 28px
     }
 
@@ -29437,7 +29718,8 @@ input[type=number] {
 .sign-in-wrap .card-wrap .card-box .item {
                 position: relative;
                 padding-left: 48px;
-                padding-top: 22px
+                padding-top: 22px;
+                padding-right: 24px
             }
 
 .sign-in-wrap .card-wrap .card-box .item > label {
@@ -29457,7 +29739,7 @@ input[type=number] {
 .sign-in-wrap .card-wrap .card-box .item > .title-wrap .tit {
                         font-family: 'Noto Sans CJK KR Medium';
                         font-family: var(--font2);
-                        font-size: 13px;
+                        font-size: 14px;
                         font-weight: 500;
                         line-height: 19px;
                         letter-spacing: -0.33px;
@@ -29545,12 +29827,39 @@ input[type=number] {
                     }
 
 .sign-in-wrap .card-wrap .card-box .item > .desc {
-                    font-size: 11px;
-                    line-height: 17px;
+                    position: relative;
+                    font-size: 12px;
+                    line-height: 18px;
                     letter-spacing: -0.28px;
-                    color: #9b9aa6;
-                    color: var(--text-03);
+                    color: #737183;
+                    padding-left: 5px;
+                    margin-bottom: 3px
                 }
+
+.sign-in-wrap .card-wrap .card-box .item > .desc:last-child {
+                        margin-bottom: 0;
+                    }
+
+.sign-in-wrap .card-wrap .card-box .item > .desc.no-dot {
+                        padding-left: 0
+                    }
+
+.sign-in-wrap .card-wrap .card-box .item > .desc.no-dot::after {
+                            content: none;
+                        }
+
+.sign-in-wrap .card-wrap .card-box .item > .desc::after {
+                        content: '';
+                        position: absolute;
+                        width: 2px;
+                        height: 2px;
+                        background-color: #9b9aa6;
+                        background-color: var(--text-03);
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        top: 8px;
+                        left: 0;
+                    }
 
 .sign-in-wrap .card-wrap .card-box .item .btn-more-wrap {
                     position: absolute;
@@ -29601,8 +29910,8 @@ input[type=number] {
 .sign-in-wrap .tip-wrap ul li {
                 position: relative;
                 padding-left: 19px;
-                font-size: 11px;
-                line-height: 16px;
+                font-size: 12px;
+                line-height: 18px;
                 letter-spacing: -0.28px;
                 color: #737183;
                 color: var(--text-02);
@@ -29618,7 +29927,7 @@ input[type=number] {
                     position: absolute;
                     width: 14px;
                     height: 14px;
-                    top: 0;
+                    top: 2px;
                     left: 0;
                     background-size: cover;
                 }

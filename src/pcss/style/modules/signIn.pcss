@@ -97,7 +97,7 @@
     }
 
     & .card-wrap {
-        padding: 0 28px;
+        padding: 0 20px;
         margin-bottom: 28px;
 
         &.must {
@@ -172,6 +172,7 @@
                 position: relative;
                 padding-left: 48px;
                 padding-top: 22px;
+                padding-right: 24px;
 
                 & > label {
                     position: absolute;
@@ -188,7 +189,7 @@
 
                     & .tit {
                         font-family: var(--font2);
-                        font-size: 13px;
+                        font-size: 14px;
                         font-weight: 500;
                         line-height: 19px;
                         letter-spacing: -0.33px;
@@ -274,10 +275,37 @@
                 }
 
                 & > .desc {
-                    font-size: 11px;
-                    line-height: 17px;
+                    position: relative;
+                    font-size: 12px;
+                    line-height: 18px;
                     letter-spacing: -0.28px;
-                    color: var(--text-03);
+                    color: #737183;
+                    padding-left: 5px;
+                    margin-bottom: 3px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &.no-dot {
+                        padding-left: 0;
+
+                        &::after {
+                            content: none;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 2px;
+                        height: 2px;
+                        background-color: var(--text-03);
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        top: 8px;
+                        left: 0;
+                    }
                 }
 
                 & .btn-more-wrap {
@@ -331,8 +359,8 @@
             & li {
                 position: relative;
                 padding-left: 19px;
-                font-size: 11px;
-                line-height: 16px;
+                font-size: 12px;
+                line-height: 18px;
                 letter-spacing: -0.28px;
                 color: var(--text-02);
                 margin-bottom: 12px;
@@ -346,7 +374,7 @@
                     position: absolute;
                     width: 14px;
                     height: 14px;
-                    top: 0;
+                    top: 2px;
                     left: 0;
                     background-size: cover;
                 }

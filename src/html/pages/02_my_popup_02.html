@@ -3,13 +3,9 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-    <!--  S header  -->
     <div class="header">
         <a href="#" class="sprite btn_back"></a>
     </div>
-    <!--  E header  -->
-
-    <!--  S contents  -->
     <div class="contents">
         <div class="my-page-tutorial">
             <div class="title">철회에 대한 안내</div>
@@ -23,38 +19,25 @@
             <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">유지</a>
         </div>
     </div>
-    <!--  E contents  -->
 </div>
-<!-- s popup -->
-<div class="popup-layer popup-sm active"> <!-- active 클래스 추가 시, popup 활성화 -->
-    <div class="popup-dim">
-        <div class="popup">
-            <div class="popup-body">
-                <p class="desc">
-                    삭제시 기존에 수집된<br/>
-                    고객의 정보가 모두 또는<br/>
-                    일부 삭제되며 정상적인 서비스<br/>
-                    제공이 어려울 수 있습니다
-                </p>
-            </div>
-            <div class="popup-footer">
-                <div class="confirm-area">
-                    <a class="left" href="#" onclick="closePopup()">취소</a>
-                    <a class="right" href="#">확인</a>
-                </div>
+<div class="modal fade" id="confirm" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="tit">데이터 철회가 완료 되었어요</div>
+            <a class="btn-close" data-dismiss="modal" aria-label="Close" href="#"></a>
+<!--            <div class="txt">-->
+<!--                기존에 수집된 고객님의 정보가<br/>-->
+<!--                모두 삭제됩니다-->
+<!--            </div>-->
+            <div class="txt">
+                지금부터 <span class="number">2023. 08. 23</span>일까지<br/>
+                데이터가 <span class="number">3년</span>간 유지됩니다
             </div>
         </div>
     </div>
 </div>
 <script>
-    function openPopup() {
-        $('.popup-layer').addClass('active');
-    }
-
-    function closePopup() {
-        $('.popup-layer').removeClass('active');
-    }
+    $('#confirm').modal('show');
 </script>
-<!-- e popup -->
 </body>
 </html>
