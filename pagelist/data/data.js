@@ -878,6 +878,36 @@ data.mydata = {
             'category': 'mydata',
             'page': '개별인증 완료'
         },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_10',
+            'category': 'mydata',
+            'page': '가입상품 목록 전송요구서'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_11',
+            'category': 'mydata',
+            'page': '개인(신용)정보 수집·이용 동의서'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_12',
+            'category': 'mydata',
+            'page': '개인(신용)정보 수집·이용 동의서'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_13',
+            'category': 'mydata',
+            'page': '개인(신용)정보 수집·이용 동의서'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_14',
+            'category': 'mydata',
+            'page': '개인(신용)정보 제공 동의서'
+        },
     ]
 };
 data.mycard = {

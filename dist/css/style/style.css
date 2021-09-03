@@ -26081,20 +26081,20 @@ input[type=number] {
             }
 
 .my-data-sign-in .sign-in-wrap .card-wrap {
-           padding: 0;
-           margin-bottom: 0
-       }
+            padding: 0;
+            margin-bottom: 0
+        }
 
 .my-data-sign-in .sign-in-wrap .card-wrap .card-box .item > label {
-                       left: 20px;
-                   }
+                        left: 20px;
+                    }
 
 .my-data-sign-in .sign-in-wrap .card-wrap .card-title {
-               color: #37354e;
-               color: var(--text-01);
-               border-bottom: 2px solid #37354e;
-               border-bottom: 2px solid var(--text-01);
-           }
+                color: #37354e;
+                color: var(--text-01);
+                border-bottom: 2px solid #37354e;
+                border-bottom: 2px solid var(--text-01);
+            }
 
 .my-data-required {
     padding: 10px 20px 52px
@@ -26189,17 +26189,15 @@ input[type=number] {
                     margin-bottom: 17px;
                 }
 
-.my-data-required > .card-list .card-item .card-body > .checkbox {
-                    border-bottom: 1px solid #37354e;
-                    border-bottom: 1px solid var(--text-01);
-                    padding-bottom: 20px
+.my-data-required > .card-list .card-item .card-body .checkbox {
+                    margin-top: 14px
                 }
 
-.my-data-required > .card-list .card-item .card-body > .checkbox label {
+.my-data-required > .card-list .card-item .card-body .checkbox label {
                         margin-right: 40px
                     }
 
-.my-data-required > .card-list .card-item .card-body > .checkbox label:last-child {
+.my-data-required > .card-list .card-item .card-body .checkbox label:last-child {
                             margin-right: 0;
                         }
 
@@ -26209,7 +26207,6 @@ input[type=number] {
                     }
 
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item {
-                            display: flex;
                             width: 100%;
                             padding: 20px 0;
                             align-items: start;
@@ -26221,30 +26218,25 @@ input[type=number] {
                             }
 
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item .tit {
-                                width: 120px;
-                                float: left;
-                                font-size: 13px;
-                                line-height: 16px;
-                                letter-spacing: -0.33px;
+                                display: block;
+                                font-size: 12px;
+                                line-height: 18px;
+                                letter-spacing: -0.3px;
                                 color: #737183;
                                 color: var(--text-02);
+                                margin-bottom: 4px;
                             }
 
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item .val {
-                                width: calc(100% - 120px);
-                                float: right;
+                                display: block;
                                 font-size: 13px;
                                 font-family: 'Roboto Medium';
                                 font-family: var(--font5);
                                 font-weight: 500;
-                                line-height: 16px;
+                                line-height: 20px;
                                 letter-spacing: -0.33px;
-                                text-align: right;
                                 color: #37354e;
-                                color: var(--text-01);
-                                overflow: hidden;
-                                white-space: nowrap;
-                                text-overflow: ellipsis
+                                color: var(--text-01)
                             }
 
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item .val > a {
@@ -26382,9 +26374,23 @@ input[type=number] {
         line-height: 22px;
         letter-spacing: -0.35px;
         text-align: center;
-        color: #737183;
-        color: var(--text-02);
+        color: #9b9aa6;
+        color: var(--text-03)
     }
+
+.my-data-completed .desc.caution span {
+                display: inline-block
+            }
+
+.my-data-completed .desc.caution span::before {
+                    content: '';
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    background-image: url(../../img/common/ico-caution@2x.png);
+                    background-size: cover;
+                    margin-right: 4px;
+                }
 
 .my-data-connected {
     padding-top: 131px
@@ -26429,10 +26435,24 @@ input[type=number] {
         line-height: 22px;
         letter-spacing: -0.35px;
         text-align: center;
-        color: #737183;
-        color: var(--text-02);
-        margin-top: 12px;
+        color: #9b9aa6;
+        color: var(--text-03);
+        margin-top: 12px
     }
+
+.my-data-connected .desc.caution span {
+                display: inline-block
+            }
+
+.my-data-connected .desc.caution span::before {
+                    content: '';
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    background-image: url(../../img/common/ico-caution@2x.png);
+                    background-size: cover;
+                    margin-right: 4px;
+                }
 
 .my-data-btn-fixed {
     width: 100%;
@@ -26465,6 +26485,112 @@ input[type=number] {
     transform: translateX(-50%);
     padding: 0 20px;
 }
+
+.my-data-terms-of-use {
+    padding: 10px 20px 30px
+}
+
+.my-data-terms-of-use > .title {
+        font-family: 'Noto Sans CJK KR Bold';
+        font-family: var(--font3);
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 25px;
+        letter-spacing: -0.43px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+.my-data-terms-of-use .item-wrap {
+        margin-bottom: 30px;
+    }
+
+.my-data-terms-of-use .item {
+        margin-bottom: 36px
+    }
+
+.my-data-terms-of-use .item:last-child {
+            margin-bottom: 0;
+        }
+
+.my-data-terms-of-use .item > .title {
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            letter-spacing: -0.35px;
+            margin-bottom: 10px
+        }
+
+.my-data-terms-of-use .item > .title:nth-child(3) {
+                margin-top: 15px;
+                margin-bottom: 40px;
+            }
+
+.my-data-terms-of-use .item .desc {
+            font-size: 12px;
+            line-height: 19px;
+            letter-spacing: -0.3px;
+            color: #737183;
+            color: var(--text-02);
+        }
+
+.my-data-terms-of-use .item .list {
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #737183;
+            color: var(--text-02);
+            margin-bottom: 6px;
+            letter-spacing: -0.3px
+        }
+
+.my-data-terms-of-use .item .list::before {
+                top: 9px;
+            }
+
+.my-data-terms-of-use .item .list:last-child {
+                margin-bottom: 0;
+            }
+
+.my-data-terms-of-use .item .table tbody tr td {
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        font-weight: normal;
+                        color: #737183;
+                        color: var(--text-02);
+                        letter-spacing: -.28px;
+                        line-height: 16px;
+                        padding: 8px;
+                    }
+
+.my-data-terms-of-use .table td:nth-child(2) {
+            vertical-align: top;
+        }
+
+.my-data-terms-of-use .table td.col-header {
+            background-color: #f5f6f8;
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 1.45;
+            letter-spacing: -0.55px;
+            text-align: center;
+            color: #737183;
+            color: var(--text-02);
+        }
+
+.my-data-terms-of-use .checkbox {
+        margin-bottom: 36px
+    }
+
+.my-data-terms-of-use .checkbox label:first-child {
+                margin-right: 40px;
+            }
 
 /*
     작성자 : 이주연
