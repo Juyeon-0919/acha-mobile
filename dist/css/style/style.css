@@ -619,33 +619,33 @@ template {
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Noto Sans CJK KR Regular';
     font-style: normal;
     font-weight: 400;
-    unicode-range: U+0030-0039;
     src: url('../../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
     url('../../fonts/Roboto/Roboto-Regular.woff') format('woff'),
     url('../../fonts/Roboto/Roboto-Regular.ttf') format('opentype');
+    unicode-range: U+0030-0039;
 }
 
 @font-face {
-    font-family: 'Roboto Medium';
+    font-family: 'Noto Sans CJK KR Medium';
     font-style: normal;
     font-weight: 500;
-    unicode-range: U+0030-0039;
     src: url('../../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
     url('../../fonts/Roboto/Roboto-Medium.woff') format('woff'),
     url('../../fonts/Roboto/Roboto-Medium.ttf') format('opentype');
+    unicode-range: U+0030-0039;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Noto Sans CJK KR Bold';
     font-style: normal;
     font-weight: 700;
-    unicode-range: U+0030-0039;
     src: url('../../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
     url('../../fonts/Roboto/Roboto-Bold.woff') format('woff'),
     url('../../fonts/Roboto/Roboto-Bold.ttf') format('opentype');
+    unicode-range: U+0030-0039;
 }
 
 .roboto {
@@ -14342,8 +14342,7 @@ input.custom:focus {
                     top: 22px;
                     font-size: 14px;
                     font-weight: 500;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     letter-spacing: -0.7px;
                     color: #6839d3;
                     color: var(--color-point);
@@ -14405,8 +14404,7 @@ input.custom:focus {
                     top: 0;
                     left: 0;
                     font-size: 15px;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     color: #ff2e60;
                     letter-spacing: -0.75px;
                     line-height: 21px;
@@ -14571,9 +14569,9 @@ input.custom:focus {
                 }
 
 .deduct .statement .item .description .value.primary {
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         color: #6839d3;
+
                         color: var(--color-point);
                     }
 
@@ -15183,15 +15181,13 @@ input.custom:focus {
 
 .box_tax .inner .list-box .list-body li > span:first-child .won {
                                 font-size: 13px;
-                                font-family: 'Roboto Medium';
-                                font-family: var(--font5);
+
                                 color: #9b9aa6;
                             }
 
 .box_tax .inner .list-box .list-body li > span:nth-child(2) {
                             font-size: 13px;
-                            font-family: 'Roboto Medium';
-                            font-family: var(--font5);
+
                             float: right;
                             padding-right: 3px;
                             letter-spacing: 0;
@@ -15735,8 +15731,7 @@ input.custom:focus {
         color: #37354e;
         font-size: 13px;
         line-height: 42px;
-        font-family: 'Roboto Medium';
-        font-family: var(--font5);
+
         font-weight: 500;
         text-align: left;
         margin-right: 5px;
@@ -15834,8 +15829,6 @@ input.custom:focus {
                 float: right;
                 width: 40%;
                 text-align: right;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 14px;
                 line-height: 19px;
                 letter-spacing: -.14px;
@@ -15850,9 +15843,9 @@ input.custom:focus {
                 }
 
 .statement > .item .description .value.primary {
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     color: #6839d3;
+
                     color: var(--color-point);
                 }
 
@@ -16039,8 +16032,7 @@ input.custom:focus {
 .list-connect .list-item .value {
             display: inline-block;
             position: absolute;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             letter-spacing: -.14px;
             font-size: 14px;
             top: 0;
@@ -16884,8 +16876,7 @@ input.custom:focus {
 
 .popup-normal.automatic-payment-details .popup-body li span.won {
                         width: 120px;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-size: 13px;
                         line-height: 17px;
                         text-align: right;
@@ -18796,7 +18787,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
                 border-bottom: 1px solid #e3e4e8;
                 border-right: 1px solid #e3e4e8;
                 background: #f5f6f8;
-                color: #737183
+                color: #37354e;
+                color: var(--text-01)
             }
 
 .table thead tr th:last-child {
@@ -18813,7 +18805,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
                 font-family: var(--font2);
                 font-size: 11px;
                 letter-spacing: -0.55px;
-                color: #000000;
+                color: #37354e;
+                color: var(--text-01);
                 border-right: 1px solid #e3e4e8
             }
 
@@ -19139,8 +19132,7 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
             }
 
 .card .card-body .input_area .value .current {
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 13px;
                     letter-spacing: -0.65px;
                 }
@@ -19395,8 +19387,6 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
 .chart.chart_graph .sort .value {
                 position: absolute;
                 font-size: 15px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 line-height: 20px;
                 padding-top: 0;
                 letter-spacing: -.15px;
@@ -19619,8 +19609,6 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
             }
 
 .xaxis-day-label ul li.active {
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 border-radius: 50%;
                 color: #6839d3;
                 color: var(--text-point-color);
@@ -20020,8 +20008,7 @@ textarea.custom:focus {
                                     float: right;
                                     position: relative;
                                     font-size: 14px;
-                                    font-family: 'Roboto Medium';
-                                    font-family: var(--font5);
+
                                     color: #37354e;
                                     letter-spacing: -.14px;
                                     line-height: 16px;
@@ -20413,8 +20400,7 @@ textarea.custom:focus {
     }
 
 .select_box .txt .sum, .select_box .txt2 .sum {
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             color: #37354e;
             letter-spacing: -.19px;
             font-size: 19px;
@@ -20515,11 +20501,6 @@ textarea.custom:focus {
                         font-family: var(--font4)
                     }
 
-.card_detail_wrap .card_info .division-01 li span:nth-child(2).won {
-                            font-family: 'Roboto Medium';
-                            font-family: var(--font5)
-                        }
-
 .card_detail_wrap .card_info .division-01 li span:nth-child(2).won::after {
                                 content: '원';
                                 font-family: 'Noto Sans CJK KR Regular';
@@ -20574,11 +20555,6 @@ textarea.custom:focus {
                         font-family: var(--font1);
                         color: #737183
                     }
-
-.card_detail_wrap .card_info .division-02 li span:nth-child(2).won {
-                            font-family: 'Roboto Medium';
-                            font-family: var(--font5)
-                        }
 
 .card_detail_wrap .card_info .division-02 li span:nth-child(2).won::after {
                                 content: '원';
@@ -20764,8 +20740,7 @@ textarea.custom:focus {
                     display: inline-block;
                     float: left;
                     width: 28%;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 14px;
                     letter-spacing: -.14px;
                     text-align: right;
@@ -21562,8 +21537,7 @@ textarea.custom:focus {
                                 position: absolute;
                                 left: 0;
                                 top: 0;
-                                font-family: 'Roboto Medium';
-                                font-family: var(--font5);
+
                                 font-size: 14px;
                                 font-weight: 500;
                                 line-height: 16px;
@@ -21589,8 +21563,7 @@ textarea.custom:focus {
                                 position: absolute;
                                 left: 0;
                                 top: 0;
-                                font-family: 'Roboto Medium';
-                                font-family: var(--font5);
+
                                 font-size: 14px;
                                 font-weight: 500;
                                 line-height: 16px;
@@ -21607,8 +21580,7 @@ textarea.custom:focus {
                                             position: absolute;
                                             left: -5px;
                                             top: 2px;
-                                            font-family: 'Roboto Medium';
-                                            font-family: var(--font5);
+
                                             font-size: 14px;
                                             font-weight: 500;
                                             line-height: 16px;
@@ -21626,8 +21598,7 @@ textarea.custom:focus {
                                             position: absolute;
                                             left: -5px;
                                             top: 2px;
-                                            font-family: 'Roboto Medium';
-                                            font-family: var(--font5);
+
                                             font-size: 14px;
                                             font-weight: 500;
                                             line-height: 16px;
@@ -22414,8 +22385,7 @@ textarea.custom:focus {
 
 .expenditure-report-wrap .content-area .item-list .item .val {
                     float: right;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 22px;
@@ -23815,8 +23785,7 @@ textarea.custom:focus {
                     }
 
 .popup-normal.popup_event .popup-body .form .event-form.phone .dNum {
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-size: 14px;
                         font-weight: 500;
                         line-height: 1.43;
@@ -23827,8 +23796,7 @@ textarea.custom:focus {
 
 .popup-normal.popup_event .popup-body .form .event-form.phone input {
                         width: 60px;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-size: 14px;
                         font-weight: 500;
                         line-height: 1.43;
@@ -23955,8 +23923,6 @@ textarea.custom:focus {
         }
 
 .popupNormal.event .popup-body .bottom .date {
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-weight: 500;
                 color: #6839d3;
                 color: var(--text-point-color);
@@ -24799,8 +24765,6 @@ input[type=number] {
                 width: calc(100% - 130px);
                 float: right;
                 font-size: 13px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-weight: 500;
                 line-height: 16px;
                 letter-spacing: -0.33px;
@@ -24814,8 +24778,7 @@ input[type=number] {
 
 .my-page-required-list .list-body .item .val.color-red {
                     color: #ef4b61;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                 }
 
 .my-page-required-list .list-body .item .val > .btn-wrap {
@@ -25009,8 +24972,6 @@ input[type=number] {
 .my-page-sending-required-list .list-body .item .val {
                 display: block;
                 font-size: 13px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-weight: 500;
                 line-height: 19px;
                 letter-spacing: -0.32px;
@@ -25020,8 +24981,7 @@ input[type=number] {
 
 .my-page-sending-required-list .list-body .item .val.color-red {
                     color: #ef4b61;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                 }
 
 .my-page-sending-required-list .list-body .item .val > .btn-wrap {
@@ -25148,8 +25108,6 @@ input[type=number] {
 
 .my-page-fixed-ex > .ex-list .item .val {
                 float: right;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 13px;
                 font-weight: 500;
                 line-height: 19px;
@@ -25459,9 +25417,9 @@ input[type=number] {
             text-align: center;
             background: rgba(104, 57, 211, .06);
             border-radius: 50%;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             color: #6839d3;
+
             color: var(--color-point);
             position: absolute;
             top: 30%;
@@ -25631,8 +25589,7 @@ input[type=number] {
         }
 
 .box_ex_calendar_list > .ex-total > .val span:first-child {
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 18px;
                     font-weight: 500;
                     line-height: 64px;
@@ -25673,8 +25630,7 @@ input[type=number] {
             }
 
 .box_ex_calendar_list > .ex-day > .ex-total .date .day {
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 20px;
                     font-weight: bold;
                     line-height: 21px;
@@ -25970,9 +25926,9 @@ input[type=number] {
                                                             text-align: center;
                                                             background: rgba(104, 57, 211, .06);
                                                             border-radius: 50%;
-                                                            font-family: 'Roboto Medium';
-                                                            font-family: var(--font5);
+
                                                             color: #6839d3;
+
                                                             color: var(--text-point-color);
                                                         }
 
@@ -25995,9 +25951,9 @@ input[type=number] {
                                                                 text-align: center;
                                                                 background: rgba(104, 57, 211, .06);
                                                                 border-radius: 50%;
-                                                                font-family: 'Roboto Medium';
-                                                                font-family: var(--font5);
+
                                                                 color: #6839d3;
+
                                                                 color: var(--text-point-color);
                                                             }
 
@@ -26230,8 +26186,7 @@ input[type=number] {
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item .val {
                                 display: block;
                                 font-size: 13px;
-                                font-family: 'Roboto Medium';
-                                font-family: var(--font5);
+
                                 font-weight: 500;
                                 line-height: 20px;
                                 letter-spacing: -0.33px;
@@ -26996,8 +26951,6 @@ input[type=number] {
                         float: right;
                         position: relative;
                         font-size: 16px;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
                         color: #37354e;
                         letter-spacing: -.14px;
                         line-height: 21px;
@@ -27753,16 +27706,9 @@ input[type=number] {
                         }
 
 .my-card-detail .card-detail-wrap .card-info .crad-info-list li span:nth-child(2).point {
-                                font-family: 'Roboto Medium';
-                                font-family: var(--font5);
                                 color: #37354e;
                                 color: var(--text-01);
                                 font-weight: 500;
-                            }
-
-.my-card-detail .card-detail-wrap .card-info .crad-info-list li span:nth-child(2).won {
-                                font-family: 'Roboto Medium';
-                                font-family: var(--font5)
                             }
 
 .my-card-detail .card-detail-wrap .card-info .crad-info-list li span:nth-child(2).won::after {
@@ -27846,8 +27792,6 @@ input[type=number] {
                 display: inline-block;
                 font-size: 16px;
                 font-weight: 500;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 letter-spacing: -0.16px;
                 line-height: 21px
             }
@@ -28167,8 +28111,6 @@ input[type=number] {
                         float: right;
                         display: inline-block;
                         font-size: 13px;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
                         font-weight: 500
                     }
 
@@ -28295,8 +28237,6 @@ input[type=number] {
             }
 
 .my-card-detail .card-detail-info > .title span:last-child {
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
             }
 
 .my-card-detail .card-detail-info > .info-list li {
@@ -28320,8 +28260,7 @@ input[type=number] {
 
 .my-card-detail .card-detail-info > .info-list li span:nth-child(2) {
                         float: right;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-weight: 500;
                         text-align: right;
                         color: #37354e;
@@ -28426,8 +28365,6 @@ input[type=number] {
 .my-card-detail .card-detail-list-wrap .card-detail-calendar .icon {
                 float: left;
                 width: 37px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 40px;
@@ -28640,8 +28577,6 @@ input[type=number] {
                     display: inline-block;
                     float: left;
                     width: 28%;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
                     font-size: 14px;
                     letter-spacing: -.14px;
                     text-align: right;
@@ -28716,11 +28651,6 @@ input[type=number] {
         color: #37354e;
         color: var(--text-01)
     }
-
-.card-benefits-wrap > .info-title span {
-            font-family: 'Roboto Medium';
-            font-family: var(--font5)
-        }
 
 .card-benefits-wrap > .info-title span:first-child {
                 font-family: 'Noto Sans CJK KR Medium';
@@ -30378,8 +30308,6 @@ input[type=number] {
                 height: 100%;
                 border: 0;
                 padding: 10px 12px 11px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 38px;
@@ -30430,8 +30358,7 @@ input[type=number] {
 .box-ex-account .card-detail-calendar .icon {
             float: left;
             width: 37px;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             font-size: 14px;
             font-weight: 500;
             line-height: 40px;
@@ -30566,8 +30493,6 @@ input[type=number] {
 .box-ex-account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value {
                                 line-height: 18px;
                                 padding-right: 0;
-                                font-family: 'Roboto Medium';
-                                font-family: var(--font5);
                                 font-weight: 500
                             }
 
@@ -31334,9 +31259,62 @@ input[type=number] {
             }
 
 .box-ex-list {
-    padding: 20px 20px 4px;
+    padding: 37px 20px 4px;
     border-bottom: 10px solid #f5f6f8
 }
+
+.box-ex-list .title-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px
+    }
+
+.box-ex-list .title-area .title {
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 22px;
+            letter-spacing: -0.38px;
+            text-align: left;
+        }
+
+.box-ex-list .title-area .date {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #9b9aa6;
+            color: var(--text-03)
+        }
+
+.box-ex-list .title-area .date::before {
+                content: '';
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-image: url(../../img/common/ico-cal@2x.png);
+                background-size: cover;
+                margin-right: 3px;
+                transform: translateY(2px);
+            }
+
+.box-ex-list .title-area .total {
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 23px;
+            letter-spacing: normal;
+            text-align: right;
+            color: #37354e;
+            color: var(--text-01);
+        }
+
+.box-ex-list .title-area + .title-area {
+            justify-content: flex-end;
+        }
 
 .box-ex-list .no-data {
         padding-top: 15px;
@@ -31387,7 +31365,7 @@ input[type=number] {
 .box-ex-detail-top .account-info .info1 {
             position: relative;
             padding-top: 17px;
-            padding-bottom: 17px
+            padding-bottom: 14px
         }
 
 .box-ex-detail-top .account-info .info1 + .info2 {
@@ -31409,6 +31387,10 @@ input[type=number] {
 
 .box-ex-detail-top .account-info .info1 .name {
                 display: inline-block;
+                width: calc(100% - 100px);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
                 vertical-align: middle;
                 font-family: 'Noto Sans CJK KR Medium';
                 font-family: var(--font2);
@@ -31489,7 +31471,8 @@ input[type=number] {
 
 .box-ex-detail-top .account-info .info2 {
             position: relative;
-            padding: 14px 0 17px
+            padding: 14px 0;
+            overflow: hidden
         }
 
 .box-ex-detail-top .account-info .info2 .ac-name {
@@ -31506,8 +31489,6 @@ input[type=number] {
 
 .box-ex-detail-top .account-info .info2 .ac-num {
                 display: inline-block;
-                font-family: 'Roboto';
-                font-family: var(--font4);
                 font-size: 13px;
                 line-height: 18px;
                 letter-spacing: -0.33px;
@@ -31543,6 +31524,104 @@ input[type=number] {
                     vertical-align: text-bottom;
                     margin-left: 1px;
                 }
+
+.box-ex-detail-top .account-info .info2 .ac-total {
+                float: right;
+                text-align: right
+            }
+
+.box-ex-detail-top .account-info .info2 .ac-total .val {
+                    display: block;
+                    font-family: 'Roboto';
+                    font-family: var(--font4);
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 24px;
+                    letter-spacing: -0.18px;
+                    text-align: right;
+                    margin-bottom: 1px
+                }
+
+.box-ex-detail-top .account-info .info2 .ac-total .val::after {
+                        content: '원';
+                        display: inline-block;
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
+                        font-size: 12px;
+                        font-weight: bold;
+                        line-height: 24px;
+                        letter-spacing: -0.3px;
+                        margin-left: 1px;
+                        transform: translateY(-2px);
+                    }
+
+.box-ex-detail-top .account-info .info2 .ac-total .desc {
+                    display: block;
+                    font-size: 11px;
+                    line-height: 17px;
+                    letter-spacing: -0.28px;
+                    text-align: right;
+                    color: #737183;
+                    color: var(--text-02)
+                }
+
+.box-ex-detail-top .account-info .info2 .ac-total .desc .num {
+                        font-family: 'Roboto';
+                        font-family: var(--font4);
+                    }
+
+.box-ex-detail-top .account-info .info3 {
+            padding: 18px 0;
+            border-top: 1px solid #e3e4e8
+        }
+
+.box-ex-detail-top .account-info .info3 ul {
+                display: flex
+            }
+
+.box-ex-detail-top .account-info .info3 ul li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 33.3333%
+                }
+
+.box-ex-detail-top .account-info .info3 ul li:last-child::after {
+                            content: none;
+                        }
+
+.box-ex-detail-top .account-info .info3 ul li::after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 46px;
+                        background-color: #f5f6f8;
+                    }
+
+.box-ex-detail-top .account-info .info3 ul li .tit {
+                        font-size: 11px;
+                        line-height: 17px;
+                        letter-spacing: -0.28px;
+                        color: #737183;
+                        color: var(--text-02);
+                        margin-bottom: 3px;
+                    }
+
+.box-ex-detail-top .account-info .info3 ul li .val {
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 26px;
+                        letter-spacing: -0.5px;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
 
 .box-ex-detail-top .account-info.type2 {
             position: relative;
@@ -31704,8 +31783,6 @@ input[type=number] {
 
 .ac-bank .ac-list .ac-item .value {
                 float: right;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 22px;
@@ -31828,28 +31905,54 @@ input[type=number] {
 
 .group-date .ex-list .ex-item {
             position: relative;
-            margin-bottom: 37px
+            margin-bottom: 21px
 
         }
 
-.group-date .ex-list .ex-item > .title {
-                float: left;
-                width: calc(100% - 128px);
-                font-family: 'Noto Sans CJK KR Medium';
-                font-family: var(--font2);
-                font-size: 13px;
-                line-height: 22px;
-                letter-spacing: -0.33px;
-                color: #37354e;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+.group-date .ex-list .ex-item .info {
+                display: block;
+                overflow: hidden
             }
 
+.group-date .ex-list .ex-item .info .title {
+                    float: left;
+                    width: calc(100% - 128px);
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    line-height: 22px;
+                    letter-spacing: -0.33px;
+                    color: #37354e;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+.group-date .ex-list .ex-item .info .state {
+                    float: right;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    vertical-align: middle;
+                }
+
+.group-date .ex-list .ex-item .info .time {
+                    position: absolute;
+                    font-family: 'Roboto';
+                    font-family: var(--font4);
+                    font-size: 11px;
+                    line-height: 13px;
+                    letter-spacing: 0;
+                    color: #9b9aa6;
+                    left: 0;
+                    top: 23px;
+                }
+
 .group-date .ex-list .ex-item .value {
-                float: right;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
+                display: block;
+                text-align: right;
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 22px;
@@ -31889,29 +31992,15 @@ input[type=number] {
                         color: var(--color-point);
                     }
 
-.group-date .ex-list .ex-item .time {
-                position: absolute;
-                font-family: 'Roboto';
-                font-family: var(--font4);
-                font-size: 11px;
-                line-height: 13px;
-                letter-spacing: 0;
-                color: #9b9aa6;
-                left: 0;
-                top: 23px;
-            }
-
 .group-date .ex-list .ex-item .balance {
-                position: absolute;
-                display: inline-block;
+                display: block;
                 font-family: 'Roboto';
                 font-family: var(--font4);
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0;
                 color: #9b9aa6;
-                right: 2px;
-                top: 24px
+                text-align: right
             }
 
 .group-date .ex-list .ex-item .balance::after {
@@ -32017,8 +32106,6 @@ input[type=number] {
 .box_ex_edit_list .ex_edit_item .value {
             display: inline-block;
             float: right;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
             font-size: 14px;
             font-weight: 500;
             line-height: 22px;
@@ -32087,8 +32174,6 @@ input[type=number] {
 .box_my_income_list .income-item .value {
             float: right;
             display: inline-block;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
             font-size: 14px;
             line-height: 17px;
             letter-spacing: -0.14px;
@@ -32593,8 +32678,6 @@ input[type=number] {
                 right: 2px;
                 top: 14px;
                 display: inline-block;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 17px;
                 line-height: 20px;
                 letter-spacing: 0;
@@ -32839,11 +32922,6 @@ input[type=number] {
             white-space: nowrap
         }
 
-.box_ex_detail_list .ex-detail-item .value.won {
-                font-family: 'Roboto Medium';
-                font-family: var(--font5)
-            }
-
 .box_ex_detail_list .ex-detail-item .value.won::after {
                     content: '원';
                     font-family: 'Noto Sans CJK KR Medium';
@@ -32927,8 +33005,6 @@ input[type=number] {
 .ex-detail-list > ul > li li .value {
                     display: inline-block;
                     float: right;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
                     font-size: 14px;
                     line-height: 19px;
                     letter-spacing: -0.14px
@@ -33451,8 +33527,6 @@ input[type=number] {
             }
 
 .box_category_ex_detail .ex-list .ex-item .btn-move .value {
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
                     font-size: 14px;
                     line-height: 16px;
                     letter-spacing: -0.14px;
@@ -33795,8 +33869,6 @@ input[type=number] {
                 }
 
 .box_category_list .category-list-item .ex-item a .btn-move .value {
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
                         font-size: 14px;
                         line-height: 16px;
                         letter-spacing: -0.14px;
@@ -34013,8 +34085,7 @@ input[type=number] {
 
 .box-ex-account .ex-account > ul .ac-item .right {
                     float: right;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 13px;
                     line-height: 18px;
                     letter-spacing: 0;
@@ -34281,8 +34352,7 @@ input[type=number] {
 .box-ex-account .card-body .ex-total .inner .value {
                     float: right;
                     display: inline-block;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 15px;
                     line-height: 59px;
                     letter-spacing: normal;
@@ -34466,9 +34536,9 @@ input[type=number] {
             text-align: center;
             background: rgba(104, 57, 211, .06);
             border-radius: 50%;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             color: #6839d3;
+
             color: var(--text-point-color);
             position: absolute;
             top: 30%;
@@ -34670,8 +34740,7 @@ input[type=number] {
 .box_ex_calendar_info .inner .box-ex-account-info > li > a .value {
                         position: absolute;
                         display: inline-block;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-size: 14px;
                         line-height: 19px;
                         letter-spacing: -0.14px;
@@ -35193,8 +35262,6 @@ input[type=number] {
                 right: 0;
                 top: 0;
                 display: block;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 13px;
                 line-height: 19px;
                 text-align: right;
@@ -35242,8 +35309,6 @@ input[type=number] {
 .ex-current .ex02-list .inner .value {
                 position: absolute;
                 display: inline-block;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 14px;
                 line-height: 19px;
                 color: #ef4b61;
@@ -35322,8 +35387,6 @@ input[type=number] {
                 float: right;
                 padding-right: 4px;
                 display: inline-block;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 14px;
                 line-height: 19px;
                 letter-spacing: -0.14px;
@@ -35500,7 +35563,7 @@ input[type=number] {
 
 .account-detail-wrap .info-wrap {
         padding-bottom: 6px;
-        margin-top: 30px
+        margin-top: 36px
     }
 
 .account-detail-wrap .info-wrap:last-child {
@@ -35559,16 +35622,15 @@ input[type=number] {
                     color: var(--text-02)
                 }
 
-.account-detail-wrap .info-wrap > .info-list .item .val.won {
-                        font-family: 'Roboto';
-                        font-family: var(--font4)
-                    }
-
 .account-detail-wrap .info-wrap > .info-list .item .val.won::after {
                             content: '원';
                             font-family: 'Noto Sans CJK KR Regular';
                             font-family: var(--font1);
                         }
+
+.account-detail-wrap .info-wrap > .info-list + .title {
+                margin-top: 36px;
+            }
 
 .account-detail-wrap .info-wrap > .info-list.type2 {
                 padding: 24px;
@@ -35587,6 +35649,35 @@ input[type=number] {
 .account-detail-wrap .info-wrap > .info-list.type2 .item:last-child {
                         padding-bottom: 0;
                     }
+
+.account-detail-wrap .table:first-child {
+            margin-top: 37px;
+        }
+
+.account-detail-wrap .table:nth-child(2n) {
+            margin-bottom: 23px;
+        }
+
+.account-detail-wrap .table thead th {
+                height: 29px;
+                line-height: 28px;
+                font-size: 11px;
+                letter-spacing: -0.55px;
+                color: #737183;
+                color: var(--text-02);
+            }
+
+.account-detail-wrap .table tbody {
+            border-color: #e3e4e8;
+        }
+
+.account-detail-wrap .table td {
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
+            font-size: 11px;
+            padding: 0 10px;
+            letter-spacing: -0.28px;
+        }
 
 .add-income-wrap {
     padding: 10px 20px 96px
@@ -35791,11 +35882,12 @@ input[type=number] {
         }
 
 .box-ex-detail-info .item .txt {
-            overflow: hidden
+            display: flex;
+            justify-content: space-between;
+            align-items: center
         }
 
 .box-ex-detail-info .item .txt .tit {
-                float: left;
                 font-family: 'Noto Sans CJK KR Medium';
                 font-family: var(--font2);
                 font-size: 14px;
@@ -35807,7 +35899,6 @@ input[type=number] {
             }
 
 .box-ex-detail-info .item .txt .val {
-                float: right;
                 font-size: 14px;
                 line-height: 20px;
                 letter-spacing: -0.14px;
@@ -35826,6 +35917,12 @@ input[type=number] {
                         font-family: 'Noto Sans CJK KR Regular';
                         font-family: var(--font1);
                     }
+
+.box-ex-detail-info .item .txt .btn-sm {
+                float: right;
+                min-width: auto;
+                padding: 0 10px;
+            }
 
 .box-ex-detail-info .item .btn-wrap {
             display: block;
@@ -35953,8 +36050,7 @@ input[type=number] {
             padding-right: 4px;
             display: inline-block;
             vertical-align: middle;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             font-size: 14px;
             line-height: 19px;
             letter-spacing: -0.14px;
@@ -35969,6 +36065,26 @@ input[type=number] {
                 font-family: var(--font2);
                 margin-left: 1px;
             }
+
+.box-ex-select-wrap-2 {
+    padding: 0 20px;
+    margin-top: 30px
+}
+
+.box-ex-select-wrap-2 .select-box select {
+            height: 52px;
+            line-height: 50px;
+            font-size: 14px;
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-weight: 500;
+            color: #37354e;
+            color: var(--text-01);
+            padding-left: 20px;
+            padding-right: 40px;
+            border-radius: 4px;
+            background: #ffffff url(../../img/sprite/common/ico_close.png) no-repeat top 20px right 20px;
+        }
 
 .box-ex-select-wrap {
     position: relative;
@@ -35987,7 +36103,7 @@ input[type=number] {
 
 .box-ex-select-wrap .select-wrap .select-box {
             position: relative;
-            width: 215px
+            width: 245px
         }
 
 .box-ex-select-wrap .select-wrap .select-box select {
@@ -36004,21 +36120,91 @@ input[type=number] {
             }
 
 .box-ex-usage-history {
-    padding: 36px 20px 30px
+    padding: 10px 20px 30px
 }
 
-.box-ex-usage-history > .title {
-        font-family: 'Noto Sans CJK KR Bold';
-        font-family: var(--font3);
-        font-size: 15px;
-        font-weight: bold;
-        line-height: 22px;
-        letter-spacing: -0.38px;
-        text-align: left;
-        color: #37354e;
-        color: var(--text-01);
-        margin-bottom: 20px;
+.box-ex-usage-history.box-ex-usage-history-lg {
+        padding: 37px 20px 30px
     }
+
+.box-ex-usage-history.box-ex-usage-history-lg .title-area .val {
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 23px;
+                letter-spacing: normal;
+                text-align: right;
+                color: #37354e;
+                color: var(--text-01)
+            }
+
+.box-ex-usage-history.box-ex-usage-history-lg .title-area .val::after {
+                    content: '원';
+                    font-size: 14px;
+                }
+
+.box-ex-usage-history.box-ex-usage-history-lg .title-area .point {
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 23px;
+                letter-spacing: normal;
+                text-align: right;
+                color: #37354e;
+                color: var(--text-01);
+            }
+
+.box-ex-usage-history .title-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+.box-ex-usage-history .title-area > .title {
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 22px;
+            letter-spacing: -0.38px;
+            text-align: left;
+        }
+
+.box-ex-usage-history .title-area .val {
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 22px;
+            letter-spacing: -0.38px;
+            text-align: right;
+        }
+
+.box-ex-usage-history .title-area .date {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #9b9aa6;
+            color: var(--text-03)
+        }
+
+.box-ex-usage-history .title-area .date::before {
+                content: '';
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-image: url(../../img/common/ico-cal@2x.png);
+                background-size: cover;
+                margin-right: 3px;
+                transform: translateY(2px);
+            }
+
+.box-ex-usage-history .title-area + .title-area {
+            justify-content: flex-end;
+        }
 
 .box-ex-usage-history .box-filter {
         padding: 18px 20px;
@@ -36073,12 +36259,26 @@ input[type=number] {
                     margin-right: 0;
                 }
 
+.box-ex-usage-history .usage-history > .date {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #afaeb8;
+            color: var(--text-04);
+            margin: 30px 0 24px;
+        }
+
 .box-ex-usage-history .usage-history .item {
             margin-bottom: 22px
         }
 
 .box-ex-usage-history .usage-history .item:last-child {
                 margin-bottom: 0;
+                padding-bottom: 6px;
             }
 
 .box-ex-usage-history .usage-history .item .tit {
@@ -36100,8 +36300,8 @@ input[type=number] {
 
 .box-ex-usage-history .usage-history .item .val {
                 float: right;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 19px;
@@ -36120,6 +36320,19 @@ input[type=number] {
                     margin-left: 1px;
                 }
 
+.box-ex-usage-history .usage-history .item .point {
+                float: right;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 19px;
+                letter-spacing: -0.14px;
+                text-align: right;
+                color: #37354e;
+                color: var(--text-01);
+            }
+
 .box-ex-usage-history .usage-history .item .date {
                 display: inline-block;
                 vertical-align: middle;
@@ -36133,6 +36346,17 @@ input[type=number] {
                 transform: translateY(1px);
             }
 
+.box-ex-usage-history .usage-history .item .name {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                text-align: left;
+                color: #737183;
+                color: var(--text-02);
+            }
+
 .box-ex-usage-history .usage-history .item .txt {
                 display: inline-block;
                 vertical-align: middle;
@@ -36141,14 +36365,46 @@ input[type=number] {
                 font-size: 11px;
                 line-height: 15px;
                 letter-spacing: -.55px;
+                color: #37354e;
+                color: var(--text-01);
+                margin-left: 3px;
+            }
+
+.box-ex-usage-history .usage-history .item .bank {
+                display: inline-block;
+                vertical-align: middle;
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
+                font-size: 11px;
+                line-height: 15px;
+                letter-spacing: -.55px;
+                color: #737183;
+                color: var(--text-02);
+                margin-left: 3px
+            }
+
+.box-ex-usage-history .usage-history .item .bank .color-default {
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-usage-history .usage-history .item .desc {
+                float: right;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                text-align: right;
                 color: #9b9aa6;
                 color: var(--text-03);
-                margin-left: 3px;
             }
 
 .box-ex-usage-history .usage-history .item .info1 {
                 overflow: hidden;
                 margin-bottom: 2px;
+            }
+
+.box-ex-usage-history .usage-history .item .info2 {
+                overflow: hidden;
             }
 
 .box-ex-usage-history .no-data {
@@ -36175,6 +36431,191 @@ input[type=number] {
             color: #737183;
             color: var(--text-02);
         }
+
+.box-ex-detail-list {
+    border-top: 10px solid #f5f6f8;
+    padding: 0 20px 60px;
+    margin-top: 36px
+}
+
+.box-ex-detail-list .item {
+        padding: 20px 0 22px;
+        border-bottom: 1px solid #f5f6f8
+    }
+
+.box-ex-detail-list .item:last-child {
+            margin-bottom: 0;
+        }
+
+.box-ex-detail-list .year {
+        font-family: 'Noto Sans CJK KR Bold';
+        font-family: var(--font3);
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+        text-align: left;
+        color: #37354e;
+        color: var(--text-01);
+        padding-bottom: 14px;
+        border-bottom: 1px solid #f5f6f8;
+        margin-top: 36px;
+    }
+
+.box-ex-detail-list .date-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px
+    }
+
+.box-ex-detail-list .date-info.sm-mb {
+            margin-bottom: 11px;
+        }
+
+.box-ex-detail-list .date-info .date {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19px;
+            color: #37354e;
+            color: var(--text-01);
+        }
+
+.box-ex-detail-list .date-info .btn {
+            min-width: auto;
+            padding: 0 10px;
+        }
+
+.box-ex-detail-list .date-info .type {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.3px;
+            text-align: right;
+            color: #737183;
+            color: var(--text-02);
+        }
+
+.box-ex-detail-list .ex-info > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px
+        }
+
+.box-ex-detail-list .ex-info > div:last-child {
+                margin-bottom: 0;
+            }
+
+.box-ex-detail-list .ex-info > div.lg {
+                margin-bottom: 11px
+            }
+
+.box-ex-detail-list .ex-info > div.lg .name {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: normal;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-detail-list .ex-info > div.lg .val {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 21px;
+                    letter-spacing: -0.16px;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-detail-list .ex-info > div.md .name {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: normal;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-detail-list .ex-info > div.md .round {
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-detail-list .ex-info > div.md .val {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    letter-spacing: -0.14px;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-detail-list .ex-info > div.md-gray {
+                margin-bottom: 16px
+            }
+
+.box-ex-detail-list .ex-info > div.md-gray .name {
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 20px;
+                    letter-spacing: normal;
+                    color: #737183;
+                    color: var(--text-02);
+                }
+
+.box-ex-detail-list .ex-info > div.md-gray .round {
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-detail-list .ex-info > div.md-gray .val {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    letter-spacing: -0.14px;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.box-ex-detail-list .ex-info > div .name {
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                color: #9b9aa6;
+                color: var(--text-03);
+            }
+
+.box-ex-detail-list .ex-info > div .val {
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                text-align: right;
+                color: #737183;
+                color: var(--text-02)
+            }
+
+.box-ex-detail-list .ex-info > div .val::after {
+                    content: '원';
+                }
 
 .loading-gif {
     position: fixed;
@@ -36242,6 +36683,245 @@ input[type=number] {
     z-index: 10;
     bottom: 20px;
 }
+
+.transaction-history-popup .modal-dialog {
+        width: 315px;
+        max-width: 315px !important;
+        padding: 30px 0
+    }
+
+.transaction-history-popup .modal-dialog .modal-content {
+            width: 315px;
+            border-radius: 0;
+            text-align: left;
+            padding: 20px 0 0
+        }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-header {
+                padding: 0;
+                margin-bottom: 20px;
+                border-bottom: 0
+            }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-header .btn-close {
+                    position: absolute;
+                    display: inline-block;
+                    top: 20px;
+                    right: 16px;
+                    width: 22px;
+                    height: 22px;
+                    background-image: url(../../img/sprite/common/btn_popup_close@2x.png);
+                    background-size: cover;
+                }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-header .title {
+                    width: 100%;
+                    display: block;
+                    font-family: 'Noto Sans CJK KR Bold';
+                    font-family: var(--font3);
+                    font-size: 15px;
+                    font-weight: bold;
+                    line-height: 22px;
+                    letter-spacing: -0.75px;
+                    text-align: center;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body {
+                flex: none;
+                padding: 20px 20px 30px
+            }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .date-info {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.6px;
+                    text-align: right;
+                    margin-bottom: 10px;
+                }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .text {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    letter-spacing: -0.6px;
+                    text-align: left;
+                    color: #37354e;
+                    color: var(--text-01);
+                    margin-bottom: 10px;
+                }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table {
+                    border-top: 1px solid #e3e4e8;
+                    margin-bottom: 35px
+                }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tbody {
+                        border-bottom: 1px solid #e3e4e8;
+                    }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table + .table {
+                        margin-top: -15px;
+                    }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tr:first-child td {
+                                border-top: 0;
+                            }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tr td {
+                            border-color: #f5f6f8;
+                            height: 34px;
+                            line-height: normal;
+                            line-height: initial;
+                            padding: 8px 10px;
+                            border-top: 1px solid #e3e4e8;
+                            border-right: 1px solid #e3e4e8;
+                            text-align: right;
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
+                            font-size: 12px;
+                            color: #737183;
+                            color: var(--text-02);
+                            letter-spacing: 0
+                        }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tr td.with-bg {
+                                background-color: #f5f6f8;
+                                text-align: center;
+                            }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tr td:last-child {
+                                border-right: 0;
+                            }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tr td:first-child {
+                                font-size: 11px;
+                                color: #737183;
+                                color: var(--text-02);
+                                background-color: #f5f6f8;
+                                text-align: center;
+                            }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tr td[colspan="2"] {
+                                font-size: 11px;
+                                background-color: #f5f6f8;
+                                text-align: center;
+                            }
+
+.transaction-history-popup .modal-dialog .modal-content .modal-body .table tr td[rowspan="3"] {
+                                font-size: 11px;
+                                background-color: #f5f6f8;
+                            }
+
+.box-select-accordion {
+    padding: 0 20px;
+    margin-top: 30px
+}
+
+.box-select-accordion .accordion {
+        border: 1px solid #37354e;
+        border: 1px solid var(--text-01);
+        border-radius: 4px;
+        padding: 0 20px
+    }
+
+.box-select-accordion .accordion .select-header button {
+                position: relative;
+                width: 100%;
+                display: block;
+                height: 52px;
+                line-height: 52px;
+                background-color: #fff;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: -0.35px;
+                text-align: left;
+                color: #37354e;
+                color: var(--text-01)
+            }
+
+.box-select-accordion .accordion .select-header button:focus {
+                    border: 0;
+                    outline: none;
+                }
+
+.box-select-accordion .accordion .select-header button.collapsed::after {
+                        background-image: url(../../img/common/ico-input-arrow-close@2x.png);
+                    }
+
+.box-select-accordion .accordion .select-header button::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 18px;
+                    height: 18px;
+                    background-image: url(../../img/common/ico-input-arrow-open@2x.png);
+                    background-size: cover;
+                }
+
+.box-select-accordion .accordion .select-body {
+            border-top: 1px solid #e3e4e8
+        }
+
+.box-select-accordion .accordion .select-body ul li {
+                    position: relative;
+                    height: 58px;
+                    padding: 0 5px;
+                    border-bottom: 1px solid #f5f6f8
+                }
+
+.box-select-accordion .accordion .select-body ul li a {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        align-items: center;
+                    }
+
+.box-select-accordion .accordion .select-body ul li .img {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 7px
+                    }
+
+.box-select-accordion .accordion .select-body ul li .img img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+.box-select-accordion .accordion .select-body ul li .name {
+                        width: calc(100% - 66px);
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        letter-spacing: -0.35px;
+                        color: #37354e;
+                        color: var(--text-01);
+                    }
+
+.box-select-accordion .accordion .select-body ul li .state {
+                        position: absolute;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.35px;
+                        text-align: right;
+                        color: #6839d3;
+                        color: var(--blurple);
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
 
 @-webkit-keyframes updateAnimation {
     from {
@@ -37084,8 +37764,7 @@ input[type=number] {
 
 .faq-wrap .input-search-wrap .input-search input:focus, .faq-wrap .input-search-wrap .input-search input.focus {
                     outline: none;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-weight: 500;
                     border-color: #37354e;
                     border-color: var(--text-01);
@@ -37185,8 +37864,7 @@ input[type=number] {
                     font-size: 14px;
                     line-height: 19px;
                     font-weight: 500;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     letter-spacing: -0.7px;
                     color: #6839d3;
                     color: var(--blurple);
@@ -37318,8 +37996,6 @@ input[type=number] {
                 font-size: 14px;
                 line-height: 19px;
                 font-weight: 500;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 letter-spacing: -0.7px;
                 color: #6839d3;
                 color: var(--blurple);
@@ -37349,8 +38025,6 @@ input[type=number] {
                 top: 20px;
                 left: 16px;
                 font-size: 14px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 color: #ff2e60;
                 letter-spacing: -0.75px;
                 line-height: 21px;
@@ -37476,8 +38150,6 @@ input[type=number] {
                 top: 20px;
                 left: 20px;
                 font-size: 15px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 color: #ff2e60;
                 letter-spacing: -0.75px;
                 line-height: 21px;
@@ -38875,8 +39547,7 @@ input[type=number] {
 
 .timeline-wrap .badge-wrap .month-badge span::after {
                     content: '월';
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-weight: 500;
                     font-size: 13px;
                     line-height: 26px;
@@ -38941,8 +39612,7 @@ input[type=number] {
 
 .t-pay-list > .month {
         width: 32px;
-        font-family: 'Roboto Medium';
-        font-family: var(--font5);
+
         font-weight: 500;
         font-size: 13px;
         line-height: 18px;
@@ -38953,8 +39623,7 @@ input[type=number] {
 
 .t-pay-list > .month::after {
             content: '월';
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             font-size: 13px;
             font-weight: 500;
             line-height: 18px;
@@ -38986,8 +39655,6 @@ input[type=number] {
                 display: inline-block;
                 width: 32px;
                 height: 32px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 34px;
@@ -39090,8 +39757,7 @@ input[type=number] {
                         max-width: calc(100% - 20px - 15px - 6px - 30px);
                         position: relative;
                         margin-right: 15px;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-size: 13px;
                         font-weight: 500;
                         line-height: 20px;
@@ -39251,8 +39917,7 @@ input[type=number] {
                         float: right;
                         width: 84px;
                         display: inline-block;
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-size: 13px;
                         font-weight: 500;
                         line-height: 46px;
@@ -40300,8 +40965,7 @@ input[type=number] {
         }
 
 .dormant-account-wrap .cont .desc {
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             font-size: 15px;
             font-weight: 500;
             line-height: 22px;
@@ -40590,8 +41254,6 @@ input[type=number] {
                 float: left;
                 display: inline-block;
                 width: 90px;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 19px;
@@ -41323,8 +41985,6 @@ input[type=number] {
 
 .connection-main-wrap .box-connection .box-profile .val {
                 float: right;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 20px;
@@ -41422,8 +42082,7 @@ input[type=number] {
                         }
 
 .connection-main-wrap .box-connection .box-spending ul li .val {
-                        font-family: 'Roboto Medium';
-                        font-family: var(--font5);
+
                         font-size: 15px;
                         font-weight: 500;
                         line-height: 20px;
@@ -41461,8 +42120,7 @@ input[type=number] {
 .connection-main-wrap .box-connection .link-area .link .val {
                     display: inline-block;
                     vertical-align: middle;
-                    font-family: 'Roboto Medium';
-                    font-family: var(--font5);
+
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 21px;
@@ -42002,8 +42660,6 @@ input[type=number] {
 
 .box-daily-detail-spending.category .category-name .val {
                 float: right;
-                font-family: 'Roboto Medium';
-                font-family: var(--font5);
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 22px;
@@ -42162,8 +42818,7 @@ input[type=number] {
 
 .box-bg-receipt > .top-area .val {
             position: absolute;
-            font-family: 'Roboto Medium';
-            font-family: var(--font5);
+
             font-size: 16px;
             font-weight: 500;
             line-height: 21px;

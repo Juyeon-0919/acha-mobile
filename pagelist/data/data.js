@@ -353,76 +353,186 @@ data.expenditure2 = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_12',
+            'url': '11_exependiture_26',
             'category': '홈계좌',
-            'page': '3.1 여수신정보(정액적립식) (01_고정지출, My 상세)'
+            'page': '02. 여수신정보_2.1 수신상품(요구불식 계좌)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_13',
+            'url': '11_exependiture_27',
             'category': '홈계좌',
-            'page': '3.1 여수신정보(정액적립식) (04_상세_거래내역)'
+            'page': '02. 여수신정보_2.1 수신상품(요구불식 계좌)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_14',
+            'url': '11_exependiture_28',
             'category': '홈계좌',
-            'page': '3.1 여수신정보(자유적립식, 거치식) (01_홈-계좌, My상세)'
+            'page': '02. 여수신정보_2.5 투자상품(거치식 계좌)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_15',
+            'url': '11_exependiture_29',
             'category': '홈계좌',
-            'page': '3.1 여수신정보(요구불식) (01_고정지출, My 상세)'
+            'page': '02. 여수신정보_2.5 투자상품(거치식 계좌)_상세_거래내역'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_16',
+            'url': '11_exependiture_30',
             'category': '홈계좌',
-            'page': '3.1 여수신정보(요구불식) (02_계좌 정보)'
+            'page': '02. 여수신정보_2.8. 대출상품 (일반상환)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_17',
+            'url': '11_exependiture_31',
             'category': '홈계좌',
-            'page': '3.3 보험(일반) (01_고정지출, My 상세)'
+            'page': '02. 여수신정보_2.12. 대출 상세 (거래내역)_고정지출, My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_popup_01',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_2.12. 대출 상세 (거래내역)_고정지출, My 상세_팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_32',
+            'category': '홈계좌',
+            'page': '03. 보험_3.1 보험(일반)_My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_33',
+            'category': '홈계좌',
+            'page': '03. 보험_3.1 보험(일반)_상세_거래내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_34',
+            'category': '홈계좌',
+            'page': '03. 보험_3.3. 보험대출_고정지출, My 상세_상세_거래내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_35',
+            'category': '홈계좌',
+            'page': '03. 보험_3.3. 보험대출_고정지출, My 상세_상세_거래내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_popup_02',
+            'category': '홈계좌',
+            'page': '03. 보험_3.3. 보험대출_고정지출, My 상세_거래내역'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_18',
             'category': '홈계좌',
-            'page': '3.5 카드 청구서(카드대출) (01_고정지출, My 상세)'
+            'page': '04. 카드_고정지출, My 상세'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_19',
             'category': '홈계좌',
-            'page': '3.5 카드 청구서(카드대출) (02_상세_카드대출)'
+            'page': '04. 카드_상세_카드대출'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_20',
+            'url': '11_exependiture_36',
             'category': '홈계좌',
-            'page': '3.5 카드 청구서(청구서 미발행)'
+            'page': '05. 금융투자_5.2 연금 상품_홈-계좌, My 상세'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_21',
+            'url': '11_exependiture_37',
             'category': '홈계좌',
-            'page': '3.6 금융투자정보 (01_홈,계좌, My 상세)'
+            'page': '05. 금융투자_5.2 연금 상품_상세_거래내역'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_22',
+            'url': '11_exependiture_popup_03',
             'category': '홈계좌',
-            'page': '3.7 선불전자지급수단 정보 (01_내카드, My 상세)'
+            'page': '05. 금융투자_5.2 연금 상품_상세_거래내역_팝업'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_23',
+            'url': '11_exependiture_38',
             'category': '홈계좌',
-            'page': '3.8 선불전자지급수단 정보 (01_내카드, My 상세)'
+            'page': '06. 선불전자지급수단 정보_내카드, My 상세'
         },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_39',
+            'category': '홈계좌',
+            'page': '07. 전자결제정보_내카드, My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_40',
+            'category': '홈계좌',
+            'page': '08. 개인형IRP_홈-계좌, My상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_41',
+            'category': '홈계좌',
+            'page': '08. 개인형IRP_상세_거래내역'
+        }
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_21',
+        //     'category': '홈계좌',
+        //     'page': '3.6 금융투자정보 (01_홈,계좌, My 상세)'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_22',
+        //     'category': '홈계좌',
+        //     'page': '3.7 선불전자지급수단 정보 (01_내카드, My 상세)'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_23',
+        //     'category': '홈계좌',
+        //     'page': '3.8 선불전자지급수단 정보 (01_내카드, My 상세)'
+        // },
+        //
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_12',
+        //     'category': '홈계좌',
+        //     'page': '3.1 여수신정보(정액적립식) (01_고정지출, My 상세)'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_13',
+        //     'category': '홈계좌',
+        //     'page': '3.1 여수신정보(정액적립식) (04_상세_거래내역)'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_14',
+        //     'category': '홈계좌',
+        //     'page': '3.1 여수신정보(자유적립식, 거치식) (01_홈-계좌, My상세)'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_15',
+        //     'category': '홈계좌',
+        //     'page': '3.1 여수신정보(요구불식) (01_고정지출, My 상세)'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_16',
+        //     'category': '홈계좌',
+        //     'page': '3.1 여수신정보(요구불식) (02_계좌 정보)'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '11_exependiture_17',
+        //     'category': '홈계좌',
+        //     'page': '3.3 보험(일반) (01_고정지출, My 상세)'
+        // },
+
     ]
 };
 data.story = {
