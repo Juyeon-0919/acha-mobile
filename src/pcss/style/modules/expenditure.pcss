@@ -165,6 +165,7 @@
                 height: 100%;
                 border: 0;
                 padding: 10px 12px 11px;
+                font-family: var(--font2);
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 38px;
@@ -175,13 +176,13 @@
                 letter-spacing: -1px;
 
                 &.default {
-                    font-family: var(--font4);
-                    font-weight: 400;
+                    font-family: var(--font1);
+                    font-weight: normal;
                     color: var(--text-03);
                 }
 
                 &::placeholder {
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-weight: 400;
                     color: var(--text-03);
                 }
@@ -271,7 +272,7 @@
                     }
 
                     & .sum {
-                        font-family: var(--font4);
+                        font-family: var(--font3);
                         font-size: 17px;
                         font-weight: bold;
                         line-height: 23px;
@@ -337,7 +338,7 @@
                             }
 
                             & .value2 {
-                                font-family: var(--font4);
+                                font-family: var(--font1);
                                 font-size: 13px;
                                 line-height: 18px;
                                 text-align: right;
@@ -1017,19 +1018,19 @@
 
     & .sum_change {
         position: absolute;
-        font-family: var(--font4);
+        font-family: var(--font3);
         font-size: 28px;
         font-weight: bold;
         line-height: 33px;
         letter-spacing: -.3px;
-        color: #37354e;
+        color: var(--text-01);
         top: 45px;
         left: 20px;
 
         &::after {
             content: '원';
             position: absolute;
-            font-family: var(--font1);
+            font-family: var(--font3);
             font-size: 16px;
             font-weight: bold;
             line-height: 24px;
@@ -1294,7 +1295,7 @@
                 position: absolute;
                 right: 0;
                 top: 35px;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 18px;
                 font-weight: bold;
                 line-height: 24px;
@@ -1321,7 +1322,7 @@
 
                 & .val {
                     display: block;
-                    font-family: var(--font4);
+                    font-family: var(--font3);
                     font-size: 18px;
                     font-weight: bold;
                     line-height: 24px;
@@ -1351,7 +1352,7 @@
                     color: var(--text-02);
 
                     & .num {
-                        font-family: var(--font4);
+                        font-family: var(--font1);
                     }
                 }
             }
@@ -1565,6 +1566,7 @@
             & .value {
                 float: right;
                 font-size: 14px;
+                font-family: var(--font2);
                 font-weight: 500;
                 line-height: 22px;
                 letter-spacing: -0.14px;
@@ -1591,7 +1593,7 @@
 
             & .ac-num {
                 position: absolute;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 13px;
                 letter-spacing: 0;
@@ -1720,7 +1722,7 @@
 
                 & .time {
                     position: absolute;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 13px;
                     letter-spacing: 0;
@@ -1734,6 +1736,7 @@
                 display: block;
                 text-align: right;
                 font-size: 14px;
+                font-family: var(--font2);
                 font-weight: 500;
                 line-height: 22px;
                 letter-spacing: -0.14px;
@@ -1770,7 +1773,7 @@
 
             & .balance {
                 display: block;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0;
@@ -1974,7 +1977,7 @@
 
             & .b-num {
                 display: inline-block;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 17px;
                 color: var(--text-03);
@@ -2062,7 +2065,7 @@
                 float: left;
                 width: calc(100% - 15px - 30px);
                 margin-right: 0;
-                font-family: var(--font4);
+                font-family: var(--font3);
                 font-size: 18px;
                 font-weight: bold;
 
@@ -2173,6 +2176,7 @@
 
         & select {
             padding-left: 29px;
+            font-family: var(--font2);
         }
     }
 }
@@ -2253,7 +2257,7 @@
 
                 & .date {
                     display: inline-block;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 11px;
                     letter-spacing: -0.11px;
                     color: var(--text-02);
@@ -2442,7 +2446,7 @@
                 & .sum {
                     float: right;
                     display: inline-block;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 17px;
                     font-weight: bold;
                     line-height: 20px;
@@ -2551,7 +2555,7 @@
                 }
 
                 & .val {
-                    font-family: var(--font4);
+                    font-family: var(--font3);
                     font-size: 18px;
                     font-weight: bold;
                     line-height: 24px;
@@ -2616,7 +2620,7 @@
             line-height: 19px;
             letter-spacing: -0.33px;
             text-align: left;
-            color: #666666;
+            color: var(--text-02);
         }
 
         & .value {
@@ -2627,14 +2631,13 @@
             line-height: 19px;
             letter-spacing: -0.33px;
             text-align: right;
-            color: #000000;
+            color: var(--text-01);
             padding-right: 4px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
 
             &.won {
-
                 &::after {
                     content: '원';
                     font-family: var(--font2);
@@ -2673,7 +2676,7 @@
                 font-size: 13px;
                 line-height: 20px;
                 letter-spacing: -0.13px;
-                color: #000000;
+                color: var(--text-01);
             }
         }
     }
@@ -2792,7 +2795,7 @@
 
                 & .ac-num {
                     display: block;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 13px;
                     color: var(--text-03);
@@ -3065,7 +3068,7 @@
 
         & .value {
             display: block;
-            font-family: var(--font4);
+            font-family: var(--font1);
             font-size: 26px;
             font-weight: bold;
             line-height: 30px;
@@ -3191,7 +3194,7 @@
 
                     & .ac-num {
                         display: inline-block;
-                        font-family: var(--font4);
+                        font-family: var(--font1);
                     }
                 }
 
@@ -3210,6 +3213,7 @@
                 padding-bottom: 15px;
 
                 & .value {
+                    font-family: var(--font2);
                     font-size: 14px;
                     line-height: 16px;
                     letter-spacing: -0.14px;
@@ -3405,7 +3409,7 @@
                 right: 20px;
                 bottom: 3px;
                 display: inline-block;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 14px;
                 line-height: 16px;
                 text-align: right;
@@ -3517,7 +3521,7 @@
 
                         & .ac-num {
                             display: inline-block;
-                            font-family: var(--font4);
+                            font-family: var(--font1);
                         }
                     }
 
@@ -3536,6 +3540,7 @@
                     padding-bottom: 15px;
 
                     & .value {
+                        font-family: var(--font2);
                         font-size: 14px;
                         line-height: 16px;
                         letter-spacing: -0.14px;
@@ -3543,6 +3548,7 @@
 
                         &::after {
                             content: '원';
+                            font-size: 13px;
                             font-family: var(--font2);
                         }
                     }
@@ -3717,7 +3723,7 @@
 
                 & .number {
                     display: inline-block;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 11px;
                     letter-spacing: normal;
@@ -3740,7 +3746,7 @@
 
                 & .right {
                     float: right;
-
+                    font-family: var(--font2);
                     font-size: 13px;
                     line-height: 18px;
                     letter-spacing: 0;
@@ -3750,6 +3756,7 @@
                     &::after {
                         content: '원';
                         font-family: var(--font2);
+                        font-size: 12px;
                     }
                 }
 
@@ -3761,7 +3768,7 @@
             & .ex-num {
                 display: block;
                 float: right;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0;
@@ -3839,7 +3846,7 @@
                 & .value {
                     display: inline-block;
                     float: right;
-                    font-family: var(--font4);
+                    font-family: var(--font2);
                     font-size: 13px;
                     line-height: 17px;
                     color: var(--text-01);
@@ -3847,6 +3854,7 @@
 
                     &::after {
                         content: '원';
+                        font-size: 12px;
                         font-family: var(--font1)
                     }
                 }
@@ -4210,7 +4218,7 @@
                 & .fc-title {
                     display: block;
                     text-align: center;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 10px;
                     line-height: 11px;
                     letter-spacing: -0.1px;
@@ -4874,6 +4882,7 @@
                 right: 0;
                 top: 0;
                 display: block;
+                font-family: var(--font2);
                 font-size: 13px;
                 line-height: 19px;
                 text-align: right;
@@ -4918,6 +4927,7 @@
                 position: absolute;
                 display: inline-block;
                 font-size: 14px;
+                font-family: var(--font2);
                 line-height: 19px;
                 color: #ef4b61;
                 right: 16px;
@@ -4995,6 +5005,7 @@
                 float: right;
                 padding-right: 4px;
                 display: inline-block;
+                font-family: var(--font2);
                 font-size: 14px;
                 line-height: 19px;
                 letter-spacing: -0.14px;
@@ -5007,6 +5018,7 @@
 
                 &::after {
                     content: '원';
+                    font-size: 13px;
                     font-family: var(--font2);
                 }
             }
@@ -5014,7 +5026,7 @@
             & .balance {
                 display: inline-block;
                 position: absolute;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 12px;
                 line-height: 14px;
                 text-align: right;
@@ -5469,8 +5481,6 @@
                 color: var(--text-02);
 
                 &.won {
-                    font-family: var(--font4);
-
                     &::after {
                         content: '원';
                         font-family: var(--font1);
@@ -5873,7 +5883,7 @@
             & .date {
                 display: inline-block;
                 vertical-align: middle;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 15px;
                 letter-spacing: normal;

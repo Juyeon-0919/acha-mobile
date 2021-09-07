@@ -126,7 +126,7 @@
             font-family: var(--font2);
 
             &.val {
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 19px;
             }
         }
@@ -146,7 +146,7 @@
             font-family: var(--font2);
 
             &.val {
-                font-family: var(--font4);
+                font-family: var(--font2);
                 font-size: 19px;
             }
         }
@@ -385,8 +385,8 @@
                     & .title {
                         display: inline-block;
                         padding-top: 2px;
-                        font-size: 13px;
-                        line-height: 16px;
+                        font-size: 15px;
+                        line-height: 22px;
                         letter-spacing: -.33px;
                         color: #37354e;
                         font-family: var(--font2);
@@ -400,6 +400,7 @@
                     & .sum {
                         float: right;
                         position: relative;
+                        font-family: var(--font2);
                         font-size: 16px;
                         color: #37354e;
                         letter-spacing: -.14px;
@@ -444,7 +445,7 @@
                     & .val {
                         display: inline-block;
                         line-height: 17px;
-                        font-family: var(--font4);
+                        font-family: var(--font1);
                         font-size: 11px;
                         letter-spacing: 0;
                         color: var(--blurple);
@@ -489,7 +490,7 @@
                     }
 
                     & .val {
-                        font-family: var(--font4);
+                        font-family: var(--font1);
                         font-size: 11px;
                         line-height: 17px;
                         letter-spacing: 0;
@@ -542,7 +543,7 @@
                                 position: absolute;
                                 bottom: -20px;
                                 right: -11px;
-                                font-family: var(--font4);
+                                font-family: var(--font1);
                                 font-size: 11px;
                                 line-height: 17px;
                                 display: inline-block;
@@ -601,7 +602,7 @@
 
                     & .val {
                         position: relative;
-                        font-family: var(--font4);
+                        font-family: var(--font1);
                         font-size: 11px;
                         line-height: 36px;
                         letter-spacing: -.11px;
@@ -939,7 +940,7 @@
                         color: #37354e;
                         font-size: 13px;
                         line-height: 40px;
-                        font-family: var(--font4);
+                        font-family: var(--font1);
                         text-align: right;
 
                         &:focus {
@@ -1107,8 +1108,8 @@
             & .card-name {
                 text-align: center;
                 font-family: var(--font2);
-                font-size: 13px;
-                line-height: 21px;
+                font-size: 14px;
+                line-height: 20px;
                 margin-bottom: 20px;
             }
 
@@ -1139,10 +1140,11 @@
                             float: right;
                             display: inline-block;
                             font-size: 13px;
-                            font-family: var(--font4);
+                            font-family: var(--font1);
                             color: var(--text-02);
 
                             &.point {
+                                font-family: var(--font2);
                                 color: var(--text-01);
                                 font-weight: 500;
                             }
@@ -1228,14 +1230,15 @@
                 float: right;
                 display: inline-block;
                 font-size: 16px;
+                font-family: var(--font2);
                 font-weight: 500;
                 letter-spacing: -0.16px;
                 line-height: 21px;
 
                 &::after {
                     content: '원';
-                    font-family: var(--font1);
-                    font-weight: bold;
+                    font-family: var(--font2);
+                    font-weight: 500;
                     font-size: 13px;
                     margin-left: 1px;
                 }
@@ -1272,7 +1275,7 @@
                 & .val {
                     display: inline-block;
                     line-height: 17px;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 11px;
                     letter-spacing: 0;
                     color: var(--blurple);
@@ -1342,7 +1345,7 @@
                 }
 
                 & .val {
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 17px;
                     letter-spacing: 0;
@@ -1395,7 +1398,7 @@
                             position: absolute;
                             bottom: -20px;
                             right: -11px;
-                            font-family: var(--font4);
+                            font-family: var(--font1);
                             font-size: 11px;
                             line-height: 17px;
                             display: inline-block;
@@ -1454,7 +1457,7 @@
 
                 & .val {
                     position: relative;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 36px;
                     letter-spacing: -.11px;
@@ -1547,12 +1550,13 @@
                         float: right;
                         display: inline-block;
                         font-size: 13px;
+                        font-family: var(--font2);
                         font-weight: 500;
 
                         &::after {
                             content: '원';
-                            font-family: var(--font1);
-                            font-weight: bold;
+                            font-family: var(--font2);
+                            font-weight: 500;
                             font-size: 13px;
                             margin-left: 1px;
                         }
@@ -1691,7 +1695,7 @@
 
                     &:nth-child(2) {
                         float: right;
-
+                        font-family: var(--font2);
                         font-weight: 500;
                         text-align: right;
                         color: var(--text-01);
@@ -1772,7 +1776,7 @@
                     width: 100%;
                     height: 100%;
                     padding: 10px 12px 11px;
-                    font-family: var(--font4);
+                    font-family: var(--font1);
                     font-size: 13px;
                     line-height: 38px;
                     text-align: left;
@@ -1852,16 +1856,17 @@
             & .total {
                 float: right;
                 line-height: 20px;
-                font-family: var(--font4);
+                font-family: var(--font3);
                 font-size: 17px;
                 font-weight: bold;
                 letter-spacing: normal;
                 text-align: right;
                 color: var(--text-01);
+
                 &::after {
                     content: '원';
                     font-size: 14px;
-                    font-family: var(--font1);
+                    font-family: var(--font3);
                     font-weight: bold;
                 }
             }
@@ -1914,7 +1919,7 @@
                     font-size: 11px;
                     font-family: var(--font2);
                     color: #9b9aa6;
-                    padding: 2px 0 0 2px;
+                    padding: 1px 0 0 2px;
                     line-height: 16px;
                 }
 
@@ -1936,6 +1941,37 @@
                         line-height: 19px;
                     }
 
+                    & .div {
+                        margin: 0 7px;
+                        color: #e3e4e8;
+                    }
+
+                    & .num {
+                        font-family: var(--font1);
+                        font-size: 11px;
+                        line-height: 17px;
+                        text-align: left;
+                        color: var(--text-03);
+                    }
+
+                    & .time {
+                        position: absolute;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #9b9aa6;
+                        font-family: var(--font1);
+                        top: 21px;
+                        left: 4px;
+                        letter-spacing: 0;
+
+                        & .category {
+                            font-family: var(--font1);
+                            font-size: 11px;
+                            letter-spacing: -.55px;
+                            margin-left: 2px;
+                        }
+                    }
+
                     & .desc {
                         font-size: 11px;
                         line-height: 17px;
@@ -1945,37 +1981,6 @@
                         position: absolute;
                         top: 21px;
                         left: 4px;
-
-                        & .div {
-                            margin: 0 7px;
-                            color: #e3e4e8;
-                        }
-
-                        & .num {
-                            font-family: var(--font4);
-                            font-size: 11px;
-                            line-height: 17px;
-                            text-align: left;
-                            color: var(--text-03);
-                        }
-
-                        & .time {
-                            position: absolute;
-                            font-size: 11px;
-                            line-height: 13px;
-                            color: #9b9aa6;
-                            font-family: var(--font4);
-                            top: 21px;
-                            left: 4px;
-                            letter-spacing: 0;
-
-                            & .category {
-                                font-family: var(--font1);
-                                font-size: 11px;
-                                letter-spacing: -.55px;
-                                margin-left: 2px;
-                            }
-                        }
                     }
                 }
 
@@ -1983,6 +1988,7 @@
                     display: inline-block;
                     float: left;
                     width: 28%;
+                    font-family: var(--font2);
                     font-size: 14px;
                     letter-spacing: -.14px;
                     text-align: right;
@@ -1990,8 +1996,9 @@
 
                     &::after {
                         content: '원';
-                        font-family: var(--font1);
-                        font-weight: bold;
+                        font-family: var(--font2);
+                        font-weight: 500;
+                        font-size: 13px;
                     }
                 }
             }
@@ -2123,7 +2130,7 @@
             & .val {
                 display: inline-block;
                 line-height: 17px;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 11px;
                 letter-spacing: 0;
                 color: var(--blurple);
@@ -2212,7 +2219,7 @@
             }
 
             & .val {
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 17px;
                 letter-spacing: 0;
@@ -2264,7 +2271,7 @@
                         position: absolute;
                         bottom: -15px;
                         right: -11px;
-                        font-family: var(--font4);
+                        font-family: var(--font1);
                         font-size: 11px;
                         line-height: 17px;
                         display: inline-block;
@@ -2323,7 +2330,7 @@
 
             & .val {
                 position: relative;
-                font-family: var(--font4);
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 36px;
                 letter-spacing: -.11px;
@@ -2863,7 +2870,7 @@
             height: 100%;
             padding: 10px 32px 11px 12px;
             border: 0;
-            font-family: var(--font4);
+            font-family: var(--font1);
             font-size: 13px;
             line-height: 1.38;
             color: var(--text-03);

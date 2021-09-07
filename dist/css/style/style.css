@@ -13372,6 +13372,24 @@ input.custom:focus {
         background-color: #ffffff
     }
 
+.custom-light input::-moz-placeholder {
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
+            font-weight: 400;
+        }
+
+.custom-light input:-ms-input-placeholder {
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
+            font-weight: 400;
+        }
+
+.custom-light input::placeholder {
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
+            font-weight: 400;
+        }
+
 .custom-light input:focus {
             border-bottom: 1px solid #37354e;
             border-bottom: 1px solid var(--text-01);
@@ -13379,8 +13397,8 @@ input.custom:focus {
         }
 
 .custom-light input.number {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 14px;
         }
 
@@ -13406,6 +13424,8 @@ input.custom:focus {
         padding: 0 26px 0 5px;
         color: #37354e;
         color: var(--text-01);
+        font-family: 'Noto Sans CJK KR Medium';
+        font-family: var(--font2);
     }
 
 .custom-light .filled-in {
@@ -13785,8 +13805,8 @@ input.custom:focus {
                 padding: 0 4px;
                 min-width: 15px;
                 height: 15px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 10px;
                 line-height: 16px;
                 letter-spacing: .2px;
@@ -14453,8 +14473,8 @@ input.custom:focus {
     }
 
 .news .card-header .date {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 12px;
             color: #888888;
             padding-left: 5px;
@@ -15644,8 +15664,8 @@ input.custom:focus {
                 color: #37354e;
                 font-size: 13px;
                 line-height: 42px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 text-align: left;
                 margin-right: 5px;
                 padding: 0 5px;
@@ -16098,8 +16118,8 @@ input.custom:focus {
 }
 
 .font-num-bold {
-    font-family: 'Roboto' !important;
-    font-family: var(--font4) !important;
+    font-family: 'Noto Sans CJK KR Regular' !important;
+    font-family: var(--font1) !important;
     font-weight: bold !important;
 }
 
@@ -16407,8 +16427,8 @@ input.custom:focus {
         }
 
 .popup .popup-body .desc-sm {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 12px;
             line-height: 14px;
             letter-spacing: -0.6px;
@@ -16579,8 +16599,8 @@ input.custom:focus {
                 color: #37354e;
                 font-size: 13px;
                 line-height: 40px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 text-align: right;
                 margin-right: 5px;
                 padding: 0 10px
@@ -16688,8 +16708,8 @@ input.custom:focus {
             }
 
 .popup-normal.required-performance .popup-body .desc span {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     letter-spacing: -.11px;
                 }
 
@@ -19126,8 +19146,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
 
 .card .card-body .input_area .value {
                 float: right;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 15px
             }
 
@@ -19319,8 +19339,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
         }
 
 .chart .sort .value span:first-child {
-                    font-family: 'Roboto';
-                    font-family: var(--font4)
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1)
                 }
 
 .chart .sort .value span:first-child::after {
@@ -19332,8 +19352,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
                     }
 
 .chart .sort .value span:nth-child(2) {
-                    font-family: 'Roboto';
-                    font-family: var(--font4)
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1)
                 }
 
 .chart .sort .value span:nth-child(2):after {
@@ -19451,8 +19471,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
 
 .chart.chart_graph .sort .bar .amount .tooltip_box .tooltip_text .value {
                                 position: unset !important;
-                                font-family: 'Roboto' !important;
-                                font-family: var(--font4) !important;
+                                font-family: 'Noto Sans CJK KR Regular' !important;
+                                font-family: var(--font1) !important;
                                 font-size: 13px !important;
                                 font-weight: normal !important;
                                 color: #6839d3 !important;
@@ -19594,8 +19614,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
             width: 23px;
             height: 23px;
             margin-right: 22px;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 11px;
             line-height: 23px;
             letter-spacing: -.11px;
@@ -19612,6 +19632,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
                 border-radius: 50%;
                 color: #6839d3;
                 color: var(--text-point-color);
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 background-color: rgba(104, 57, 211,.06);
             }
 
@@ -19634,8 +19656,8 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
             width: 23px;
             height: 23px;
             margin-right: 22px;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 11px;
             line-height: 23px;
             text-align: center;
@@ -20041,8 +20063,8 @@ textarea.custom:focus {
                                 }
 
 .mycard .contents .card_box.list .card-connected a li.required-performance .val {
-                                    font-family: 'Roboto';
-                                    font-family: var(--font4);
+                                    font-family: 'Noto Sans CJK KR Regular';
+                                    font-family: var(--font1);
                                     font-size: 11px;
                                     line-height: 26px;
                                     letter-spacing: 0;
@@ -20122,8 +20144,8 @@ textarea.custom:focus {
                                 }
 
 .mycard .contents .card_box.list .card-connected a li.bar-graph .val {
-                                    font-family: 'Roboto';
-                                    font-family: var(--font4);
+                                    font-family: 'Noto Sans CJK KR Regular';
+                                    font-family: var(--font1);
                                     font-size: 11px;
                                     line-height: 26px;
                                     letter-spacing: 0;
@@ -20174,8 +20196,8 @@ textarea.custom:focus {
 
 .mycard .contents .card_box.list .card-connected a li.performance .val {
                                     position: relative;
-                                    font-family: 'Roboto';
-                                    font-family: var(--font4);
+                                    font-family: 'Noto Sans CJK KR Regular';
+                                    font-family: var(--font1);
                                     font-size: 11px;
                                     line-height: 36px;
                                     letter-spacing: -.11px;
@@ -20497,8 +20519,8 @@ textarea.custom:focus {
                         float: right;
                         display: inline-block;
                         font-size: 13px;
-                        font-family: 'Roboto';
-                        font-family: var(--font4)
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1)
                     }
 
 .card_detail_wrap .card_info .division-01 li span:nth-child(2).won::after {
@@ -20574,8 +20596,8 @@ textarea.custom:focus {
                                 }
 
 .card_detail_wrap .card_info .division-02 li span:nth-child(2) .num {
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
                         }
 
 .card_detail_wrap .card_info .division-02 li:last-child {
@@ -20647,8 +20669,8 @@ textarea.custom:focus {
 .card_detail_list_wrap .inner .date_info .total {
                 float: right;
                 line-height: 20px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 17px;
                 font-weight: bold;
                 letter-spacing: normal;
@@ -20721,8 +20743,8 @@ textarea.custom:focus {
                         font-size: 11px;
                         line-height: 13px;
                         color: #9b9aa6;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         top: 21px;
                         left: 4px;
                         letter-spacing: 0
@@ -21761,8 +21783,8 @@ textarea.custom:focus {
 
 .box_tax_home .title_area .val {
             display: inline-block;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 32px;
             font-weight: bold;
             line-height: 28px;
@@ -22085,8 +22107,8 @@ textarea.custom:focus {
                     }
 
 .box_tax_category ul li .tit-lg span:last-child em {
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
                             font-size: 20px;
                             font-weight: bold;
                             line-height: 24px;
@@ -22143,8 +22165,8 @@ textarea.custom:focus {
 
 .box_tax_category ul li .tit span:last-child {
                         float: right;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-size: 17px;
                         font-weight: 500;
                         line-height: 20px;
@@ -22162,8 +22184,8 @@ textarea.custom:focus {
 
 .box_tax_category ul li > .val {
                 text-align: right;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 20px;
                 font-weight: bold;
                 line-height: 24px;
@@ -22644,8 +22666,8 @@ textarea.custom:focus {
                         border-radius: 50px;
                         border: 1px solid #6839d3;
                         color: #6839d3;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-weight: bold;
                         font-size: 12px;
                         letter-spacing: -.3px;
@@ -22722,8 +22744,8 @@ textarea.custom:focus {
                 line-height: 15px;
                 padding: 8px 0;
                 font-size: 12px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 color: #737183;
                 color: var(--text-02);
             }
@@ -22967,8 +22989,8 @@ textarea.custom:focus {
 
 .box_tax_sub.ver2 .box_tax_item > .value {
                 position: absolute;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 20px;
                 font-weight: bold;
                 font-stretch: normal;
@@ -23230,8 +23252,8 @@ textarea.custom:focus {
 .box_tax_title p .font-lg {
             color: #6839d3;
             color: var(--text-point-color);
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-weight: bold;
             letter-spacing: -.45px;
             font-size: 18px;
@@ -24237,8 +24259,8 @@ input[type=number] {
                         }
 
 .my-page-category .ex-list ul .item a .info .date {
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
                             font-size: 11px;
                             line-height: 15px;
                             color: #9b9aa6;
@@ -25109,6 +25131,8 @@ input[type=number] {
 .my-page-fixed-ex > .ex-list .item .val {
                 float: right;
                 font-size: 13px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-weight: 500;
                 line-height: 19px;
                 letter-spacing: -0.13px;
@@ -25161,8 +25185,8 @@ input[type=number] {
                 }
 
 .my-page-input-info > .list-header .txt-bold {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
             font-size: 17px;
             font-weight: bold;
             line-height: 24px;
@@ -25171,8 +25195,8 @@ input[type=number] {
         }
 
 .my-page-input-info > .list-header .txt-desc {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 14px;
             line-height: 20px;
             letter-spacing: -0.35px;
@@ -25242,8 +25266,8 @@ input[type=number] {
     }
 
 .my-common-wrap .date-wrap .num {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
             font-weight: bold;
         }
 
@@ -25417,9 +25441,9 @@ input[type=number] {
             text-align: center;
             background: rgba(104, 57, 211, .06);
             border-radius: 50%;
-
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             color: #6839d3;
-
             color: var(--color-point);
             position: absolute;
             top: 30%;
@@ -25486,7 +25510,7 @@ input[type=number] {
             display: inline-flex;
             height: 28px;
             align-items: center;
-            padding:  0 10px;
+            padding: 0 10px;
             background-image: url(../../img/common/btn-dash-bg-01.svg);
             width: 86px;
             background-size: cover
@@ -25589,7 +25613,8 @@ input[type=number] {
         }
 
 .box_ex_calendar_list > .ex-total > .val span:first-child {
-
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
                     font-size: 18px;
                     font-weight: 500;
                     line-height: 64px;
@@ -25630,7 +25655,8 @@ input[type=number] {
             }
 
 .box_ex_calendar_list > .ex-day > .ex-total .date .day {
-
+                    font-family: 'Noto Sans CJK KR Bold';
+                    font-family: var(--font3);
                     font-size: 20px;
                     font-weight: bold;
                     line-height: 21px;
@@ -25687,8 +25713,8 @@ input[type=number] {
             }
 
 .box_ex_calendar_list > .ex-day > .ex-total .total .val {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
                     font-size: 17px;
                     font-weight: 500;
                     line-height: 23px;
@@ -25763,8 +25789,8 @@ input[type=number] {
                         }
 
 .box_ex_calendar_list > .ex-day .ex-list .item .info-val a .val {
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
                             font-size: 14px;
                             letter-spacing: -0.14px;
                             text-align: right;
@@ -25858,8 +25884,8 @@ input[type=number] {
                         }
 
 .modal-common .modal-dialog.modal-calendar .modal-content .box_ex_calendar .fc-header-toolbar .fc-center h2 {
-                                font-family: 'Roboto';
-                                font-family: var(--font4);
+                                font-family: 'Noto Sans CJK KR Regular';
+                                font-family: var(--font1);
                                 font-size: 15px;
                                 line-height: 21px;
                                 letter-spacing: -0.15px;
@@ -25915,8 +25941,8 @@ input[type=number] {
                                                         line-height: 24px;
                                                         text-align: center;
                                                         border-radius: 50%;
-                                                        font-family: 'Roboto';
-                                                        font-family: var(--font4);
+                                                        font-family: 'Noto Sans CJK KR Regular';
+                                                        font-family: var(--font1);
                                                         position: absolute;
                                                         left: 50%;
                                                         transform: translate(-50%, -8px)
@@ -25933,13 +25959,14 @@ input[type=number] {
                                                         }
 
 .modal-common .modal-dialog.modal-calendar .modal-content .box_ex_calendar .fc-view-container .fc-view table .fc-body .fc-widget-content .fc-day-grid-container .fc-day-grid .fc-row {
+
                                                     /* Todo! 삭제 가능성 */
                                                 }
 
 .modal-common .modal-dialog.modal-calendar .modal-content .box_ex_calendar .fc-view-container .fc-view table .fc-body .fc-widget-content .fc-day-grid-container .fc-day-grid .fc-row .fc-today .fc-day-number {
                                                             background-color: transparent;
-                                                            font-family: 'Roboto';
-                                                            font-family: var(--font4);
+                                                            font-family: 'Noto Sans CJK KR Regular';
+                                                            font-family: var(--font1);
                                                             font-size: 13px;
                                                             letter-spacing: -0.13px;
                                                             color: #37354e;
@@ -25966,9 +25993,6 @@ input[type=number] {
     }
 
 .my-data-sign-in > .title-area .title {
-            font-family: 'Noto Sans CJK KR Medium';
-            font-family: var(--font2);
-            font-weight: 500;
             font-size: 18px;
             letter-spacing: -.45px;
             line-height: 28px
@@ -26062,9 +26086,6 @@ input[type=number] {
     }
 
 .my-data-required > .title-area .title {
-            font-family: 'Noto Sans CJK KR Medium';
-            font-family: var(--font2);
-            font-weight: 500;
             font-size: 18px;
             letter-spacing: -.45px;
             line-height: 28px
@@ -26186,7 +26207,8 @@ input[type=number] {
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item .val {
                                 display: block;
                                 font-size: 13px;
-
+                                font-family: 'Noto Sans CJK KR Medium';
+                                font-family: var(--font2);
                                 font-weight: 500;
                                 line-height: 20px;
                                 letter-spacing: -0.33px;
@@ -26196,6 +26218,8 @@ input[type=number] {
 
 .my-data-required > .card-list .card-item .card-body > .cont .list-body .item .val > a {
                                     font-size: 13px;
+                                    font-family: 'Noto Sans CJK KR Regular';
+                                    font-family: var(--font1);
                                     line-height: 19px;
                                     letter-spacing: -0.33px;
                                     color: #9b9aa6;
@@ -26238,6 +26262,8 @@ input[type=number] {
                             }
 
 .my-data-required > .card-list .card-item .card-body > .info-list ul .item .info .tit {
+                                    font-family: 'Noto Sans CJK KR Medium';
+                                    font-family: var(--font2);
                                     font-size: 13px;
                                     font-weight: 500;
                                     line-height: 19px;
@@ -26248,9 +26274,7 @@ input[type=number] {
 .my-data-required > .card-list .card-item .card-body > .info-list ul .item .info .num {
                                     font-size: 12px;
                                     font-weight: normal;
-                                    font-stretch: normal;
-                                    font-style: normal;
-                                    line-height: 1.33;
+                                    line-height: 18px;
                                     letter-spacing: -0.3px;
                                     text-align: left;
                                     color: #9b9aa6;
@@ -26687,8 +26711,8 @@ input[type=number] {
         }
 
 .my-card-main .main-text span.val {
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 19px;
             }
 
@@ -26710,8 +26734,8 @@ input[type=number] {
         }
 
 .my-card-main .main-info span.val {
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-size: 19px;
             }
 
@@ -26934,8 +26958,8 @@ input[type=number] {
 .main-card-list .card-list .item li.info .title {
                         display: inline-block;
                         padding-top: 2px;
-                        font-size: 13px;
-                        line-height: 16px;
+                        font-size: 15px;
+                        line-height: 22px;
                         letter-spacing: -.33px;
                         color: #37354e;
                         font-family: 'Noto Sans CJK KR Medium';
@@ -26950,6 +26974,8 @@ input[type=number] {
 .main-card-list .card-list .item li.info .sum {
                         float: right;
                         position: relative;
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
                         font-size: 16px;
                         color: #37354e;
                         letter-spacing: -.14px;
@@ -26998,8 +27024,8 @@ input[type=number] {
 .main-card-list .card-list .item li.required-performance .val {
                         display: inline-block;
                         line-height: 17px;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-size: 11px;
                         letter-spacing: 0;
                         color: #6839d3;
@@ -27046,8 +27072,8 @@ input[type=number] {
                     }
 
 .main-card-list .card-list .item li.bar-graph .val {
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-size: 11px;
                         line-height: 17px;
                         letter-spacing: 0;
@@ -27101,8 +27127,8 @@ input[type=number] {
                                 position: absolute;
                                 bottom: -20px;
                                 right: -11px;
-                                font-family: 'Roboto';
-                                font-family: var(--font4);
+                                font-family: 'Noto Sans CJK KR Regular';
+                                font-family: var(--font1);
                                 font-size: 11px;
                                 line-height: 17px;
                                 display: inline-block;
@@ -27153,8 +27179,8 @@ input[type=number] {
 
 .main-card-list .card-list .item li.performance .val {
                         position: relative;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-size: 11px;
                         line-height: 36px;
                         letter-spacing: -.11px;
@@ -27501,8 +27527,8 @@ input[type=number] {
                         color: #37354e;
                         font-size: 13px;
                         line-height: 40px;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         text-align: right
                     }
 
@@ -27668,8 +27694,8 @@ input[type=number] {
                 text-align: center;
                 font-family: 'Noto Sans CJK KR Medium';
                 font-family: var(--font2);
-                font-size: 13px;
-                line-height: 21px;
+                font-size: 14px;
+                line-height: 20px;
                 margin-bottom: 20px;
             }
 
@@ -27699,13 +27725,15 @@ input[type=number] {
                             float: right;
                             display: inline-block;
                             font-size: 13px;
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
                             color: #737183;
                             color: var(--text-02)
                         }
 
 .my-card-detail .card-detail-wrap .card-info .crad-info-list li span:nth-child(2).point {
+                                font-family: 'Noto Sans CJK KR Medium';
+                                font-family: var(--font2);
                                 color: #37354e;
                                 color: var(--text-01);
                                 font-weight: 500;
@@ -27791,6 +27819,8 @@ input[type=number] {
                 float: right;
                 display: inline-block;
                 font-size: 16px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-weight: 500;
                 letter-spacing: -0.16px;
                 line-height: 21px
@@ -27798,9 +27828,9 @@ input[type=number] {
 
 .my-card-detail .card-total-ex-wrap .card-info .val::after {
                     content: '원';
-                    font-family: 'Noto Sans CJK KR Regular';
-                    font-family: var(--font1);
-                    font-weight: bold;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-weight: 500;
                     font-size: 13px;
                     margin-left: 1px;
                 }
@@ -27838,8 +27868,8 @@ input[type=number] {
 .my-card-detail .card-total-ex-wrap .graph-area .required-performance .val {
                     display: inline-block;
                     line-height: 17px;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     letter-spacing: 0;
                     color: #6839d3;
@@ -27902,8 +27932,8 @@ input[type=number] {
                 }
 
 .my-card-detail .card-total-ex-wrap .graph-area .bar-graph .val {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 17px;
                     letter-spacing: 0;
@@ -27957,8 +27987,8 @@ input[type=number] {
                             position: absolute;
                             bottom: -20px;
                             right: -11px;
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
                             font-size: 11px;
                             line-height: 17px;
                             display: inline-block;
@@ -28009,8 +28039,8 @@ input[type=number] {
 
 .my-card-detail .card-total-ex-wrap .graph-area .performance .val {
                     position: relative;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 36px;
                     letter-spacing: -.11px;
@@ -28111,14 +28141,16 @@ input[type=number] {
                         float: right;
                         display: inline-block;
                         font-size: 13px;
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
                         font-weight: 500
                     }
 
 .my-card-detail .card-total-ex-wrap .info-ex li span:nth-child(2)::after {
                             content: '원';
-                            font-family: 'Noto Sans CJK KR Regular';
-                            font-family: var(--font1);
-                            font-weight: bold;
+                            font-family: 'Noto Sans CJK KR Medium';
+                            font-family: var(--font2);
+                            font-weight: 500;
                             font-size: 13px;
                             margin-left: 1px;
                         }
@@ -28260,7 +28292,8 @@ input[type=number] {
 
 .my-card-detail .card-detail-info > .info-list li span:nth-child(2) {
                         float: right;
-
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
                         font-weight: 500;
                         text-align: right;
                         color: #37354e;
@@ -28346,8 +28379,8 @@ input[type=number] {
                     width: 100%;
                     height: 100%;
                     padding: 10px 12px 11px;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 13px;
                     line-height: 38px;
                     text-align: left;
@@ -28432,8 +28465,8 @@ input[type=number] {
 .my-card-detail .card-detail-list-wrap .date-info .total {
                 float: right;
                 line-height: 20px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
                 font-size: 17px;
                 font-weight: bold;
                 letter-spacing: normal;
@@ -28445,8 +28478,8 @@ input[type=number] {
 .my-card-detail .card-detail-list-wrap .date-info .total::after {
                     content: '원';
                     font-size: 14px;
-                    font-family: 'Noto Sans CJK KR Regular';
-                    font-family: var(--font1);
+                    font-family: 'Noto Sans CJK KR Bold';
+                    font-family: var(--font3);
                     font-weight: bold;
                 }
 
@@ -28502,7 +28535,7 @@ input[type=number] {
                     font-family: 'Noto Sans CJK KR Medium';
                     font-family: var(--font2);
                     color: #9b9aa6;
-                    padding: 2px 0 0 2px;
+                    padding: 1px 0 0 2px;
                     line-height: 16px;
                 }
 
@@ -28526,6 +28559,41 @@ input[type=number] {
                         line-height: 19px;
                     }
 
+.my-card-detail .card-detail-list-wrap .spending-list li .title .div {
+                        margin: 0 7px;
+                        color: #e3e4e8;
+                    }
+
+.my-card-detail .card-detail-list-wrap .spending-list li .title .num {
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        font-size: 11px;
+                        line-height: 17px;
+                        text-align: left;
+                        color: #9b9aa6;
+                        color: var(--text-03);
+                    }
+
+.my-card-detail .card-detail-list-wrap .spending-list li .title .time {
+                        position: absolute;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #9b9aa6;
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
+                        top: 21px;
+                        left: 4px;
+                        letter-spacing: 0
+                    }
+
+.my-card-detail .card-detail-list-wrap .spending-list li .title .time .category {
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
+                            font-size: 11px;
+                            letter-spacing: -.55px;
+                            margin-left: 2px;
+                        }
+
 .my-card-detail .card-detail-list-wrap .spending-list li .title .desc {
                         font-size: 11px;
                         line-height: 17px;
@@ -28535,48 +28603,15 @@ input[type=number] {
                         color: var(--text-03);
                         position: absolute;
                         top: 21px;
-                        left: 4px
+                        left: 4px;
                     }
-
-.my-card-detail .card-detail-list-wrap .spending-list li .title .desc .div {
-                            margin: 0 7px;
-                            color: #e3e4e8;
-                        }
-
-.my-card-detail .card-detail-list-wrap .spending-list li .title .desc .num {
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
-                            font-size: 11px;
-                            line-height: 17px;
-                            text-align: left;
-                            color: #9b9aa6;
-                            color: var(--text-03);
-                        }
-
-.my-card-detail .card-detail-list-wrap .spending-list li .title .desc .time {
-                            position: absolute;
-                            font-size: 11px;
-                            line-height: 13px;
-                            color: #9b9aa6;
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
-                            top: 21px;
-                            left: 4px;
-                            letter-spacing: 0
-                        }
-
-.my-card-detail .card-detail-list-wrap .spending-list li .title .desc .time .category {
-                                font-family: 'Noto Sans CJK KR Regular';
-                                font-family: var(--font1);
-                                font-size: 11px;
-                                letter-spacing: -.55px;
-                                margin-left: 2px;
-                            }
 
 .my-card-detail .card-detail-list-wrap .spending-list li .val {
                     display: inline-block;
                     float: left;
                     width: 28%;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
                     font-size: 14px;
                     letter-spacing: -.14px;
                     text-align: right;
@@ -28585,9 +28620,10 @@ input[type=number] {
 
 .my-card-detail .card-detail-list-wrap .spending-list li .val::after {
                         content: '원';
-                        font-family: 'Noto Sans CJK KR Regular';
-                        font-family: var(--font1);
-                        font-weight: bold;
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        font-weight: 500;
+                        font-size: 13px;
                     }
 
 .my-card-detail .card-detail-list-wrap .spending-list.spending-list-sm {
@@ -28722,8 +28758,8 @@ input[type=number] {
 .card-benefits-wrap > .graph-area .required-performance .val {
                 display: inline-block;
                 line-height: 17px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 letter-spacing: 0;
                 color: #6839d3;
@@ -28804,8 +28840,8 @@ input[type=number] {
             }
 
 .card-benefits-wrap > .graph-area .bar-graph .val {
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 17px;
                 letter-spacing: 0;
@@ -28858,8 +28894,8 @@ input[type=number] {
                         position: absolute;
                         bottom: -15px;
                         right: -11px;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-size: 11px;
                         line-height: 17px;
                         display: inline-block;
@@ -28910,8 +28946,8 @@ input[type=number] {
 
 .card-benefits-wrap > .graph-area .performance .val {
                 position: relative;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 36px;
                 letter-spacing: -.11px;
@@ -29467,8 +29503,8 @@ input[type=number] {
             height: 100%;
             padding: 10px 32px 11px 12px;
             border: 0;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 13px;
             line-height: 1.38;
             color: #9b9aa6;
@@ -29635,8 +29671,8 @@ input[type=number] {
                 margin-right: 10px;
                 text-align: center;
                 border: solid 1px #e2e3e6;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 29px;
@@ -30308,6 +30344,8 @@ input[type=number] {
                 height: 100%;
                 border: 0;
                 padding: 10px 12px 11px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 38px;
@@ -30320,32 +30358,32 @@ input[type=number] {
             }
 
 .box-ex-account .card-detail-calendar .input-calendar input.default {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
-                    font-weight: 400;
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
+                    font-weight: normal;
                     color: #9b9aa6;
                     color: var(--text-03);
                 }
 
 .box-ex-account .card-detail-calendar .input-calendar input::-moz-placeholder {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-weight: 400;
                     color: #9b9aa6;
                     color: var(--text-03);
                 }
 
 .box-ex-account .card-detail-calendar .input-calendar input:-ms-input-placeholder {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-weight: 400;
                     color: #9b9aa6;
                     color: var(--text-03);
                 }
 
 .box-ex-account .card-detail-calendar .input-calendar input::placeholder {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-weight: 400;
                     color: #9b9aa6;
                     color: var(--text-03);
@@ -30436,8 +30474,8 @@ input[type=number] {
                     }
 
 .box-ex-account .accordion .card .card-body > .total-sum .sum {
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
                         font-size: 17px;
                         font-weight: bold;
                         line-height: 23px;
@@ -30508,8 +30546,8 @@ input[type=number] {
                                 }
 
 .box-ex-account .accordion .card .card-body .ex-pre .ex-info .value-wrap .value2 {
-                                font-family: 'Roboto';
-                                font-family: var(--font4);
+                                font-family: 'Noto Sans CJK KR Regular';
+                                font-family: var(--font1);
                                 font-size: 13px;
                                 line-height: 18px;
                                 text-align: right;
@@ -31202,13 +31240,14 @@ input[type=number] {
 
 .box-ex-top .sum_change {
         position: absolute;
-        font-family: 'Roboto';
-        font-family: var(--font4);
+        font-family: 'Noto Sans CJK KR Bold';
+        font-family: var(--font3);
         font-size: 28px;
         font-weight: bold;
         line-height: 33px;
         letter-spacing: -.3px;
         color: #37354e;
+        color: var(--text-01);
         top: 45px;
         left: 20px
     }
@@ -31216,8 +31255,8 @@ input[type=number] {
 .box-ex-top .sum_change::after {
             content: '원';
             position: absolute;
-            font-family: 'Noto Sans CJK KR Regular';
-            font-family: var(--font1);
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
             font-size: 16px;
             font-weight: bold;
             line-height: 24px;
@@ -31501,8 +31540,8 @@ input[type=number] {
                 position: absolute;
                 right: 0;
                 top: 35px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 18px;
                 font-weight: bold;
                 line-height: 24px;
@@ -31532,8 +31571,8 @@ input[type=number] {
 
 .box-ex-detail-top .account-info .info2 .ac-total .val {
                     display: block;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Bold';
+                    font-family: var(--font3);
                     font-size: 18px;
                     font-weight: bold;
                     line-height: 24px;
@@ -31566,8 +31605,8 @@ input[type=number] {
                 }
 
 .box-ex-detail-top .account-info .info2 .ac-total .desc .num {
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                     }
 
 .box-ex-detail-top .account-info .info3 {
@@ -31784,6 +31823,8 @@ input[type=number] {
 .ac-bank .ac-list .ac-item .value {
                 float: right;
                 font-size: 14px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-weight: 500;
                 line-height: 22px;
                 letter-spacing: -0.14px;
@@ -31812,8 +31853,8 @@ input[type=number] {
 
 .ac-bank .ac-list .ac-item .ac-num {
                 position: absolute;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 13px;
                 letter-spacing: 0;
@@ -31940,8 +31981,8 @@ input[type=number] {
 
 .group-date .ex-list .ex-item .info .time {
                     position: absolute;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 13px;
                     letter-spacing: 0;
@@ -31954,6 +31995,8 @@ input[type=number] {
                 display: block;
                 text-align: right;
                 font-size: 14px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-weight: 500;
                 line-height: 22px;
                 letter-spacing: -0.14px;
@@ -31994,8 +32037,8 @@ input[type=number] {
 
 .group-date .ex-list .ex-item .balance {
                 display: block;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0;
@@ -32211,8 +32254,8 @@ input[type=number] {
 
 .box_my_income_list .income-item .ac-info .b-num {
                 display: inline-block;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 17px;
                 color: #9b9aa6;
@@ -32302,8 +32345,8 @@ input[type=number] {
                 float: left;
                 width: calc(100% - 15px - 30px);
                 margin-right: 0;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
                 font-size: 18px;
                 font-weight: bold
             }
@@ -32436,6 +32479,8 @@ input[type=number] {
 
 .box_my_income_add .select-box select {
             padding-left: 29px;
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
         }
 
 .box_ex_detail {
@@ -32519,8 +32564,8 @@ input[type=number] {
 
 .box_ex_detail .box-ex-header .ex-bottom .left .date {
                     display: inline-block;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     letter-spacing: -0.11px;
                     color: #737183;
@@ -32719,8 +32764,8 @@ input[type=number] {
 .box_ex_detail .box-ex-header .ex-bill .info .sum {
                     float: right;
                     display: inline-block;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 17px;
                     font-weight: bold;
                     line-height: 20px;
@@ -32835,8 +32880,8 @@ input[type=number] {
                 }
 
 .box_ex_detail .box-ex-header .ex-direct .info .val {
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Bold';
+                    font-family: var(--font3);
                     font-size: 18px;
                     font-weight: bold;
                     line-height: 24px
@@ -32903,7 +32948,8 @@ input[type=number] {
             line-height: 19px;
             letter-spacing: -0.33px;
             text-align: left;
-            color: #666666;
+            color: #737183;
+            color: var(--text-02);
         }
 
 .box_ex_detail_list .ex-detail-item .value {
@@ -32915,7 +32961,8 @@ input[type=number] {
             line-height: 19px;
             letter-spacing: -0.33px;
             text-align: right;
-            color: #000000;
+            color: #37354e;
+            color: var(--text-01);
             padding-right: 4px;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -32962,7 +33009,8 @@ input[type=number] {
                 font-size: 13px;
                 line-height: 20px;
                 letter-spacing: -0.13px;
-                color: #000000;
+                color: #37354e;
+                color: var(--text-01);
             }
 
 .ex-detail-list {
@@ -33087,8 +33135,8 @@ input[type=number] {
 
 .box_apartment_i .sec-aparti .ex-list li .ac-num {
                     display: block;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 13px;
                     color: #9b9aa6;
@@ -33369,8 +33417,8 @@ input[type=number] {
 
 .box_category_ex_detail .ex-header .value {
             display: block;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 26px;
             font-weight: bold;
             line-height: 30px;
@@ -33507,8 +33555,8 @@ input[type=number] {
 
 .box_category_ex_detail .ex-list .ex-item .b-info .ac-info .ac-num {
                         display: inline-block;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                     }
 
 .box_category_ex_detail .ex-list .ex-item .b-info .badge {
@@ -33527,6 +33575,8 @@ input[type=number] {
             }
 
 .box_category_ex_detail .ex-list .ex-item .btn-move .value {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
                     font-size: 14px;
                     line-height: 16px;
                     letter-spacing: -0.14px;
@@ -33723,8 +33773,8 @@ input[type=number] {
                 right: 20px;
                 bottom: 3px;
                 display: inline-block;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 14px;
                 line-height: 16px;
                 text-align: right;
@@ -33849,8 +33899,8 @@ input[type=number] {
 
 .box_category_list .category-list-item .ex-item a .b-info .ac-info .ac-num {
                             display: inline-block;
-                            font-family: 'Roboto';
-                            font-family: var(--font4);
+                            font-family: 'Noto Sans CJK KR Regular';
+                            font-family: var(--font1);
                         }
 
 .box_category_list .category-list-item .ex-item a .b-info .badge {
@@ -33869,6 +33919,8 @@ input[type=number] {
                 }
 
 .box_category_list .category-list-item .ex-item a .btn-move .value {
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
                         font-size: 14px;
                         line-height: 16px;
                         letter-spacing: -0.14px;
@@ -33877,6 +33929,7 @@ input[type=number] {
 
 .box_category_list .category-list-item .ex-item a .btn-move .value::after {
                             content: '원';
+                            font-size: 13px;
                             font-family: 'Noto Sans CJK KR Medium';
                             font-family: var(--font2);
                         }
@@ -34059,8 +34112,8 @@ input[type=number] {
 
 .box-ex-account .ex-account > ul .ac-info .number {
                     display: inline-block;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     line-height: 11px;
                     letter-spacing: normal;
@@ -34085,7 +34138,8 @@ input[type=number] {
 
 .box-ex-account .ex-account > ul .ac-item .right {
                     float: right;
-
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
                     font-size: 13px;
                     line-height: 18px;
                     letter-spacing: 0;
@@ -34098,6 +34152,7 @@ input[type=number] {
                         content: '원';
                         font-family: 'Noto Sans CJK KR Medium';
                         font-family: var(--font2);
+                        font-size: 12px;
                     }
 
 .box-ex-account .ex-account > ul .ac-item:last-child {
@@ -34107,8 +34162,8 @@ input[type=number] {
 .box-ex-account .ex-account > ul .ex-num {
                 display: block;
                 float: right;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0;
@@ -34191,8 +34246,8 @@ input[type=number] {
 .box-ex-account .card-body .ex-pre .ex-info .value {
                     display: inline-block;
                     float: right;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
                     font-size: 13px;
                     line-height: 17px;
                     color: #37354e;
@@ -34202,6 +34257,7 @@ input[type=number] {
 
 .box-ex-account .card-body .ex-pre .ex-info .value::after {
                         content: '원';
+                        font-size: 12px;
                         font-family: 'Noto Sans CJK KR Regular';
                         font-family: var(--font1)
                     }
@@ -34582,8 +34638,8 @@ input[type=number] {
 .box_ex_calendar .fc-event-container .fc-day-grid-event .fc-content .fc-title {
                     display: block;
                     text-align: center;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 10px;
                     line-height: 11px;
                     letter-spacing: -0.1px;
@@ -35262,6 +35318,8 @@ input[type=number] {
                 right: 0;
                 top: 0;
                 display: block;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-size: 13px;
                 line-height: 19px;
                 text-align: right;
@@ -35310,6 +35368,8 @@ input[type=number] {
                 position: absolute;
                 display: inline-block;
                 font-size: 14px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 line-height: 19px;
                 color: #ef4b61;
                 right: 16px;
@@ -35387,6 +35447,8 @@ input[type=number] {
                 float: right;
                 padding-right: 4px;
                 display: inline-block;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-size: 14px;
                 line-height: 19px;
                 letter-spacing: -0.14px;
@@ -35402,6 +35464,7 @@ input[type=number] {
 
 .ex-current .ex03-list .ex03-item .value::after {
                     content: '원';
+                    font-size: 13px;
                     font-family: 'Noto Sans CJK KR Medium';
                     font-family: var(--font2);
                 }
@@ -35409,8 +35472,8 @@ input[type=number] {
 .ex-current .ex03-list .ex03-item .balance {
                 display: inline-block;
                 position: absolute;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 12px;
                 line-height: 14px;
                 text-align: right;
@@ -35907,11 +35970,6 @@ input[type=number] {
                 color: var(--text-02)
             }
 
-.box-ex-detail-info .item .txt .val.won {
-                    font-family: 'Roboto';
-                    font-family: var(--font4)
-                }
-
 .box-ex-detail-info .item .txt .val.won::after {
                         content: '원';
                         font-family: 'Noto Sans CJK KR Regular';
@@ -36336,8 +36394,8 @@ input[type=number] {
 .box-ex-usage-history .usage-history .item .date {
                 display: inline-block;
                 vertical-align: middle;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 15px;
                 letter-spacing: normal;
@@ -37094,8 +37152,8 @@ input[type=number] {
 
 .notice-wrap > ul .item a .date {
                     display: block;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     color: #9b9aa6;
                     color: var(--text-03);
@@ -37124,8 +37182,8 @@ input[type=number] {
     }
 
 .notice-wrap > .date {
-        font-family: 'Roboto';
-        font-family: var(--font4);
+        font-family: 'Noto Sans CJK KR Regular';
+        font-family: var(--font1);
         font-size: 12px;
         line-height: 16px;
         text-align: left;
@@ -37311,8 +37369,8 @@ input[type=number] {
         }
 
 .event-list .event .date {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 12px;
             line-height: 16px;
             color: #9b9aa6;
@@ -37474,8 +37532,8 @@ input[type=number] {
 
 .event-item-wrap > ul .item a .date {
                     display: block;
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Regular';
+                    font-family: var(--font1);
                     font-size: 11px;
                     color: #9b9aa6;
                     color: var(--text-03);
@@ -37534,8 +37592,8 @@ input[type=number] {
 
 .event-content-wrap .event-item-detail-wrap .date {
             display: block;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 11px;
             color: #9b9aa6;
             color: var(--text-03)
@@ -37606,8 +37664,8 @@ input[type=number] {
     }
 
 .event-content .date-wrap .date {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 12px;
             line-height: 25px;
             letter-spacing: normal;
@@ -37742,8 +37800,8 @@ input[type=number] {
                 background-color: #fff;
                 background-color: var(--white);
                 padding: 10px 32px 11px 12px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 13px;
                 line-height: 1.38;
                 color: #9b9aa6;
@@ -38076,8 +38134,8 @@ input[type=number] {
                 display: inline-block;
                 vertical-align: text-top;
                 padding-left: 15px;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 18px;
                 color: #9b9aa6;
@@ -38132,8 +38190,8 @@ input[type=number] {
             }
 
 .faq_list_detail .faq_answer .content .date {
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 26px;
                 color: #9b9aa6;
@@ -38767,8 +38825,8 @@ input[type=number] {
 
 .list_group.multi .list_group_item .date {
                 display: block;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 11px;
                 line-height: 21px;
                 letter-spacing: -0.11px;
@@ -39535,8 +39593,8 @@ input[type=number] {
 
 .timeline-wrap .badge-wrap .month-badge span {
                 display: inline-block;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 13px;
                 line-height: 26px;
                 letter-spacing: -0.13px;
@@ -39612,7 +39670,8 @@ input[type=number] {
 
 .t-pay-list > .month {
         width: 32px;
-
+        font-family: 'Noto Sans CJK KR Medium';
+        font-family: var(--font2);
         font-weight: 500;
         font-size: 13px;
         line-height: 18px;
@@ -39623,7 +39682,8 @@ input[type=number] {
 
 .t-pay-list > .month::after {
             content: '월';
-
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
             font-size: 13px;
             font-weight: 500;
             line-height: 18px;
@@ -39656,6 +39716,8 @@ input[type=number] {
                 width: 32px;
                 height: 32px;
                 font-size: 15px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-weight: 500;
                 line-height: 34px;
                 letter-spacing: -0.15px;
@@ -39757,7 +39819,8 @@ input[type=number] {
                         max-width: calc(100% - 20px - 15px - 6px - 30px);
                         position: relative;
                         margin-right: 15px;
-
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
                         font-size: 13px;
                         font-weight: 500;
                         line-height: 20px;
@@ -39770,8 +39833,8 @@ input[type=number] {
 
 .t-pay-list .t-pay-item .item-wrap .item .bank-info .time {
                         float: left;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-size: 12px;
                         line-height: 20px;
                         letter-spacing: -0.12px;
@@ -39917,7 +39980,8 @@ input[type=number] {
                         float: right;
                         width: 84px;
                         display: inline-block;
-
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
                         font-size: 13px;
                         font-weight: 500;
                         line-height: 46px;
@@ -40136,8 +40200,8 @@ input[type=number] {
             }
 
 .t-pay-list .tag-search-result .item .val {
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Bold';
+                font-family: var(--font3);
                 font-size: 21px;
                 font-weight: bold;
                 line-height: 28px;
@@ -40149,12 +40213,14 @@ input[type=number] {
 
 .t-pay-list .tag-search-result .item .val.won::after {
                         content: '원';
+                        font-family: 'Noto Sans CJK KR Bold';
+                        font-family: var(--font3);
                     }
 
 .t-pay-list .tag-search-result .item .val::after {
                     content: '개';
-                    font-family: 'Roboto';
-                    font-family: var(--font4);
+                    font-family: 'Noto Sans CJK KR Bold';
+                    font-family: var(--font3);
                     font-size: 17px;
                     font-weight: bold;
                     line-height: 28px;
@@ -40356,8 +40422,8 @@ input[type=number] {
         }
 
 .timeline-detail-info .detail-info-header .value {
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Bold';
+            font-family: var(--font3);
             font-size: 18px;
             font-weight: bold;
             line-height: 24px;
@@ -41255,6 +41321,8 @@ input[type=number] {
                 display: inline-block;
                 width: 90px;
                 font-size: 14px;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
                 font-weight: 500;
                 line-height: 19px;
                 letter-spacing: -0.14px;
@@ -42082,7 +42150,8 @@ input[type=number] {
                         }
 
 .connection-main-wrap .box-connection .box-spending ul li .val {
-
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
                         font-size: 15px;
                         font-weight: 500;
                         line-height: 20px;
@@ -42120,7 +42189,8 @@ input[type=number] {
 .connection-main-wrap .box-connection .link-area .link .val {
                     display: inline-block;
                     vertical-align: middle;
-
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 21px;
@@ -42458,8 +42528,8 @@ input[type=number] {
                                 float: left;
                                 width: 100px;
                                 display: inline-block;
-                                font-family: 'Roboto';
-                                font-family: var(--font4);
+                                font-family: 'Noto Sans CJK KR Regular';
+                                font-family: var(--font1);
                                 font-size: 14px;
                                 line-height: 19px;
                                 letter-spacing: -0.14px;
@@ -42581,8 +42651,8 @@ input[type=number] {
 
 .box-daily-detail-spending .item .val {
             float: right;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 14px;
             line-height: 19px;
             letter-spacing: -0.14px;
@@ -42632,8 +42702,8 @@ input[type=number] {
 
 .box-daily-detail-spending .item .num {
             display: inline-block;
-            font-family: 'Roboto';
-            font-family: var(--font4);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
             font-size: 11px;
             line-height: 15px;
             letter-spacing: normal;
@@ -42818,7 +42888,8 @@ input[type=number] {
 
 .box-bg-receipt > .top-area .val {
             position: absolute;
-
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
             font-size: 16px;
             font-weight: 500;
             line-height: 21px;
@@ -43040,8 +43111,8 @@ input[type=number] {
 
 .my-page-wrap .info-wrap .item .date {
                 float: right;
-                font-family: 'Roboto';
-                font-family: var(--font4);
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
                 font-size: 13px;
                 line-height: 19px;
                 letter-spacing: -0.33px;
@@ -43324,8 +43395,8 @@ input[type=number] {
 
 .my-page-wrap .connection-info-wrap .direct-input-list-wrap .item a .date {
                         display: block;
-                        font-family: 'Roboto';
-                        font-family: var(--font4);
+                        font-family: 'Noto Sans CJK KR Regular';
+                        font-family: var(--font1);
                         font-size: 11px;
                         line-height: 15px;
                         letter-spacing: normal;

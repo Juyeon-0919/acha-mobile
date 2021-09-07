@@ -809,13 +809,18 @@ input.custom {
         border-radius: 0;
         background-color: #ffffff;
 
+        &::placeholder {
+            font-family: var(--font1);
+            font-weight: 400;
+        }
+
         &:focus {
             border-bottom: 1px solid var(--text-01);
             outline: 0;
         }
 
         &.number {
-            font-family: var(--font4);
+            font-family: var(--font1);
             font-size: 14px;
         }
     }
@@ -841,6 +846,7 @@ input.custom {
         border-radius: 0;
         padding: 0 26px 0 5px;
         color: var(--text-01);
+        font-family: var(--font2);
     }
 
     & .filled-in {

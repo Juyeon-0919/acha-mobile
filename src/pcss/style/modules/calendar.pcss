@@ -15,7 +15,7 @@
             text-align: center;
             background: rgba(104, 57, 211, .06);
             border-radius: 50%;
-
+            font-family: var(--font1);
             color: var(--color-point);
             position: absolute;
             top: 30%;
@@ -89,7 +89,7 @@
             display: inline-flex;
             height: 28px;
             align-items: center;
-            padding:  0 10px;
+            padding: 0 10px;
             background-image: url(../../img/common/btn-dash-bg-01.svg);
             width: 86px;
             background-size: cover;
@@ -135,6 +135,7 @@
             & img {
                 display: inline-block;
             }
+
             & span {
                 display: inline-block;
                 font-family: var(--font2);
@@ -175,6 +176,7 @@
                     color: var(--text-01);
                     margin-right: 3px;
                 }
+
                 &:nth-child(2) {
                     font-size: 12px;
                     line-height: 64px;
@@ -183,12 +185,13 @@
                 }
             }
         }
+
         & > .val {
             float: right;
 
             & span {
                 &:first-child {
-
+                    font-family: var(--font2);
                     font-size: 18px;
                     font-weight: 500;
                     line-height: 64px;
@@ -196,6 +199,7 @@
                     text-align: right;
                     color: var(--text-01);
                 }
+
                 &:nth-child(2) {
                     font-family: var(--font3);
                     font-size: 11px;
@@ -224,7 +228,7 @@
                 float: left;
 
                 & .day {
-
+                    font-family: var(--font3);
                     font-size: 20px;
                     font-weight: bold;
                     line-height: 21px;
@@ -239,6 +243,7 @@
                         margin-left: 2px;
                     }
                 }
+
                 & .day2 {
                     font-size: 13px;
                     line-height: 21px;
@@ -247,6 +252,7 @@
                     margin-left: 3px;
                     margin-right: 5px;
                 }
+
                 & .state {
                     display: inline-block;
                     height: 21px;
@@ -273,7 +279,7 @@
                 float: right;
 
                 & .val {
-                    font-family: var(--font4);
+                    font-family: var(--font2);
                     font-size: 17px;
                     font-weight: 500;
                     line-height: 23px;
@@ -291,6 +297,7 @@
             }
 
         }
+
         & .ex-list {
             & .item {
                 overflow: hidden;
@@ -321,6 +328,7 @@
                         text-overflow: ellipsis;
                     }
                 }
+
                 & .info-val {
                     float: right;
 
@@ -343,7 +351,7 @@
                         }
 
                         & .val {
-                            font-family: var(--font4);
+                            font-family: var(--font1);
                             font-size: 14px;
                             letter-spacing: -0.14px;
                             text-align: right;
@@ -422,6 +430,7 @@
                                 &:disabled {
                                     display: none;
                                 }
+
                                 & .fc-icon-chevron-left {
                                     display: inline-block;
                                     width: 18px;
@@ -440,7 +449,7 @@
                             text-align: center;
 
                             & h2 {
-                                font-family: var(--font4);
+                                font-family: var(--font1);
                                 font-size: 15px;
                                 line-height: 21px;
                                 letter-spacing: -0.15px;
@@ -460,6 +469,7 @@
                                 &:disabled {
                                     display: none;
                                 }
+
                                 & .fc-icon-chevron-right {
                                     display: inline-block;
                                     width: 18px;
@@ -502,7 +512,7 @@
                                                         line-height: 24px;
                                                         text-align: center;
                                                         border-radius: 50%;
-                                                        font-family: var(--font4);
+                                                        font-family: var(--font1);
                                                         position: absolute;
                                                         left: 50%;
                                                         transform: translate(-50%, -8px);
@@ -515,11 +525,13 @@
                                                             color: var(--text-point-color);
                                                         }
                                                     }
+
                                                     /* Todo! 삭제 가능성 */
+
                                                     & .fc-today {
                                                         & .fc-day-number {
                                                             background-color: transparent;
-                                                            font-family: var(--font4);
+                                                            font-family: var(--font1);
                                                             font-size: 13px;
                                                             letter-spacing: -0.13px;
                                                             color: var(--text-01);

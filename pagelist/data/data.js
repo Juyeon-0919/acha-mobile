@@ -476,63 +476,73 @@ data.expenditure2 = {
             'url': '11_exependiture_41',
             'category': '홈계좌',
             'page': '08. 개인형IRP_상세_거래내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_42',
+            'category': '홈계좌',
+            'page': '09. 통신업_고정지출, My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_43',
+            'category': '홈계좌',
+            'page': '09. 통신업_상세_납부내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_44',
+            'category': '홈계좌',
+            'page': '10. 보증보험_My상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_45',
+            'category': '홈계좌',
+            'page': '10. 보증보험_상세_거래 내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_46',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_대출_할부금융_My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_47',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_대출_할부금융 거래내역_고정지출, My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_popup_01',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_대출_할부금융 거래내역_고정지출, My 상세_팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_48',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_대출_운용리스_My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_49',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_대출_운용리스 거래내역_My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_50',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_2.4 수신상품(정액적립식 계좌)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51',
+            'category': '홈계좌',
+            'page': '02. 여수신정보_2.4 수신상품(정액적립식 계좌)_계좌 상세'
         }
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_21',
-        //     'category': '홈계좌',
-        //     'page': '3.6 금융투자정보 (01_홈,계좌, My 상세)'
-        // },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_22',
-        //     'category': '홈계좌',
-        //     'page': '3.7 선불전자지급수단 정보 (01_내카드, My 상세)'
-        // },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_23',
-        //     'category': '홈계좌',
-        //     'page': '3.8 선불전자지급수단 정보 (01_내카드, My 상세)'
-        // },
-        //
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_12',
-        //     'category': '홈계좌',
-        //     'page': '3.1 여수신정보(정액적립식) (01_고정지출, My 상세)'
-        // },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_13',
-        //     'category': '홈계좌',
-        //     'page': '3.1 여수신정보(정액적립식) (04_상세_거래내역)'
-        // },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_14',
-        //     'category': '홈계좌',
-        //     'page': '3.1 여수신정보(자유적립식, 거치식) (01_홈-계좌, My상세)'
-        // },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_15',
-        //     'category': '홈계좌',
-        //     'page': '3.1 여수신정보(요구불식) (01_고정지출, My 상세)'
-        // },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_16',
-        //     'category': '홈계좌',
-        //     'page': '3.1 여수신정보(요구불식) (02_계좌 정보)'
-        // },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '11_exependiture_17',
-        //     'category': '홈계좌',
-        //     'page': '3.3 보험(일반) (01_고정지출, My 상세)'
-        // },
-
     ]
 };
 data.story = {
@@ -932,85 +942,74 @@ data.mydata = {
             'stateClass': 'complete',
             'url': '04_my_data_01',
             'category': 'mydata',
-            'page': '통합인증 약관동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_02',
-            'category': 'mydata',
-            'page': '전송요구 내역 확인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_date_popup_01',
-            'category': 'mydata',
-            'page': '정기전송 주기 변경 팝업'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_03',
-            'category': 'mydata',
-            'page': '개인신용정보 전송요구'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_04',
-            'category': 'mydata',
-            'page': '보유계좌(상품) 목록 전송요구 완료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_05',
-            'category': 'mydata',
-            'page': '개인신용정보 선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_06',
-            'category': 'mydata',
-            'page': '전송요구내역 확인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_07',
-            'category': 'mydata',
-            'page': '통합인증 완료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_08',
-            'category': 'mydata',
-            'page': '전송요구내역 선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_09',
-            'category': 'mydata',
-            'page': '개별인증 완료'
+            'page': '04-1. 추가하기_02. 통합인증_2.2 인증수단 선택 (01_통합인증 약관동의1)'
         },
         {
             'stateClass': 'complete',
             'url': '04_my_data_10',
             'category': 'mydata',
-            'page': '가입상품 목록 전송요구서'
+            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (01_가입상품 목록 전송요구서)'
         },
         {
             'stateClass': 'complete',
             'url': '04_my_data_11',
             'category': 'mydata',
-            'page': '개인(신용)정보 수집·이용 동의서'
+            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (02_개인(신용)정보 수집·이용 동의서)'
         },
         {
             'stateClass': 'complete',
             'url': '04_my_data_12',
             'category': 'mydata',
-            'page': '개인(신용)정보 수집·이용 동의서'
+            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (03_개인(신용)정보 제공 동의서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_03',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (01_개인신용정보 전송요구(인증앱)1)'
+        },
+        // 비밀번호
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_04',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (03_인증 완료)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_05',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.5 개인신용정보 선택 (01_개인신용정보 선택)'
+        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '04_my_data_06',
+        //     'category': 'mydata',
+        //     'page': '전송요구내역 확인'
+        // },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_07',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (01_통합인증 완료(일반))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_08',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_date_popup_01',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (02_전송 종료시점 변경 팝업)'
         },
         {
             'stateClass': 'complete',
             'url': '04_my_data_13',
             'category': 'mydata',
-            'page': '개인(신용)정보 수집·이용 동의서'
+            'page': '04-1. 추가하기_02. 통합인증_2.7 약관동의2 (01_통합인증 약관동의2)'
         },
         {
             'stateClass': 'complete',
@@ -1018,6 +1017,24 @@ data.mydata = {
             'category': 'mydata',
             'page': '개인(신용)정보 제공 동의서'
         },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_15',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.3 사이트 자체인증 (01_전송요구내역 선택(자체인증))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_09',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (01_개별인증 완료(일반))'
+        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '04_my_data_02',
+        //     'category': 'mydata',
+        //     'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (01_가입상품 목록 전송요구서)'
+        // },
     ]
 };
 data.mycard = {
