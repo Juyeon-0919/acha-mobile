@@ -981,18 +981,6 @@ data.mydata = {
             'category': 'mydata',
             'page': '04-1. 추가하기_02. 통합인증_2.5 개인신용정보 선택 (01_개인신용정보 선택)'
         },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '04_my_data_06',
-        //     'category': 'mydata',
-        //     'page': '전송요구내역 확인'
-        // },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_07',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (01_통합인증 완료(일반))'
-        },
         {
             'stateClass': 'complete',
             'url': '04_my_data_08',
@@ -1013,6 +1001,36 @@ data.mydata = {
         },
         {
             'stateClass': 'complete',
+            'url': '04_my_data_07',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (01_통합인증 완료(일반))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_16',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (02_통합인증 완료(만료 상품 MY안내))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_17',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_03. 통합인증수단_3.1 공동인증서 인증(2) (01_인증 완료)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_18',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.2 약관동의(1) (01_개별인증 약관동의)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_19',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.2 약관동의(2) (01_개인(신용)정보 수집·이용 동의서)'
+        },
+        {
+            'stateClass': 'complete',
             'url': '04_my_data_14',
             'category': 'mydata',
             'page': '개인(신용)정보 제공 동의서'
@@ -1029,12 +1047,12 @@ data.mydata = {
             'category': 'mydata',
             'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (01_개별인증 완료(일반))'
         },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '04_my_data_02',
-        //     'category': 'mydata',
-        //     'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (01_가입상품 목록 전송요구서)'
-        // },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_20',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (02_개별인증 완료(만료 상품 MY 안내))'
+        },
     ]
 };
 data.mycard = {
