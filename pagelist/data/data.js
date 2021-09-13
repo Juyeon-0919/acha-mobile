@@ -1203,30 +1203,40 @@ data.signIn = {
     'list': [
         {
             'stateClass': 'complete',
+            'url': '06_sign_in_00',
+            'category': '회원가입',
+            'page': '마이데이터 서비스 이용 안내'
+        },
+        {
+            'stateClass': 'complete',
             'url': '06_sign_in_01',
             'category': '회원가입',
             'page': '본인확인 안내'
-        }, {
+        },
+        {
             'stateClass': 'complete',
             'url': '06_sign_in_02',
             'category': '회원가입',
             'page': '약관동의'
-        }, {
+        },
+        {
             'stateClass': 'complete',
             'url': '06_sign_in_03',
             'category': '회원가입',
             'page': '약관상세'
-        }, {
+        },
+        {
             'stateClass': 'complete',
             'url': '06_sign_in_04',
             'category': '회원가입',
             'page': '정보입력'
-        }, {
+        },
+        {
             'stateClass': 'complete',
             'url': '06_sign_in_05',
             'category': '회원가입',
             'page': '비밀번호 설정 안내'
-        },
+        }
     ]
 };
 data.taxRenewal = {
