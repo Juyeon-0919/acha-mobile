@@ -407,6 +407,18 @@ data.expenditure2 = {
         },
         {
             'stateClass': 'complete',
+            'url': '11_exependiture_52',
+            'category': '홈계좌',
+            'page': '03. 보험_3.2 보험(자동차)_My 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_53',
+            'category': '홈계좌',
+            'page': '03. 보험_3.2 보험(자동차)_상세_거래내역'
+        },
+        {
+            'stateClass': 'complete',
             'url': '11_exependiture_34',
             'category': '홈계좌',
             'page': '03. 보험_3.3. 보험대출_고정지출, My 상세_상세_거래내역'
@@ -431,9 +443,15 @@ data.expenditure2 = {
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_19',
+            'url': '11_exependiture_55',
             'category': '홈계좌',
-            'page': '04. 카드_상세_카드대출'
+            'page': '04. 카드_상세_리볼빙'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_54',
+            'category': '홈계좌',
+            'page': '04. 카드_상세_카드대출(단기)'
         },
         {
             'stateClass': 'complete',

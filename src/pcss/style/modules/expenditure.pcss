@@ -5258,6 +5258,18 @@
                 }
             }
         }
+
+        & > .list.caution {
+            padding-left: 16px;
+            margin-top: 12px;
+            color: var(--text-03);
+            font-family: var(--font1);
+            font-weight: normal;
+
+            &::before {
+                left: 0;
+            }
+        }
     }
 
     & .table {
@@ -6036,14 +6048,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
 
             &:last-child {
                 margin-bottom: 0;
             }
 
             &.lg {
-                margin-bottom: 11px;
+                margin-bottom: 12px;
 
                 & .name {
                     font-family: var(--font2);

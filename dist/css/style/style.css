@@ -35718,6 +35718,20 @@ input[type=number] {
                         padding-bottom: 0;
                     }
 
+.account-detail-wrap .info-wrap > .list.caution {
+            padding-left: 16px;
+            margin-top: 12px;
+            color: #9b9aa6;
+            color: var(--text-03);
+            font-family: 'Noto Sans CJK KR Regular';
+            font-family: var(--font1);
+            font-weight: normal
+        }
+
+.account-detail-wrap .info-wrap > .list.caution::before {
+                left: 0;
+            }
+
 .account-detail-wrap .table:first-child {
             margin-top: 37px;
         }
@@ -36564,7 +36578,7 @@ input[type=number] {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 5px
+            margin-bottom: 10px
         }
 
 .box-ex-detail-list .ex-info > div:last-child {
@@ -36572,7 +36586,7 @@ input[type=number] {
             }
 
 .box-ex-detail-list .ex-info > div.lg {
-                margin-bottom: 11px
+                margin-bottom: 12px
             }
 
 .box-ex-detail-list .ex-info > div.lg .name {
