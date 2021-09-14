@@ -443,15 +443,15 @@ data.expenditure2 = {
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_55',
-            'category': '홈계좌',
-            'page': '04. 카드_상세_리볼빙'
-        },
-        {
-            'stateClass': 'complete',
             'url': '11_exependiture_54',
             'category': '홈계좌',
             'page': '04. 카드_상세_카드대출(단기)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_55',
+            'category': '홈계좌',
+            'page': '04. 카드_상세_리볼빙'
         },
         {
             'stateClass': 'complete',
