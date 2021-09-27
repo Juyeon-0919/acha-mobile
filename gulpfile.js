@@ -92,6 +92,7 @@ function copyFonts() {
 function jsLib() {
     let sourceLib = [
         'src/js/lib/jquery.js',
+        'src/js/lib/popper.js',
         'src/js/lib/bootstrap.js',
 
         'src/js/lib/jquery.sticky.js',

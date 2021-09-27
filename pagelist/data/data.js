@@ -631,7 +631,13 @@ data.story = {
             'url': '10_story_08',
             'category': '스토리',
             'page': '태그검색 상세'
-        }
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_popup_04',
+            'category': '스토리',
+            'page': '내 지출 기분 선택 팝업'
+        },
     ]
 };
 data.moreview = {
