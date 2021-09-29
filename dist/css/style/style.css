@@ -18379,6 +18379,10 @@ input.custom:focus {
         display: block;
     }
 
+.modal-loading .img {
+        margin: 0 auto;
+    }
+
 .section {
     position: relative;
     border-radius: 7px;

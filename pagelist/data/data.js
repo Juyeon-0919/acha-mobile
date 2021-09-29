@@ -14,6 +14,12 @@ data.common = {
             'category': 'common ',
             'page': '캘린더 팝업'
         },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_loading',
+            'category': 'common ',
+            'page': '로딩'
+        },
     ]
 };
 data.dataPolicy = {
