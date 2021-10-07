@@ -36716,17 +36716,8 @@ input[type=number] {
                 letter-spacing: -0.14px;
                 text-align: right;
                 color: #37354e;
-                color: var(--text-01)
+                color: var(--text-01);
             }
-
-.box-ex-usage-history .usage-history .item .val::after {
-                    content: '원';
-                    font-family: 'Noto Sans CJK KR Medium';
-                    font-family: var(--font2);
-                    font-size: 13px;
-                    font-weight: 500;
-                    margin-left: 1px;
-                }
 
 .box-ex-usage-history .usage-history .item .point {
                 float: right;
