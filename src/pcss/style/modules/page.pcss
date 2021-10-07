@@ -683,6 +683,15 @@
             font-size: 13px;
             letter-spacing: -.33px;
 
+            &.disabled {
+                color: var(--text-01);
+                opacity: 1;
+
+                &::after {
+                    content: none;
+                }
+            }
+
             &[aria-expanded="true"] {
                 background-color: #f5f6f8;
             }
@@ -725,12 +734,12 @@
 
 
 .terms_of_service {
-    padding: 0 20px 30px 20px;
+    padding: 0 20px 40px 20px;
 
     & .title {
-        font-size: 16px;
-        font-family: var(--font3);
-        font-weight: bold;
+        font-size: 20px;
+        font-family: var(--font2);
+        font-weight: 500;
         line-height: 29px;
         letter-spacing: -0.5px;
         margin-bottom: 20px;
@@ -739,27 +748,27 @@
     & .title-lg {
         font-family: var(--font2);
         font-size: 18px;
-        line-height: 27px;
+        line-height: 23px;
         letter-spacing: -0.45px;
         color: var(--text-01);
-        margin-bottom: 27px;
+        margin-bottom: 20px;
     }
 
     & .title-sm {
         font-family: var(--font2);
         font-weight: 500;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 22px;
         letter-spacing: -0.38px;
         margin-bottom: 15px;
     }
 
     & .content {
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: -0.3px;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: -0.35px;
         margin-bottom: 25px;
-        color: #5c5a6f;
+        color: var(--text-01);
     }
 
     & .color-grey {
@@ -809,6 +818,38 @@
                             font-size: 11px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    & .v-table {
+        margin-bottom: 30px;
+
+        & tr {
+            border-bottom: 1px solid #e3e4e8;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            & td {
+                font-family: var(--font1);
+                font-size: 13px;
+                line-height: 21px;
+                letter-spacing: normal;
+                text-align: left;
+                padding: 10px 12px;
+                color: var(--text-02);
+
+                &:first-child {
+                    background-color: #f5f6f8;
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    font-weight: 500;
+                    letter-spacing: -0.33px;
+                    text-align: center;
+                    color: var(--text-02);
                 }
             }
         }

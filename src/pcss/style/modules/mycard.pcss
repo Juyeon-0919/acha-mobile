@@ -1906,7 +1906,21 @@
             }
         }
 
+        & > .month {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 19px;
+            letter-spacing: -0.35px;
+            text-align: left;
+            color: var(--text-01);
+            padding: 0 20px;
+            margin-bottom: 24px;
+        }
+
         & .spending-list {
+            display: flex;
+            flex-direction: column-reverse;
+
             & li {
                 width: 100%;
                 height: 60px;

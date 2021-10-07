@@ -14727,6 +14727,16 @@ input.custom:focus {
             letter-spacing: -.33px
         }
 
+.dropdown-wrap .dropdown .dropdown-toggle.disabled {
+                color: #37354e;
+                color: var(--text-01);
+                opacity: 1
+            }
+
+.dropdown-wrap .dropdown .dropdown-toggle.disabled::after {
+                    content: none;
+                }
+
 .dropdown-wrap .dropdown .dropdown-toggle[aria-expanded="true"] {
                 background-color: #f5f6f8;
             }
@@ -14767,14 +14777,14 @@ input.custom:focus {
             }
 
 .terms_of_service {
-    padding: 0 20px 30px 20px
+    padding: 0 20px 40px 20px
 }
 
 .terms_of_service .title {
-        font-size: 16px;
-        font-family: 'Noto Sans CJK KR Bold';
-        font-family: var(--font3);
-        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Noto Sans CJK KR Medium';
+        font-family: var(--font2);
+        font-weight: 500;
         line-height: 29px;
         letter-spacing: -0.5px;
         margin-bottom: 20px;
@@ -14784,29 +14794,30 @@ input.custom:focus {
         font-family: 'Noto Sans CJK KR Medium';
         font-family: var(--font2);
         font-size: 18px;
-        line-height: 27px;
+        line-height: 23px;
         letter-spacing: -0.45px;
         color: #37354e;
         color: var(--text-01);
-        margin-bottom: 27px;
+        margin-bottom: 20px;
     }
 
 .terms_of_service .title-sm {
         font-family: 'Noto Sans CJK KR Medium';
         font-family: var(--font2);
         font-weight: 500;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 22px;
         letter-spacing: -0.38px;
         margin-bottom: 15px;
     }
 
 .terms_of_service .content {
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: -0.3px;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: -0.35px;
         margin-bottom: 25px;
-        color: #5c5a6f;
+        color: #37354e;
+        color: var(--text-01);
     }
 
 .terms_of_service .color-grey {
@@ -14853,6 +14864,42 @@ input.custom:focus {
 .terms_of_service .t-table .table tbody.font-small tr td {
                             font-size: 11px;
                         }
+
+.terms_of_service .v-table {
+        margin-bottom: 30px
+    }
+
+.terms_of_service .v-table tr {
+            border-bottom: 1px solid #e3e4e8
+        }
+
+.terms_of_service .v-table tr:first-child {
+                border-top: 0;
+            }
+
+.terms_of_service .v-table tr td {
+                font-family: 'Noto Sans CJK KR Regular';
+                font-family: var(--font1);
+                font-size: 13px;
+                line-height: 21px;
+                letter-spacing: normal;
+                text-align: left;
+                padding: 10px 12px;
+                color: #737183;
+                color: var(--text-02)
+            }
+
+.terms_of_service .v-table tr td:first-child {
+                    background-color: #f5f6f8;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 13px;
+                    font-weight: 500;
+                    letter-spacing: -0.33px;
+                    text-align: center;
+                    color: #737183;
+                    color: var(--text-02);
+                }
 
 /* tablet */
 
@@ -28731,6 +28778,23 @@ input[type=number] {
                     transform: translate(0, 2px);
                 }
 
+.my-card-detail .card-detail-list-wrap > .month {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 19px;
+            letter-spacing: -0.35px;
+            text-align: left;
+            color: #37354e;
+            color: var(--text-01);
+            padding: 0 20px;
+            margin-bottom: 24px;
+        }
+
+.my-card-detail .card-detail-list-wrap .spending-list {
+            display: flex;
+            flex-direction: column-reverse
+        }
+
 .my-card-detail .card-detail-list-wrap .spending-list li {
                 width: 100%;
                 height: 60px
@@ -30291,8 +30355,10 @@ input[type=number] {
                     right: 5px;
                     top: 12px;
                     background-image: url(../../img/common/ico-input-delete@2x.png);
-                    background-size: cover;
-                    width: 18px;
+                    background-size: 18px 18px;
+                    background-position: right 10px center;
+                    background-repeat: no-repeat;
+                    width: 28px;
                     height: 18px;
                     -webkit-appearance: none;
                 }

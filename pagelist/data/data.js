@@ -1,4 +1,39 @@
 var data = {}
+data.signInRenewal = {
+    'title': '이용약관',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_06',
+            'category': 'common',
+            'page': '서비스 이용약관'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_07',
+            'category': 'common',
+            'page': '개인(신용)정보 수집 이용 동의서'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_08',
+            'category': 'common',
+            'page': '개인(신용)정보 제 3자 제공에 관한 사항'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_09',
+            'category': 'common',
+            'page': '마케팅 활용 및 수신 동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_10',
+            'category': 'common',
+            'page': '개인정보처리방침'
+        },
+    ]
+};
 data.common = {
     'title': '공통',
     'list': [
