@@ -176,6 +176,11 @@
                     & label {
                         margin-right: 40px;
 
+                        & span {
+                            font-family: var(--font1);
+                            font-weight: 400;
+                        }
+
                         &:last-child {
                             margin-right: 0;
                         }
@@ -185,7 +190,6 @@
                 & > .cont {
                     & .list-body {
                         width: 100%;
-                        padding: 0 5px;
 
                         & .item {
                             width: 100%;
@@ -286,6 +290,55 @@
                                 top: 0;
                                 padding-left: 100%;
                                 padding-top: 25px;
+                            }
+                        }
+                    }
+                }
+
+                & .my-data-terms-of-use {
+                    padding: 0;
+
+                    & > .title {
+                        font-size: 15px;
+                        line-height: 22px;
+                        letter-spacing: -0.38px;
+                        text-align: left;
+                        color: var(--text-01);
+                        margin-bottom: 10px;
+
+                        &.title-sm {
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: -0.35px;
+                            padding-top: 0;
+                        }
+                    }
+
+                    & .checkbox {
+                        margin-bottom: 0;
+                    }
+
+                    & .table {
+                        & td {
+                            vertical-align: top;
+                            padding: 8px 10px 10px;
+
+                            &.col-header {
+                                text-align: center;
+
+                                & span {
+                                    text-align: center;
+                                    color: var(--text-02);
+                                }
+                            }
+
+                            & span {
+                                display: block;
+                                font-size: 11px;
+                                line-height: 17px;
+                                letter-spacing: -0.28px;
+                                text-align: left;
+                                color: var(--text-02);
                             }
                         }
                     }
