@@ -26747,9 +26747,9 @@ input[type=number] {
 .my-data-terms-of-use .item > .title {
             font-family: 'Noto Sans CJK KR Bold';
             font-family: var(--font3);
-            font-size: 14px;
+            font-size: 15px;
             font-weight: bold;
-            line-height: 20px;
+            line-height: 22px;
             letter-spacing: -0.35px;
             margin-bottom: 10px
         }
@@ -26811,6 +26811,16 @@ input[type=number] {
                         line-height: 16px;
                         padding: 8px;
                     }
+
+.my-data-terms-of-use .table td span {
+                display: inline-block;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: -0.28px;
+                text-align: left;
+                color: #737183;
+                color: var(--text-02);
+            }
 
 .my-data-terms-of-use .table td:nth-child(2) {
             vertical-align: top;
