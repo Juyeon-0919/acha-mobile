@@ -26764,8 +26764,17 @@ input[type=number] {
             line-height: 19px;
             letter-spacing: -0.3px;
             color: #737183;
-            color: var(--text-02);
+            color: var(--text-02)
         }
+
+.my-data-terms-of-use .item .desc.highlight {
+                display: inline-block;
+                font-size: 15px;
+                line-height: 19px;
+                letter-spacing: -0.38px;
+                color: #ef4b61;
+                border-bottom: 1px solid #ef4b61;
+            }
 
 .my-data-terms-of-use .item .list {
             font-family: 'Noto Sans CJK KR Regular';
