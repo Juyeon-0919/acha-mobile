@@ -28778,7 +28778,7 @@ input[type=number] {
                     transform: translate(0, 2px);
                 }
 
-.my-card-detail .card-detail-list-wrap > .month {
+.my-card-detail .card-detail-list-wrap .month {
             font-size: 14px;
             font-weight: bold;
             line-height: 19px;
@@ -39086,10 +39086,11 @@ input[type=number] {
             }
 
 .list_group .list_group_item .item_title .title {
+                display: block;
                 font-family: 'Noto Sans CJK KR Medium';
                 font-family: var(--font2);
                 font-size: 13px;
-                line-height: 21px;
+                line-height: 19px;
                 letter-spacing: -0.33px;
                 vertical-align: top;
             }
@@ -39108,10 +39109,11 @@ input[type=number] {
             font-family: 'Noto Sans CJK KR Medium';
             font-family: var(--font2);
             font-size: 11px;
-            line-height: 21px;
+            line-height: 17px;
             letter-spacing: -0.28px;
-            color: #888;
-            padding-top: 1px;
+            color: #9b9aa6;
+            color: var(--text-03);
+            padding-top: 2px;
             padding-right: 50px
         }
 
@@ -39124,7 +39126,7 @@ input[type=number] {
 .list_group .list_group_item .btn {
             position: absolute;
             right: 3px;
-            top: 26px;
+            top: 24px;
             font-family: 'Noto Sans CJK KR Regular';
             font-family: var(--font1);
             color: #737183;
