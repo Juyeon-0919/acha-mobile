@@ -10438,7 +10438,6 @@ temporary rendered events).
 .fc-row .fc-content-skeleton {
   position: relative;
   z-index: 4;
-  padding-bottom: 2px;
   /* matches the space above the events */
 }
 
@@ -25678,12 +25677,110 @@ input[type=number] {
 /*
     작성자 : 이주연
     제목 : 캘린더
-    날짜 : 2021.05.25
+    날짜 : 2021.10.15
 */
+
+.box_ex_calendar_header {
+    position: relative;
+    width: 100%
+}
+
+.box_ex_calendar_header .top-area {
+        position: relative;
+        width: 100%;
+        height: 66px
+    }
+
+.box_ex_calendar_header .top-area .btn-back {
+            position: absolute;
+            display: flex;
+            width: 26px;
+            height: 26px;
+            justify-content: center;
+            align-items: center;
+            left: 16px;
+            top: 20px;
+        }
+
+.box_ex_calendar_header .top-area .btn-select-month {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center
+        }
+
+.box_ex_calendar_header .top-area .btn-select-month span {
+                display: inline-block;
+                font-family: 'Noto Sans CJK KR Medium';
+                font-family: var(--font2);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.28;
+                letter-spacing: normal;
+                color: #fff;
+                margin-right: 9px;
+            }
+
+.box_ex_calendar_header .text-area {
+        width: 100%;
+        padding: 0 20px 15px 20px
+    }
+
+.box_ex_calendar_header .text-area p {
+            padding: 10px 15px;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.3px;
+            text-align: left;
+            background-color: rgba(255,255,255,.06);
+            border-radius: 6px;
+            color: #beacdf
+        }
+
+.box_ex_calendar_header .text-area p span {
+                color: #fff;
+            }
+
+.box_ex_calendar_header.bg-purple {
+        background-color: #653bb4;
+    }
+
+.box_ex_calendar_header.bg-dark-blue {
+        background-color: #40466a
+    }
+
+.box_ex_calendar_header.bg-dark-blue .text-area p {
+                color: #a6aac7;
+            }
+
+.box_ex_calendar_header.bg-blue {
+        background-color: #3e5baf
+    }
+
+.box_ex_calendar_header.bg-blue .text-area p {
+                color: #a9b5d8;
+            }
 
 .box_ex_calendar {
     padding: 0 20px !important
 }
+
+.box_ex_calendar .fc-day-number.active {
+            width: 24px;
+            height: 24px;
+            margin: 0 auto;
+            line-height: 24px;
+            text-align: center;
+            background: rgba(104, 57, 211, .06);
+            border-radius: 50%;
+            color: #6839d3 !important;
+            color: var(--color-point) !important;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+        }
 
 .box_ex_calendar .fc-day-selected .fc-day-number {
             width: 24px;
@@ -25693,8 +25790,6 @@ input[type=number] {
             text-align: center;
             background: rgba(104, 57, 211, .06);
             border-radius: 50%;
-            font-family: 'Noto Sans CJK KR Regular';
-            font-family: var(--font1);
             color: #6839d3;
             color: var(--color-point);
             position: absolute;
@@ -25705,10 +25800,6 @@ input[type=number] {
 
 .box_ex_calendar .fc-day-disabled .fc-day-number {
             opacity: 0.3;
-        }
-
-.box_ex_calendar .fc-today .fc-day-number {
-
         }
 
 .box_ex_calendar .first-data .fc-content .fc-title {
@@ -25738,7 +25829,7 @@ input[type=number] {
 .box_ex_calendar .sort-area ul li a {
                     display: inline-block;
                     height: 28px;
-                    line-height: 28px;
+                    line-height: 27px;
                     border-radius: 999px;
                     background-color: #f5f6f8;
                     padding: 0 12px;
@@ -25770,7 +25861,7 @@ input[type=number] {
 
 .box_ex_calendar .sort-area .btn-reset em {
                 font-size: 11px;
-                line-height: 2.36;
+                line-height: 26px;
                 letter-spacing: -0.55px;
                 text-align: right;
                 color: #737183;
@@ -26197,23 +26288,16 @@ input[type=number] {
                                                         font-family: var(--font1);
                                                         position: absolute;
                                                         left: 50%;
-                                                        transform: translate(-50%, -8px)
+                                                        transform: translate(-50%, -9px)
                                                     }
 
 .modal-common .modal-dialog.modal-calendar .modal-content .box_ex_calendar .fc-view-container .fc-view table .fc-body .fc-widget-content .fc-day-grid-container .fc-day-grid .fc-row .fc-day-number.active {
                                                             text-align: center;
                                                             background: rgba(104, 57, 211, .06);
                                                             border-radius: 50%;
-
                                                             color: #6839d3;
-
                                                             color: var(--text-point-color);
                                                         }
-
-.modal-common .modal-dialog.modal-calendar .modal-content .box_ex_calendar .fc-view-container .fc-view table .fc-body .fc-widget-content .fc-day-grid-container .fc-day-grid .fc-row {
-
-                                                    /* Todo! 삭제 가능성 */
-                                                }
 
 .modal-common .modal-dialog.modal-calendar .modal-content .box_ex_calendar .fc-view-container .fc-view table .fc-body .fc-widget-content .fc-day-grid-container .fc-day-grid .fc-row .fc-today .fc-day-number {
                                                             background-color: transparent;
@@ -35042,12 +35126,7 @@ input[type=number] {
 .box_ex_calendar .fc-day-number {
         display: block;
         float: unset !important;
-        font-family: 'Roboto';
-        font-family: var(--font4);
         font-size: 13px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
         letter-spacing: -0.13px;
         text-align: center;
         color: #37354e;
@@ -35068,9 +35147,7 @@ input[type=number] {
             text-align: center;
             background: rgba(104, 57, 211, .06);
             border-radius: 50%;
-
             color: #6839d3;
-
             color: var(--text-point-color);
             position: absolute;
             top: 30%;

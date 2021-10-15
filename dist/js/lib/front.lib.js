@@ -12890,7 +12890,6 @@ return jQuery;
   return Popper;
 
 })));
-//# sourceMappingURL=popper.js.map
 
 /*!
   * Bootstrap v4.6.0 (https://getbootstrap.com/)

@@ -1,10 +1,112 @@
 /*
     작성자 : 이주연
     제목 : 캘린더
-    날짜 : 2021.05.25
+    날짜 : 2021.10.15
 */
+.box_ex_calendar_header {
+    position: relative;
+    width: 100%;
+
+    & .top-area {
+        position: relative;
+        width: 100%;
+        height: 66px;
+
+        & .btn-back {
+            position: absolute;
+            display: flex;
+            width: 26px;
+            height: 26px;
+            justify-content: center;
+            align-items: center;
+            left: 16px;
+            top: 20px;
+        }
+
+        & .btn-select-month {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            & span {
+                display: inline-block;
+                font-family: var(--font2);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.28;
+                letter-spacing: normal;
+                color: #fff;
+                margin-right: 9px;
+            }
+        }
+    }
+
+    & .text-area {
+        width: 100%;
+        padding: 0 20px 15px 20px;
+
+        & p {
+            padding: 10px 15px;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.3px;
+            text-align: left;
+            background-color: rgba(255,255,255,.06);
+            border-radius: 6px;
+            color: #beacdf;
+
+            & span {
+                color: #fff;
+            }
+        }
+    }
+
+    &.bg-purple {
+        background-color: #653bb4;
+    }
+
+    &.bg-dark-blue {
+        background-color: #40466a;
+
+        & .text-area {
+            & p {
+                color: #a6aac7;
+            }
+        }
+    }
+
+    &.bg-blue {
+        background-color: #3e5baf;
+
+        & .text-area {
+            & p {
+                color: #a9b5d8;
+            }
+        }
+    }
+}
+
 .box_ex_calendar {
     padding: 0 20px !important;
+
+    & .fc-day-number {
+        &.active {
+            width: 24px;
+            height: 24px;
+            margin: 0 auto;
+            line-height: 24px;
+            text-align: center;
+            background: rgba(104, 57, 211, .06);
+            border-radius: 50%;
+            color: var(--color-point) !important;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+        }
+    }
 
     & .fc-day-selected {
         & .fc-day-number {
@@ -15,7 +117,6 @@
             text-align: center;
             background: rgba(104, 57, 211, .06);
             border-radius: 50%;
-            font-family: var(--font1);
             color: var(--color-point);
             position: absolute;
             top: 30%;
@@ -27,12 +128,6 @@
     & .fc-day-disabled {
         & .fc-day-number {
             opacity: 0.3;
-        }
-    }
-
-    & .fc-today {
-        & .fc-day-number {
-
         }
     }
 
@@ -63,7 +158,7 @@
                 & a {
                     display: inline-block;
                     height: 28px;
-                    line-height: 28px;
+                    line-height: 27px;
                     border-radius: 999px;
                     background-color: #f5f6f8;
                     padding: 0 12px;
@@ -96,7 +191,7 @@
 
             & em {
                 font-size: 11px;
-                line-height: 2.36;
+                line-height: 26px;
                 letter-spacing: -0.55px;
                 text-align: right;
                 color: var(--text-02);
@@ -515,18 +610,15 @@
                                                         font-family: var(--font1);
                                                         position: absolute;
                                                         left: 50%;
-                                                        transform: translate(-50%, -8px);
+                                                        transform: translate(-50%, -9px);
 
                                                         &.active {
                                                             text-align: center;
                                                             background: rgba(104, 57, 211, .06);
                                                             border-radius: 50%;
-
                                                             color: var(--text-point-color);
                                                         }
                                                     }
-
-                                                    /* Todo! 삭제 가능성 */
 
                                                     & .fc-today {
                                                         & .fc-day-number {

@@ -4,6 +4,18 @@
 <body>
 <div class="wrap">
     <div class="contents">
+        <div class="box_ex_calendar_header bg-purple"> <!-- bg-dark-blue / bg-blue -->
+            <div class="top-area">
+                <a href="#" class="btn-back"><i class="sprite ico_top_back_nor"></i></a>
+                <a href="#" class="btn-select-month _btnSlideOpen"><span>5월</span><i class="sprite top_month_arrow"></i></a>
+            </div>
+            <div class="text-area">
+                <p>
+                    <span>지출 예정/완료 내역</span>을 캘린더로 확인하세요<br/>
+                    <span>일 선택 및 다중 선택</span>이 가능합니다 🙂
+                </p>
+            </div>
+        </div>
         <div class="box_ex_calendar">
             <div class="sort-area">
                 <ul class="clearfix">
@@ -123,8 +135,14 @@
                     return weekList[date.getDay()];
                 },
                 navLinkDayClick: function (date, jsEvent) {
+                    console.log('클릭 시 보여지는 날짜 ↓')
                     console.log(date.toISOString().slice(0,10));
-                    console.log(jsEvent.target)
+                    console.log('클릭되는 요소 타켓 ↓')
+                    console.log(jsEvent.target);
+                    document.querySelectorAll('.fc-day-number').forEach( a => {
+                        a.classList.remove('active')
+                    });
+                    jsEvent.target.classList.add('active');
                 },
                 events: [
                     {
@@ -193,6 +211,11 @@
             $('.fc-day-top[data-date="2021-05-25"]').addClass('fc-day-selected')
             $('.fc-day-top[data-date="2021-05-28"]').addClass('fc-day-selected')
         })
+
+        function showDate() {
+            console.log('확인 클릭 시 선택된 날짜 ↓')
+            console.log($('.fc-day-number.active').data('goto').date)
+        }
     </script>
     <script>
         $('.sort-area li a').on('click',function (){
@@ -200,5 +223,67 @@
         })
     </script>
 </div>
+<div class="modal-slide calendar-change _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title">월 선택</div>
+            <div class="month-list _monthList">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 6월</span>
+                            <span class="badge next">다음달</span>
+                            <span class="txt-sm">(예정)</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="txt">2021년 5월</span>
+                            <span class="badge">이번달</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 4월</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 3월</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+        });
+    })
+</script>
 </body>
 </html>
