@@ -98,10 +98,20 @@
         }
     }
 
+    & .account-list-title {
+        font-family: var(--font2);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
     & .account-list {
         border-top: 1px solid var(--text-01);
         border-bottom: 1px solid #e3e4e8;
-        margin-bottom: 90px;
+        margin-bottom: 36px;
 
         & li {
             position: relative;
@@ -181,6 +191,10 @@
                 right: 0;
                 transform: translateY(-50%);
             }
+        }
+
+        & + .account-list {
+            margin-top: -54px;
         }
     }
 

@@ -304,6 +304,12 @@ data.connection = {
             'category': '커넥션',
             'page': '커넥션 끊기 팝업'
         },
+        {
+            'stateClass': 'complete',
+            'url': '13_connection_popup_14',
+            'category': '커넥션',
+            'page': '공유항목 편집'
+        },
     ]
 };
 data.dormant = {
